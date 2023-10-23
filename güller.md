@@ -36,7 +36,7 @@ Here, I am explaining how to fork and push a Java assignment.
    git push
    ```
 
-6. **Ask the Teacher to Check:**
+6. **Ask:**
    ```bash
    # Go to the assignment on GitHub
    # Click "New Pull Request"
