@@ -19,4 +19,4 @@ Determine whether a number entered by the user is even or odd.
 Calculate the factorial of a number using loops.
 
 Best,
-[Your Name]
+Akif
