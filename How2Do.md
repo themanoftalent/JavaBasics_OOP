@@ -1,4 +1,4 @@
-`Share your assignment on GitHub:`
+` Share your assignment on GitHub:`
 
 ### Step 1: Create a GitHub Account (If You Don't Have One)
 
