@@ -1,0 +1,22 @@
+Ucu kırılan bir kurşun kalemin kalemtıraş ile ucunu sivriltme algoritması;
+1) Sağ elinizi ucu kırılan kurşun kaleme doğrultun.
+2) Sağ elinizle kurşun kalemi ortasından tutun ve kaldırın.
+3) Sol elinizi kalemtıraşa doğrultun.
+4) Sol elinizle kalemtıraşın yan kısımlarından baş ve işaret parmağınızla sıkıca tut ve kaldırın.
+5) Sağ elinizde tuttuğunuz kalemin kırık uç tarafını sol elinizde tuttuğunuz kalemtıraşın girintili kısmına doğrultup sokun.
+6) Kalemin ucu sona geldiğinde kalemtıraşı sıkıca tutarak kalemi saat yönünde 4 tam tur çevirin.
+7) Kalemi kalemtıraşın girintili kısmından çıkarın.
+Kaleminizin ucu sivrilmiş olacaktır.
+
+
+Java ile HelloWorld;
+
+
+public class baslangic
+{
+public static void main(String[] args) {
+System.out.println("Hello World");
+}
+}
+
+
