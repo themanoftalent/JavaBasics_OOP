@@ -1,0 +1,20 @@
+//Çay demleme algoritması
+Başla
+Çaydanlığı eline al
+Musluğu aç
+Çaydanlığın altına su koy
+Ocağı aç
+Çaydanlığı ocağa koy
+Çaydanlığın üzerine çay koy
+Suyun kaynamasını bekle
+Su kaynayınca çaydanlığın altındaki suyu üste dök
+Çaydanlıktan bardağa çay koy
+Bitti
+
+
+//Javada "java öğreniyorum"yazan kod
+public class Main {
+    public static void main(String[] args) {
+        System.out.printf("Java öğreniyorum\n");
+    }
+}
