@@ -1,0 +1,16 @@
+// Girilen sayinin tek mi çift mi oldugunu bulan algoritma
+1-Başla
+2-Sayi giriniz
+3-a=sayi%2
+4-a 0'a esit ise ekrana yazdır 'girdigin sayi çift'
+5-a 0'a esit değil ise ekrana yazdır 'girdigin sayi tek'
+6-Bitir
+
+
+//javada 'merhaba  ben java ogreniyorum' yazan kod
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.printf("merhaba ben java ogreniyorum");
+    }
+}
