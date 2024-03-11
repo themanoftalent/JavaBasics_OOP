@@ -1,0 +1,14 @@
+Java Dört İşlem Ders Örnek
+
+
+public class İkiSayiİslem {
+	public static void main(String args[]) {
+		int a=10;
+		int b=5;
+		int toplam=a+b;
+		int cikartma=a-b;
+		int carpma=a*b;
+		int bolum=a/b;
+		System.out.println("Toplam:"+toplam+ "\nFark:"+cikartma+ "\nCarpim:"+carpma+"\nBolum:"+bolum);
+	}
+}
