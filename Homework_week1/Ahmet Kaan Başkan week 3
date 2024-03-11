@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        int x1=3;
+
+        int toplam = x1+x2;
+        int carpım = x1*x2;
+        float bölüm = x1/x2;
+        int   mod = x1%x2;
+
+
+        System.out.println("sayıların toplamı : "+ toplam);
+        System.out.println("sayıların çarpımı"+ carpım);
+        System.out.println("sayıların bölümü"+ bölüm);
+        System.out.println("sayıların modları"+ mod);
+    }
+}
+// ahmet kaan başkan 2311502206
