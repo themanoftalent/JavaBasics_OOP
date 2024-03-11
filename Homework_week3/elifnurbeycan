@@ -1,0 +1,22 @@
+//girilen sayılar üzerinden işlem yapma
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_sayisi= new Scanner(System.in);
+        System.out.println("ilk sayiyi girin:");
+        float sayi1= girdi_sayisi.nextFloat();
+
+        System.out.println("ikinci sayiyi girin:");
+        float sayi2= girdi_sayisi.nextFloat();
+        float toplam= sayi1+sayi2;
+        float fark= sayi1-sayi2;
+        float carpim=sayi1*sayi2;
+        float bolum=sayi1/sayi2;
+
+        System.out.println("toplam:"+toplam);
+        System.out.println("carpım:"+carpim);
+        System.out.println("bolum:"+bolum);
+        System.out.println("fark:"+fark);
+    }
+}
