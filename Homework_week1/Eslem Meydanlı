@@ -1,0 +1,25 @@
+Algoritma ödev
+Konum bulma algoritması 
+1. Başla 
+2. Telefonu eline al.
+3. Telefonunun ekranını aç.
+4. Telefonun şifresini gir.
+5. Telefonun ayarlar panelini aç ve konumu aktifleştir.
+6. Haritalar uygulamasına gir.
+7. Başlangıç yerine bulunduğun konumu gir.
+8. Varış kısmına gitmek istediğin konumu seç.
+9. Gideceğin yere uygun ulaşım şeklini seç.
+10. Uygulamadaki başla butonuna tıkla.
+11. Gideceğin konuma geldiğinde uygulamadan çıkış yap.
+12. Bitir.
+
+
+
+
+Kod yazma  ödevi
+
+class Hello {
+     public static void main(String[] args) {
+         System.out.println("Merhaba sinif ben java ogreniyorum.);
+     }
+}
