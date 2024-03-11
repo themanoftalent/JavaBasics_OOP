@@ -1,19 +1,17 @@
 
 import java.util.Scanner;
 
-public class Hello_World {
-
-	public static void main(String[] args) {
-		Scanner girdi_sayisi= new Scanner(System.in);
-		System.out.println("enter first number");
-		float sayi1= girdi_sayisi.nextFloat();
+public class Hello_World{
+	public static void main(String []args) {
+		java.util.Scanner yenihafiza= new Scanner(System.in);
+		System.out.println("enter your name \n");
+		String isim= yenihafiza.nextLine();
 		
-		System.out.println("enter second number");
-		int sayi2= girdi_sayisi.nextInt();
-		float toplam= sayi1+sayi2;
-		System.out.println("toplam; "+toplam);
-			
-
+		System.out.println("enter your surname\n");
+		String soyisim= yenihafiza.nextLine();
+		System.out.println("your name and surname :"+ isim +" " + soyisim);
+		
 	}
-
+	
+	
 }
