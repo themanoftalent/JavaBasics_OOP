@@ -1,0 +1,27 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        int Sayi1=10;
+        int Sayi2=2;
+        int Toplam;
+        int Cikarma;
+        int Bolme;
+        int Carpma;
+        int Kalan;
+
+        Toplam = Sayi1 + Sayi2;
+        Cikarma = Sayi1 - Sayi2;
+        Bolme = Sayi1 / Sayi2;
+        Carpma = Sayi1 * Sayi2;
+        Kalan = Sayi1 % Sayi2;
+
+        System.out.println("\nToplam :" +Toplam);
+        System.out.println("Cikarma :" +Cikarma);
+        System.out.println("Bolme :" +Bolme);
+        System.out.println("Carpma :" +Carpma);
+        System.out.println("Kalan :" +Kalan);
+
+
+    }
+}
