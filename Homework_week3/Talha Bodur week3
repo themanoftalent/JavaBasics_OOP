@@ -1,3 +1,4 @@
+// Matematik işlemleri ;
 public class Main {
 
     public static void main(String[] args) {
@@ -22,6 +23,24 @@ public class Main {
         System.out.println("Carpma :" +Carpma);
         System.out.println("Kalan :" +Kalan);
 
+
+    }
+}
+
+Ad Soyad Soran kod;
+
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args) {
+
+        System.out.println("Enter your name :");
+        String name;
+        name = input.next();
+        System.out.println("Enter your surname :");
+        String surname;
+        surname = input.next();
 
     }
 }
