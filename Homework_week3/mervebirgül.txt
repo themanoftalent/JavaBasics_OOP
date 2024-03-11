@@ -1,22 +1,34 @@
-package hello;
+package adsoyad;
 
-public class selam 
-{
+import java.util.Scanner;
 
-	public static void main(String[] args) 
-	{
-		 int  number1=3 ,number2=1,toplam,bolme,carpma,cıkarma;
-		  toplam= number1 +number2;
-		  bolme=number1/number2;
-		  carpma= number1*number2;
-		  cıkarma= number1-number2;
-		 
-		 System.out.println("toplam" + toplam);
-		 System.out.println("çıkarma" + cıkarma);
-		 System.out.println("çarpma" + carpma);
-		 System.out.println("bölme" + bolme);
 
- 
+
+
+
+public class Adsoyad {
+
+	public static void main(String[] args) {
+  
+  
+  Scanner scanner= new Scanner(System.in);
+  System.out.println("bir isim giriniz:");
+  String isim = scanner.nextLine();
+  
+  System.out.println("bir soyisim giriniz:");
+  String soyad = scanner.nextLine();
+  
+  //System.out.println("isim:"+ "\t"+isim + "\n"+ "soyisim:"+ "\t"+ soyad);
+  if(isim.equals("merve")|| soyad.equals("birgül"))
+  {
+	  System.out.println("isim dogru girildi.");
+  }else
+  {
+	  System.out.println("yanlış girildi");
+  }
+  
+  
 	}
 
 }
+
