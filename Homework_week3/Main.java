@@ -9,5 +9,13 @@ public class Main {
         System.out.println("soy isminizi giriniz");
         String soyisim;
         soyisim=input.next();
+        if((isim.equals("yusuf"))&&(soyisim.equals("mermertas")))
+        {
+            System.out.println("isim ve soyisim dogru");
+        }
+        else
+        {
+            System.out.println("isim ve soyisim dogru degil");
+        }
         System.out.println(isim +" " +soyisim);
     }}
