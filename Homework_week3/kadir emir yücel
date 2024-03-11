@@ -27,3 +27,24 @@ public class java {
 	
 
 }
+
+// İsim Soyisim soran kod;
+import java.security.DrbgParameters;
+import java.util.Scanner;
+
+import javax.crypto.Cipher;
+
+public class java {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+ System.out.println("isim  gir");
+ String isim=scanner.nextLine();
+ System.out.println("soy isim  gir");
+ String soyisim=scanner.nextLine();
+ System.out.println("isim soyisim "+isim+' '+soyisim);
+}
+	
+
+}
+
