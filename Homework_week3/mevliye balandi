@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class isimSoyisimSor {
+    public static void main(String[] args) {
+        String isim, soyisim;
+        Scanner isim_soyisim = new Scanner ( System.in);
+        System.out.println("enter name");
+       isim = isim_soyisim.nextLine();
+       System.out.println("enter surname");
+       soyisim = isim_soyisim.nextLine();
+       System.out.println("isim:"+ isim);
+       System.out.println("soyisim:"+ soyisim);
+
+         
+        
+    }
+}
