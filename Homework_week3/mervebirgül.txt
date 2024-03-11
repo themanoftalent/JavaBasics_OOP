@@ -1,0 +1,22 @@
+package hello;
+
+public class selam 
+{
+
+	public static void main(String[] args) 
+	{
+		 int  number1=3 ,number2=1,toplam,bolme,carpma,cıkarma;
+		  toplam= number1 +number2;
+		  bolme=number1/number2;
+		  carpma= number1*number2;
+		  cıkarma= number1-number2;
+		 
+		 System.out.println("toplam" + toplam);
+		 System.out.println("çıkarma" + cıkarma);
+		 System.out.println("çarpma" + carpma);
+		 System.out.println("bölme" + bolme);
+
+ 
+	}
+
+}
