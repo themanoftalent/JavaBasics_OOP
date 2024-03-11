@@ -44,3 +44,30 @@ public class Main {
 
     }
 }
+
+Ad Soyad Sorup Doğruluğunu Denetleyen kod;
+
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args) {
+
+        System.out.println("Enter your name :");
+        String name;
+        name = input.next();
+        if (name.equals("Ahmet")){
+            System.out.println("Your name is correct!");
+        }
+        else System.out.println("Your name is incorrect!");
+        System.out.println("Enter your surname :");
+        String surname;
+        surname = input.next();
+        if (surname.equals("Bodur")){
+            System.out.println("Your surname is correct!");
+        }
+        else System.out.println("Your surname is incorrect!");
+
+    }
+}
+
