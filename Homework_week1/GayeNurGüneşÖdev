@@ -1,0 +1,142 @@
+JavaÖdev
+
+public class HelloWorld {
+	public static void main(String args[]) {
+		System.out.println("Hello World!!");
+	}
+}
+
+
+
+
+AlgoritmaÖdev
+
+
+Çay demleme algoritması
+
+Başla.
+Bulunduğun yerden mutfağın kapısına doğru yürü.
+Elini kapının koluna doğru uzat.
+Kapının kolunu tut.
+Eğer kapı kolu döndürmeli ise kolu döndür.
+  Kolu it.
+  Kolu bırak.
+  Elini kendine doğru çek.
+Değilse aşağıya doğru bastır.
+  Kolu it.
+  Kolu bırak.
+  Elini kendine doğru çek.
+Kapıdan geçerek tezgaha doğru ilerle.
+Yönünü tezgaha doğru dön.
+Kettle'ın tezgahta nerede olduğunu tespit et.
+Tespit edilen yerin hizasına gelene kadar o yöne adımlar at.
+Elini kettle'ın kapağına götür.
+Kapağı aç.
+Kapağı kettle'ın yanında tezgaha bırak.
+Elini kettle'ın sapına götür.
+Sapı tut.
+Kettle'ı olduğu yerden yukarı kaldır.
+Lavabonun nerede olduğunu tespit et.
+Lavabonun olduğu yerin hizasına gelene kadar o yöne adımlar at.
+Kettle'ı musluğun alt hizasında tut.
+Eğer sol elinle kettle'ı tutuyorsan sağ elini musluğun açma kapama yerine doğru götür.
+Değilse sol elini musluğun açma kapama yerine doğru götür.
+Eğer açma kapama yeri döndürmeli ise döndür.
+  Eğer dönmüyorsa tersi yönünde döndür.
+  Değilse sonuna kadar döndür.
+Değilse yukarı doğru kaldırarak suyu aç.
+Suyun kettle'a dolması için bekle.
+Kettle'ın dolduğu durumda;
+  Eğer musluğun açma kapama yeri döndürmeli ise suyu açtığın yönün tersine döndür.
+  Değilse açma kapama yerini aşağı indir.
+Musluğun açma kapama yerinde bulunan elini oradan çek.
+Diğer elinde bulunan kettle'ı başta olduğu konuma götürmek için o yönde adımlar at.
+Kettle'ı yuvasına yerleştir.
+Kettle'ın sapını bırak.
+Elini kettle'ın fişine götür.
+Fişi tut.
+Fişi kaldır.
+Fişi prize takmak için priz ile aynı hizaya getir.
+Fişi duvardaki prize doğru ittir.
+Elini fişten çek.
+Elini kettle düğmesine koy.
+Kettle düğmesine bas.
+Elini düğmeden çek.
+Suyun kaynamasını bekle.
+Suyun kaynadığı durumda;
+  Elini fişe götür.
+  Fişi tut.
+  Fişi çek.
+  Fişi tezgahın üstüne bırak.
+  Elini fişten çek.
+Çay kabının yerini tespit et.
+Çaydanlığın yerini tespit et.
+Çay kabı hizasına doğru adımlar at.
+Çay kabına elini götür.
+Kabı tut.
+Diğer elinle kabın kapağını tut.
+Kapağı aç.
+Kapağı tezgaha koy.
+Kapaktaki elini kapaktan çek.
+Elindeki kap ile çaydanlığın olduğu hizaya doğru adımlar at.
+Boş elini çaydanlığın kapağına koy.
+Kapağı yukarı kaldırarak çaydanlığı aç.
+Elindeki kabı çaydanlığın üst hizasına doğru eğik bir şekilde götür.
+Kabı hafif devirerek istenen miktarda çay ilave et.
+Yeterince eklediğinde kabı düzle ve kendine doğru çek.
+Kabı tezgahta bir kenara koy.
+Kaptaki elini çek.
+Tekrar kettle'ın olduğu hizaya doğru adımlar at.
+Kettle'ın sapına boş elini götür.
+Sapı tut.
+Kettle'ı olduğu yerden kaldır.
+Çaydanlığın hizasına doğru adımlar at.
+Kettle'ı çaydanlığın üst hizasına getir.
+Kettle'ı eğerek su dolana kadar dök.
+Su dolduğunda kettle'ı düzle.
+Kettle'ı kendine doğru çek.
+Diğer elinde duran kapağı çaydanlığın üst hizasına doğru götür.
+Kapağı kapat.
+Elini kapaktan çek.
+Boş olan elini çaydanlığın üst hanesindeki sapına götür.
+Sapı tut.
+Üst hanesini kaldır.
+Üst haneyi biraz kenara çek.
+Diğer elindeki kettle'ı alt hanenin üst hizasına getir.
+Kettle'ı biraz eğerek suyu aldığı kadar içine dök.
+Suyun dolduğu durumda kettle'ı kendine doğru çek.
+Diğer elindeki üst haneyi alt hanenin üzerine doğru getir.
+Üst haneyi alt hanenin tam üstüne yerleşecek şekilde yavaşça aşağı indirerek koy.
+Üst hanedenin sapındaki elini saptan bırak.
+Saptan elini çek.
+Kettle'ın en başında olduğu yere doğru adımlar at.
+Kettle'ı yuvasının üstüne doğru hizala.
+Kettle'ı yuvasına yerleştir.
+Elini kettle'ın sapından bırak.
+Elini çek.
+Tekrar çaydanlığın olduğu yere doğru adımlar at.
+Çaydanlığın alt hane sapına elini götür.
+Sapı tut.
+Çaydanlığı kaldır.
+Ocağın nerede olduğunu tespit et.
+Ocak hizasına doğru adımlar at.
+Elindeki çaydanlığı üstü boş ocaklardan birinin üstüne doğru götür.
+Çaydanlığı yavaşça aşağı indirerek yerleştir.
+Elini çaydanlığın sapından bırak.
+Elini çek.
+Elini ocağın açma düğmesine götür.
+Elinle düğmeyi tut.
+Düğmeyi döndür.
+Eğer düğme dönmüyorsa diğer yöne döndür.
+Ateşi orta hizada aç.
+Elini düğmeden bırak.
+Elini çek.
+Çay kaynayana kadar bekle.
+Eğer çay kaynamışsa elini ocağın düğmesine götür.
+Düğmeyi tut.
+Düğmeyi açtığın yönün tersine çevirerek ateşi kıs.
+Elini düğmeden bırak.
+Elini çek.
+Çay bir süre demlenene kadar bekle.
+Bitir.
+
