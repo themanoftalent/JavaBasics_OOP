@@ -4,8 +4,8 @@ public class İkiSayiTopla {
 
         Scanner sc = new Scanner(System.in);
 
-        int sayi1 = sc.nextInt() ; // sayı alma
-        int sayi2 = sc.nextInt(); //sayı alma
+        int sayi1 = sc.nextInt() ; 
+        int sayi2 = sc.nextInt(); 
 
         int toplam=sayi1+sayi2;
         float bolme=(float)sayi1/(float)sayi2;
