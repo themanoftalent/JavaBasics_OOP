@@ -8,8 +8,12 @@ public class Main {
         System.out.println("Please enter your surname");
         String surname;
         surname = input.next();
-        System.out.println("Your name is " +name +". Your surname is "+surname);
-
+        if(name.equals("Stan") && surname.equals("sidibe")){
+            System.out.println("Your name and surname are correct:)");
+        }
+        else{
+            System.out.println("It is incorrect");
+        }
     }
 
 }
