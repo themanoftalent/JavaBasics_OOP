@@ -1,21 +1,16 @@
 import java.util.Scanner;
 
-public class Main {
-    static Scanner input =new Scanner(System.in);
-    public static void main(String[] args) {
-        System.out.println("isminiz ne");
-        String isim;
-        isim =input.next();
-        System.out.println("soy isminizi giriniz");
-        String soyisim;
-        soyisim=input.next();
-        if((isim.equals("yusuf"))&&(soyisim.equals("mermertas")))
-        {
-            System.out.println("isim ve soyisim dogru");
-        }
-        else
-        {
-            System.out.println("isim ve soyisim dogru degil");
-        }
-        System.out.println(isim +" " +soyisim);
-    }}
+public class AdSoyad {
+    public static void main(String[]args){
+        Scanner input =new Scanner(System.in);
+        System.out.println("İsim giriniz");
+        String isim= input.nextLine();
+        System.out.println("Soyisim giriniz");
+        String soyisim=input.nextLine();
+        System.out.println("İsim Soyisim:"+isim + " " +soyisim);
+
+
+
+
+
+    }
