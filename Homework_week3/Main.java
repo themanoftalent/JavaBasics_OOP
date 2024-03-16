@@ -1,16 +1,16 @@
-import java.util.Scanner;
+public class DortIslem {
+    public static void main(String[] args)  {
 
-public class AdSoyad {
-    public static void main(String[]args){
-        Scanner input =new Scanner(System.in);
-        System.out.println("İsim giriniz");
-        String isim= input.nextLine();
-        System.out.println("Soyisim giriniz");
-        String soyisim=input.nextLine();
-        System.out.println("İsim Soyisim:"+isim + " " +soyisim);
+        float a=5f;
+        float b=2f;
+        float toplam=a+b;
+        float fark = a-b;
+        float carpma= a*b;
+        float bolme= a/b;
+        float mod =a%b;
+        System.out.println("Toplam:"+ toplam);
+        System.out.println("Fark:"+ fark);
+        System.out.println("Çarpma:"+ carpma);
+        System.out.println("Bölme:"+ bolme);
+        System.out.println("Mod:" +mod);
 
-
-
-
-
-    }
