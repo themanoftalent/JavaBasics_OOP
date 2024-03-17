@@ -1,0 +1,50 @@
+import java.security.DrbgParameters;
+import java.util.Scanner;
+
+import javax.crypto.Cipher;
+
+public class java {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+ System.out.println("sayi 1 gir");
+ double sayi1=scanner.nextInt();
+ System.out.println("sayi 2 gir");
+ double sayi2=scanner.nextInt();
+	double sonuc=0;
+	sonuc=sayi1+sayi2;
+	System.out.println("sonç toplam "+ sonuc);
+	double sonucc=1;
+	sonucc=sayi1*sayi2;
+	System.out.println("sonç çaprım"+ sonucc);
+	double sonucb=sayi1-sayi2;
+	System.out.println("sonç  çıkarma"+ sonucb);
+	double sonucx=sayi1/sayi2;
+	System.out.println("sonç bölme "+ sonucx);
+	double kalan =sayi1%sayi2;
+	System.out.println(" sonuç kalan "+ kalan);
+}
+	
+
+}
+
+// İsim Soyisim soran kod;
+import java.security.DrbgParameters;
+import java.util.Scanner;
+
+import javax.crypto.Cipher;
+
+public class java {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+ System.out.println("isim  gir");
+ String isim=scanner.nextLine();
+ System.out.println("soy isim  gir");
+ String soyisim=scanner.nextLine();
+ System.out.println("isim soyisim "+isim+' '+soyisim);
+}
+	
+
+}
+

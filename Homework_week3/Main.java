@@ -1,14 +1,16 @@
-import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static Scanner input = new Scanner(System.in);
-    public static void main(String[] args) {
-        System.out.println("Please Enter your name: ");
-        String name = input.next();
-        System.out.println("Please enter your surname");
-        String surname = input.next();
+public class DortIslem {
+    public static void main(String[] args)  {
 
-        System.out.println("Your name is:" + name +" "+ surname);
+        float a=5f;
+        float b=2f;
+        float toplam=a+b;
+        float fark = a-b;
+        float carpma= a*b;
+        float bolme= a/b;
+        float mod =a%b;
+        System.out.println("Toplam:"+ toplam);
+        System.out.println("Fark:"+ fark);
+        System.out.println("Çarpma:"+ carpma);
+        System.out.println("Bölme:"+ bolme);
+        System.out.println("Mod:" +mod);
 
-    }
-}

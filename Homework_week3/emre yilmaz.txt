@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class İsimSoyisimSor {
+    public static void main(String[] args){
+        String gercekIsım = "Emre";
+        String gercekSoyad = "Yılmaz";
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Adınızı girin:");
+        String ad = input.next(); 
+        System.out.println("Soyadınızı girin:");
+        String soyad = input.next();
+
+        if(gercekIsım == ad && gercekSoyad == soyad) {
+            System.out.println("Adı ve Soyadı:" + ad + " " +  soyad);
+        } else {
+            System.out.println("İsim-Soyisim yanlış girilmiştir.");
+        }

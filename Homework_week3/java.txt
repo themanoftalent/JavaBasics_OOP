@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class İsimSoyisimSor {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Adınızı girin:");
+        String ad = input.nextLine();
+        System.out.println("Soyadınızı girin:");
+        String soyad = input.nextLine();
+
+        System.out.println("Adı ve Soyadı:" + ad + " " +  soyad);
+    }
+}
