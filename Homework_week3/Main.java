@@ -1,16 +1,18 @@
-public class DortIslem {
-    public static void main(String[] args)  {
+import java.util.Scanner;
 
-        float a=5f;
-        float b=2f;
-        float toplam=a+b;
-        float fark = a-b;
-        float carpma= a*b;
-        float bolme= a/b;
-        float mod =a%b;
-        System.out.println("Toplam:"+ toplam);
-        System.out.println("Fark:"+ fark);
-        System.out.println("Çarpma:"+ carpma);
-        System.out.println("Bölme:"+ bolme);
-        System.out.println("Mod:" +mod);
 
+public class Main {
+
+    static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println("please enter your name:");
+        String name=input.next();
+        System.out.println("please enter your surname");
+        String surname=input.next();
+
+        System.out.println("your name is:"+name+"your surname is :"+surname);
+
+
+    }
+
+}
