@@ -1,0 +1,23 @@
+mustafa saydan
+
+import java.util.Scanner;
+class geriyeSayma {
+
+	public static void main(String[] args) {
+		Scanner sayiAl=new Scanner(System.in);
+		System.out.println("Sayı gir:");
+		int number=sayiAl.nextInt();
+		while(number<100) {
+			System.out.println("100 den küçük girdin, tekrar gir. ");
+			number=sayiAl.nextInt();
+		}
+		
+		for(;0<number;number--) {
+			System.out.print(number+" ");
+		}
+		
+		sayiAl.close();
+
+	}
+
+}
