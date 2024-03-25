@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+Scanner oku=new Scanner(System.in);
+        System.out.print("birinci notu giriniz:");
+        int not1=oku.nextInt();
+        System.out.print("ikinci notu girin");
+        int not2=oku.nextInt();
+        System.out.print("ucuncu notu girin:");
+        int not3=oku.nextInt();
+        System.out.print("dorduncu notu girin:");
+        int not4=oku.nextInt();
+
+        int gpa=(not1+not2+not3+not4)/100;
+        switch (gpa){
+            case 1:
+                System.out.print("kaldi"); break;
+            case 2:
+                System.out.print("kaldi"); break;
+            case 3:
+                System.out.print("gecti"); break;
+            case 4:
+                System.out.print("gecti"); break;
+            default:
+                System.out.println("hatali deger girdiniz");
+        }
+
+
+
+    }
+}
