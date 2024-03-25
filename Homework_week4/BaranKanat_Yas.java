@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Yas {
+public class BaranKanat_Yas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Yaşınızı Giriniz");
