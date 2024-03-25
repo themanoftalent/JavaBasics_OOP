@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class geriyeSayma {
+
+	public static void main(String[] args) {
+		Scanner sayiAl=new Scanner(System.in);
+		System.out.println("Sayı gir:");
+		int number=sayiAl.nextInt();
+	    for(int i=0;i<number;--number) {
+			System.out.print(number+" ");
+		}
+		
+		sayiAl.close();
+
+	}
+
+}
