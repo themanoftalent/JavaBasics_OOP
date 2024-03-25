@@ -1,0 +1,35 @@
+import java.util.Scanner;
+ public class   DersClass {
+     public static void main(String[] args) {
+         Scanner scan = new Scanner(System.in);
+       int not1,not2,not3,not4,not5;
+         not1=scan.nextInt();
+         not2=scan.nextInt();
+         not3=scan.nextInt();
+         not4=scan.nextInt();
+         int ort=(not1+not2+not3+not4)/4;
+
+
+
+         switch (ort){
+             case "1":
+                 System.out.println("kaldi");
+                 break;
+             case "2":
+                 System.out.println("kaldi");
+                 break;
+             case"3":
+                 System.out.println("gecti");
+                 break;
+             case"4":
+                 System.out.println("gecti");
+                 break;
+             default:
+         }
+
+
+
+     }
+
+
+     }
