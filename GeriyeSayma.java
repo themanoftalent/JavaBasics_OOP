@@ -6,7 +6,7 @@ public class GeriyeSayma {
         System.out.println("Bir sayı giriniz: ");
         int sayi = sc.nextInt();
 
-        if(sayi<=100) {
+        if(sayi>=100) {
             for(int i = sayi;0<=sayi;sayi--){
                 System.out.print(sayi + " ");
             }
