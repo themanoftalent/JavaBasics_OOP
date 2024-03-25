@@ -2,9 +2,13 @@ import java.util.Scanner;
 public class Sayılar {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the n: ");
-        int n = input.nextInt();
-        for(int i=0; i<=n; i++){
+        int n;
+        do {
+            System.out.print("Enter the n: ");
+            n = input.nextInt();
+        }
+        while (n < 100);
+        for (int i = n; i >= 0; i--) {
             System.out.println(i);
         }
     }
