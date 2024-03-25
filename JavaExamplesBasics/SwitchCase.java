@@ -30,6 +30,7 @@ public class AgeCalculator {
                 break;
             case 5:
                 System.out.println("You are a teenager.");
+                // case 5,6,7,8,9,10,11,12,13,14,15,16,17:
                 break;
             default:
                 System.out.println("You are an adult.");
