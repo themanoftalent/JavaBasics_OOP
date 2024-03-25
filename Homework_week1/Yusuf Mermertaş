@@ -1,0 +1,40 @@
+1.	Ödev Algoritma
+1.Adım: Kalk ve mutfağa git
+2Adım: Mutfağın kapısını aç ve içeri gir
+3.Adım: Ocağın üstündeki dolabın yanına git ve kapağını aç
+4.Adım: Dolabın içinden makarna paketini,yağdanlığı,tuzluğu ,makası ,su bardağını ve tatlı kaşığını al ve ocağın yanındaki tezgaha koy
+5.Adım: Ocağın altındaki dolabın kapağını aç ve içindeki tencereyi al ve tezgahın üstüne koy.
+6Adım: Su bardağını ve tencereyi al musluğun yanına git
+7.Adım: Musluğun vanasını aç ve su bardağına suyu doldur ve su bardağındaki suyu tencereye boşalt bu işlemi 5 defa tekrarla ve musluğu kapat
+8.Adım: Makarna paketini al ve makas yardımıyla ağzını kes
+9. Adım: Ağzı açılan makarnayı tencerenin içine boşalt
+10.Adım: Tuzluğu al ve tatlı kaşığına boşalt ,tatlı kaşığındaki tuzu tencereye at
+11.Adım:Yağdanlığı al ve tatlı kaşığına boşalt ,tatlı kaşığındaki yağı tencereye boşalt 
+12. Adım: Ocağın sağındaki çakmağı al ve ocağı yak
+13.Adım: Ocaktaki yanan gözün üstüne tencereyi koy
+14.Adım : 5 dk pişir 
+15.Adım:Tatlı kaşığıyla pişen makarnadan tat ve yumuşadıysa altını kapat yumuşamadıysa 14. Adıma git
+16.Adım:10 dakika soğumasını bekleyin
+17.Adım: Ocağın üstündeki dolabın solundaki dolabı aç
+18.Adım: Dolabın içindeki tabağı ve çatalı al ve tezgaha koy
+19.Adım : Tezgahın üstündeki çatal yardımıyla tenceredeki makarnadan tabak dolana kadar tabağa boşalt 
+20.Adım : Dolu tabağı ye 
+
+
+2.	ÖDEV JAVA İLE HELLO WORLD
+
+
+public class baslangic
+{
+public static void main(String[] args) {
+System.out.println("Hello World");
+}
+}
+
+
+
+
+
+
+
+

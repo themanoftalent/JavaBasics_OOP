@@ -1,0 +1,25 @@
+-Java programlama dilinde hello world yazımı :
+
+public class HelloWorld
+ {
+    public static void main(String[ ]args)
+   {
+        System.out.println("Hello, World!");
+    }
+}
+
+
+-Havuçlu tarçınlı kek yapımının algoritması :
+-Malzemeleri al:
+- 2 su bardağı rendelenmiş havuç ,1 su bardağı toz şeker , yarım su bardağı sıvı yağ ,3 adet yumurta ,  2 su bardağı un , 1 tatlı kaşığı kabartma tozu ,
+       1 tatlı kaşığı tarçın ,bir tutam tuz .
+- Fırını 180 dereceye ayarla ve ısıtmaya başla .
+-Yumurtaları bir karıştırma kabına kır ve çırpıcıyla köpük haline getirene kadar çırp .
+-Şekeri yumurtalara ekleyip 5 dakika çırp.
+-Sıvı yağı ekleyip 1 dakika karıştır.
+-Rendelenmiş havuçları ekleyip 1 dakika karıştır.
+-Unu, kabartma tozunu, tarçını ve tuzu eleyerek karışıma ekleyip spatula veya tahta kaşıkla , homojen bir kıvam elde edene kadar karıştır.
+-Kek kalıbını yağla. 
+-Hazırlanan karışımı yağlanmış kek kalıbına dök.
+- Önceden ısıtılmış 180 derece fırında40-45dakika pişir. 
+- Fırından çıkart.

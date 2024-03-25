@@ -1,0 +1,32 @@
+1. Mutfağa git.
+2. Ocağı yak.
+3. Çaydanlığın olduğu dolabı aç, çaydanlığı al ve dolabı geri kapat.
+4. Çaydanlığın altını musluğun altına götür.
+5. Musluğu aç.
+6. Çaydanlığın altına su koy.
+7. Musluğu kapat.
+8. Çayın olduğu dolabı aç.
+9. Çayın olduğu kabı al.
+10. Çaydanlığın üstünü eline al.
+11. Çaydanlığın üstüne çay koy.
+12. Kabı yerine koy.
+13. Dolabı kapat.
+14. Çaydanlığı ocağa koy.
+15. Ocağı aç.
+16. Suyun kaynamasını bekle.
+17. Su kaynayınca çaydanlığın üstüne kaynayan suyu dök.
+18. Çaydanlığın altını  musluğa götür.
+19. Musluğu aç.
+20. Çaydanlığın altına su koy.
+21. Musluğu kapat.
+22. Çaydanlığı ocağa koy.
+23. 20 dakika bekle.
+24. Çay hazır.
+
+
+public class main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}

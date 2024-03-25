@@ -1,0 +1,18 @@
+public class İkisayislemleri {
+    public static void main(String[] args) {
+        float sayi1=5.48235F;
+        int sayi2=8;
+        float toplam=0;
+        toplam =sayi1+sayi2;
+        float bolum=0;
+        bolum=sayi1/sayi2;
+        float carpim=1;
+        carpim=sayi1*sayi2;
+        float cikarma=0;
+        cikarma=sayi1-sayi2;
+        System.out.println("toplam:"+toplam);
+        System.out.println("bolum:"+bolum);
+        System.out.println("carpim:"+carpim);
+        System.out.println("cikarma:"+cikarma);
+    }
+}

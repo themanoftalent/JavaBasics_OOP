@@ -1,0 +1,27 @@
+Question 1 : Algoritma yazma
+
+Başla
+   - Bir Kaba alın.
+   - Karışım hazırlığı için un, süt, yumurta, şeker ve tuz gibi malzemeleri bir kaba ölçüp ekleyin.
+   - Malzemeleri bir spatula veya çırpıcı kullanarak iyice karıştırın, homojen bir kıvam elde edene kadar devam edin.
+   - Yapışmaz bir tavayı orta ateşte ısıtın.
+   - Tavanın içine biraz tereyağı veya yağ ekleyin ve eriyene kadar yayın.
+   - Tavaya bir kepçe kullanarak pancake karışımından ekleyin.
+   - Pancake'in bir tarafı kabarıp altı kahverengi olana kadar pişirin.
+   - Pancake'in diğer tarafını çevirerek diğer tarafını da pişirin.
+   - Pişen pancake'i servis tabağına alın.
+   - Bu adımları pancake karışımı bitene kadar tekrarlayın.
+   - İsteğe bağlı olarak, servis öncesinde maple syrup, bal, meyve veya diğer tercih ettiğiniz malzemelerle süsleyin.
+Son
+
+Question 2 : Java da Hello World kod yazmak
+
+ 
+ public class HelloWorld
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World.");
+    }
+}
+ 

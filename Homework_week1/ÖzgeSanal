@@ -1,0 +1,37 @@
+//Algoritma Ödev
+Çiçekçiden aldığımız çiçeği toprağa ekme pseokodu
+1. Başla
+2. Saksının olduğu dolabın kapağını aç
+3. Elini uzat
+4. Bir elinle saksıyı diğer elinle çakıltaşı poşetini tut
+5. İkisini de çıkarıp yere koy
+6. Çakıltaşı poşetini elinle
+7. Elinle çakıltaşı poşeti kaldır
+8. Saksının içine çakıltaşlarını dök
+9. Çakıştaşı poşetini yere koy
+10. Toprağın olduğu dolabın kapağını aç
+11. Elini uzat
+12. Toprağın olduğu poşeti tut
+13. Toprak poşetin paketini elinle yırt
+14. Elinle toprak poşetini kaldır
+15. Çakıl taşlarının üzerine biraz toprak dök
+16. Toprak poşetini yere koy
+17. Çiçekçiden aldığın yerde duran çiçeği eline al
+18. Çiçeğin poşetini çıkarıp yere koy
+19. Çiçeğin sap kısmı saksıya ortala 
+20. Dik bir şekilde çiçeği saksıya yerleştir 
+21. Bir elle çiçeği tutmaya devam et
+22. Diğer elle toprak poşetini yerden kaldır
+23. Çiçeğin kökü kapanana kadar üzerine toprak dök
+24. Toprak poşetini tekrar yere koy
+25. Çiçeği tutmayı bırak
+26. Parmakların ile toprağa yavaşça baskı yap
+25. Dikme işi bittiyse çiçeğe can suyu ver
+27. Bitir
+
+//Javada kod yazma ödev
+class WeekOne {
+    public static void main(String[] args) {
+        System.out.println("Merhaba Sınıf, ben Java ogreniyorum."); 
+    }
+}

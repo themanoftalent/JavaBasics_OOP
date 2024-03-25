@@ -1,0 +1,15 @@
+//bir sayinin iki basamakli oldugunu bulma algoritmasi
+1-basla
+2-sayi giriniz
+3-eger sayi 9'dan buyuk ve 100'den kucukse 
+4-yazdir sayi iki basamaklidir
+5-eger sayi 9'dan kucuk esit veya 100'den buyuk esitse
+6-yazdir sayi iki basamakli degildir
+7-bitir
+
+//java 
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("merhaba javayi ogreniyorum.");
+    }
+}
