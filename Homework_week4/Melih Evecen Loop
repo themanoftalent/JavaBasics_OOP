@@ -3,15 +3,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int sayi = input.nextInt();
+        int sayi;
 
-        if (sayi > 100) {
-            for (int i = 1; i <= sayi; i++) {
-                System.out.println("i = " + i);
+        while (true) {
+            sayi = input.nextInt();
+
+            if (sayi > 100) {
+                for (int i = 1; i <= sayi; i++) {
+                    System.out.println("i = " + i);
+                }
+            } else {
+                System.out.println("Hatalı sayı girdiniz");
             }
-        } else {
-            System.out.println("Hatalı sayı girdiniz");
         }
     }
 }
-Melih Evecen
+//Melih Evecen
