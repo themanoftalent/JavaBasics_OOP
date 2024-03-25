@@ -1,0 +1,31 @@
+
+import java.util.Scanner;
+
+public class NotOrtalamasiHesaplama {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int toplam = 0;
+
+        System.out.println(" 5 not giriniz:");
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Not " + (i + 1) + ": ");
+            int not = scanner.nextInt();
+            toplam += not;
+        }
+
+        double ortalama = (double) toplam / 5;
+        System.out.println("Girilen notların ortalaması: " + ortalama);
+
+        if (ortalama < 40) {
+            System.out.println(" kaldınız");
+        } else if (ortalama < 60) {
+            System.out.println("Geçtiniz");
+        } else {
+            System.out.println("bravo");
+        }
+
+
+    }
+}
+
