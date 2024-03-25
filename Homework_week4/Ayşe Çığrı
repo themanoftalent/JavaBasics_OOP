@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class AnaClass {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Birinci notu giriniz");
+        int not1 = scan.nextInt();
+        System.out.println("İkinci notu giriniz");
+        int not2 = scan.nextInt();
+        System.out.println("Üçüncü notu giriniz");
+        int not3 = scan.nextInt();
+        System.out.println("Dördüncü notu giriniz");
+        int not4 = scan.nextInt();
+        int gpa = (not1 + not2 + not3 + not4) / 100;
+        switch (gpa){
+
+            case 1:
+                    System.out.println("Kaldı"); break;
+            case 2:
+            System.out.println("Kaldı"); break;
+            case 3:
+            System.out.println("Gecti"); break;
+            case 4:
+            System.out.println("Gecti"); break;
+            default:
+                System.out.println("hatali deger"); break;
+
+}
+    }
+}
