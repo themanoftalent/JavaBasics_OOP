@@ -1,0 +1,18 @@
+// Javada 4 işlem
+
+    public  class islemler {
+    public static void main(String[] args) {
+        int a=12;
+        int b=3;
+        int toplam=a+b;
+        int çıkarma=a-b;
+        int çarpma=a*b;
+        int bölme=a/b;
+        System.out.println(toplam);
+        System.out.println(çıkarma);
+        System.out.println(çarpma);
+        System.out.println(bölme);
+
+
+    }
+}

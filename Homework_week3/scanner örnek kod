@@ -1,0 +1,36 @@
+package hesaplamalar;
+
+import java.util.Scanner;
+
+public class Sikanefhesaplamalar {
+
+	
+	public static void main(String[] args) {
+        Scanner sikaner = new Scanner(System.in);
+		float a,b;
+		System.out.print("a sayisini gir : ");
+		a = sikaner.nextInt();
+		System.out.print("b sayisini gir : ");
+		b = sikaner.nextInt();
+		
+		float toplama,cikarma,carpma,bolme;
+		 
+		toplama=a+b;
+		System.out.print("a ve b sayisinin toplami : ");
+		System.out.println(toplama);
+		
+		cikarma=a-b;
+		System.out.print("a ve b sayisinin toplami : ");
+		System.out.println(cikarma);
+		
+		carpma=a*b;
+		System.out.print("a ve b sayisinin toplami : ");
+		System.out.println(carpma);
+		
+		bolme=a/b;
+		System.out.print("a ve b sayisinin toplami : ");
+		System.out.println(bolme);
+		
+	}
+
+}

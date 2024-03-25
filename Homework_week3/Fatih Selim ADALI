@@ -1,0 +1,32 @@
+Masaüstünde Bulunan Bir Dosyayı Kendi Bilgisayarımda Mail Atma Algoritması Sözde Kod ;
+
+1-)BAŞLA
+2-)Elini fareye götür
+3-)İmleci google üzerine ilerlet
+4-)Farenin sol click’ine 2 kere tıkla
+5-)İmleci sol üsteki Gmail yazısına götür
+6-)Frenin sol click’ine 1 kere tıkla
+7-)İmleci oluştur butonuna götür
+8-)Farenin sol click’ine 1 kere tıkla
+9-)İmleci Kime yazısına sürükle
+10-)Farenin sol click’ine 1 kere tıkla
+11-)Klavyeden mail atmak istediğin gmaili gir
+12-)İmleci google sekmesinin üstüne götür
+13-)Frenin sol click’ine basılı tutup en sağa götür
+14-)Farenin sol click’ine basılı tutmayı bırak
+15-)Mail atılcak dosya ekranın solundamı evet ise devam  et,hayır ise 
+16-)İmleci Mail atılıcak dosyanın üzrerine götür
+17-)Farenin sol click’ine basılı tut
+18-)İmleci google ekranındaki Gönder yazısının üstüne götür
+19-)Basılı tutmayı bırak
+20-)gönder butonuna tıkla
+21-)Başka atmak istediğin dosya var mı evet ise adım 5 e git hayır ise devam et
+22-)BİTİR 
+
+package Ilkprojem
+
+public class Selamdunya {
+    public static void main(String[] args) {
+        System.out.println("merhaba sinif ben java ogreniyorum");
+    }
+}

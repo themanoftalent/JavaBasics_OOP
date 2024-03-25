@@ -1,0 +1,57 @@
+Format atma algoritması 
+
+Başla 
+
+Uefi windows 10 kurulumlu USB belleği bilgisayarın USB girişine tak. 
+
+Bilgisayarın power tuşuna bas. 
+
+Bilgisayar açılırken bilgisayarının anakart modeline göre boot menüsünü açan tuşa sürekli tıkla. 
+
+Karşına çıkan ekranda uefi disk yazan seçeneğe gelene kadar klavyenin aşağı yönlü ok tuşuna tıkla. 
+
+Uefi disk seçildikten sonra enter tuşuna tıkla. 
+
+Karşına çıkan ekranda mouse’u kaydırarak ileri tuşunun üstüne gel ve işaret parmağınla mouse’un sol click yerine tıkla. 
+
+Karşına çıkan ekranda mouse’u kaydırarak şimdi yükle tuşunun üstüne gel ve işaret parmağınla mouse’un sol click yerine tıkla. 
+
+Karşına çıkan ekranda eğer var ise klavyenin tuşlarına tıklayarak ürün anahtarını gir. 
+
+Mouse’u kullanarak ileri tuşunun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak lisans koşullarını kabul ediyorum yazısınınüstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak ileri tuşunun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak Özel:Yalnızca Windows’u yükle(gelişmiş) yazısının üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Karşına çıkan ekranda mouse ile sürücü 0 ayrılmamış alan yazısına gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak *Yeni yazısının üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak uygula tuşunun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak tamam tuşunun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak ileri tuşunun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak hızlı ayarları kullan tuşunun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak bu bilgisayarı kim kullanacak? yazısının altındaki kutucuğun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Mouse’u kullanarak ileri tuşunun üstüne gel ve mouse’un sol click tuşuna tıkla. 
+
+Bitir.
+
+JAVA HELLO WORLD
+public class HelloWorld{
+
+	public static void main(String[] args){
+
+	    System.out.println("Hello World!");
+	    
+
+	}
+
+}

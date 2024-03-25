@@ -1,0 +1,25 @@
+import java.security.DrbgParameters;
+import java.util.Scanner;
+
+import javax.crypto.Cipher;
+import javax.lang.model.type.TypeMirror;
+
+public class java {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+ System.out.println("isim  gir");
+ String isim=scanner.nextLine();
+ System.out.println("soy isim  gir");
+ String soyisim=scanner.nextLine();
+ System.out.println("isim soyisim "+isim+' '+soyisim);
+ String tümisim=scanner.nextLine();
+ tümisim="kadir emir yücel";
+ String kullanıcıadi="kadir emir yücel";
+ if(tümisim==kullanıcıadi)
+	 System.out.println("isim doğru");
+ else 
+	 System.out.println("girilen isim yanlış");
+}
+
+}
