@@ -1,0 +1,62 @@
+public static void main(String[] args) {
+		Scanner not = new Scanner(System.in);
+		int ay;
+		System.out.println("kaçıncı ay? ");
+		System.out.print("ay :");
+		ay = not.nextInt();
+		
+		switch(ay) {
+		case 12:
+			System.out.println("aralık");
+			System.out.println("kış");
+			break;
+		case 1:
+			System.out.println("ocak");
+			System.out.println("kış");
+			break;
+		case 2:
+			System.out.println("şubat");
+			System.out.println("kış");
+			break;
+		case 3:
+			System.out.println("mart");
+			System.out.println("ilkbahar");
+			break;
+		case 4:
+			System.out.println("nisan");
+			System.out.println("ilkbahar");
+			break;
+		case 5:
+			System.out.println("mayıs");
+			System.out.println("ilkbahar");
+			break;
+		case 6:
+			System.out.println("haziran");
+			System.out.println("yaz");
+			break;
+		case 7:
+			System.out.println("temmuz");
+			System.out.println("yaz");
+			break;
+		case 8:
+			System.out.println("ağustos");
+			System.out.println("yaz");
+			break;
+		case 9:
+			System.out.println("eylül");
+			System.out.println("sonbahar");
+			break;
+		case 10:
+			System.out.println("ekim");
+			System.out.println("sonbahar");
+			break;
+		case 11:
+			System.out.println("kasım");
+			System.out.println("sonbahar");
+			break;
+		}
+	
+		
+		
+		
+	}
