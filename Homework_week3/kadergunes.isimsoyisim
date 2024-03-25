@@ -1,0 +1,22 @@
+ import java.util.Scanner;
+        public class Main{
+            public static void main(String[] args) {
+                String isim, soyisim;
+                Scanner isim_soyisim = new Scanner ( System.in);
+                System.out.println("enter name");
+                isim = isim_soyisim.nextLine();
+                System.out.println("enter surname");
+                soyisim = isim_soyisim.nextLine();
+                System.out.println("isim:"+ isim);
+                System.out.println("soyisim:"+ soyisim);
+                if(isim .equals("kader"))
+                    System.out.println("harika isim dogru");
+                else
+                    System.out.println("isim dogru degiil");
+                if(soyisim .equals("güneş"))
+                    System.out.println("harika soyisim dogru");
+                else
+                    System.out.println("soyisim dogru değil");
+
+            }
+        }
