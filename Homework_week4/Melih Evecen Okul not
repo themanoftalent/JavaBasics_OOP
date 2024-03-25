@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("1.Dersin notunu giriniz: ");
+        int not1 = input.nextInt();
+
+        System.out.print("2.Dersin notunu giriniz: ");
+        int not2 = input.nextInt();
+
+        System.out.print("3.Dersin notunu giriniz: ");
+        int not3 = input.nextInt();
+
+        System.out.print("4.Dersin notunu giriniz: ");
+        int not4 = input.nextInt();
+
+        System.out.print("5.Dersin notunu giriniz: ");
+        int not5 = input.nextInt();
+
+        double GPA = (not1 + not2 + not3 + not4 + not5) / 5.0;
+        System.out.printf("Ortalama: %.2f\n", GPA);
+
+        switch ((int) GPA / 10) {
+            case 9:
+                System.out.println("Geçtiniz! Harf Notu: A");
+                break;
+            case 8:
+                System.out.println("Geçtiniz! Harf Notu: B");
+                break;
+            case 7:
+                System.out.println("Geçtiniz! Harf Notu: C");
+                break;
+            case 6:
+                System.out.println("Geçtiniz! Harf Notu: D");
+                break;
+            default:
+                System.out.println("Üzgünüm Kaldınız! Harf Notu F");
+        }
+    }
+}
