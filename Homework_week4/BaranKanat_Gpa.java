@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Gpa {
+public class BaranKanat_Gpa{
     public static void main(String[] args) {
         int not1,not2,not3,not4,not5;
         Scanner scanner = new Scanner(System.in);
