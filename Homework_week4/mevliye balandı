@@ -1,0 +1,16 @@
+//mevliye balandı
+import java.util.Scanner;
+public class döngü {
+    public static void main(String[] args) {
+        Scanner sayi = new Scanner(System.in);
+        System.out.println("sayi girin: ");
+        int input = sayi.nextInt();
+        if (input < 100) {
+            System.out.println("sayi 100 den küçük hatali girdin");
+            input = sayi.nextInt();
+        } else
+            for (int i=0; i<input; i++) {
+                System.out.println(i);
+            }
+    }
+}
