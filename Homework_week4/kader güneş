@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Lütfen isminizi girin: ");
+        String isim = scanner.nextLine();
+
+        System.out.print("Lütfen soyisim girin: ");
+        String soyisim= scanner.nextLine();
+    }
+}

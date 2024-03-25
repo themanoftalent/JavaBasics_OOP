@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class İslemler{
+   public static void main(String[]args) {
+	   Scanner girdi_sayisi = new Scanner(System.in);
+	   System.out.println("Enter first number");
+	   float number1 =girdi_sayisi.nextInt();
+	   System.out.println("Enter second number");
+	   int number2 = girdi_sayisi.nextInt();
+	
+	   System.out.println("Cikarma:"+ (number1-number2));
+	   System.out.println("Toplam:" + (number1+number2));
+	   System.out.println("Bölme:" + (number1/number2));
+	   System.out.println("Carpma:" + (number1*number2));
+	
+   }
+	
+}
