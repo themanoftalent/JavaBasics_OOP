@@ -3,30 +3,37 @@ import java.util.Scanner;
 public class Main {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        int age;
-        System.out.println("Please Enter your age: ");
-        age = input.nextInt();
-        switch (age){
-            case 0:
-                System.out.println("You are just borned:)");
-                break;
+        String month;
+        int season = 0;
+        System.out.println("Please Enter a month: ");
+        month = input.next();
+        if (month.equals("December") || month.equals("January") || month.equals("February") ){
+            season = 1;
+        }
+        if (month.equals("March") || month.equals("April") || month.equals("May") ){
+            season = 2;
+        }
+        if (month.equals("June") || month.equals("July") || month.equals("August") ){
+            season = 3;
+        }
+        if (month.equals("September") || month.equals("October") || month.equals("November") ){
+            season = 4;
+        }
+        switch (season){
             case 1:
-                System.out.println("You learnt how to walk");
+                System.out.println("It is Winter");
                 break;
             case 2:
-                System.out.println("You learnt how to speak");
+                System.out.println("It is Spring");
                 break;
             case 3:
-                System.out.println("You started to go kindergarten");
+                System.out.println("It is Summer");
                 break;
             case 4:
-                System.out.println("You are growing up fast");
-                break;
-            case 5:
-                System.out.println("You will start elementary school next year:)");
+                System.out.println("It is Autumn");
                 break;
             default:
-                System.out.println("You are getting old:)");
+                System.out.println("Please Enter valid month)");
                 break;
         }
     }
