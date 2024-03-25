@@ -16,7 +16,7 @@ public class Main15 {
 	
 	
 		if (gpa<45) System.out.println("F");
-		else if (gpa<45)  System.out.println("E");
+		else if (gpa<50)  System.out.println("E");
 		else if (gpa<60)  System.out.println("D");
 		else if (gpa<70)  System.out.println("C");
 		else if (gpa<80)  System.out.println("B");
