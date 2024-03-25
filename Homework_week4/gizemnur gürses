@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_sayisi = new Scanner(System.in);
+        System.out.println("sayı gir:");
+        int sayı = girdi_sayisi.nextInt();
+
+        if (sayı < 100) {
+            System.out.println("100 den küçük sayılar girilmez");
+        } else {
+            for (int i = sayı; i >= 100; i--) {
+                System.out.println("i = " + i);
+            }
+        }
+    }
+}
