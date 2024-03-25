@@ -7,5 +7,7 @@ public static void main(String[] args) {
 			for(int i=100; i>=sayi; i--)
 				System.out.println(i);
 		}
+                else 
+			System.out.println("hatali sayi girdiniz.") ;
 	
 	}
