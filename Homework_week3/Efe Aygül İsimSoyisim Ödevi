@@ -9,6 +9,14 @@ public class Main {
         System.out.println("soy isminizi giriniz");
         String soyisim;
         soyisim=input.next();
-        System.out.println(isim + "  " +soyisim);
+        if((isim.equals("efe"))&&(soyisim.equals("aygul")))
+        {
+            System.out.println("isim, soyisim dogru");
+        }
+        else
+        {
+            System.out.println("isim, soyisim yanlis");
+        }
+        System.out.println(isim +" " +soyisim);
     }
 }
