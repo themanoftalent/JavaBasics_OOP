@@ -16,3 +16,26 @@ public class İslemler{
    }
 	
 }
+
+
+import java.util.Scanner;
+
+public class İsim {
+        public static void main(String[] args) {
+            java.util.Scanner namesurname = new Scanner(System.in);
+
+            System.out.println("İsmini Gir:");
+            String isim = namesurname.nextLine();
+
+            System.out.println("Soyismini Gir:");
+            String soyisim = namesurname.nextLine();
+
+            System.out.println("Isminiz ve Soyisminiz: "+isim+" "+soyisim);
+            if((isim.equals("Eslem") && soyisim.equals("Meydanlı")) || (isim.equals("eslem")&&soyisim.equals("meydanlı"))) {
+                System.out.println("Ismini dogru girdin");
+            }
+            else {
+                System.out.println("Ismini yanlıs girdin");
+            }
+        }
+}
