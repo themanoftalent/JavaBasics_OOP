@@ -1,0 +1,25 @@
+Furkan Tatar
+
+import java.util.Scanner;
+
+class Mevsim {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Hangi ayda oldugumuzu giriniz. ");
+		
+		int mevsim = input.nextInt();
+		while(mevsim < 0 || mevsim > 12) {
+			System.out.println("Hatali ay girdiniz, Lütfen tekrar giriniz. ");
+			mevsim = input.nextInt();
+		}
+
+		switch(mevsim) {
+		case 12,1,2:  System.out.println("Kış Mevsimindesiniz. "); 			break;
+		case 3,4,5:   System.out.println("İlkbahar Mevsimindesiniz. "); 	break;
+		case 6,7,8:   System.out.println("Yaz Mevsimindesiniz. "); 			break;
+		case 9,10,11: System.out.println("Sonbahar Mevsimindesiniz. "); 	break;
+		}
+	}
+
+}
