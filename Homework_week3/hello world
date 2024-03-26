@@ -1,0 +1,5 @@
+public static void main(String[] args) {
+		// merhaba dunya
+		System.out.println("Hello world, I'm learning Java!");
+		
+ }
