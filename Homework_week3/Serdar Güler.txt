@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class WhoRU {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+    	System.out.println("İsim girin: ");
+        String isim = scanner.nextLine();
+        
+        System.out.println("Soyadı girin: ");
+        String soyad = scanner.nextLine();
+        System.out.println("Adınız:" + isim);
+        System.out.println("Soyadınız: " +soyad);
+    		
+    	
+    	
+    }
+}
+
+
+       

@@ -1,0 +1,25 @@
+package Projeler;
+import java.util.Scanner;
+
+public class Gerisayim {
+
+    public static void main(String[] args) {
+    	int sayi;
+    	do {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        sayi = scanner.nextInt();
+
+        if(sayi>=100) {
+            for(int i = sayi;0<=sayi;sayi--){
+                System.out.print(sayi + " ");
+            }
+        }
+        else{
+            System.out.println("hatali sayi girdiniz.");
+        }
+    	
+    
+    	}while(sayi<=100);
+    }
+}

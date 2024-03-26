@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Mevsim {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir ay ismi girin: ");
+        String Ay = scanner.nextLine();
+        String Mevsim;
+
+        switch (Ay.toLowerCase()) {
+            case "aralık":
+            case "ocak":
+            case "şubat":
+                Mevsim = "Kış";
+                break;
+            case "mart":
+            case "nisan":
+            case "mayıs":
+                Mevsim = "İlkbahar";
+                break;
+            case "haziran":
+            case "temmuz":
+            case "ağustos":
+                Mevsim = "Yaz";
+                break;
+            case "eylül":
+            case "ekim":
+            case "kasım":
+                Mevsim = "Sonbahar";
+                break;
+            default:
+                Mevsim = "Geçersiz ay";
+                break;
+        }
+
+        System.out.println("Girilen ayın mevsimi: " + Mevsim);
+
+
+    }
+}

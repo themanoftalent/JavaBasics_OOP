@@ -1,0 +1,54 @@
+//Mevliye Balandı
+import java.util.Scanner;
+public class AyHesaplama {
+    public static void main(String[]args){
+        Scanner input= new Scanner(System.in);
+        System.out.println(" Ay girin: ");
+        String ay= input.nextLine();
+        switch (ay) {
+            case "ocak":
+                System.out.println(" Kis ayindayiz..");
+                break;
+            case "subat":
+                System.out.println(" Kis ayindayiz..");
+                break;
+            case "mart":
+                System.out.println(" Bahar ayindayiz..");
+                break;
+            case "nisan":
+                System.out.println(" Bahar ayindayiz..");
+                break;
+            case "mayıs":
+                System.out.println(" Bahar ayindayiz..");
+                break;
+            case "haziran":
+                System.out.println(" Yaz ayindayiz..");
+                break;
+            case "temmuz":
+                System.out.println(" Yaz ayindayiz..");
+                break;
+            case "agustos":
+                System.out.println(" Yaz ayindayiz..");
+                break;
+            case "eylul":
+                System.out.println(" sonbahar ayindayiz..");
+                break;
+            case "ekim":
+                System.out.println(" sonbahar ayindayiz..");
+                break;
+            case "kasim":
+                System.out.println(" sonbahar ayindayiz..");
+                break;
+                case "aralik":
+                System.out.println(" kis ayindayiz..");
+                break;
+            default:
+                System.out.println("yanlis giris yaptiniz!!..");
+                break;
+
+        }
+
+        }
+
+    }
+

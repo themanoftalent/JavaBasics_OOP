@@ -1,0 +1,56 @@
+Furkan Tatar
+
+import java.util.Scanner;
+
+class TahminOyunu {
+
+	public static void main(String[] args) {
+		
+		int tahminAdet = 0;
+		int tutulan = (int) (Math.random()*100);
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("6 tahmin hakkiniz bulunmaktadir, İyi oyunlar.\n ");
+		System.out.print("Tahmininizi giriniz 0-100 arasinda.(cikmak icin  \"0\" giriniz)\n1. deneme: ");
+		int tahmin = input.nextInt();
+		
+		while(tahmin < 0 || tahmin > 100) {
+			System.out.println("Hatali deger girdiniz, 0-100 arasi deger giriniz. ");
+			tahmin = input.nextInt();
+		}
+		tahminAdet++;
+			
+		while(tahmin != 0) {
+			if(tahminAdet < 6) {
+				
+				if(tahmin == tutulan) {
+					System.out.println("Tebrikler Doğru tahmin ettiniz. ");
+					break;
+				}
+				else if(tahmin > tutulan) {
+					System.out.print("\n"+ tahminAdet +". tahmininiz "+tahmin+" tutulan sayidan büyük, tekrar deneyin.\n"+ (tahminAdet+1) + ". deneme:  ");
+				}
+				else {
+					System.out.print("\n"+ tahminAdet +". tahmininiz "+tahmin+" tutulan sayidan küçük, tekrar deneyin.\n"+ (tahminAdet+1) +". deneme ");
+				}
+				tahminAdet++;
+				tahmin = input.nextInt();
+				while(tahmin < 0 || tahmin > 100) {
+				System.out.println("Hatali deger girdiniz, 0-100 arasi deger giriniz. ");
+				tahmin = input.nextInt();
+				}
+			}
+			else {
+				System.out.println("\nTahmin hakkinizin tamamini kullandiginiz için kaybettiniz. ");
+				System.out.println("Tutulan sayi: "+ tutulan);
+				break;
+			}
+		}
+		
+		if(tahmin == 0) System.out.println("Tutulan sayi: "+ tutulan +"\nGörüşmek üzere");
+		
+		input.close();
+
+	}
+
+}

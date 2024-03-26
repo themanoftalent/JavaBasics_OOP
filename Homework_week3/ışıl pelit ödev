@@ -1,0 +1,68 @@
+// mat işlem
+public class Main {
+
+    public static void main(String[] args) {
+
+        int Sayi1=10;
+        int Sayi2=2;
+        int Toplam;
+        int Cikarma;
+        int Bolme;
+        int Carpma;
+        int Kalan;
+
+        Toplam = Sayi1 + Sayi2;
+        Cikarma = Sayi1 - Sayi2;
+        Bolme = Sayi1 / Sayi2;
+        Carpma = Sayi1 * Sayi2;
+        Kalan = Sayi1 % Sayi2;
+
+        System.out.println("\nToplam :" +Toplam);
+        System.out.println("Cikarma :" +Cikarma);
+        System.out.println("Bolme :" +Bolme);
+        System.out.println("Carpma :" +Carpma);
+        System.out.println("Kalan :" +Kalan);
+
+
+    }
+}
+//isim soyisim
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args) {
+
+        System.out.println("Enter your name :");
+        String name;
+        name = input.next();
+        System.out.println("Enter your surname :");
+        String surname;
+        surname = input.next();
+
+    }
+}
+// isim soyisim doğrulama
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args) {
+
+        System.out.println("Enter your name :");
+        String name;
+        name = input.next();
+        if (name.equals("Isil")){
+            System.out.println("Your name is correct!");
+        }
+        else System.out.println("Your name is incorrect!");
+        System.out.println("Enter your surname :");
+        String surname;
+        surname = input.next();
+        if (surname.equals("Pelit")){
+            System.out.println("Your surname is correct!");
+        }
+        else System.out.println("Your surname is incorrect!");
+
+    }
+}
