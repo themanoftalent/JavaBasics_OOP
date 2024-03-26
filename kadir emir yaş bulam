@@ -1,0 +1,39 @@
+package javamedhod;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import javax.crypto.Cipher;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+		System.out.println("doğum yılınızı giriniz");
+		int dogumyil=scanner.nextInt();
+		System.out.println("bulunduğunuz yılı girin");
+		int bulyil=scanner.nextInt();
+		int yas=(bulyil-dogumyil);
+		System.out.println("yaşınız"+yas);
+	
+	if(yas==0) {
+		System.out.println("yeni doğdunuz");
+	}
+	else if(yas>1 &&yas<18) {
+		System.out.println("gençsiniz");
+	}
+	else if (yas>=18 && yas <50) {
+		System.out.println("yetişkinsiniz");
+	}
+	else {
+		System.out.println("yaşlısınız");
+	}
+
+			}
+
+}
+
+	
