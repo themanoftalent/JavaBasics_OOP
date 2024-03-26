@@ -1,0 +1,45 @@
+Mustafa Saydan
+
+
+import java.util.Scanner;
+
+class YasHesaplama {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("Yaş giriniz:");
+		int yas=input.nextInt();
+		int bayrak=0;
+		
+		if(0<yas && yas<5) {
+			bayrak=1;
+		}
+		else if(yas>=5 && yas<18) {
+			bayrak=2;
+		}
+		else if(yas>=18 && yas<50) {
+			bayrak=3;
+			
+		}
+		else if(yas>=50 && yas<100) {
+			bayrak=4;
+		}
+		else if(yas>=100) {
+			bayrak=5;
+		}
+		
+		
+		switch(bayrak) {
+		case 1: System.out.println("oyuncaklarla oynadınız"); break;
+		case 2: System.out.println("okula gidiyorsunuz"); break;
+		case 3:System.out.println("işe gidiyorsunuz"); break;
+		case 4: System.out.println("emekli oldunuz"); break;
+		case 5:System.out.println("öldünüz");break;
+		default : System.out.println("yas negatif olamaz");
+		
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+Furkan Tatar
+
+class TekMiCiftMi {
+
+	public static void main(String[] args) {
+				
+				Scanner input = new Scanner(System.in);
+				System.out.println("Lutfen bir sayi giriniz. ");
+				int number = input.nextInt();
+				
+				if(number%2==0) System.out.println("Çift sayi girdiniz. ");
+				else System.out.println("Tek sayi girdiniz.");
+				
+				input.close();
+
+		}
+
+}

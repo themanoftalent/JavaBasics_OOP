@@ -1,0 +1,69 @@
+package denemebir;
+
+public class Main {
+		public static void main(String[] args) {
+				int sayi1=5;
+				int sayi2=10;
+				int toplam=sayi1+sayi2;
+				int fark=sayi2-sayi1;
+				int carpım=sayi1*sayi2;
+				int bolum=sayi2/sayi1;
+				System.out.println("Toplam: "+toplam);
+				System.out.println("Fark: "+fark);
+				System.out.println("Carpım: "+carpım);
+				System.out.println("Bolum: "+bolum);
+			} 
+	} 
+
+
+import java.util.Scanner;
+public class toplama {
+public static void main(String[] args) { 
+	Scanner girdi_sayisi = new Scanner(System.in);
+	System.out.println("Enter first number: ");
+	float number1= girdi_sayisi.nextInt();
+	System.out.println("Enter second number: ");
+	int number2= girdi_sayisi.nextInt(); 
+
+	System.out.println("Cıkarma: "+ (number1-number2));
+	System.out.println("Toplama: "+ (number1+number2));
+	System.out.println("Carpma: "+ (number1*number2));
+	System.out.println("Bolme: "+ (number1/number2));
+}
+}
+
+
+
+import java.util.Scanner;
+public class adsoyad {
+    public static void main(String[] args) {
+        java.util.Scanner yenihafıza = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter your name \n");
+        String isim = yenihafıza.nextLine();
+
+        System.out.println("Enter your surname \n");
+        String soyisim = yenihafıza.nextLine();
+        System.out.println("Your name and surname: " + isim + " " + soyisim);
+    } 
+} 
+
+
+import java.util.Scanner;
+public class dogru {
+    public static void main(String[] args) {
+        java.util.Scanner yenihafıza = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter your name \n");
+        String isim = yenihafıza.nextLine();
+
+        System.out.println("Enter your surname \n");
+        String soyisim = yenihafıza.nextLine();
+        System.out.println("Your name and surname: " + isim + " " + soyisim);
+
+        if (isim.equals("Ceren") && soyisim.equals("Mutlu")) {
+
+            System.out.println("Your name and surname are the same");
+        } else {
+            System.out.println("Your name and surname are different");
+        }
+    }
+} 

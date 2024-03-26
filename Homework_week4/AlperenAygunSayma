@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Sayma {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayi girin: ");
+        int sayi = input.nextInt();
+        if (sayi < 100){
+            System.out.println("sayi 100 den kucuk");}
+        else {
+            for (int i = 1; i <= sayi ; i++) {
+                System.out.println("i =" + i);
+            }
+        }
+    }
+}
+//Alperen Aygun

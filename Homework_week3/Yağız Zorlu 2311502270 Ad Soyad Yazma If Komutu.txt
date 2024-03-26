@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class AdSoyadSor {
+    public static void main(String[] args)
+    {
+        String gercekİsim = "Yağız";
+        String gercekSoyisim = "Zorlu";
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Adınızı girin:");
+        String isim = sc.nextLine();
+
+        System.out.println("Soyadınızı girin:");
+        String soyisim = sc.nextLine();
+
+        if(isim.equals(gercekİsim) && soyisim.equals(gercekSoyisim)) {
+            System.out.println("Adınız ve Soyadınız doğru girilmiştir.");
+        }
+        else
+        {
+            System.out.println("Hata yaptınız.");
+        }
+    }
+}
