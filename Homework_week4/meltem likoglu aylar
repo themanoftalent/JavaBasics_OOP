@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class derslik {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String ay;
+        System.out.println("ayi giriniz");
+        ay= scan.nextLine();
+        switch(ay){
+            case "ocak":
+                System.out.println("kis");
+                break;
+            case "subat":
+                System.out.println("kis");
+                break;
+            case "mart":
+                System.out.println("ilkbahar");
+                break;
+            case "nisan":
+                System.out.println("ilkbahar");
+                break;
+            case "mayis":
+                System.out.println("ilkbahar");
+                break;
+            case "haziran":
+                System.out.println("yaz");
+                break;
+            case "temmuz":
+                System.out.println("yaz");
+                break;
+            case "agustos":
+                System.out.println("yaz");
+                break;
+            case "eylul":
+                System.out.println("sonbahar");
+                break;
+            case "ekim":
+                System.out.println("sonbahar");
+                break;
+            case "kasim":
+                System.out.println("sonbahar");
+                break;
+            case "aralik":
+                System.out.println("kis");
+                break;
+            default:
+                System.out.println("baska ay yok!");
+                break;
+        }
+    }
+}
