@@ -1,0 +1,20 @@
+
+public class İkiSayiTopla {
+
+	public static void main(String[] args) {
+
+		int sayi1 = 5;
+		int sayi2 = 15;
+		int sonuc1 = sayi1 + sayi2;
+		int sonuc2 = sayi2 - sayi1;
+		int sonuc3 = sayi1 * sayi2;
+		int sonuc4 = sayi2 / sayi1;
+		System.out.println(sonuc1);
+		System.out.println(sonuc2);
+		System.out.println(sonuc3);
+		System.out.println(sonuc4);
+	}
+
+}
+
+       
