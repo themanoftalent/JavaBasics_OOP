@@ -1,0 +1,42 @@
+4 İŞLEM
+
+import  java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int a,b;
+        a=10;
+        b=5;
+        System.out.println("toplam:" +(a+b));
+        System.out.println("fark:" +(a-b));
+        System.out.println("carpım:" +(a*b));
+        System.out.println("bolum:" +(a/b));
+
+    }
+}
+
+
+İSİM SOYİSİM SORGULAMA
+
+import java.util.Scanner;
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args) {
+
+        System.out.println("İsim Gir:");
+        String isim = input.next();
+        System.out.println("soy isim gir");
+        String soyisim=input.next();
+
+
+        if(isim.equals("kaan") && soyisim.equals("şahin"))
+            System.out.printf("doğru");
+
+        else{
+            System.out.printf("yanlış");
+
+        }
+
+
+    }
+}

@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args){
+
+        System.out.println("please write the name of the current month");
+        String month=input.nextLine();
+
+
+        // ingilizce karakter sıkıntısı olmaması için ayların ismini ingilize olarak almak istedim
+
+        switch (month) {
+            case "december":
+            case "january":
+            case "february":{
+                System.out.println("current season = winter");
+                break;}
+            case "march":
+            case "april":
+            case "may":
+            {               
+                System.out.println("current season =spring");
+                 break;}
+            case "june":
+            case "july":
+            case "august":
+            {
+                System.out.println("current season = summer");
+                break;}
+            case "september":
+            case "october":
+            case "november":
+            {
+                System.out.println("current seosan =autumn");
+                break;}
+            default:
+                System.out.println("you wrote wrong");
+
+                break;
+        }
+
+
+
+    }}
