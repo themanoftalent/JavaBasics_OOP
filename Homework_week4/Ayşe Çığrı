@@ -1,11 +1,39 @@
-//conflict giderildi Akif, Ph.D
-
 
 import java.util.Scanner;
 
 public class AnaClass {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+        System.out.println("ayı giriniz");
+        String ay=scan.nextLine();
+                   switch(ay){
+                   case "ocak":
+                           System.out.println("birinci ay kis"); break;
+                   case "subat":
+                   System.out.println("ucuncu ay kis"); break;
+                   case "mart":
+                   System .out.println("birinci ay ilkbahar"); break;
+                   case "nisan":
+                   System.out.println("ikinci ay ilkbahar"); break;
+                   case "mayis":
+                    System.out.println("ucuncu ay ilkbahar"); break;
+                    case "haziran":
+                    System.out.println("birinci ay yaz"); break;
+                    case "temmuz":
+                    System.out.println("ikinci ay yaz "); break;
+                    case "agustos":
+                    System.out.println("ucuncu ay yaz"); break;
+                    case "eylul":
+                        System.out.println("birinci ay sonbahar"); break;
+                        case "ekim":
+                                System.out.println("ikinci ay sonbahar"); break;
+                                case "kasim":
+                                 System.out.println("ucuncu ay sonbahar"); break;
+                                 case "aralik":
+                                         System.out.println("birinci ay kis"); break;
+}}
+
         System.out.println("Birinci notu giriniz");
         int not1 = scan.nextInt();
         System.out.println("İkinci notu giriniz");
@@ -26,4 +54,5 @@ public class AnaClass {
                 System.out.println("Hatali deger"); break;
         }
     }
+
 }
