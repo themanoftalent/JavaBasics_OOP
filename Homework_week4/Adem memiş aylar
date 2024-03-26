@@ -1,0 +1,57 @@
+package Projeler;
+import java.util.Scanner;
+//adem memiş
+public class Aylar {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Yasadiginiz ayi giriniz:");
+		String ay = scanner.nextLine();
+	    System.out.println("Ay:"+ay);
+	    switch(ay)
+	    {
+	    case "ocak":
+	    	System.out.println("Kış");
+	    	break;
+	    case "subat":
+	    	System.out.println("Kış");
+	    	break;
+	    case "mart":
+	    	System.out.println("ilkbahar");
+	    	break;
+	    case "nisan":
+	    	System.out.println("ilkbahar");
+	    	break;
+	    case "mayis":
+	    	System.out.println("ilkbahar");
+	    	break;
+	    case "haziran":
+	    	System.out.println("yaz");
+	    	break;
+	    case "temmuz":
+	    	System.out.println("yaz");
+	    	break;
+	    case "agustos":
+	    	System.out.println("yaz");
+	    	break;
+	    case "eylul":
+	    	System.out.println("sonbahar");
+	    	break;
+	    case "ekim":
+	    	System.out.println("sonbahar");
+	    	break;
+	    case "kasım":
+	    	System.out.println("sonbahar");
+	    	break;
+	    case "aralik":
+	    	System.out.println("Kış");
+	    	break;
+	    default:
+	    	System.out.println("Boyle bir ay yok");
+	    	break; 	    
+	    }
+	    
+
+	}
+
+}
