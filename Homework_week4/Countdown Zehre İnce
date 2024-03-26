@@ -1,0 +1,28 @@
+// Zehre İnce 2311502231
+package zehre;
+import java.util.Scanner; 
+
+public class Zehre {
+	 public static void main(String[] args) {
+        
+	 
+	        Scanner scan = new Scanner(System.in);
+	        System.out.println("Bir sayı giriniz");
+	        int sayi = scan.nextInt();
+	        int geri;
+	        if (sayi>=100) {
+	         for(geri=sayi;geri>=0;geri--) {
+	        	 
+	     
+	    	 System.out.println(geri);
+	     } }
+	     else {
+	    	 System.out.println("100den büyük bir değer giriniz");
+	    	
+	     }
+	        	 
+	         }
+	       
+	   
+	 }
+
