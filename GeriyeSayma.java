@@ -1,19 +1,16 @@
-
+package geriyesayma;
 import java.util.Scanner;
-public class GeriyeSayma {
+
+public class geriyesayma {
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Bir sayı giriniz: ");
-        int sayi = sc.nextInt();
 
-        if(sayi>=100) {
-            for(int i = sayi;0<=sayi;sayi--){
-                System.out.print(sayi + " ");
-            }
-        }
-        else{
-            System.out.println("hatalı sayı girdiniz.");
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayı girin:");
+        int sayi = scanner.nextInt();
 
+        for (int i = sayi; i >= 0; i--) {
+            System.out.println(i);
+        }
     }
 }
