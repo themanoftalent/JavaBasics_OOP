@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class GeriSayim {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+
+        if (sayi > 100) {
+            System.out.println("100 veya daha küçük bir sayı girin.");
+        } else {
+
+            for (int i = 100; i >= sayi; i--) {
+                System.out.println(i);
+            }
+        }
+
+
+    }
+}
