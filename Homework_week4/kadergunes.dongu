@@ -1,0 +1,19 @@
+//kader güneş
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int number;
+        Scanner input=new Scanner(System.in);
+        System.out.println("geriye saymak istediğiniz sayıyı girin:");
+        number=input.nextInt();
+        if(number<100){
+            System.out.println("100den küçük sayılar kabul edilemez");
+        }
+        else{
+            for(int i=number;i>=0;i--){
+                System.out.println(i);
+            }
+        }
+
+    }
+}

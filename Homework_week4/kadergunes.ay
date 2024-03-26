@@ -1,0 +1,37 @@
+//kader güneş
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+       int month;
+        Scanner input=new Scanner(System.in);
+        System.out.println("ay seçiniz");
+        System.out.println("1->ocak\n2->şubat\n3->mart\n4->nisan\n5->mayıs\n6->haziran\n7->temmuz\n8->ağustos\n9->eylül\n10->ekim\n11->kasım\n12->aralık");
+        month=input.nextInt();
+        switch(month){
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("kış");
+                break;
+            case 4:
+            case 5:
+            case 3:
+                System.out.println("ilkbahar");
+                break;
+            case 7:
+            case 8:
+            case 6:
+                System.out.println("yaz");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("kış");
+                break;
+            default:
+                System.out.println("hatalı giriş yaptınız");
+        }
+
+
+    }
+}

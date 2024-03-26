@@ -1,3 +1,6 @@
+//conflict giderildi Akif, Ph.D
+
+
 import java.util.Scanner;
 
 public class AnaClass {
@@ -11,20 +14,16 @@ public class AnaClass {
         int not3 = scan.nextInt();
         System.out.println("Dördüncü notu giriniz");
         int not4 = scan.nextInt();
-        int gpa = (not1 + not2 + not3 + not4) / 100;
+        int gpa = (not1 + not2 + not3 + not4) / 4; // Calculate GPA by dividing by the number of grades
         switch (gpa){
-
+            case 0:
             case 1:
-                    System.out.println("Kaldı"); break;
+                System.out.println("Kaldı"); break;
             case 2:
-            System.out.println("Kaldı"); break;
             case 3:
-            System.out.println("Gecti"); break;
-            case 4:
-            System.out.println("Gecti"); break;
+                System.out.println("Gecti"); break;
             default:
-                System.out.println("hatali deger"); break;
-
-}
+                System.out.println("Hatali deger"); break;
+        }
     }
 }

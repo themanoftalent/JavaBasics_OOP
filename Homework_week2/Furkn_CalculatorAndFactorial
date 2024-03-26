@@ -1,0 +1,63 @@
+Furkan Tatar
+
+package soru02;
+
+	import java.util.Scanner;
+
+	class HesapMakinesi {
+
+		public static void main(String[] args) {
+
+			int numberOne, numberTwo;
+			
+			Scanner scan = new Scanner(System.in);
+			
+			System.out.println("Please enter your operation(+, -, *, /, %, f)");
+			String operator = scan.next();
+			
+			if(operator.charAt(0) != 'f') {
+				System.out.println("Please enter your first number ");
+				numberOne=scan.nextInt();
+				System.out.println("Please enter your second number ");
+				numberTwo=scan.nextInt();
+			} else {
+				System.out.println("Enter the number whose factorial you want to calculate.");
+				numberOne=scan.nextInt();
+				numberTwo=1;
+			}
+
+			System.out.println("Islem sonucunuz: " +  Hesap.hesapla(operator.charAt(0), numberOne, numberTwo));
+			
+			scan.close();
+		}
+	}
+
+
+package soru02;
+
+	class Hesap {	
+		
+		static int faktoriyel(int x, int y) {
+			
+			y=1;
+			while(x>0) {
+				y*=x;
+				x--;
+			}
+			return y;
+		}
+		
+		//return ifadesi case'lerden cikis yapacagi icin ayriyeten break kullanmaya gerek yokmus.
+			static float hesapla(char c, float numberOne, float numberTwo) {
+			    switch(c) {
+			    case '+': return (float)numberOne + numberTwo;
+			    case '-': return (float)numberOne - numberTwo;
+			    case '*': return (float)numberOne * numberTwo;
+			    case '/': return (float)numberOne / numberTwo;
+			    case '%': return (float)numberOne % numberTwo;
+			    case 'f':  return faktoriyel((int) numberOne, (int) numberTwo);
+			    default: throw new IllegalArgumentException("Geçersiz operatör: " + c);
+			    //illegal argument exception ifadesi ile float beklemesine ragmen float returnlemeden çıkabiliyoruz.
+			    }
+			}
+	}
