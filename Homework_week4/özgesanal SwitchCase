@@ -1,0 +1,39 @@
+//Özge Sanal
+import java.util.Scanner;
+public class Main{
+	public static void main(String[]args) {
+		
+		Scanner yas = new Scanner(System.in);
+		
+		System.out.println("Dogum Tarihinizi Girin: ");
+		int dogum_tarihi = yas.nextInt();
+		
+		System.out.println("Bugünki Yılı Girin: ");
+		int bugünki_yıl = yas.nextInt();
+		
+		int yasın = bugünki_yıl - dogum_tarihi;
+				
+		switch(yasın) {
+		    case 0:
+		    	System.out.println("Yeni Dogdun!!");
+		    	break;
+			case 1:
+				System.out.println("Bir Yasındasın");
+				break;
+			case 5:
+				System.out.println("Cocuksun");
+				break;
+			case 10:
+				System.out.println("Okul Yasındasın");
+				break;
+			case 15:
+				System.out.println("Lise Yasındasın");
+				break;
+			case 20:
+				System.out.println("Universite Yasındasın");
+				break;
+			default:
+				System.out.println("Yaslısın");
+		}
+	}
+}

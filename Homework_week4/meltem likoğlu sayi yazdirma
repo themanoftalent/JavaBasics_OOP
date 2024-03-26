@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class derslik {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a;
+        System.out.println("a yi giriniz:");
+        a = scan.nextInt();
+        if (a < 100) {
+
+            for (int i = a; i >= 0; i--) {
+                System.out.println("i = " + i);
+            }
+            
+
+        }
+    }
+}

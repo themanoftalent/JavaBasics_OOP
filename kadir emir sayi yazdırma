@@ -1,0 +1,29 @@
+package javamedhod;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import javax.crypto.Cipher;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+		System.out.println("bir sayi girniz");
+		int sayi=scanner.nextInt();
+	
+	if (sayi>100) {
+		 for (int i=0;i<=sayi;i++) {
+			 int a=sayi-i;
+			 System.out.println(a);
+		 }
+		}
+	else 
+		System.out.println("başak bir sayı girin");
+		
+				}
+
+}

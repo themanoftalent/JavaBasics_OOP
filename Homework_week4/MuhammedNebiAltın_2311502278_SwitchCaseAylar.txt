@@ -1,0 +1,50 @@
+// Muhammed Nebi Altın 2311502278
+
+import java.util.Scanner;
+
+public class Aylar {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String ay = sc.nextLine();
+
+        switch (ay){
+            case ("ocak"):
+                System.out.println("1. Ay Kış");
+                break;
+            case ("şubat"):
+                System.out.println("2. Ay Kış");
+                break;
+            case ("mart"):
+                System.out.println("3. Ay Bahar");
+                break;
+            case ("nisan"):
+                System.out.println("4. Ay Bahar");
+                break;
+            case ("mayıs"):
+                System.out.println("5. Ay Bahar");
+                break;
+            case ("haziran"):
+                System.out.println("6. Ay Yaz");
+                break;
+            case ("temmuz"):
+                System.out.println("7. Ay Yaz");
+                break;
+            case ("ağustos"):
+                System.out.println("8. Ay Yaz");
+                break;
+            case ("eylül"):
+                System.out.println("9. Ay Sonbahar");
+                break;
+            case ("ekim"):
+                System.out.println("10. Ay Sonbahar");
+                break;
+            case ("kasım"):
+                System.out.println("11. Ay Sonbahar");
+                break;
+            case ("aralık"):
+                System.out.println("12. Ay Kış");
+                break;
+        }
+    }
+}

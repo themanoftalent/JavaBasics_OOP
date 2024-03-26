@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class proje2 {
+
+	public static void main(String[] args) {
+		
+		int bayrak=0;
+		Scanner input=new Scanner(System.in);
+		System.out.println("mat gir:");
+		int mat=input.nextInt();
+		System.out.println("fizik gir:");
+		int fizik=input.nextInt();
+		System.out.println("programlama gir:");
+		int programlama=input.nextInt();
+		System.out.println("devre analizi:");
+		int devreAnalizi=input.nextInt();
+		System.out.println("ingilizce gir:");
+		int ingilizce=input.nextInt();
+		
+		double ortalama=(mat+fizik+programlama+devreAnalizi+ingilizce)/5;
+		
+	    if(ortalama<50) {
+	    	System.out.println(ortalama+" ile kaldınız.");
+	    	bayrak=1;
+	    }
+	    else {
+	    	System.out.println(ortalama+" ile geçtiniz.");
+	    	bayrak=2;
+	    }
+	    
+	    switch(bayrak) {
+	    case 1: System.out.println(ortalama+" ile kaldınız.");  break;
+	    case 2: System.out.println(ortalama+" ile geçtiniz.");  break;
+	    }
+	    
+	}
+
+}

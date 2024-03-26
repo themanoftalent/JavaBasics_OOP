@@ -1,0 +1,24 @@
+// Muhammed Nebi Altın  2311502278
+
+import java.util.Scanner;
+
+public class ForLoop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int start = 0;
+        do {
+            System.out.println("Sayısı Giriniz");
+            start = sc.nextInt();
+            if (start > 100){
+                break;
+            }
+            System.out.println("Girdiğiniz Sayı 100'den Büyük Olmalıdır");
+        }while (true);
+
+        for (int i = start; i >= 0; i--){
+            System.out.println(i);
+        }
+
+    }
+}

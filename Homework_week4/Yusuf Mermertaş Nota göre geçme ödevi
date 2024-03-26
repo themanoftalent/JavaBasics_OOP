@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args){
+
+        System.out.println("lutfen 1. dersinizin notunu giriniz");
+        int not1=input.nextInt();
+        System.out.println("lutfen 2. dersinizin notunu giriniz");
+        int not2=input.nextInt();
+        System.out.println("lutfen 3. dersinizin notunu giriniz ");
+        int not3=input.nextInt();
+        System.out.println("lutfen 4. dersinizin notunu giriniz");
+        int not4=input.nextInt();
+        System.out.println("lutfen 5. dersinizin notunu giriniz");
+        int not5=input.nextInt();
+        double gecmeNotu=((not1+not2+not3+not4+not5)/5.0);
+        switch ((int)gecmeNotu) {
+            case 100:
+            case 99:
+            case 98:
+            case 97:
+            case 96:
+            case 95:
+            case 94:
+            case 93:
+            case 92:
+            case 91:
+            case  90:{
+                System.out.println("tebrikler gecme harfiniz AA ,gecme notunuz =" + gecmeNotu);
+                break;
+            }
+            case 89:
+            case 88:
+            case 87:
+            case 86:
+            case 85:{
+                System.out.println("tebrikler gecme harfiniz BA,gecme notunuz=" + gecmeNotu);
+                break;
+
+            }
+            case 84:
+            case 83:
+            case 82:
+            case 81:
+            case 80:{
+                System.out.println("tebrikler gecme harfiniz BB,gecme notunuz=" + gecmeNotu);
+                break;
+            }
+            case 79:
+            case 78:
+            case 77:
+            case 76:
+            case 75:
+            case 74:
+            case 73:
+            case 72:
+            case 71:
+            case 70:{
+                System.out.println("tebrikler gecme harfiniz CB,gecme notunuz=" + gecmeNotu);
+                break;
+            }
+            case 69:
+            case 68:
+            case 67:
+            case 66:
+            case 65:
+            case 64:
+            case 63:
+            case 62:
+            case 61:
+            case  60:{
+                System.out.println("tebrikler gecme harfiniz CC ,gecme notunuz=" + gecmeNotu);
+                break;
+            }
+            case 59:
+            case 58:
+            case 57:
+            case 56:
+            case  55:
+            {
+                System.out.println("tebrikler sartlı gecme harfiniz DC,şartlı gecme  notunuz=" + gecmeNotu);
+                break;
+            }
+            case 54:
+            case 53:
+            case 52:
+            case 51:
+            case 50:
+            case 49:
+            case 48:
+            case 47:
+            case 46:
+            case 45:
+            {
+                System.out.println("maalesef kaldınız harf notunuz DD,gecme notunuz=" + gecmeNotu);
+                break;
+            }
+            default: {
+                System.out.println("maalesef kaldiniz harf notunuz FF,gecme notunuz=" + gecmeNotu);
+                break;
+            }
+        }
+    }}
