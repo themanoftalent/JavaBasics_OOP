@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Adınız : ");
+        String isim = scanner.nextLine();
+        System.out.print("Soyadınız : ");
+        String soyisim = scanner.nextLine();
+
+
+        System.out.println("kullanıcı ismi\t"+isim);
+        System.out.println("kullanıcı soyadı\t"+soyisim);
+
+        if(isim.equals("irem") && soyisim.equals("özbey")){
+            System.out.println("doğru girdiniz");
+
+        }
+		else { System.out.println("yanlış girdiniz"); }
+    }

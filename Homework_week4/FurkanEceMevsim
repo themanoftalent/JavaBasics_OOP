@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String mevsim = scanner.nextLine();
+        switch (mevsim){
+            case "Aralik":
+                System.out.println("Kis");
+                break;
+            case "Ocak":
+                System.out.println("Kis");
+                break;
+            case "Subat":
+                System.out.println("Kis");
+                break;
+            case "Mart":
+                System.out.println("Ilkbahar");
+                break;
+            case "Nisan":
+                System.out.println("Ilkbahar");
+                break;
+            case "Mayis":
+                 System.out.println("Ilkbahar");
+                 break;
+            case "Haziran":
+                System.out.println("Yaz");
+                break;
+            case "Temmuz":
+                System.out.println("Yaz");
+                break;
+            case "Agustos":
+                System.out.println("Yaz");
+                break;
+            case "Eylul":
+                System.out.println("Sonbahar");
+                break;
+            case "Ekim":
+                System.out.println("Sonbahar");
+                break;
+            case "Kasim":
+                 System.out.println("Sonbahar");
+                 break;
+            default:
+                System.out.println("Lütfen baş harfi büyük olacak şekilde mevsim giriniz");
+
+        }      
+    }
+}

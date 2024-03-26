@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class İslemler{
+   public static void main(String[]args) {
+	   Scanner girdi_sayisi = new Scanner(System.in);
+	   System.out.println("Enter first number");
+	   float number1 =girdi_sayisi.nextInt();
+	   System.out.println("Enter second number");
+	   int number2 = girdi_sayisi.nextInt();
+	
+	   System.out.println("Cikarma:"+ (number1-number2));
+	   System.out.println("Toplam:" + (number1+number2));
+	   System.out.println("Bölme:" + (number1/number2));
+	   System.out.println("Carpma:" + (number1*number2));
+	
+   }
+	
+}
+
+
+import java.util.Scanner;
+
+public class İsim {
+        public static void main(String[] args) {
+            java.util.Scanner namesurname = new Scanner(System.in);
+
+            System.out.println("İsmini Gir:");
+            String isim = namesurname.nextLine();
+
+            System.out.println("Soyismini Gir:");
+            String soyisim = namesurname.nextLine();
+
+            System.out.println("Isminiz ve Soyisminiz: "+isim+" "+soyisim);
+            if((isim.equals("Eslem") && soyisim.equals("Meydanlı")) || (isim.equals("eslem")&&soyisim.equals("meydanlı"))) {
+                System.out.println("Ismini dogru girdin");
+            }
+            else {
+                System.out.println("Ismini yanlıs girdin");
+            }
+        }
+}

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gectikaldi = new Scanner(System.in);
+        System.out.println("1. Notu Girin");
+        int not1 = gectikaldi.nextInt();
+
+        System.out.println("2. Notu Girin");
+        int not2 = gectikaldi.nextInt();
+
+        System.out.println("3. Notu Girin");
+        int not3 = gectikaldi.nextInt();
+
+        float ort = (float) (not1 + not2 + not3) / 3;
+        if((int)ort>=50){
+            ort=1;
+        }
+        else
+            ort=0;
+        switch((int)ort){
+            case 1:
+                System.out.println("Gectiniz!!");
+                break;
+            case 0:
+                System.out.println("Kaldiniz!!");
+                break;
+        }
+
+    }
+}

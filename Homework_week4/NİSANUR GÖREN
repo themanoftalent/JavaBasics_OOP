@@ -1,0 +1,149 @@
+NİSANUR GÖREN
+
+1) Kaçıncı ay hangi mevsim
+
+    import java.util.Scanner;
+
+    public class Main {
+    public static void main(String[] args) {
+    Scanner scanner=new Scanner(System.in);
+        System.out.println("Kaçıncı ay?:");
+    int ay = scanner.nextInt();
+
+
+
+        switch (ay) {
+            case 1:
+            case 2:
+                System.out.println("Kış mevsimi");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("İlkbahar mevsimi");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Yaz mevsimi");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Sonbahar mevsimi");
+                break;
+            case 12:
+                System.out.println("Kış mevsimi");
+                break;
+            default:
+                System.out.println("Girdiğiniz ay geçersiz.");
+        }
+    }
+    }
+
+NİSANUR GÖREN
+
+2) Ortalama Bulma
+
+
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int toplam = 0;
+        for (int i = 0; i < 5; i++) {
+            System.out.print("not girin:" + (i + 1)  );
+            int not = scanner.nextInt();
+            toplam += not;
+        }
+        double ortalama = toplam / 5;
+        System.out.print("girilen sayıların ortalaması:" + ortalama);
+    int durum;
+        if (ortalama >= 50) {
+          durum  = 1;
+        } else {
+            durum = 2;
+        }
+        switch (durum) {
+            case 1:
+                System.out.println("Geçtiniz.");
+                break;
+            case 2:
+                System.out.print("Kaldınız.");
+                break;
+
+        }
+
+    }
+}
+
+NİSANUR GÖREN
+
+3) Yaşların Dönemi
+
+import java.util.Scanner;
+public class ödev{
+    public static void main(String[]args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("bir yas giriniz:");
+        int yas=scanner.nextInt();
+        int durum;
+        if(yas<5){
+            durum=1;
+
+        }
+        else if(yas<12){
+            durum=2;
+        }
+        else if(yas<20){
+            durum=3;
+        }
+        else if(yas<50){
+            durum=4;
+        }
+        else{
+            durum=5;
+        }
+        switch(durum) {
+            case 1:
+                System.out.print("kisi bebektir:");
+                break;
+            case 2:
+                System.out.print("kisi cocuktur:");
+                break;
+            case 3:
+                System.out.print("kisi ergendir:");
+                break;
+            case 4:
+                System.out.print("kisi yetiskindir:");
+                break;
+            case 5:
+                System.out.println("kisi yaslidir:");
+                break;
+
+        }
+    }
+}
+
+NİSANUR GÖREN
+
+4) Girilen sayıdan sıfıra kadar
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main (String[]args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("bir sayi giriniz:");
+        int sayi=scanner.nextInt();
+        for(int i=sayi; i>=0; i--){
+            System.out.print( i  +" ");
+        }
+    }
+
+}
+
+
+
+

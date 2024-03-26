@@ -1,0 +1,27 @@
+//ad soyad alma
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+Scanner ad_soyad=new Scanner(System.in);
+String ad,soyad;
+        System.out.println("adinizi girin:");
+         ad=ad_soyad.nextLine();
+
+        System.out.println("soyadinizi girin:");
+         soyad=ad_soyad.nextLine();
+
+        System.out.println("adiniz:"+ad);
+        System.out.println("soyadiniz:"+soyad);
+
+        if(ad.equals("elif")||(soyad.equals("beycan")))
+        {
+            System.out.println("dogru giris");
+        }
+        else
+        {
+            System.out.println("hatali giris");
+        }
+    }
+}
