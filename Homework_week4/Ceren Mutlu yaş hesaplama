@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class YasHesaplama {
+public static void main(String[] args) { 
+	Scanner input = new Scanner(System.in);
+	int yas = input.nextInt();
+	switch(yas) { 
+	case 0 : 
+		System.out.println("Yeni dogdun.");
+		break;
+	case 1 : 
+		System.out.println("1 yasindasin.");
+		break;
+	case 5 : 
+		System.out.println("5 yasindasin.");
+		break;
+	case 10 : 
+		System.out.println("Okula gidiyorsun.");
+		break;
+	case 15 : 
+		System.out.println("Liselisin.");
+		break;
+	case 20 : 
+		System.out.println("Universiteye baslamissin.");
+		break;
+	default  :
+		System.out.println("Yaslanmissin.");
+		break;
+	}
+}
+}
