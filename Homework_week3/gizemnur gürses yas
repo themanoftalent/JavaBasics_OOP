@@ -27,7 +27,7 @@ public class Main {
                 System.out.println("20 yaşında=\n");
                 break;
             default:
-                ;System.out.println("yaslısın=\n");
+                System.out.println("yaslısın=\n");
         }
     }
 }
