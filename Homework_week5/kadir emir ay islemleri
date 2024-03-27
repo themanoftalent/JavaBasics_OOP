@@ -1,0 +1,70 @@
+package javamedhod;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import javax.crypto.Cipher;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+		System.out.println("bulunduğunuz ayı girin rakam olarak");
+		int ay=scanner.nextInt();
+	switch (ay) {
+	case 1: {
+		System.out.println("ocak mevsim kış");
+		break;
+	}
+	case 2:{
+		System.out.println("şubat mevsim ilkbahar");
+		break;
+	}
+	case 3:
+	{
+		System.out.println("mart mevsim ilkbahar");
+		break;
+	}
+	case 4:{
+		System.out.println("nisan mevsim ilkbahar");
+		break;
+	}
+	case 5:{
+		System.out.println("mayıs mevsim yaz");
+		break;
+	}
+	case 6:{
+		System.out.println("haziran mevsim yaz");
+		break;
+	}
+	case 7:{
+		System.out.println("temmuz mevsim yaz");
+		break;
+	}
+	case 8:{
+		System.out.println("ağustos mevsim sonbahar");
+		break;
+	}
+	case 9:{
+		System.out.println("eylül mevsim sonbahar");
+		break;
+	}
+	case 11:{
+		System.out.println("kasım mevsim sonbahar");
+		break;
+	}
+	case 12:{
+		System.out.println("aralık mevsim kış");
+		break;
+	}
+		
+	default:
+		System.out.println("yanlış değer girdiniz");
+	}
+	
+				}
+
+}

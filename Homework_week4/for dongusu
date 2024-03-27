@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+		Scanner not = new Scanner(System.in);
+		System.out.println("sayi giriniz:");
+		int sayi = not.nextInt();
+		
+		if(sayi<100) {
+			for(int i=100; i>=sayi; i--)
+				System.out.println(i);
+		}
+                else 
+			System.out.println("hatali sayi girdiniz.") ;
+	
+	}

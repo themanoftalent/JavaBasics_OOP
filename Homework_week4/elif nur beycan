@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku= new Scanner(System.in);
+        System.out.print("sayi giriniz:");
+        int a=oku.nextInt();
+        if(a>=100){
+            for(int i=a;i>=0;i--){
+                System.out.println(i);
+
+            }
+        }
+        else
+        {
+            System.out.println("hatali giris");
+        }
+
+
+    }
+}

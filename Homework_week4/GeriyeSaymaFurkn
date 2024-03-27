@@ -1,0 +1,23 @@
+Furkan Tatar
+
+import java.util.Scanner;
+
+class GeriyeSayma {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Geriye dogru yazdirmak icin 100'den buyuk bi deger giriniz. ");
+		int number = input.nextInt();
+		
+		while(number<100) {
+			System.out.println("girdiginiz deger 100'den buyuk degil, tekrar giris yapiniz. ");
+			number = input.nextInt();
+		}
+		
+		input.close();
+
+	}
+
+}

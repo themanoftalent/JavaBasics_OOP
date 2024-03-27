@@ -1,0 +1,43 @@
+Furkan Tatar
+
+import java.util.Scanner;
+
+class DersOrt {
+
+	public static void main(String[] args) {
+	
+		System.out.print("Lütfen kaç ders için ortalama hesaplayacaginizi giriniz: ");
+		Scanner input = new Scanner(System.in);
+		
+		
+		int dersAdet = input.nextInt();
+		
+		while(dersAdet <= 0 || dersAdet > 16) {
+			System.out.print("Hatali girdiniz, ders adeti 1 ile 15 adet aralıgında olmalı. ");
+			dersAdet = input.nextInt();
+		}
+		
+		int[] notlar = new int[dersAdet];
+		
+		
+		for(int i=0;dersAdet>i;i++) {
+			System.out.print((i+1) +". dersin notunu giriniz: ");
+			notlar[i] = input.nextInt();
+			if(notlar[i]<0 || notlar[i]>100) {
+				System.out.println("100-0 arasinda deger girilmeli, lütfen tekrar giriniz ");
+				--i;
+			}
+		}
+		
+			double ort=0;
+		for(int sayac=0; sayac<dersAdet; sayac++) {
+			ort += notlar[sayac];
+			if(sayac == (dersAdet-1)) {
+			System.out.println("Not ortalamaniz = "+ (ort/dersAdet));
+			}
+		}
+		
+		input.close();
+	}
+
+}

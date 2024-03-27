@@ -1,18 +1,58 @@
+
 import java.util.Scanner;
 
-public class Main {
+public class AnaClass {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Sayi giriniz");
-        int a = scan.nextInt();
-        if(a>=100){
-            for (int i = a; i > 0; i--){
-                System.out.println("i="+i);
-            }
-        }
-        else{
-            System.out.println("hatali sayi");
-        }
 
+        System.out.println("ayı giriniz");
+        String ay=scan.nextLine();
+                   switch(ay){
+                   case "ocak":
+                           System.out.println("birinci ay kis"); break;
+                   case "subat":
+                   System.out.println("ucuncu ay kis"); break;
+                   case "mart":
+                   System .out.println("birinci ay ilkbahar"); break;
+                   case "nisan":
+                   System.out.println("ikinci ay ilkbahar"); break;
+                   case "mayis":
+                    System.out.println("ucuncu ay ilkbahar"); break;
+                    case "haziran":
+                    System.out.println("birinci ay yaz"); break;
+                    case "temmuz":
+                    System.out.println("ikinci ay yaz "); break;
+                    case "agustos":
+                    System.out.println("ucuncu ay yaz"); break;
+                    case "eylul":
+                        System.out.println("birinci ay sonbahar"); break;
+                        case "ekim":
+                                System.out.println("ikinci ay sonbahar"); break;
+                                case "kasim":
+                                 System.out.println("ucuncu ay sonbahar"); break;
+                                 case "aralik":
+                                         System.out.println("birinci ay kis"); break;
+}}
+
+        System.out.println("Birinci notu giriniz");
+        int not1 = scan.nextInt();
+        System.out.println("İkinci notu giriniz");
+        int not2 = scan.nextInt();
+        System.out.println("Üçüncü notu giriniz");
+        int not3 = scan.nextInt();
+        System.out.println("Dördüncü notu giriniz");
+        int not4 = scan.nextInt();
+        int gpa = (not1 + not2 + not3 + not4) / 4; // Calculate GPA by dividing by the number of grades
+        switch (gpa){
+            case 0:
+            case 1:
+                System.out.println("Kaldı"); break;
+            case 2:
+            case 3:
+                System.out.println("Gecti"); break;
+            default:
+                System.out.println("Hatali deger"); break;
+        }
     }
+
 }

@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+		// iki sayının toplamı
+		Scanner girdi_sayisi = new Scanner(System.in);
+		System.out.println("enter first number");
+		float sayi1 = girdi_sayisi.nextFloat();
+		System.out.println("enter second number");
+        float sayi2 = girdi_sayisi.nextFloat();
+        
+        float toplam = sayi1+sayi2;
+        float fark = sayi1-sayi2;
+        float carpim = sayi1*sayi2;
+        System.out.println("Sayilarin toplami : "+toplam);
+        System.out.println("Sayilarin farki : "+fark);
+        System.out.println("Sayilarin carpimi : "+carpim);
+ }

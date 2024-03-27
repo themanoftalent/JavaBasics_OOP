@@ -1,0 +1,16 @@
+/* 1. Malzemeleri hazırla:
+   - Yumurta
+   - Tuz
+2. Tencereyi ocak üzerine yerleştir ve orta ateşte ısıt.
+3. Tencereye su ekleyerek kaynatmaya başla. Su miktarı, yumurtanın tamamen kaplanması için yeterli olmalıdır.
+4. Su kaynadıktan sonra yumurtayı al ve bir kaşık yardımıyla suya yavaşça bırak.
+5. Yumurtayı haşlamak istediğin süreye göre pişir(3-5 dakika)
+6. Pişme süresi tamamlandıktan sonra, yumurtayı bir kepçe veya delikli kaşık yardımıyla sudan al ve soğuk su altında hızlıca durula.
+7. Soğuyan yumurtayı kabuğunu soyarak servis tabağına al.
+8. İsteğe bağlı olarak, üzerine tuz ve karabiber serperek sıcak servis yap.
+*/
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}

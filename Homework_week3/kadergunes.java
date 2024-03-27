@@ -1,28 +1,29 @@
-//kader güneş
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        // Scanner object to read user input
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Sayı giriniz:");
-        int a;
-        Scanner input = new Scanner(System.in);
-        a = input.nextInt();
-        System.out.println("Girdiğiniz sayı:"+a);
-        System.out.println("-------");
-        int b,c;
-
+        // Prompt user for first number
         System.out.println("Birinci sayıyı giriniz:");
-        Scanner sayi1=new Scanner(System.in);
-        b=sayi1.nextInt();
+        int sayi1 = scanner.nextInt();
+
+        // Prompt user for second number
         System.out.println("İkinci sayıyı giriniz:");
-        Scanner sayi2=new Scanner(System.in);
-        c=sayi2.nextInt();
-        int d= sayi2 + sayi1;
-        Scanner sonuc=new Scanner(System.in);
-        d=sonuc.nextInt();
-        System.out.println("sonuç:"+sonuc);
+        int sayi2 = scanner.nextInt();
 
+        // Calculate sum
+        int toplam = sayi1 + sayi2;
 
+        // Print the sum
+        System.out.println("Toplam: " + toplam);
 
+        // You can perform other calculations here similarly
+        int cikarma = sayi1 - sayi2;
+        System.out.println("Çıkarma: " + cikarma);
 
+        // Close the scanner to avoid resource leaks (optional but good practice)
+        scanner.close();
     }
+}
