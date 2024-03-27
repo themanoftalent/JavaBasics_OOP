@@ -1,0 +1,56 @@
+// Zehre İnce 2311502231
+package zehre;
+import java.util.Scanner; 
+
+public class Zehre {
+	 public static void main(String[] args) {
+        
+	 
+	        Scanner scan = new Scanner(System.in);
+	        System.out.println("Bulunduğunuz ayı giriniz");
+	        String ay = scan.nextLine();
+	        
+	        switch(ay) {
+	        case "Ocak":
+	        	System.out.println("Kış");
+	        break;
+	        
+	        case "Şubat":
+	        	System.out.println("Kış");
+	        break;
+	        
+	        case "Mart":
+	        	System.out.println("İlkbahar");
+	        	  break;
+	        case "Nisan":
+	        	System.out.println("İlkbahar");
+	        
+	        	  break;
+	        case "Mayıs":
+	        	System.out.println("İlkbahar");
+	        	  break;
+	        case "Haziran":
+	        	System.out.println("Yaz");
+	        	  break;
+	        case "Temmuz":
+	        	System.out.println("Yaz");
+	        	  break;
+	        case "Ağustos":
+	        	System.out.println("Yaz");
+	        	  break;
+	        case "Eylül":
+	        	System.out.println("Sonbahar");
+	        	  break;
+	        case "Ekim" :
+	        	System.out.println("Sonbahar");
+	        	  break;
+	        case "Kasım":
+	        	System.out.println("Sonbahar");
+	        	  break;
+	        case "Aralık":
+	        	System.out.println("Kış");
+	        	  break;
+	        }
+	   
+	 }
+}

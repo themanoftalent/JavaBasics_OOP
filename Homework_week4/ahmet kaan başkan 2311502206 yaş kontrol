@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+        public class YasKontrol {
+            public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Yaşınızı giriniz:");
+                int yas = scanner.nextInt();
+
+                if (yas == 0) {
+                    System.out.println("Yeni doğdunuz.");
+                } else if (yas == 1) {
+                    System.out.println("1 yaşındasınız.");
+                } else if (yas < 5) {
+                    System.out.println("Çocuksunuz.");
+                } else if (yas < 10) {
+                    System.out.println("Okula gidiyorsunuz.");
+                } else if (yas < 15) {
+                    System.out.println("Ortaokuldasınız.");
+                } else if (yas < 18) {
+                    System.out.println("Lisedesiniz.");
+                } else if (yas < 25) {
+                    System.out.println("Üniversitedesiniz.");
+                } else {
+                    System.out.println("Yaşlısınız.");
+                }
+
+
+            }
+        }

@@ -1,0 +1,159 @@
+Gaye Nur Güneş-2211502017
+
+
+1. Geriye Sayma 
+
+
+import java.util.Scanner;
+public class GeriyeSayma {
+    public static void main(String[]args){
+
+        Scanner scan=new Scanner(System.in);
+        int sayi;
+
+        while(true) {
+            System.out.print("Bir sayı girin: ");
+            sayi = scan.nextInt();
+
+            if (sayi > 100) {
+                for (int i = sayi; i >= 0; i--) {
+                    System.out.println(i);
+                }
+                break;
+            }
+
+            else {
+                System.out.println("100 den büyük bir sayı giriniz!!!!!");
+
+            }
+        }
+    }
+}
+
+
+
+2. Yaş Sorgulama
+
+
+import java.util.Scanner;
+
+public class YasSorgulama {
+    public static void main(String[]args){
+        Scanner scan= new Scanner(System.in);
+        int yas;
+        System.out.print("Yaş girin: ");
+        yas = scan.nextInt();
+
+        switch(yas){
+            case 0:
+                System.out.println("Yeni doğmuş bebek");
+                break;
+            case 1,2,3,4,5:
+                System.out.println("Okul çağına gelmemiş çocuk");
+                break;
+            case 6,7,8,9:
+                System.out.println("İlkokul döneminde çocuk");
+                break;
+            case 10,11,12,13:
+                System.out.println("Ortaokul döneminde çocuk");
+                break;
+            case 14,15,16,17:
+                System.out.println("Lise döneminde ergen");
+                break;
+            case 18,19,20,21:
+                System.out.println("Üniversite döneminde genç");
+                break;
+            default:
+                System.out.println("Yetişkin");
+                break;
+        }
+    }
+}
+
+
+
+3. Mevsim Hesabı
+
+
+import java.util.Scanner;
+
+public class MevsimHesabi {
+    public static void main(String[]args){
+        Scanner scan = new Scanner(System.in);
+        String ay;
+        System.out.print("Ay giriniz: ");
+        ay = scan.nextLine();
+
+        switch(ay){
+            case "aralık":
+            case "ocak":
+            case "şubat":
+                System.out.println("Kış");
+                break;
+            case "mart":
+            case "nisan":
+            case "mayıs":
+                System.out.println("İlkbahar");
+                break;
+            case "haziran":
+            case "temmuz":
+            case "ağustos":
+                System.out.println("Yaz");
+                break;
+            case "eylül":
+            case "ekim":
+            case "kasım":
+                System.out.println("Sonbahar");
+                break;
+            default:
+                System.out.println("Yanlış giriş yaptınız..");
+                break;
+        }
+
+    }
+}
+
+
+
+4. Not Ortalaması
+
+
+import java.util.Scanner;
+
+public class NotOrtalamasi {
+    public static void main(String[]args){
+        Scanner scan = new Scanner(System.in);
+        int a,b,c,d,e;
+
+        System.out.print("İlk not: ");
+        a= scan.nextInt();
+
+        System.out.print("İkinci not: ");
+        b= scan.nextInt();
+
+        System.out.print("Üçüncü not: ");
+        c= scan.nextInt();
+
+        System.out.print("Dördüncü not: ");
+        d= scan.nextInt();
+
+        System.out.print("Beşinci not: ");
+        e= scan.nextInt();
+
+        float ortalama = (float)(a+b+c+d+e)/5;
+
+        int sonuc=0;
+        if(ortalama>50){
+            sonuc = 1;
+        }
+
+        switch(sonuc){
+            case 1:
+                System.out.println("Geçti\nOrtalama:"+ortalama);
+                break;
+            default:
+                System.out.println("Kaldı\nOrtalama:"+ortalama);
+                break;
+        }
+    }
+}

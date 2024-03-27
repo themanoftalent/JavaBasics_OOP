@@ -4,34 +4,25 @@ public class NotOrtalamasi {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int ders1, ders2, ders3, ders4, ders5;
-        double ortalama;
 
-        System.out.println("Lütfen 5 dersin notlarını giriniz:");
-        System.out.print("Ders 1: ");
-        ders1 = scanner.nextInt();
-        System.out.print("Ders 2: ");
-        ders2 = scanner.nextInt();
-        System.out.print("Ders 3: ");
-        ders3 = scanner.nextInt();
-        System.out.print("Ders 4: ");
-        ders4 = scanner.nextInt();
-        System.out.print("Ders 5: ");
-        ders5 = scanner.nextInt();
+        int not1, not2, not3, not4, not5;
 
-        ortalama = (ders1 + ders2 + ders3 + ders4 + ders5) / 5.0;
+        System.out.println("Lütfen 5 notu girin:");
+        not1 = scanner.nextInt();
+        not2 = scanner.nextInt();
+        not3 = scanner.nextInt();
+        not4 = scanner.nextInt();
+        not5 = scanner.nextInt();
 
-        switch ((int) ortalama / 10) {
-            case 10:
-            case 9:
-            case 8:
-            case 7:
-            case 6:
-                System.out.println("GEÇ");
-                break;
-            default:
-                System.out.println("KAL");
-                break;
-        }
+        // Calculate average as double for decimal precision
+        double ortalama = (double) (not1 + not2 + not3 + not4 + not5) / 5;
+
+        System.out.println("Girilen notların ortalaması: " + ortalama);
+
+        // Use a ternary operator for concise pass/fail determination
+        String durum = ortalama >= 50 ? "Geçti" : "Kaldı";
+        System.out.println("Durum: " + durum);
+
+        scanner.close(); // Close the scanner to avoid resource leaks
     }
 }

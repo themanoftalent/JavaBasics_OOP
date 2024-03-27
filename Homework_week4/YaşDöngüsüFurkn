@@ -1,0 +1,68 @@
+Furkan Tatar
+
+import java.util.Scanner;
+class YaşHesapla {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Karakterinizin kaç yillik yasantisini görmek istiyorsunuz, giriniz. ");
+		int age = input.nextInt();
+		while(age < 0 || age > 100) {
+			System.out.print("Yaş degeri 0 ila 100 arasinda olmali, yeniden giriniz: ");
+			age = input.nextInt();
+		}
+		
+		//Math.random 0 ila 1 arasında sayılar oluşturur,
+		//*124 bu sayilari 124 ila 0 araligina götürür
+		//+1900 ile sayilar 1900 ila 2024 arasinda olmuş olur.
+		int year = (int) ((Math.random()*124)+1900);
+		
+		int flag=0;
+		int flagIki=0;
+		
+		if(year+age>2024) {
+			age=2024-year;
+			flagIki=-1;
+		}
+		
+		if(age>0 && age<5) {
+			flag=1;
+		}
+		else if(age>=5 && age<18) {
+			flag=2;
+		}
+		else if(age>=18 && age<40) {
+			flag=3;
+		}
+		else if(age>=40 && age<60){
+			flag=4;
+		}
+		else if(age>=60 && age<100) {
+			flag=5;
+		}
+		
+		for(int control=0; control<flag+1 ;control++) {
+			
+			switch(control) {
+			case 0: System.out.println(year+ " yilinda hayata gözlerini acti. ");						break;
+			case 1: System.out.println("Çocuklugunda oyuncaklarla oynadi. ");							break;
+			case 2: System.out.println("5 yaşından sonra okula gitti. ");								break;
+			case 3: System.out.println("18 yaşında ise gitmeye başladı ve gelecekte aile kurdu. ");		break;
+			case 4: System.out.println("İs kariyerinde basari dönemini yasamaya basladi. ");			break;
+			case 5: System.out.println("60+ yasinda torun sevdi. ");									break;
+			
+			}
+			
+		}
+		
+		if(flagIki==0) {
+			System.out.println(age+" yasinda vefat etti. ");
+		}
+		else {
+			System.out.println("2024'te hala yasiyor ve hayatina kaldigi yerden devam ediyor. "); 
+		}
+	}
+		
+		
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class OrtalamaHesaplama {
+public static void main(String[] args) { 
+	Scanner not = new Scanner(System.in);
+	int not1,not2,not3,not4,not5;
+	System.out.println("Notlari giriniz: ");
+	
+	System.out.println("Not 1: ");
+    not1 = not.nextInt();
+    System.out.println("Not 2: ");
+    not2 = not.nextInt();
+    System.out.println("Not 3: "); 
+	not3 = not.nextInt();
+	System.out.println("Not 4: ");
+	not4 = not.nextInt();
+	System.out.println("Not 5: ");
+	not5 = not.nextInt();
+	float gpa = (not1+not2+not3+not4+not5)/5;
+	switch (gpa) { 
+	case : (gpa<50):
+		System.out.println("Kaldı.");
+	default : 
+		System.out.println("Geçti.");
+	}
+}
+}
