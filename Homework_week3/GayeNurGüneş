@@ -1,0 +1,47 @@
+Gaye Nur Güneş-2211502017
+
+
+İsim Soyisim Sorgulama
+
+
+import java.util.Scanner;
+
+public class İsimSoyisim {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String isim;
+        System.out.print("İsminizi giriniz: ");
+        isim = scan.nextLine();
+
+        String tİsim;
+        if(isim.equals("Gaye Nur")){
+            System.out.println("İsminizi doğru girdiniz..");
+            tİsim=isim;
+        }
+        else {
+            System.out.println("İsminizi yanlış girdiniz..");
+            tİsim="Gaye Nur";
+        }
+
+
+        Scanner scan2 = new Scanner(System.in);
+        String soyisim;
+        System.out.print("Soyisminizi giriniz: ");
+        soyisim= scan2.next();
+
+        String tSoyisim;
+        if(soyisim.equals("Güneş")){
+            System.out.println("Soyisminizi doğru girdiniz..");
+            tSoyisim=soyisim;
+
+        }
+        else {
+            System.out.println("Soyisminizi yanlış girdiniz..");
+            tSoyisim="Güneş";
+
+        }
+
+        System.out.print("Kayıtlı isim: "+tİsim+ "\nKayıtlı soyisim: "+tSoyisim);
+
+    }
+}
