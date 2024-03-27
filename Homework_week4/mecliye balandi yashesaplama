@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class YasHesapla {
+    public static void main(String[]args) {
+        System.out.println("dogum yilinizi girin: ");
+ Scanner yas  = new Scanner(System.in);
+        int dogumyili= yas.nextInt();
+        int simdikiyil=2024;
+        int yasi= simdikiyil-dogumyili;
+        switch(yasi){
+            case1:
+            System.out.println(" yeni doğdun");
+            break;
+            case2:
+            System.out.println(" bir yasindasin");
+            break;
+            case3:
+            System.out.println(" bes yasindasin");
+            break;
+            case4:
+            System.out.println(" okula basladin");
+            break;
+            case5:
+            System.out.println("liselisin");
+            break;
+            case6:
+            System.out.println(" üniversiteye basladin");
+            break;
+            default:
+            System.out.println("yaslandiinn");
+        }
+        }
+
+    }

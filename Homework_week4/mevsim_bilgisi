@@ -1,0 +1,104 @@
+package mevsim;
+import java.util.Scanner;
+public class Mevsimbilgisi {
+//Fatih Selim ADALI
+
+	public static void main(String[] args) {
+		
+		   Scanner deger = new Scanner(System.in);
+	        String a;
+	        System.out.print("Hangi aydasınız: ");
+	        a = deger.nextLine();
+	        
+	        switch(a){
+	        
+	            case "OCAK":
+	                System.out.print("Kış ayındasınız");
+	                break;
+	                
+	                
+	                
+	            case "ŞUBAT":
+	                System.out.print("Kış ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "MART":
+	                System.out.print("İlkbahar ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "NİSAN":
+	                System.out.print("İlkbahar ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	                
+	            case "MAYIS":
+	                System.out.print("İlkbahar ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "HAZİRAN":
+	                System.out.print("Yaz ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "TEMMUZ":
+	                System.out.print("Yaz ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "AĞUSTOS":
+	                System.out.print("Yaz ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "EYLÜL":
+	                System.out.print("Sonbahar ayındasınız");
+	                break;
+	                
+	                
+	                
+	            case "EKİM":
+	                System.out.print("Sonbahar ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "KASIM":
+	                System.out.print("Sonbahar ayındasınız");
+	                break;
+	                
+	                
+	                
+	                
+	            case "ARALIK":
+	                System.out.print("Kış ayındasınız");
+	                break;
+	        
+	        
+	        
+	        }
+		
+		
+	}
+		
+		
+	
+}

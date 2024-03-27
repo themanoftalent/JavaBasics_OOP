@@ -1,0 +1,43 @@
+
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("please enter your notes (5)");
+        int total = 0;
+        int note = 0;
+        for (int i = 1; i >= 5; i++) ;
+        {
+            Scanner scanner = new Scanner(System.in);
+            note = scanner.nextInt();
+            total += note;
+        }
+        float gpa = total / 5;
+
+        switch ((int) gpa / 10) {
+            case 10 :
+                System.out.println("A");
+                break;
+            case 9 :
+                System.out.println("B");
+                break;
+            case 8 :
+                System.out.println("C");
+                break;
+            case 7 :
+                System.out.println("D");
+                break;
+            case 6 :
+                System.out.println("E");
+                break;
+            case 5 :
+            case 4 :
+            case 3:
+                case2:
+                case1 :
+                System.out.println("FF");
+                break;
+        }
+    }
+}
+//Alperen Aygun

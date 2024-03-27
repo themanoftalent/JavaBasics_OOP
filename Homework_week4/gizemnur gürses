@@ -1,5 +1,54 @@
 import java.util.Scanner;
 
+// gizemnur gürses
+public class Main {
+    public static void main(String[] args) {
+        int aysayısı;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Lütfen ay sayısını  girin: ");
+        aysayısı = input.nextInt();
+        ;
+
+        switch (aysayısı) {
+            case 1:
+                System.out.println("kıs=\n");
+                break;
+            case 2:
+                System.out.println("kıs=\n");
+                break;
+            case 3:
+                System.out.println("ilkbahar=\n");
+                break;
+            case 4:
+                System.out.println("ilkbahar=\n");
+                break;
+            case 5:
+                System.out.println("ilkbahar=\n");
+                break;
+            case 6:
+                System.out.println("yaz=\n");
+                break;
+            case 7:
+                System.out.println("yaz=\n");
+                break;
+            case 8:
+                System.out.println("yaz=\n");
+                break;
+            case 9:
+                System.out.println("sonbahar=\n");
+                break;
+            case 10:
+                System.out.println("sonbahar=\n");
+                break;
+            case 11:
+                System.out.println("sonbahar=\n");
+                break;
+            case 12:
+                System.out.println("kıs=\n");
+                break;
+            default:
+=======
+
 public class Main {
     public static void main(String[] args) {
         Scanner girdi_sayisi = new Scanner(System.in);
@@ -12,6 +61,7 @@ public class Main {
             for (int i = sayı; i >= 100; i--) {
                 System.out.println("i = " + i);
             }
+
         }
     }
 }

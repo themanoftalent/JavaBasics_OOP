@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Yas {
+    public static void main(String[] args) {
+        System.out.println("Dogum yilinizi giriniz:");
+        Scanner yas = new Scanner(System.in);
+        int dogum_tarihi = yas.nextInt();
+
+        System.out.println("Bugunku yili giriniz:");
+        int bugunku_tarih = yas.nextInt();
+
+        int yası = bugunku_tarih - dogum_tarihi;
+
+        switch(yası) {
+            case 0:
+                System.out.println("Yeni dogdun");
+                break;
+            case 1:
+                System.out.println("Bir yasindasin");
+                break;
+            case 5:
+                System.out.println("5 yasindasin");
+                break;
+            case 10:
+
+                System.out.println("okul yasindasin");
+                break;
+            case 15:
+                System.out.println("liselisin");
+                break;
+            case 20:
+                System.out.println("universite yasindasin");
+                break;
+            default:
+                System.out.println("yaslisin");
+                
+        }
+        
+    }
+}

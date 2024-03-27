@@ -1,0 +1,26 @@
+package Proje;
+import java.util.Scanner;
+
+public class GeriSayim {
+
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    int number;
+		
+    do {
+	System.out.println("Geri sayim yapmak istediginiz sayiyi giriniz: ");
+	number= sc.nextInt();
+			
+	if(number>100)
+            break;			
+        else
+	    System.out.println("Girdiğiniz sayı 100'den büyük olmalıdır.");
+		    
+    }while(true);
+		
+    for (int i=number; i>=0; i--)
+        System.out.println(i);
+
+    }
+
+}

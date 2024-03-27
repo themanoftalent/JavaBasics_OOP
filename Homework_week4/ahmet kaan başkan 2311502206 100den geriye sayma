@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sayi;
+        do {
+            System.out.print("numara giriniz:");
+            sayi = input.nextInt();
+
+            if (sayi < 100) {
+                System.out.println("100'den daha büyük bir sayı giriniz:");
+            }
+        }
+        while (sayi < 100);
+
+        for (int i = sayi; i >= 0; i--) {
+            System.out.println(i);
+
+
+        }
+    }
+}

@@ -1,0 +1,57 @@
+//Fatih Selim ADALI
+package ortalama;
+import java.util.Scanner;
+public class Ortalamagectikadlı {
+	
+	
+
+	public static void main(String[] args) {
+		
+		Scanner deger = new Scanner(System.in);
+		int m,f,p,y,d;
+		char a;
+		int ort;
+		
+		System.out.print("matematik || nıtunu gir : ");
+		m = deger.nextInt();
+		
+		System.out.print("fizik || notunu gir : ");
+		f = deger.nextInt();
+		
+		System.out.print("programlama notunu gir : ");
+		p = deger.nextInt();
+		
+		System.out.print("yabancı dil ||  notunu gir : ");
+		y = deger.nextInt();
+		
+		System.out.print("devre anaşlizi notunu gir : ");
+		d= deger.nextInt();
+		
+		ort=(f+m+p+y+d)/5;
+		
+		System.out.println("ortalammnız : "+ort);
+		
+		if(ort>=50) {
+			a='1';
+		}
+		else
+			a='2';
+		
+		switch(a) {
+		
+		case '1':
+			System.out.print("geçti");
+		break;
+		default:
+			System.out.print("kaldı");
+		
+		
+		}
+	
+		
+		
+		}
+
+		
+	
+}
