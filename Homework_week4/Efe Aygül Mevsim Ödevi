@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args){
+
+        System.out.println("bulundugunuz ayi girin");
+        String ay=input.nextLine();
+
+        switch (ay) {
+            case "aralik":
+            case "ocak":
+            case "subat":{
+                System.out.println("mevsim= kis");
+                break;}
+            case "mart":
+            case "nisan":
+            case "mayis":
+            {               
+                System.out.println("mevsim= ilkbahar");
+                 break;}
+            case "haziran":
+            case "temmuz":
+            case "agustos":
+            {
+                System.out.println("mevsim= yaz");
+                break;}
+            case "eylul":
+            case "ekim":
+            case "kasim":
+            {
+                System.out.println("mevsim= sonbahar");
+                break;}
+            default:
+                System.out.println("hatali giris");
+
+                break;
+        }
+    }
+}
