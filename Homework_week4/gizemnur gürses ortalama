@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_sayisi = new Scanner(System.in);
+        System.out.println("ilk notu gir:");
+        int not1 = girdi_sayisi.nextInt();
+
+        System.out.println("ikinci notu gir:");
+        int not2 = girdi_sayisi.nextInt();
+
+        System.out.println("ücüncü notu gir:");
+        int not3 = girdi_sayisi.nextInt();
+
+        System.out.println("dördüncü notu gir:");
+        int not4 = girdi_sayisi.nextInt();
+
+        System.out.println("beşinci notu gir:");
+        int not5 = girdi_sayisi.nextInt();
+
+        int toplam=not1+not2+not3+not4+not5;
+        int ortalama=toplam/5;
+        System.out.println("ortalama=\n");
+
+
+        if (ortalama < 50) {
+            System.out.println("Kaldı");
+        } else {
+            System.out.println("Geçti");
+        }
+    }
+}
+
+
