@@ -7,7 +7,6 @@ public class Main {
         System.out.println("Lütfen yaşınızı girin: ");
         yas = input.nextInt();
         
-
         switch (yas) {
             case 0:
                 System.out.println("yeni doğmuş=\n");
