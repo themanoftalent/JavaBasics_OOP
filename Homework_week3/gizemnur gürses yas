@@ -6,7 +6,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Lütfen yaşınızı girin: ");
         yas = input.nextInt();
-        ;
+        
 
         switch (yas) {
             case 0:
