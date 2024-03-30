@@ -1,0 +1,24 @@
+import java.util.Objects;
+import java.util.Scanner;
+
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    static String isimReel = "Muhammed";
+    static String soyadReel = "Altın";
+
+    public static void main(String[] args)
+    {
+
+        System.out.println("İsim Giriniz: ");
+        String isimIn = sc.nextLine();
+        System.out.println("Soyad Giriniz");
+        String soyadIn = sc.nextLine();
+
+        if (Objects.equals(isimIn, isimReel) && Objects.equals(soyadIn, soyadReel)){
+            System.out.println("Girilen Bilgiler Doğru");
+        }
+        else{
+            System.out.println("İsim veya Soyisim Hatalı");
+        }
+    }
+}

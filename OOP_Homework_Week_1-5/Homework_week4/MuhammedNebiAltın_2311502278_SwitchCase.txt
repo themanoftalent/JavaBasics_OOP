@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        int not0, not1, not2, not3, not4 = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Notu Giriniz");
+        not0 = sc.nextInt();
+        System.out.println("2. Notu Giriniz");
+        not1 = sc.nextInt();
+        System.out.println("3. Notu Giriniz");
+        not2 = sc.nextInt();
+        System.out.println("4. Notu Giriniz");
+        not3 = sc.nextInt();
+        System.out.println("5. Notu Giriniz");
+        not4 = sc.nextInt();
+
+        int gpa = (not0+not1+not2+not3+not4)/5;
+        gpa /= 50;
+        switch (gpa){
+            case 0:
+                System.out.println("Kaldın");
+                break;
+            default:
+                System.out.println("Geçtin");
+                break;
+        }
+   }
+}

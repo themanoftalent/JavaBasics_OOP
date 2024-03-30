@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class selam {
+
+	public static void main(String[] args)
+ {
+
+		Scanner aScanner=new Scanner(System.in);
+
+		System.out.println("bir sayı gir:");
+
+		int sayi1=aScanner.nextInt();
+
+		System.out.println("ikinci sayıyı gir:");
+
+		int sayi2=aScanner.nextInt();
+
+		int toplam=sayi1+sayi2;
+
+		System.out.println("toplam="+toplam);
+	}
+}

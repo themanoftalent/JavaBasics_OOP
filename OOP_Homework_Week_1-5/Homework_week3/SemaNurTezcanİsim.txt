@@ -1,0 +1,24 @@
+package hello1;
+
+import java.util.Scanner;
+
+public class hello1 {
+
+	public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+		
+	    System.out.print("Adınızı giriniz: ");
+	    String ad = scanner.nextLine();
+
+	    System.out.print("Soyadınızı girin: ");
+	    String soyad = scanner.nextLine();
+
+	    if(ad.equals("Sema") && soyad.equals("Tezcan"))
+	        System.out.println("Merhaba, " + ad + " " + soyad + "!");
+	    else
+	    	System.out.println("Tekrar deneyiniz!!");
+
+	    scanner.close();
+	}
+
+}

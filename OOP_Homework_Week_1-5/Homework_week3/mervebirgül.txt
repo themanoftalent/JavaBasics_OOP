@@ -1,0 +1,34 @@
+package adsoyad;
+
+import java.util.Scanner;
+
+
+
+
+
+public class Adsoyad {
+
+	public static void main(String[] args) {
+  
+  
+  Scanner scanner= new Scanner(System.in);
+  System.out.println("bir isim giriniz:");
+  String isim = scanner.nextLine();
+  
+  System.out.println("bir soyisim giriniz:");
+  String soyad = scanner.nextLine();
+  
+  //System.out.println("isim:"+ "\t"+isim + "\n"+ "soyisim:"+ "\t"+ soyad);
+  if(isim.equals("merve")|| soyad.equals("birgül"))
+  {
+	  System.out.println("isim dogru girildi.");
+  }else
+  {
+	  System.out.println("yanlış girildi");
+  }
+  
+  
+	}
+
+}
+

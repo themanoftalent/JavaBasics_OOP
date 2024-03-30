@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args)
+    {
+        System.out.println("İsim Giriniz: ");
+        String isimIn = sc.nextLine();
+        System.out.println("Soyad Giriniz");
+        String soyadIn = sc.nextLine();
+
+        System.out.println("İsim: " + isimIn);
+        System.out.println("Soyad: " + soyadIn);
+    }
+}

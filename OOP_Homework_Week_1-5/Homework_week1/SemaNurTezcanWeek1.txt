@@ -1,0 +1,41 @@
+//OTOBÜSLE ÜNİVERSİTEYE GİTME ALGORİTMASI
+
+1.Başla
+2.Sabah alarmın çaldığında uyan.
+3.Yataktan kalk ve odanda biraz yürü.
+4.Banyoya git ve dişlerini fırçala.
+5.Duş al ve temiz bir havluyla kurulan.
+6.Yatak odana geri dön ve kıyafetlerini giy.
+7.Mutfakta kahvaltı hazırla: bir dilim ekmek al, üzerine reçel sür, bir bardak süt doldur.
+8.Kahvaltını masanın üzerine koy ve otur.
+9.Kahvaltını yaparken günlük haberleri oku veya bir kitap oku.
+10.Kahvaltıdan sonra mutfağı temizle: tabağı yıka, bardağı yıka, masayı sil.
+11.Çantasını hazırla: kitaplarını koy, defterini koy, kalemlerini koy.
+12.Anahtarlarını, cüzdanını ve telefonunu çantanın içine yerleştir.
+13.Evden çık ve kapıyı kitle.
+14.Apartman merdivenlerinden aşağı inerek sokaktan çık.
+15.Otobüs durağına doğru yürü.
+16.Otobüs bekleyenler arasına katıl.
+17.Otobüs geldiğinde kapıya yaklaş.
+18.Şoföre biletini veya kartını göster.
+19.Ön kapıdan içeri gir ve boş bir koltuk bulup otur.
+20.Varış durağında kalk ve kapıya doğru ilerle.
+21.Otobüsten in.
+22.Üniversite binasına doğru yürü.
+23.Giriş kapısını aç ve içeri gir.
+24.Hedefine doğru ilerle ve derslerine katıl.
+25.Bitir.
+
+
+
+
+//JAVA HELLO WORLD
+
+public class HelloWorld {
+    public static void main(String[] args) {
+
+        System.out.println("Hello World.");
+    }
+}
+
+

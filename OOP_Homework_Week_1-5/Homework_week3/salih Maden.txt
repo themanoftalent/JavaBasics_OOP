@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    static Scanner sa = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        System.out.println("Birinci Sayıyı Giriniz");
+
+        int a = sa.nextInt();
+
+        System.out.println("Birinci Sayıyı Giriniz");
+
+        int b = sa.nextInt();
+
+        int toplam = a+b;
+
+        int cikarma = a-b;
+
+        float mod = a%b;
+
+        float bolum = (float)a/b;
+
+        int carpım = a*b;
+        
+        System.out.println("Toplam: " + toplam);
+
+        System.out.println("Çıkarma: " + cikarma);
+
+        System.out.println("Mod: " + mod);
+
+        System.out.println("Bölme: " + bolum);
+
+        System.out.println("Çarpma: " + carpım);
+    }
+}

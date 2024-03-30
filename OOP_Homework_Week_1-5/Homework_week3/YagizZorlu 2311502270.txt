@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Ops {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int sayi1 = scanner.nextInt();
+        int sayi2 = scanner.nextInt();
+
+        int bolme = sayi1 / sayi2;
+        int cikarma = sayi1 - sayi2;
+        int toplama = sayi1 + sayi2;
+        int carpma = sayi1 * sayi2;
+
+        System.out.println("Toplama Sonucu:" + toplama);
+        System.out.println("Çıkarma Sonucu:" + cikarma);
+        System.out.println("Çarpma Sonucu:" + carpma);
+        System.out.println("Bölme Sonucu:" + bolme);
+
+    }
+}

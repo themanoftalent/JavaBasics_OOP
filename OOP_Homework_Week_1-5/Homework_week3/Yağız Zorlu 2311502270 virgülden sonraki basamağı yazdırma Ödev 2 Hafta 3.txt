@@ -1,0 +1,12 @@
+public class İkiSayiTopla {
+    public static void main (String[] args) {
+        double sayi1 = 10.2454;
+
+        double sayi2 = 20.32324;
+
+        double toplam = sayi1 + sayi2;
+
+        System.out.println("Toplamın İlk Hali :" + toplam);
+        System.out.printf("Toplam: %.2f", toplam );
+    }
+}

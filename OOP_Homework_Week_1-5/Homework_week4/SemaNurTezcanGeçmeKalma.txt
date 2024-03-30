@@ -1,0 +1,26 @@
+package Proje;
+import java.util.Scanner;
+
+public class Not{
+public static void main(String[] args) {
+    
+    Scanner sc= new Scanner(System.in);
+    int toplam= 0;
+    	
+    System.out.println("5 adet sınav notunuzu giriniz: ");
+    	
+    for(int i=0; i<5; i++) {
+    	int not= sc.nextInt();
+    	toplam+= not;    		
+    }
+    	
+    int ortalama= toplam/5;
+    	
+    if(ortalama>= 50)
+    	System.out.println("Tebrikler Geçtiniz!");
+    else
+    	System.out.println("Maalesef kaldınız!!");
+    	
+    }
+    
+}
