@@ -1,0 +1,23 @@
+public class derslik {
+
+    public int number=8;
+    public double number1=89.33;
+    public char letter='M';
+    public boolean isProgFun=true ;
+
+    public static void main(String[] args) {
+
+    }
+
+    }
+//drive kismi
+
+public class MainDrive {
+    public static void main(String[] args) {
+      derslik degisken = new derslik();
+        System.out.println(degisken.number);
+        System.out.println(degisken.number1);
+        System.out.println(degisken.letter);
+        System.out.println(degisken.isProgFun);
+    }
+}
