@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        float sayi1 = girdi_sayisi.nextFloat();
+
+        System.out.println("enter second number:");
+        int sayi2 = girdi_sayisi.nextInt();
+
+        float toplam = sayi1 + sayi2;
+        System.out.println("toplam:" + toplam);
+
+        float cikarma= sayi1-sayi2;
+        System.out.println("cikarma:" + cikarma);
+
+        float carpma=sayi1*sayi2;
+        System.out.println("carpma:" + carpma);
+
+        float bölme=sayi1/sayi2;
+        System.out.println("bölme:" + bölme);
+
+    }
+}

@@ -1,0 +1,18 @@
+-Büyük sayıyı bulma algoritması-
+1-sayi 1 giriniz
+2-sayi 2 giriniz
+3-sayi1>sayi2 ise 4. adıma gidiniz değilse 5. adıma gıdınız.
+4-sayi2=enbuyuksayıdır
+5-sayi1=enbuyuksayıdır
+6-ekrana yaz "enbuyuksayı"
+7-bitir
+
+
+-JAVA HELLO WORLD-
+public class HelloWorld{
+
+	public static void main(String[] args){
+
+	    System.out.println("Hello World");	    
+	}
+}
