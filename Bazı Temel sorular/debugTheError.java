@@ -31,12 +31,12 @@ public class SerkanOneFile {
     public int calculateAge(){
 
         LocalDate today = LocalDate.now();
-        Period period = Period.between(birthdate,now);
+        Period period = Period.between(birthdate,today);
         return period.getYears();
     }
 
     public static void main(String[] args) {
-        Serkan adam = new Serkan("Serkan", "Kaya", "Bandirma", "Comeng", "white", 174.20, 100.2, "reading", true, false, LocalDate.of(1990, 5, 5));
+        SerkanOneFile adam = new SerkanOneFile("Serkan", "Kaya", "Bandirma", "Comeng", "white", 174.20, 100.2, "reading", true, false, LocalDate.of(1990, 5, 5));
 
         System.out.println("Name: " + adam.name);
         System.out.println("Surname: " + adam.surname);
@@ -54,5 +54,5 @@ public class SerkanOneFile {
 }
 
 
-}
+
 
