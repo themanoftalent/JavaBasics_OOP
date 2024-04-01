@@ -1,0 +1,33 @@
+public class MyClass {
+
+   public String isim;
+   public String soyisim;
+   public int yas;
+   public String bolum;
+   public String renk;
+   public double boy;
+   public String hobi;
+}
+
+public class MyClassDrive {
+    public static void main(String[]args){
+        MyClass cv= new MyClass();
+        cv.isim="şebnem";
+        cv.soyisim="aydın";
+        cv.yas=18;
+        cv.bolum="bilgisayar mühendisi";
+        cv.renk="siyah";
+        cv.boy=1.60;
+        cv.hobi="şarkı dinlemek";
+        System.out.println(cv.isim);
+        System.out.println(cv.soyisim);
+        System.out.println(cv.yas);
+        System.out.println(cv.bolum);
+        System.out.println(cv.renk);
+        System.out.println(cv.boy);
+        System.out.println(cv.hobi);
+
+
+
+    }
+}
