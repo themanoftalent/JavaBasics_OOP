@@ -1,0 +1,51 @@
+//main
+package labdersi1;
+import java.util.Scanner;
+
+public class Labilkkkk {
+	
+	public String isim;
+	public String soyad;
+	public int yas;
+	public String dogumtarih;
+	public String buguntarihi;
+	public String uni;
+	public String bolum;
+	public String sacrengi;
+
+
+	
+
+}
+
+//drive
+package labdersi1;
+
+public class Birlesim {
+public static void main(String[]args)
+{
+	Labilkkkk e = new Labilkkkk();
+	
+	e.isim = "ceren";
+	e.soyad = "keskin";
+	e.yas = 20;
+	e.uni = "17 eylul";
+	e.bolum = "pc muh";
+	e.dogumtarih = "04.10.2004";
+	e.buguntarihi = "01.04.2004";
+	e.sacrengi = "kahverengi";
+	
+	System.out.println(e.isim);
+	System.out.println(e.soyad);
+	System.out.println(e.bolum);
+	System.out.println(e.uni);
+	System.out.println(e.buguntarihi);
+	System.out.println(e.dogumtarih);
+	System.out.println(e.yas);
+	System.out.println(e.sacrengi);
+	
+
+	
+
+}
+}
