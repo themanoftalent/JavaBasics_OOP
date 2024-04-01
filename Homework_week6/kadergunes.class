@@ -1,0 +1,31 @@
+//kadergunes
+import java.time.LocalDate;
+public class MyClass {
+    public String isim="kader";
+   public String soyisim="güneş";
+    public int yas=20;
+    public String unvan="ogrenci";
+    public double boy=1.65;
+    public boolean bıyık=false;
+    public String sacRengi="siyah";
+    public String hobby="codding";
+    public LocalDate birthDate=java.time.LocalDate.of(2003,5,5);
+
+
+}
+public class MyClassDrive {
+    public static void main(String[] args) {
+        MyClass degisken=new MyClass();
+
+        System.out.println(degisken.isim);
+        System.out.println(degisken.soyisim);
+        System.out.println(degisken.yas);
+        System.out.println(degisken.hobby);
+        System.out.println(degisken.unvan);
+        System.out.println(degisken.bıyık);
+        System.out.println(degisken.boy);
+        System.out.println(degisken.sacRengi);
+        System.out.println(degisken.birthDate);
+
+    }
+}
