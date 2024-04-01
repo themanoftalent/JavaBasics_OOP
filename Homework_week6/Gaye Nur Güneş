@@ -1,0 +1,60 @@
+//Gaye Nur Güneş Ders Örnek1
+
+
+public class VarMoreExamples {
+    public int sayi= 5;
+    public double sayi2= 5.5;
+    public char karakter= 'A';
+    public String kelime= "kelime";
+
+    public static void main(String[]args){}
+}
+
+
+
+
+public class VarMoreExDrive {
+    public static void main(String[]args){
+        VarMoreExamples ornek= new VarMoreExamples();
+
+        System.out.println(ornek.kelime);
+        System.out.println(ornek.karakter);
+        System.out.println(ornek.sayi);
+        System.out.println(ornek.sayi2);
+
+    }
+}
+
+
+
+
+
+
+//Gaye Nur Güneş Ders Örnek2
+
+
+public class MyClass {
+    //isim soyisim, yas bugün-dogum tarihi, unv bölüm, sac rengi, boy, bıyık,sakal,hobby
+    public String name= "Gaye Nur";
+    public String surname="Güneş";
+    public int age = 2024-2004;
+    public String bolum = "Bilgisayar Mühendisliği";
+    public String sacRengi= "Kahverengi";
+    public int boy= 160;
+    public boolean bıyık= false;
+    public boolean sakal= false;
+    public String hobby= "Uyumak";
+
+}
+
+
+
+
+public class MyDrive {
+    public static void main(String[]args){
+        MyClass veriler= new MyClass();
+
+        System.out.println((veriler.name)+"\n"+(veriler.surname)+"\n"+(veriler.age)+"\n"+(veriler.bolum)+"\n"+(veriler.sacRengi)+"\n"+(veriler.boy)+"\n"+(veriler.bıyık)+"\n"+(veriler.sakal)+"\n"+(veriler.hobby));
+    }
+}
+
