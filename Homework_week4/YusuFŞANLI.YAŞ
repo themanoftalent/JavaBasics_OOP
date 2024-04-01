@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Yashesaplama {
+
+	public static void main(String[] args) {
+    Scanner scanner= new Scanner(System.in);
+    System.out.println("Yaşinizi giriniz:");
+    int yas = scanner.nextInt();
+    System.out.println("Yasiniz:"+yas);
+    switch(yas)
+    {
+    case 0:
+    	System.out.println("Yeni doğdun");
+    	break;
+    case 1:
+    	System.out.println("1 yasındasın");
+    	break;
+    case 5:
+    	System.out.println("5 yasındasın");
+    	break;
+    	
+    case 10:
+    	System.out.println("okula basladin");
+    	break;
+    case 15:
+    	System.out.println("Liseye gectin");
+    	break;
+    case 20:
+    	System.out.println("Üniversiteye başladın");
+    	break;
+    default:
+    	System.out.println("Yaşlandın");
+    	break;    	
+    }
+
+}
+
+}

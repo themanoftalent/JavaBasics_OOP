@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Döngü {
+    public static void main(String[] args) {
+        System.out.println("sayi gir:");
+        Scanner sayi = new Scanner(System.in);
+
+        int deger = sayi.nextInt();
+
+        if (deger < 100) {
+            System.out.println("sayi 100 den küçük hatalı giriş");
+            deger = sayi.nextInt();
+        } else{
+
+            for (int i = 0; i <= deger; i++) {
+                System.out.println(i);
+            }
+        }
+    }
+}

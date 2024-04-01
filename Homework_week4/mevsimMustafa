@@ -1,0 +1,27 @@
+mustafa saydan
+
+import java.util.Scanner;
+
+class aylar {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("KAÇINCI AYDAYIZ:");
+		int ay=input.nextInt();
+		switch(ay) {
+		case 12,1,2: System.out.println("KIŞTAYIZ"); break;
+	
+		case 3,4,5: System.out.println("İLKBAHARDAYIZ"); break;
+		
+		case 6,7,8: System.out.println("YAZDAYIZ"); break;
+		
+		case 9,10,11: System.out.println("SONBAHARDAYIZ"); break;
+		
+		
+		
+		
+		}
+    input.close();
+	}
+
+}

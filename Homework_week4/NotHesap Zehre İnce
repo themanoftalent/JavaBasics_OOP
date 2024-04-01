@@ -1,0 +1,36 @@
+package zehrejava;
+import java.util.Scanner; 
+
+public class Zehre {
+	 public static void main(String[] args) {
+         int gpa;	
+		 char gpaa;
+	 
+	        Scanner scan = new Scanner(System.in);
+	        System.out.println("1. notu giriniz");
+	        int bir = scan.nextInt();
+	        System.out.println("2. notu giriniz");
+	        int iki = scan.nextInt();
+	        System.out.println("3. notu giriniz");
+	        int uc = scan.nextInt();
+	        System.out.println("4. notu giriniz");
+	        int dort = scan.nextInt();
+	        System.out.println("5. notu giriniz");
+	        int bes = scan.nextInt();
+	 gpa = (bir+iki+uc+dort+bes)/5;
+	    if (gpa>=50) {
+	    	gpaa='1';
+	    }
+	    else {
+	    	gpaa='2';
+	    }
+	        switch (gpaa) {
+	        case '1':
+	        System.out.println("Geçtiniz");
+	        break;
+	        case '2': {
+	        System.out.println("Kaldınız");
+	        break;
+	        } }
+	 }
+}

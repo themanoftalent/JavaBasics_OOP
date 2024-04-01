@@ -1,0 +1,22 @@
+package Projeler;
+import java.util.Scanner;
+
+
+public class OkulDers {
+
+	public static void main(String[] args) {
+	
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Isim:");
+        String isim = scanner.nextLine();
+        System.out.println("Soyisim:");
+        String soyisim = scanner.nextLine();
+        System.out.println("İsim:"+isim+" Soyisim:"+soyisim);
+        
+		
+		
+		
+		
+	}
+
+}

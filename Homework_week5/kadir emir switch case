@@ -1,0 +1,45 @@
+package javamedhod;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import javax.crypto.Cipher;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+		System.out.println("ders 1 notunu girin");
+		int ders1=scanner.nextInt();
+		System.out.println("ders 2 notunu girin");
+		int ders2=scanner.nextInt();
+		System.out.println("ders 3 notunu girin");
+		int ders3=scanner.nextInt();
+		System.out.println("ders 4 notunu girin");
+		int ders4=scanner.nextInt();
+		System.out.println("ders 5 notunu girin");
+		int ders5=scanner.nextInt();
+		double ort=(ders1+ders2+ders3+ders4+ders5)/5;
+		System.out.println("ortalama değeriniz"+ort);
+		System.out.println("ortalama 50 den küçükse 1 girin büyükse ve eşitse 2 girin");
+		int islem=scanner.nextInt();
+		switch (islem) {
+		case 1: {
+System.out.println("ortalamanız 50 den küçük dersten kaldınız");
+			
+			break;
+		}
+		case 2:
+		{
+			System.out.println("ortalamanız 50 den büyük dersten geçtiniz");
+			break;
+		}
+		default:
+			System.out.println("yanlış değer girdiniz");
+		}
+	}
+
+}

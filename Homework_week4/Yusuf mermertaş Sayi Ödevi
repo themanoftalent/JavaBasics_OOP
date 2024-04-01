@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args){
+
+        System.out.println("Sayi giriniz");
+        int a = input.nextInt();
+        if(a>=100){
+            for (int i = a; i > 0; i--){
+                System.out.println("i="+i);
+            }
+        }
+        else{
+            System.out.println("hatali sayi");
+        }
+
+
+    }}

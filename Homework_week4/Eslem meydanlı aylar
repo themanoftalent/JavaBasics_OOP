@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Aylar {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Kacıncı ay:");
+        
+        int ay  = input.nextInt();
+
+        switch (ay) {
+
+            case 1:
+                System.out.println("ocak");
+                System.out.println("kis");
+                break;
+            case 2:
+                System.out.println("subat");
+                System.out.println("kis");
+                break;
+            case 3:
+                System.out.println("mart");
+                System.out.println("ilkbahar");
+                break;
+            case 4:
+                System.out.println("nisan");
+                System.out.println("ilkbahar");
+                break;
+            case 5:
+                System.out.println("mayıs");
+                System.out.println("ilkbahar");
+                break;
+            case 6:
+                System.out.println("haziran");
+                System.out.println("yaz");
+                break;
+            case 7:
+                System.out.println("temmuz");
+                System.out.println("yaz");
+                break;
+            case 8:
+                System.out.println("agustos");
+                System.out.println("yaz");
+                break;
+            case 9:
+                System.out.println("eylul");
+                System.out.println("sonbahar");
+                break;
+            case 10:
+                System.out.println("ekim");
+                System.out.println("sonbahar");
+                break;
+            case 11:
+                System.out.println("kasım");
+                System.out.println("sonbahar");
+                break;
+            case 12:
+                System.out.println("aralik");
+                System.out.println("kis");
+                break;
+            default:
+                System.out.println("hata");
+        }
+
+    }
+}
