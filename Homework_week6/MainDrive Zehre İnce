@@ -1,0 +1,70 @@
+// Zehre İnce 2311502231
+
+package zehrejava;
+
+//main
+public class Zehre {
+	public String isim;
+	public boolean sakal;
+	public boolean biyik;
+	public double boy;
+	public String soyisim;
+	public String sacrengi;
+	public int dogumtarih;
+	public double kilo;
+	public String hobi;
+	public int yas;
+	public String uni;
+	public String bolum;
+
+	
+}
+
+  // drive
+
+package zehrejava;
+
+public class MainDrive {
+	
+	
+	  public static void main(String[] args) {
+		  Zehre z = new Zehre();
+	        z.biyik = false;
+	        z.boy = 173.0;
+	        z.sakal = false;
+	        z.hobi = "Müzik";
+	        z.sacrengi = "Siyah";
+	        z.yas= 19;
+	        z.isim = "Zehre";
+	        z.soyisim = "İnce";
+	        z.kilo = 57.3;
+	        z.bolum = "Computer Engineering";
+	        z.uni = "Bandirma 17 Eylul Uni";
+	      
+	        		
+	        System.out.println("Ad: " + z.isim);
+	        System.out.println("Soyad: " + z.soyisim);
+	        System.out.println("Üniversite " + z.uni);
+	        System.out.println("Bölüm: " + z.bolum);
+	        System.out.println("Yaş " + z.yas);
+	        System.out.println("Saç rengi: " + z.sacrengi);
+	        System.out.println("Boy: " + z.boy);
+	        System.out.println("Kilo: " + z.kilo);
+	        if (z.biyik){
+	        	System.out.println("Bıyık var");
+	        	
+	        }
+	        else {
+	        	System.out.println("Bıyık yok" );
+	        }
+	        if (z.sakal){
+	        	System.out.println("Sakal var");
+	        	
+	        }
+	        else {
+	        	System.out.println("Sakal yok" );
+	        }
+	        System.out.println("Hobi: " + z.hobi);
+	  }
+	}
+
