@@ -1,0 +1,30 @@
+package javamedhod;
+import java.net.SocketTimeoutException;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import javax.crypto.Cipher;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+		System.out.println("uygulamaya hoş geldiniz");
+		int sayi=scanner.nextInt();
+		do {
+            System.out.print("Bir sayı girin: ");
+            sayi = scanner.nextInt();
+            
+            if (sayi % 2 == 0) {
+                System.out.println("Girilen sayı çifttir.");
+            } else {
+                System.out.println("Girilen sayı tektir.");
+            }
+        } while (true);
+    }
+
+}	
