@@ -1,3 +1,19 @@
+
+package myclass;
+
+public class MyClass {
+
+	    public String name = "Beyza";
+	    public String surname = "Ayan";
+	    public int age = 22;
+	    public String university = "Bandirma";
+	    public String department = "Computer Engineering";
+	    public String hairColor = "Brown";
+	    
+	
+
+}
+
 public class MyClass {
         public int tarih=2004;
        public String isim="isil";
@@ -9,3 +25,4 @@ public class MyClass {
        public String bolum="mühendislik";
 
 }
+
