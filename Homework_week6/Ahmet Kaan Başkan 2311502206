@@ -1,0 +1,39 @@
+package week6;
+
+public class AhmetKaanBaskanMyClass {
+    public String name;
+    public String surname;
+    public int age;
+    public String uni;
+    public String major;
+    public String hairColor;
+    public float height;
+    public boolean isBeard;
+    public boolean isMoustache;
+    public String hobby;
+
+    public static void main(String[] args) {
+        AhmetKaanBaskanMyClass kaan = new AhmetKaanBaskanMyClass();
+
+        kaan.name = "ahmet kaan";
+        kaan.surname = "BASKAN";
+        kaan.age = 2024 - 2004;
+        kaan.uni = "Bandirma 17 Eylül Üniversite";
+        kaan.major = "bilgisayar mühendisliği";
+        kaan.hairColor = "siyah";
+        kaan.height = 1.89F;
+        kaan.isBeard = true;
+        kaan.isMoustache = true;
+        kaan.hobby = "kod yazmak";
+
+        System.out.println("isim: " + kaan.name);
+        System.out.println("soy isim: " + kaan.surname);
+        System.out.println("yaş: " + kaan.age);
+        System.out.println("üni/bölüm: " + kaan.uni + "/" + kaan.major);
+        System.out.println("saç rengi: " + kaan.hairColor);
+        System.out.println("boy: " + kaan.height);
+        System.out.println("bıyık: " + kaan.isMoustache);
+        System.out.println("sakal: " + kaan.isBeard);
+        System.out.println("hobisi: " + kaan.hobby);
+    }
+}
