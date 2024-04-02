@@ -1,0 +1,22 @@
+public class MyClass {
+    public String name = "Ozlem";
+    public String surname = "Sen";
+    public double height = 1.65;
+    public int weight = 50;
+    public String favHobby = "listening music";
+    public String hairColor = "black";
+    public int birthYear = 2004;
+    
+}
+public class MyClassDrive {
+    public static void main(String[] args){
+        MyClass info = new MyClass();
+        System.out.println(info.name);
+        System.out.println(info.surname);
+        System.out.println(info.height);
+        System.out.println(info.weight);
+        System.out.println(info.favHobby);
+        System.out.println(info.hairColor);
+        System.out.println(info.birthYear);
+    }
+}
