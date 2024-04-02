@@ -1,0 +1,33 @@
+
+//kadir emir yücel
+genel sınıf KadirEmirYucelMyClass {
+    genel Dize adı;
+    genel Dize soyadı;
+    kamu int yaşı;
+    public String uni;
+    public String major;
+    halka açık Dize saçRengi;
+    halka açık şamandıra yüksekliği;
+    halka açık Yaylı hobisi;
+
+    public static void main(String[] args) {
+    KadirEmirYucelMyClass kadir = new KadirEmirYucelMyClass();
+
+       kadir.name = "Kadir Emir";
+        kadir.soyadı = "Yücel";
+        kadir.yaş = 2024 - 2005;
+       kadir.uni = "Bandırma 17 Eylül Üniversitesi";
+       kadir.major = "bilgisayar mühendisliği";
+        kadir.hairColor = "siyah";
+      kadir.yükseklik = 1,78F;
+        kadir.hobby = "kod yaz";
+
+        System.out.println("isim: " +kadir.name);
+        System.out.println("soya adı: " +kadir.soyadı);
+        System.out.println("yaş: " + kadir.age);
+        System.out.println("üni/bölüm: " +kadir.uni + " " + kaan.major);
+        System.out.println("saç rengi: " + kadir.hairColor);
+        System.out.println("erkek çocuk: " +kadir.yükseklik);
+        System.out.println("hobisi: " +kadir.hobi);
+    }
+}
