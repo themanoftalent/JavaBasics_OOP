@@ -1,0 +1,26 @@
+public static void main(String[] args) {
+		Scanner not = new Scanner(System.in);
+		int yas;
+		System.out.println("Yaş giriniz: ");
+		System.out.print("yaş :");
+		yas = not.nextInt();
+		
+		switch(yas) {
+		case 0:
+			System.out.println("yeni dogdun");
+			break;
+		case 1:
+			System.out.println("1 yaşındasın");
+			break;
+		case 10:
+			System.out.println("okula basladin");
+			break;
+		case 20:
+		System.out.println("universiteye basladın");
+		break;
+		}
+	
+		
+		
+		
+	}

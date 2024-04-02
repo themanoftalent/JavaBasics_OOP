@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
 public class NotOrtalamasi {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int not1, not2, not3, not4, not5;
 
         System.out.println("Lütfen 5 notu girin:");
@@ -12,23 +14,15 @@ public class NotOrtalamasi {
         not4 = scanner.nextInt();
         not5 = scanner.nextInt();
 
-       
-        int ortalama = (not1 + not2 + not3 + not4 + not5) / 5;
+        // Calculate average as double for decimal precision
+        double ortalama = (double) (not1 + not2 + not3 + not4 + not5) / 5;
 
-        
         System.out.println("Girilen notların ortalaması: " + ortalama);
 
-        
-        switch (ortalama >= 50 ? 1 : 0) {
-            case 1:
-                System.out.println("Geçti");
-                break;
-            default:
-                System.out.println("Kaldı");
-                break;
-        }
+        // Use a ternary operator for concise pass/fail determination
+        String durum = ortalama >= 50 ? "Geçti" : "Kaldı";
+        System.out.println("Durum: " + durum);
 
-        scanner.close();
+        scanner.close(); // Close the scanner to avoid resource leaks
     }
 }
-

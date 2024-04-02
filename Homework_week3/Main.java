@@ -1,18 +1,20 @@
-import java.util.Scanner;
 
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-
-    static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println("please enter your name:");
-        String name=input.next();
-        System.out.println("please enter your surname");
-        String surname=input.next();
 
-        System.out.println("your name is:"+name+"your surname is :"+surname);
-
-
+        int sayi1 = 40;
+        int sayi2 = 20;
+        int sonuc = sayi1 + sayi2;
+        System.out.println("toplama sonuc=" + sonuc);
+        int sonuc2 = sayi1 * sayi2;
+        System.out.println("carpma sonuc=" + sonuc2);
+        int sonuc3 = sayi1 / sayi2;
+        System.out.println("bölme sonuc=" + sonuc3);
+        int sonuc4 = sayi1 - sayi2;
+        System.out.println("cikarma sonuc=" + sonuc4);
     }
-
 }
+
+

@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class Girilensayıyıgeriyedoğruyaz {
+public class Girilensayıyıgeriyedoğruyazdırma {
     public static void main(String[]args){
         Scanner hafıza=new Scanner(System.in);
-        int i=hafıza.nextInt();
+        int i;
         do {
-            System.out.println("Sayı değeri giriniz.");
+            System.out.println("SAYI GİRİNİZ");
             i=hafıza.nextInt();
-            if(i<100){
-                System.out.println("Daha büyük bir değer giriniz.");
+            if (i<100){
+                System.out.println("DAHA BÜYÜK DEĞERLİ");
             }
         }
         while (i<100);
-        for (int k=i; i>0; i--)
+        for (int k=i;i>0;i--)
             System.out.println(i);
     }
 }

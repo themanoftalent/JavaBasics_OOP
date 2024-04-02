@@ -1,0 +1,40 @@
+package zehre;
+import java.util.Scanner; 
+
+public class Zehre {
+	 public static void main(String[] args) {
+        
+	 
+	        Scanner scan = new Scanner(System.in);
+	        System.out.println("Yaş giriniz:");
+	        int yas = scan.nextInt();
+	        
+	        switch(yas) {
+	        case 0:
+	        	System.out.println("Yeni doğdun");
+	        break;
+	        
+	        case 1:
+	        	System.out.println("Bir yaşındasın");
+	        break;
+	        
+	        case 5:
+	        	System.out.println("5 yaşındasın");
+	        	  break;
+	        case 10:
+	        	System.out.println("Okula başladn");
+	        
+	        	  break;
+	        case 15:
+	        	System.out.println("Liselisin");
+	        	  break;
+	        case 20:
+	        	System.out.println("Üniversiteye başladın");
+	        	  break;
+	        	  default:
+	        		  System.out.println("Yaşlısın");
+	        		  break;
+	        }
+	   
+	 }
+}

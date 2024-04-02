@@ -1,0 +1,30 @@
+A)    HELLO WORLD ÖDEVİ
+public class Main {
+    public static void main(String[] args) 
+{    
+ System.out.println("Hello World");
+}
+}
+
+
+
+
+B) OMLLET YAPMA ALGORİTMASI
+1.adım: Mutfağa git
+2.adım: Dolabı aç
+3.adım: Yumurtaları al
+4.adım: Yağı al
+5.adım: Dolabı kapat
+6.adım: Ocağı aç
+7.adım: Tavayı ocağa koy
+8.adım: Yağı tavaya dök
+9.adım: Yağın kızmasını bekle
+10.adım: Yumurtayı tavaya kır
+11.adım: Yumurtanın kızarmasını bekle
+12.adım: Tavayı ocaktan al
+13.adım: Dolabı aç
+14.adım: Dolaptan servis tabağını ve çatalı al
+15.adım: Yemeği tavadan alıp servis tabağına yerleştir
+16.adım: Servis tabağını masaya koy
+17.adım: Afiyetle ye
+

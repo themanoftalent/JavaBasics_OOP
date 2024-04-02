@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Notlar {
+
+    public static void main(String[] args) {
+        Scanner not= new Scanner(System.in);
+        System.out.println("Not1 girin:");
+        int not1 =  not.nextInt();
+        System.out.println("Not2 girin:");
+        int not2 =  not.nextInt();
+        System.out.println("Not3 girin:");
+        int not3 =  not.nextInt();
+        System.out.println("Not4 girin:");
+        int not4 =  not.nextInt();
+        System.out.println("Not5 girin:");
+        int not5 =  not.nextInt();
+        float gpa = (not1+not2+not3+not4+not5)/5f;
+        int deger;
+
+        if(gpa > 50) {
+            deger = 1;
+        }
+        else {
+            deger = 2;
+        }
+        switch(deger){
+            case 1:
+                System.out.println("Geçti");
+                break;
+            case 2:
+                System.out.println("Kaldı");
+                break;
+        }
+    }
+}

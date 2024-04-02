@@ -1,0 +1,19 @@
+public class VarMoreExamples {
+    public int number =7;
+    public double number2=7.1;
+    public char karakter='B';
+    public String kelime="kelime";
+
+    public static void main(String[] args) {
+
+    }
+}
+public class VarMoreExDrive {
+    public static void main(String[] args) {
+        VarMoreExamples example=new VarMoreExamples();
+        System.out.println(example.number);
+        System.out.println(example.number2);
+        System.out.println(example.karakter);
+        System.out.println(example.kelime);
+    }
+}
