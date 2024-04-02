@@ -1,0 +1,35 @@
+public class sınıf {
+    public String isim = "şebnem";
+    public String soyisim = "aydın";
+    public int simdikiYil;
+    public int dogumyil;
+    public String universite = "Bandırma Onyedi Eylül Üniversitesi";
+    public String bolum  = "Bilgisayar Mühendisliği";
+    public String renk = "Siyah";
+    public double boy = 1.60;
+    public String hobi = "müzik dinlemek";
+    public int yasHesaplama(int simdikiYil, int dogumYil) {
+        int yas = simdikiYil-dogumYil;
+        return yas;
+    }
+}
+
+public class sınıfDrive
+ {
+    public static void main(String[] args) {
+       sınıf cv= new sınıf();
+        System.out.println("Ad: " + cv.isim);
+        System.out.println("Soyad: " + cv.soyisim);
+        System.out.println("Üniversite: " + cv.universite);
+        System.out.println("Bölüm: " + cv.bolum);
+        System.out.println("Renk: " + cv.renk);
+        System.out.println("Boy=" + cv.boy);
+        System.out.println("Hobi= " + cv.hobi);
+        System.out.println("Yaş: " + cv.yasHesaplama(2024,2002));
+
+
+}
+}
+
+
+
