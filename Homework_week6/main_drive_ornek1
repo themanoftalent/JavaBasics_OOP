@@ -1,0 +1,74 @@
+//Fatih Selim ADALI 2311502248 
+
+
+//main
+package somecode;
+
+public class Somecode {
+
+	
+	
+	
+public String isim;
+public String soyisim;
+public int yaş;
+public String dogumtarihi;
+public String buguntarihi;
+public String uni;
+public String bolum;
+public String sacrengi;
+public double boy;
+public boolean bıyık;
+public boolean sakal;
+public String hobby;
+
+
+
+
+}
+
+
+
+//drive
+
+package somecode;
+
+public class Fatihselim {
+
+	public static void main(String[] args) {
+	
+		Somecode k = new Somecode();
+		
+		
+		 
+    k.isim = "Fatih Selim";
+    k.soyisim = "Adali";
+    k.yaş = 19;
+		k.dogumtarihi ="25.03.2005";
+		k.buguntarihi ="1.04.2024";
+		k.uni = "17eyluluni.";
+		k.bolum = "bilgisayar_mühendisliği";
+		k.sacrengi = "siyah";
+		k.boy = 1.86;
+		k.bıyık = false;
+		k.sakal = false;
+		k.hobby = "electronic";
+
+		
+		
+		
+		System.out.println(k.isim);		
+		System.out.println(k.soyisim);
+		System.out.println(k.yaş);		
+		System.out.println(k.dogumtarihi);		
+		System.out.println(k.buguntarihi);
+		System.out.println(k.uni);	
+		System.out.println(k.sacrengi);		
+		System.out.println(k.boy);
+		System.out.println(k.bıyık);
+		System.out.println(k.sakal);
+		System.out.println(k.hobby);
+	}
+
+}
+

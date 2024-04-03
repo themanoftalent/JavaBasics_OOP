@@ -1,0 +1,27 @@
+package javamedhod;
+import java.net.SocketTimeoutException;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import java.util.function.IntToDoubleFunction;
+
+import javax.crypto.Cipher;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+		System.out.println("faktöriyel hesaplanacak sayıyı giriniz");
+		int faktoryel=1;
+		int sayi=scanner.nextInt();
+		for(int i=1;i<=sayi;i++) {
+		faktoryel*=i;
+		}
+		System.out.println("girilen sayının faktöryel sonucu :" +faktoryel);
+    }
+
+}	

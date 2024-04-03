@@ -1,0 +1,31 @@
+
+public class Melih {
+
+ public String İsim="Melih";
+ public String Soyisim="Evecen";
+ public int Yas= 2024-2000;
+ public String Bölüm="Bilgisayar Mühendisliği";
+ public String Üniversite="Bandırma 17 Eylül Üniversitesi";
+ public String SaçRengi="Kumral";
+ public int Boy=175;
+ public double Kİlo=78.8;
+ public boolean Sakal =false;
+ public boolean Bıyık =false;
+ public String Hobby="Football";
+
+}
+
+
+
+
+public class MelihDrive {
+    public static void main(String[] args) {
+        Melih bilgiler =new Melih();
+        System.out.println("İsim:" + " " + bilgiler.İsim);
+
+
+    }
+}
+
+
+//Melih Evecen
