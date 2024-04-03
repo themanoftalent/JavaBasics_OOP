@@ -1,31 +1,27 @@
- main
-// Arda Göktaş 2311502241
+// Ahmet Talha Bodur 2311502242
+
 public class MyClassDrive {
-    public static void main(String[] args) {
-        MyClass info = new MyClass();
-        System.out.println(info.name);
-        System.out.println(info.surname);
-        System.out.println(info.age);
-        System.out.println(info.department);
-        System.out.println(info.beard);
-        System.out.println(info.height);
-        System.out.println(info.mustache);
-        System.out.println(info.hobby);
-        System.out.println(info.university);
+    public static void main (String[] args){
+        MyCLass bodur = new MyCLass();
+
+        System.out.println("Your name :"+bodur.name);
+
+        System.out.println("Your surname :"+bodur.surname);
+
+        System.out.println("Your age :"+bodur.age);
+
+        System.out.println("Your department :"+bodur.department);
+
+        System.out.println("Have mustache :"+bodur.moustache);
+
+        System.out.println("Have beard :"+bodur.beard);
+
+        System.out.println("Your height :"+bodur.height);
+
+        System.out.println("Your weight :"+bodur.weight);
+
+        System.out.println("Your hobby :"+bodur.hobby);
+
+
     }
 }
-public class Myclassdrive {
-    public static void main(String[] args) {
-        Myclass call = new Myclass();
-        System.out.println(call.isim);
-        System.out.println(call.soyisim);
-        System.out.println(call.yas);
-        System.out.println(call.uni);
-        System.out.println(call.boy);
-        System.out.println(call.saç);
-        System.out.println(call.bıyık);
-        System.out.println(call.sakal);
-        System.out.println(call.hobi);
-    }
-}
-main
