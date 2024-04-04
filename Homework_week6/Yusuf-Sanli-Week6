@@ -1,0 +1,42 @@
+package week6;
+public class YusufŞanliMyClass {
+		public String isim;
+		public String soyisim;
+		public int yas;
+		public int kilo;
+		public double boy;
+		public String sacrengi;
+		public boolean biyik;
+		public boolean sakal;
+		public String uni;
+		public  String bolum;
+		public String hobi;
+		
+public static void main(String[] args){	
+		YusufŞanliMyClass my=new YusufŞanliMyClass();	
+		my.isim="Yusuf";
+		my.soyisim="Şanlı";
+		my.yas=20;
+		my.kilo=80;
+		my.boy=1.81;
+		my.sacrengi="siyah";
+		my.sakal=true;
+		my.biyik=true;
+		my.uni="BANÜ";
+		my.bolum="Bilgisayar Mühendisliği";
+		my.hobi="masa tenisi ve spor";		
+		System.out.println("*******************************");
+		System.out.println("İsim = "+my.isim);	
+		System.out.println("Soyisim = "+my.soyisim  );				
+		System.out.println("Yaş = "+my.yas);
+		System.out.println("Kilo = "+my.kilo);
+		System.out.println("Boy = "+my.boy);
+		System.out.println("Saç rengi = "+my.sacrengi);
+		System.out.println("Bıyık = "+my.biyik);
+		System.out.println("Sakal = "+my.sakal);
+		System.out.println("Üniversite = "+my.uni);
+		System.out.println("Bölüm = "+my.bolum);
+		System.out.println("Hobiler = "+my.hobi);
+		System.out.println("********************************");
+	}
+}
