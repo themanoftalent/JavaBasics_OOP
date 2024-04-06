@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args) {
+     System.out.println("isminizi giriniz");
+        String isim;
+        isim =input.next();
+        System.out.println("soy isminizi giriniz");
+        String soyisim;
+        soyisim=input.next();
+        if((isim.equals("efe"))&&(soyisim.equals("aygul")))
+        {
+            System.out.println("isim, soyisim dogru");
+        }
+        else
+        {
+            System.out.println("isim, soyisim yanlis");
+        }
+        System.out.println(isim +" " +soyisim);
+    }
+}

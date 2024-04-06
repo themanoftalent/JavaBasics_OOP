@@ -1,0 +1,19 @@
+public class MyClass {
+    public int sayi=3;
+    public double sayi2=3.5;
+    public char karakter='A';
+    public String kelime="kelime";
+
+    public static void main(String[] args) {
+
+    }
+}
+public class MyClassDrive {
+    public static void main(String[] args) {
+        MyClass ornek=new MyClass();
+        System.out.println(ornek.sayi);
+        System.out.println(ornek.sayi2);
+        System.out.println(ornek.karakter);
+        System.out.println(ornek.kelime);
+    }
+}

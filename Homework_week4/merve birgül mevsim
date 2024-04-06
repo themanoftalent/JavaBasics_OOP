@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir ay giriniz: ");
+        int ay = scanner.nextInt();
+
+        String mevsim;
+
+        switch (ay) {
+            case 12:
+            case 1:
+            case 2:
+                mevsim = "Kis";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                mevsim = "İlkbahar";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                mevsim = "Yaz";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                mevsim = "Sonbahar";
+                break;
+            default:
+                mevsim = "hatali ay!";
+                break;
+        }
+
+        System.out.println("Girdiğiniz ay " + mevsim + " mevsimine aittir.");
+    }
+}

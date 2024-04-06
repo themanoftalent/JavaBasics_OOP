@@ -1,0 +1,19 @@
+Mustafa Saydan 
+import java.util.Scanner;
+
+public class faktöriyelAl{
+    public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);
+        System.out.println("Faktöriyelini hesaplamak istediğiniz sayıyı girin: ");
+        int sayi = scanner.nextInt();
+        faktöriyel= 1;
+        if (sayi == 0 || sayi == 1) {
+            System.out.println("Faktöriyel: " + faktöriyel);
+        } else {
+            for (int i = 2; i <= sayi; i++) {
+                faktöriyel *= i;
+            }
+    System.out.println("Faktöriyel: " + faktöriyel);
+        }
+    }
+}

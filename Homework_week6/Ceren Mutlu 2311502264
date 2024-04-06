@@ -1,0 +1,30 @@
+public class MyClass {
+public String isim = "Ceren";
+public String soyisim = "Mutlu";
+public int yas = 19; 
+public String uni = "Bandirma OnYedi Eylul Universitesi";
+public String sacrengi = "Kahverengi";
+public int boy = 160;
+public String biyik = "Yok";
+public String sakal = "Yok";
+public String hobi = "Kitapokumak";
+} 
+
+
+
+public class MyClassDrive {
+public static void main(String[] args) { 
+	MyClass me = new MyClass();
+	System.out.println(me.isim);
+	System.out.println(me.soyisim);
+	System.out.println(me.yas);
+	System.out.println(me.uni);
+	System.out.println(me.sacrengi);
+	System.out.println(me.boy);
+	System.out.println(me.biyik);
+	System.out.println(me.sakal);
+	System.out.println(me.hobi);
+}
+} 
+
+Ceren Mutlu 2311502264

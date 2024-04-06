@@ -1,0 +1,42 @@
+algoritma
+1.Kek tarifine bak.
+2.Kek için gerekli olan malzemeleri yerlerinden al ve masaya koy.
+3.Bir eline boş bir su bardağı ve öbür eline şeker al.
+4.Su bardağına taşana kadar şeker koy ve kalan şekeri bırak.
+5.Boş eline boş bir kap al.
+6.Su bardağının içini kaba dök.
+7.Kabı ve su bardağını kenara koy.
+8.Yumurtayı al, kır. 
+9.Boş eline kabı al ve yumurtanın içini kaba dök.
+10.Kabı ve yumurta çöpünü kenara koy.
+11.Bir eline 1 yemek kaşığı ve öbür eline zeytinyağı al ve içine zeytinyağı koy.
+12.Zeytinyağını bırak ve kabı eline al ve yemek kaşığının içindekini kabın içine dök.
+13.Yemek kaşığını bırak ve çırpıcı al.
+14.Kabın içindekilerini çırpıcıyla çırp.
+15.Çırpıcıyı ve kabı bırak ve bir eline bardak ve öbür eline süt al içine süt koy.
+16.Sütü bırak ve kabı al ve bardağın içini kaba boşalt.
+17.Bardağı ve kabı bırak.
+18.Kabartma tozu ve vanilin al paketini aç.
+19.Kabı boş eline al ve kabartma tozunu ve vanilini kabın içine boşalt.
+20.Paketleri at ve çırpıcıyı al kabın içindekileri karıştır.
+21.Çırpıcıyı bırak kek kalıbı al kabın içindekileri boşalt.
+22.Kabı kenara bırak.
+23.Kek kalıbıyla fırının yanına git.
+24.Fırının kapağını aç ve kek kalıbını içine koy.
+25.Fırının kapağını kapat.
+26.Fırının sıcaklık derecelerini ayarla ve çalıştır.
+27.Fırından ses gelince fırını kapat.
+28.Fırının kapağını aç ve kek kalıbını al .
+29.Fırının kapağını kapat.
+30.Eline tabak al ve kek kalıbının içindeki keki tabağa koy.
+31.Kek kalıbını kenara koy.
+
+
+
+
+
+public class Hello{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}

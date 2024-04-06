@@ -1,0 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+        int number1,number2,result;
+        number1=4;
+        number2=2;
+
+        int sum=number1+number2;
+        System.out.println("sum=\n");
+        int cikarma=number1-number2;
+        System.out.println("çikarma=\n");
+        int çarp=number1*number2;
+        System.out.println("çarp=\n");
+        int böl=number1/number2;
+        System.out.println("böl\n");
+
+
+
+    }
+
+}
