@@ -1,0 +1,7 @@
+//MEVLİYE BALANDI
+//"Merhaba Dünya!" yazan bir Java programı yazın. konsola
+public class Ödev1 {
+    public static void main(String[] args) {
+        System.out.println("hello world!!");
+    }
+}
