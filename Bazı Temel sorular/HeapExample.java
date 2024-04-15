@@ -1,3 +1,5 @@
+package hafta7;
+
 public class HeapExample {
     public static void main(String[] args) {
         int[] numbers = new int[5];
