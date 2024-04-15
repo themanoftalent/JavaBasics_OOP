@@ -1,0 +1,33 @@
+//Özge Sanal 2311502210
+public class VariableExamples {
+
+    public String name;
+    public String surname;
+    public int birthyear;
+    public int currentyear;
+    public String uni;
+    public String department;
+    public String haircolour;
+    public Boolean hasMuscles;
+    public double height;
+    public double weight;
+    public int age;
+}
+
+public class MainDrive {
+    public static void main(String[]args){
+        VariableExamples degisken = new VariableExamples();
+
+        degisken.name = "Ozge";
+        degisken.surname = "Sanal";
+        degisken.birthyear = 2004;
+        degisken.currentyear = 2024;
+        degisken.age = degisken.currentyear - degisken.birthyear;
+        degisken.uni = "Bandirma 17 Eylül Uni";
+        degisken.department = "Bilgisayar Mühendisliği";
+        degisken.haircolour = "kumral";
+        degisken.hasMuscles = true;
+        degisken.height = 1.58;
+        degisken.weight = 48.5;
+    }
+}

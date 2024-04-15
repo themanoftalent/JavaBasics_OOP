@@ -1,0 +1,36 @@
+public class MyClass {
+    public String isim = "Meltem";
+    public String soyisim = "Likoglu";
+    public int yas=2024-2004;
+    public String uni= "Bandirma on yedi eylul";
+    public String bolum= "Bilgisayar Muheendisligi";
+    public String sac= "sari";
+    public double boy=1.68;
+    public boolean biyik= false;
+    public boolean sakal= false;
+    public String hobby= "music";
+
+    public static void main(String[] args) {
+
+    }
+
+}
+//drive kismi assagida
+
+public class MyClassDrive {
+    public static void main(String[] args) {
+        MyClass degisken = new MyClass();
+        System.out.println("isim"+" " +degisken.isim);
+        System.out.println("soyisim"+" "+degisken.soyisim);
+        System.out.println("yas"+" "+degisken.yas);
+        System.out.println("uni"+" "+degisken.uni);
+        System.out.println("bolum"+" "+degisken.bolum);
+        System.out.println("sac"+" "+degisken.sac);
+        System.out.println("boy"+" "+degisken.boy);
+        System.out.println("biyik"+" "+degisken.biyik);
+        System.out.println("sakal"+" "+degisken.sakal);
+        System.out.println("hobby"+" "+degisken.hobby);
+
+    }
+
+}

@@ -1,0 +1,43 @@
+   //Gizemnur Gürses
+import java.time.LocalDate;
+
+public class feature {
+    public String isim= "gizem";
+
+    public String soyisim="gürses";
+
+    public int yas =21;
+
+    public String university="bandırma onyedi eylül";
+
+    public String bolum="bilgisayar mühendisliği";
+
+    public String sacrengi="kahverengi";
+
+    public int boy=160;
+
+    public String hobby="müzik dinlemek";
+
+    public String unvan="ogrenci";
+
+    public LocalDate birthDate=java.time.LocalDate.of(2003,03,11);
+
+}
+
+
+public class featuredrive {
+    public static void main(String[]args){
+        feature degisken= new feature();
+        System.out.println(degisken.isim);
+        System.out.println(degisken.soyisim);
+        System.out.println(degisken.yas);
+        System.out.println(degisken.university);
+        System.out.println(degisken.bolum);
+        System.out.println(degisken.sacrengi);
+        System.out.println(degisken.boy);
+        System.out.println(degisken.hobby);
+        System.out.println(degisken.birthDate);
+    }
+}
+
+
