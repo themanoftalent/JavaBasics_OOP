@@ -9,8 +9,9 @@ public class HeapExample {
             numbers[i] = i * 10;
         }
         System.out.println("Numbers dizisi içeriği");
-        System.out.println(numbers);
-
+    // hata :    System.out.println(numbers);
+  System.out.println(numbers[0]);
+		        //dizi olduğu için içeriğini belli etmemiz gerekiyor. numbers diye bir şey tanımlanmadı
     }
 
 }
