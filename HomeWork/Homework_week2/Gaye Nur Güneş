@@ -1,0 +1,94 @@
+4.Ödev-FaktöriyelHesaplama
+
+
+
+import java.util.Scanner;
+
+public class Faktoriyel {
+    public static void main(String[]args){
+
+        int sayi;
+        int fakt=1;
+        System.out.println("Sayi girin: ");
+        Scanner scan=new Scanner(System.in);
+        sayi=scan.nextInt();
+
+        for(int i=sayi; i>0; i--){
+            fakt=fakt*i;
+        }
+
+        System.out.println("Faktöriyeli: ");
+        System.out.println(fakt);
+
+
+    }
+}
+
+
+
+
+
+5.Ödev-FibonacciDizisi
+
+
+
+public class FibonacciDizisi {
+    public static void main(String[]args){
+
+        int a=1,b=1,c=1;
+
+        for(int i=1;i<10;i++){
+            System.out.println(a);
+            System.out.println(b);
+            c=a+b;
+            a=b+c;
+            b=a+c;
+            System.out.println(c);
+        }
+    }
+}
+
+
+
+
+
+
+6.Ödev-PalindromSayısı
+
+
+
+import java.util.Scanner;
+
+public class PalindromSayi {
+    public static void main(String[]args){
+
+        int sayi;
+        System.out.println("Sayi girin: ");
+        Scanner scan = new Scanner(System.in);
+        sayi = scan.nextInt();
+
+        int number=sayi;
+        int basamakSayisi=0;
+        int sonuc=0;
+
+        while(number>0){
+            number=number/10;
+            basamakSayisi++;
+        }
+
+        int num=sayi;
+        int num2=sayi;
+        for(int i=basamakSayisi-1;i>=0;i--){
+            sonuc=(sonuc*10)+(num%10);
+            num/=10;
+        }
+        if(sonuc==sayi){
+            System.out.println("Palindromdur.");
+        }
+        else{
+            System.out.println("Palindrom değil.");
+        }
+
+    }
+}
+
