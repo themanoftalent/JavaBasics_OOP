@@ -1,0 +1,61 @@
+//Alperen Aygun
+//7.ornek
+import java.util.Scanner ;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz");
+        int sayi = scanner.nextInt();
+        int a = sayi ;
+        int r = 0 ;
+        for (a = sayi  ; a > 0 ; r ++){
+            a /= 10 ;
+
+        }
+        int x = 0 ;
+        for (int  b =r ;b >= 0 ; b --  ){
+
+        x += sayi % 10 ;
+        sayi /= 10 ;
+
+     }
+        System.out.println(x);
+        
+    }
+}
+
+//8.ornek
+import java.util.Scanner ;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz");
+        int sayi = scanner.nextInt();
+
+       for ( int a = 1; a <= 9 ; a ++){
+           System.out.println(sayi +" * " +a+" = "+a * sayi );
+       }
+    }
+}
+//9.ornek
+import java.util.Scanner ;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz");
+        int sayi = scanner.nextInt();
+
+       for ( int a = 2; a <= sayi/2 ; a ++){
+           int x = sayi % a;
+           if (x == 0){
+               System.out.println(sayi + " bir asal sayi degildir");
+               break ;
+           }
+
+           }
+        System.out.println(sayi + " bir asal sayidir");
+       }
+    }
