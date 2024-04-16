@@ -1,0 +1,58 @@
+//7. örnek rakamların toplamı
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        int num;
+        System.out.print("sayi giriniz:");
+        num=oku.nextInt();
+        int ind=num;
+        int sonuc=0;
+        while(ind>0){
+            sonuc+=ind%10;
+            ind/=10;
+        }
+        System.out.println("girdigin sayinin rakamları toplami  "+sonuc);
+
+    }
+}
+//8. örnek çarpım tablosu
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        int num;
+        System.out.print("sayi giriniz:");
+        num=oku.nextInt();
+        int sonuc=0;
+        for(int i=1;i<=9;i++){
+            sonuc=num*i;
+            System.out.printf("%d * %d = %d ",num,i,sonuc);
+            System.out.println();
+        }
+
+    }
+}
+
+//9. örnek asal sayı denetleyici
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        int num;
+        System.out.print("sayi giriniz:");
+        num=oku.nextInt();
+        for(int i=2;i<=num;i++){
+            if(num==2){
+                System.out.println("girdigin sayi asal");
+                break;
+            }
+            else if(num%i==0){
+                System.out.println("girdigin sayi asal degil");
+                break;
+            }
+            System.out.println("girdigin sayi asal");
+        }
+
+    }
+}
