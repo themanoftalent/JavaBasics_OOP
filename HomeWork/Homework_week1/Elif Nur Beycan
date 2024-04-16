@@ -1,0 +1,52 @@
+//1. örnek
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("hello World");
+    }
+}
+
+//2. örnek basit hesap makinesi
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku =new Scanner(System.in);
+        int num1,num2;
+        double sonuc=0;
+        String islem;
+        System.out.printf("1. sayiyi girin:");
+        num1=oku.nextInt();
+        System.out.printf("yapılacak islemi girin:");
+        islem=oku.next();
+        System.out.printf("2. sayiyi girin:");
+        num2=oku.nextInt();
+
+        switch (islem){
+            case "+": sonuc=num1+num2; System.out.println(sonuc); break;
+            case "-": sonuc=num1-num2; System.out.println(sonuc); break;
+            case "*": sonuc=num1*num2; System.out.println(sonuc); break;
+            case "/": sonuc=(float) num1/num2; System.out.println(sonuc); break;
+            default:
+                System.out.printf("hatalı islem girdiniz."); break;
+        }
+
+    }
+}
+//3. ödev
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku = new Scanner(System.in);
+        System.out.print("bir sayi giriniz:");
+        int num=oku.nextInt();
+        if(num%2==0){
+            System.out.println("girdigin sayi cift sayi");
+        }
+        else {
+            System.out.println("girdigi sayi tek sayi");
+        }
+
+    }
+}
