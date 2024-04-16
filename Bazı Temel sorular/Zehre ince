@@ -1,0 +1,12 @@
+// Zehre İnce 2311502231
+public class MultiThread {
+    public static void main(String[]args){
+
+        //Yeni bir thread(iş parçacığı)
+        Thread is_parcacigi = new Thread(() -> {
+            System.out.println("Hello Thread");
+
+        });
+        is_parcacigi.start();
+    }
+}
