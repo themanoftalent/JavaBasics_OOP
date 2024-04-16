@@ -1,0 +1,35 @@
+import java.time.LocalDate;
+public class MyClass {
+    public String isim="Merve";
+    public String SoyAd="Birgül";
+    public LocalDate dogumTarihi;
+    public String Universite="Bandırma Onyedi Eylül Üniversitesi";
+    public String Bolum="Bilgisayar Mühendisliği";
+    public String SacRengi ="Kahverengi";
+    public double boy= 1.59;
+    public double kilo=56;
+    public String hobby="kitap okumak";
+    public boolean biyik=false;
+    public boolean sakal=false;
+
+
+
+}
+public class DriveMyClass {
+    public static void main(String[] args) {
+        MyClass bilgi= new MyClass();
+
+
+        bilgi.dogumTarihi= java.time.LocalDate.of(2004,10,6);
+        System.out.println(bilgi.isim+ " "+bilgi.SoyAd);
+        System.out.println(bilgi.dogumTarihi);
+        System.out.println("okul="+bilgi.Universite);
+        System.out.println("Bolum="+bilgi.Bolum);
+        System.out.println("boy="+bilgi.boy+" "+ "kilo="+bilgi.kilo);
+        System.out.println("bıyık="+bilgi.biyik+" "+ "sakal="+bilgi.sakal);
+        System.out.println("Sac rengi="+bilgi.SacRengi);
+        System.out.println("hobiler="+bilgi.hobby);
+
+
+    }
+}

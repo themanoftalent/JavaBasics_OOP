@@ -1,0 +1,9 @@
+public class Main{
+        public static void main(String[]args){
+            //yeni bir thread(iş parçacığı)
+            Thread is_parcacıgı = new Thread(); {
+                System.out.println("hello thread");
+            }
+            is_parcacıgı.start();
+        }
+    }
