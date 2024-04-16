@@ -1,0 +1,69 @@
+//10.Ödev-Bir Stringi Ters Çevirmek
+
+import java.util.Scanner;
+
+public class StringiTersCevir {
+    public static void main(String[]args){
+        String[] dizi=new String[100];
+
+        String kelime;
+        Scanner scan= new Scanner(System.in);
+        System.out.print("Kelimeyi girin: ");
+        kelime=scan.nextLine();
+
+        for(int i=0;i<kelime.length();i++){
+            String harf=kelime.substring(i,i+1);
+            dizi[i]=harf;
+        }
+
+        for(int i=1;i<=kelime.length();i++){
+            System.out.print(dizi[kelime.length()-i]);
+        }
+    }
+}
+
+
+
+//11.Ödev-Dizi Toplamı ve Ortalaması
+
+public class DiziToplami {
+    public static void main(String[]args){
+        int[] dizi={10,12,14,16,18};
+        int toplam=0;
+        float ortalama;
+        for(int i=0;i<dizi.length;i++){
+            toplam=toplam+dizi[i];
+        }
+        ortalama=(float)toplam/dizi.length;
+        System.out.println("Toplam = " + toplam);
+        System.out.println("Ortalama = " + ortalama);
+    }
+}
+
+
+
+//12.Ödev-Dizi Sıralama
+
+public class DiziSiralama {
+    public static void main(String[]args){
+        int[] dizi = {16,12,18,10,14};
+
+        int temp=0;
+
+        for(int i=0;i<4;i++){
+            for(int j=0;j<4-i;j++){
+                if(dizi[j]<dizi[j+1]){
+                    temp = dizi[j];
+                    dizi[j] = dizi[j+1];
+                    dizi[j+1] = temp;
+
+                }
+
+            }
+
+        }
+        for(int x=0;x<5;x++){
+        System.out.printf("dizi[%d] = %d\n",x,dizi[x]);}
+
+    }
+}

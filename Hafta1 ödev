@@ -1,0 +1,66 @@
+public class MyClass {
+    public static void main(String[] args) {
+        System.out.println("Merhaba Dünya");
+    }
+
+}
+//Merhaba Dünya yazan program
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        String islem;
+        System.out.println("1.sayiyi giriniz:");
+        int sayi1 = oku.nextInt();
+        System.out.println("2.sayiyi giriniz:");
+        int sayi2 =oku.nextInt();
+        System.out.println("Yapacaginiz islemi giriniz:");
+        islem = oku.next();
+        int toplama=0;
+        int cikartma=0;
+        int carpma=0;
+        double bolme=0;
+        toplama=sayi1 +sayi2;
+        carpma=sayi1*sayi2;
+        cikartma=sayi1-sayi2;
+        bolme=sayi1/sayi2;
+        switch (islem){
+            case "+":
+                System.out.println(toplama); break;
+            case "-":
+                System.out.println(cikartma); break;
+            case "*":
+                System.out.println(carpma); break;
+            case "/":
+                System.out.println(bolme); break;
+            default:
+                System.out.println("hatali islem girdiniz"); break;1
+        }
+
+
+
+    }
+
+}
+//Basit Hesap Makinesi
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+        System.out.println("Bir sayi giriniz:");
+        Scanner oku=new Scanner(System.in);
+        int sayi=oku.nextInt();
+        if(sayi%2==0){
+            System.out.println("sayi cifttir");
+        }
+        else{
+            System.out.println("sayi tektir");
+        }
+
+    }
+
+}
+//Sayının çift mi tek mi olduğunu belirleyen algoritma
