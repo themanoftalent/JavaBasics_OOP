@@ -1,20 +1,67 @@
-import java.util.Scanner;
+//10.örnek bir stringi ters çevirmek
+import java.util.Scanner ;
+
 public class Main {
     public static void main(String[] args) {
-        Scanner oku= new Scanner(System.in);
-        System.out.print("sayi giriniz:");
-        int a=oku.nextInt();
-        if(a>=100){
-            for(int i=a;i>=0;i--){
-                System.out.println(i);
+        Scanner oku = new Scanner(System.in);
+        String duz=oku.nextLine();
+        int uzunluk=duz.length();
+        String ters ="";
 
-            }
+        for(int i=uzunluk-1;i>=0;i--){
+            ters+=duz.charAt(i);
+            
         }
-        else
-        {
-            System.out.println("hatali giris");
+        
+        for(int i=0;i<uzunluk;i++){
+            System.out.print(ters.charAt(i));
         }
 
 
+        }
+        }
+
+//11. örnek dizi toplamı ve ortalaması
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+
+        int [] dizi = new int [] {1,3,12,4,5,6};
+        int toplam=0;
+        double ort=0;
+        for(int i=0;i<=dizi.length-1;i++){
+            toplam+=dizi[i];
+        }
+        ort=(float)toplam/ (dizi.length);
+        System.out.println("girilen sayilarin toplami"+toplam);
+        System.out.println("girilen sayilarin ortalamasi"+ort);
+        
+        }
     }
-}
+
+//12. örnek dizi sıralama
+public class Main {
+    public static void main(String[] args) {
+        
+        int [] dizi= new int[] {6,7,2,5,3,1,9};
+        int [] sirali= new int[7];
+        
+        for(int j=0;j< sirali.length;j++){
+            int eb=Integer.MIN_VALUE;
+            int ind=-1;
+            for(int i=0;i< dizi.length;i++){
+                if(dizi[i]>eb){
+                    eb=dizi[i];
+                    ind=i;
+                }
+        }
+            sirali[j]=eb;
+            dizi[ind]= 0;
+        }
+        for(int k=0;k< sirali.length;k++){
+            System.out.printf("%d ",sirali[k]);
+        }
+
+        }
+    }
