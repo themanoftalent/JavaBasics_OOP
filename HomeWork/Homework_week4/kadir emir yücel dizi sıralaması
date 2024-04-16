@@ -1,0 +1,38 @@
+package javamedhod;
+import java.security.DigestInputStream;
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+System.out.println("dizi için eleman sayısını giriniz");
+int eleman=scanner.nextInt();
+int []dizi=new int[eleman];
+int enbuyuk=0;
+for(int i=0;i<eleman;i++) {
+	System.out.println(i+".elemanı girin");
+	dizi[i]=scanner.nextInt();
+ 
+} 
+diziYerDeğiş(dizi);
+System.out.println("sıralanmış dizi");
+for(int i=0;i<eleman;i++) {
+	System.out.println(" "+dizi[i]);
+}
+	}  
+	public static void diziYerDeğiş(int[] dizi) {
+        int n = dizi.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (dizi[j] > dizi[j + 1]) {
+                 
+                    int temp = dizi[j];
+                    dizi[j] =dizi[j + 1];
+                    dizi[j + 1] = temp;
+                }
+            }
+        }
+    }
+}	
