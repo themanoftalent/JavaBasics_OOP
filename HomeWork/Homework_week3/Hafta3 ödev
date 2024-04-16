@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+       Scanner oku=new Scanner(System.in);
+        System.out.println("sayi giriniz:");
+        int sayi= oku.nextInt();
+        int rakamtop=0;
+        while(sayi>0){
+            rakamtop+=sayi%10;
+            sayi/=10;
+        }
+        System.out.println("girdigin sayinin rakamlari toplamı: "+rakamtop);
+
+    }
+}
+// Rakam toplamını veren kod 
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+       Scanner oku=new Scanner(System.in);
+        System.out.println("Bir sayi giriniz:");
+        int sayi=oku.nextInt();
+        for(int i=1 ;i<=9;i++){
+            int carpim=sayi*i;
+            System.out.println(sayi +"x" + i + "=" +carpim);
+        }
+
+    }
+}
+//Çarpım Tablosu
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+       Scanner oku=new Scanner(System.in);
+        System.out.println("Bir sayi giriniz:");
+        int sayi=oku.nextInt();
+        int ind=0;
+        for(int i=2;i<sayi;i++){
+            if(sayi%i==0){
+                System.out.println("girdigin sayi asal değil");
+                ind=1;
+                break;
+            }
+        }
+        if(ind==0){
+            System.out.println("girdigin sayi asal");
+        }
+
+    }
+}
+//S<ayının asal olup olmadığını belirten program
