@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        int sayi1=0, sayi2=1,temp;
+        int sayi3 = sayi1+sayi2;
+        System.out.println("sayi girin:");
+        temp = girdi_degeri.nextInt();
+
+        if(temp==1)
+            System.out.println(sayi1);
+        else {
+            System.out.print(sayi1 + " " + sayi2 + " ");
+            while (temp > 2) {
+                System.out.print(sayi3 + " ");
+                sayi1 = sayi2;
+                sayi2 = sayi3;
+                sayi3 = sayi1 + sayi2;
+                temp--;
+            }
+        }
+    }
+}
