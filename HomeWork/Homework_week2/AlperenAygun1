@@ -1,0 +1,65 @@
+//Alperen Aygun
+//4.ornek
+
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+    System.out.println("Bir sayi giriniz");
+    int sayi = scanner.nextInt();
+    int faktoriyel = 1 ;
+    for(int  i = sayi   ;i > 0 ; i --){
+                faktoriyel *= i ;
+
+    }
+    System.out.println("girilen sayinin faktoriyeli : " + faktoriyel);
+    }
+}
+//5.ornek
+public class Main {
+
+    public static void main(String[] args) {
+        int n = 10; //kacinci terime kadar hesaplayacagi 'n' e bagli
+
+        System.out.println("Fibonacci dizisi " + n + " terime kadar:");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+
+    public static int fibonacci(int n) {
+        if (n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+}
+//6.ornek
+public class Palindrome {
+    
+    public static void main(String[] args) {
+        String kelime = "kavak"; // Palindrom olup olmadigini kontrol etmek istediginiz kelimeyi buraya yazin.
+        
+        if (isPalindrome(kelime)) {
+            System.out.println(kelime + " palindrom bir kelimedir.");
+        } else {
+            System.out.println(kelime + " palindrom bir kelime degildir.");
+        }
+    }
+    
+    public static boolean isPalindrome(String kelime) {
+        int uzunluk = kelime.length();
+        
+        for (int i = 0; i < uzunluk / 2; i++) {
+            if (kelime.charAt(i) != kelime.charAt(uzunluk - 1 - i)) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+}
