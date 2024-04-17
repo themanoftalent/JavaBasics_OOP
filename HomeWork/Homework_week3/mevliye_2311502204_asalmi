@@ -1,0 +1,23 @@
+//MEVLİYE BALANDI
+//Belirli bir sayının asal mı yoksa bileşik mi olduğunu kontrol edin
+import java.util.Scanner;
+public class Ödev9 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("bir sayi girin: ");
+        int sayi = input.nextInt();
+        boolean Asallik = true;
+        for (int i = 2; i < sayi; i++) {
+            if (sayi % i == 0) {
+                Asallik = false;
+                break;
+            }
+        }
+ if(Asallik) {
+     System.out.println("asaldir..");
+ }
+ else {
+     System.out.println("asal degildir..");
+ }
+    }
+}
