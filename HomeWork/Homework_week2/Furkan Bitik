@@ -1,0 +1,76 @@
+4.Ödev
+import java.util.Scanner;
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Pozitif bir sayı giriniz: ");
+        int number = input.nextInt();
+
+        if (number < 0) {
+            System.out.println("Error: Lütfen pozitif bir sayı giriniz.");
+        } else {
+            int factorial = 1;
+            for (int i = 1; i <= number; ++i) {
+                factorial *= i;
+            }
+            System.out.println( number + " sayısının faktoriyeli" + " = " + factorial);
+        }
+    }
+}
+
+5.ödev
+import java.util.Scanner;
+
+public class FibonacciSequence {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Terim sayısını giriniz: ");
+        int n = input.nextInt();
+
+        int firstTerm = 0, secondTerm = 1;
+
+        System.out.print("Fibonacci Dizisi: ");
+
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(firstTerm + ", ");
+
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+    }
+}  
+6.ödev
+  import java.util.Scanner;
+
+public class PalindromeChecker {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Bir kelime giriniz: ");
+        String inputString = input.nextLine();
+
+        if (isPalindrome(inputString)) {
+            System.out.println("Bu kelime palindorm dur.");
+        } else {
+            System.out.println("Bu kelime palindrom değildir.");
+        }
+    }
+
+    public static boolean isPalindrome(String str) {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+}
