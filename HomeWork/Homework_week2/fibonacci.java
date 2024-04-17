@@ -1,19 +1,24 @@
-package Ödevler2.hafta;
-
 import java.util.Scanner;
-//2311502229 Ali Eren Hakut
 public class fibonacci {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("sayi giriniz: ");
-		int sayi1 = scanner.nextInt();
-		int[] fib = new int[sayi1];
-		fib[0] = 1;
-		fib[1] = 1;
-		for (int i = 2; i != sayi1; i++) {
-			fib[i] = fib[i - 1] + fib[i - 2];
-		}
-		System.out.println(fib[sayi1 - 1]);
-		scanner.close();
-	}
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Fibonacci dizisinin kaç terimine kadar oluşturulmasını istiyorsunuz? ");
+	        int n = scanner.nextInt();
+	        scanner.close();
+
+	        System.out.println("Fibonacci dizisi:");
+	        for (int i = 0; i < n; i++) {
+	            System.out.print(fibonacci(i) + " ");
+	        }
+	    }
+
+	    public static int fibonacci(int n) {
+	        if (n == 0)
+	            return 0;
+	        else if (n == 1)
+	            return 1;
+	        else
+	            return fibonacci(n - 1) + fibonacci(n - 2);
+	    }
+	
 }
