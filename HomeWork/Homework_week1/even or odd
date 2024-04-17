@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("Sayi giriniz:");
+        int sayi = girdi_degeri.nextInt();
+
+        if(sayi%2==0)
+            System.out.println("Sayi cifttir");
+        else
+            System.out.println("Sayi tektir.");
+  }
+}
