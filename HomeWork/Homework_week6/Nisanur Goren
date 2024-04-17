@@ -1,0 +1,15 @@
+//Nisanur GÖREN
+
+public class MyClass {
+        
+        public String isim="Nisanur";
+        public String soyisim="Goren";
+        public int boy=172;
+        public int tarih=2004;
+        public int yas=19;
+        public String hobby="Voleybol";
+        public String sacRenk="Kahverengi";
+        public String uni = "Bandirma";
+        public String bolum="Bilgisayar Muhendisligi";
+
+}

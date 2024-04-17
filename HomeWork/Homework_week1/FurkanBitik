@@ -1,0 +1,69 @@
+1.Ödev
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+2.Ödev
+import java.util.Scanner;
+
+public class BasicCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Birinci sayıyı giriniz: ");
+        double num1 = input.nextDouble();
+
+        System.out.print("İkinci sayıyı giriniz: ");
+        double num2 = input.nextDouble();
+
+        System.out.print("Yapacağınız işlem giriniz (+, -, *, /): ");
+        char operator = input.next().charAt(0);
+
+        double result;
+
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                if (num2 != 0) {
+                    result = num1 / num2;
+                } else {
+                    System.out.println("Error: 0 dışında bir sayı giriniz");
+                    return;
+                }
+                break;
+            default:
+                System.out.println("Error: Geçersiz operator");
+                return;
+        }
+
+        System.out.println("Sonuç: " + result);
+    }
+}  
+
+3.Ödev
+import java.util.Scanner;
+
+public class EvenOrOdd {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Bir sayı giriniz: ");
+        int num = input.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println(num + " Çift.");
+        } else {
+            System.out.println(num + " Tek.");
+        }
+    }
+}  

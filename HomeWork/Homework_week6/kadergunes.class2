@@ -1,0 +1,17 @@
+//kadergunes
+public class VariableExample {
+
+        public int number=10;
+        public double number2=3.15;
+        public char letter='C';
+        public boolean isProgFun=true;
+    }
+public class MainDrive {
+    public static void main(String[] args) {
+        VariableExample degisken=new VariableExample();
+        System.out.println(degisken.number);
+        System.out.println(degisken.number2);
+        System.out.println(degisken.letter);
+        System.out.println(degisken.isProgFun);
+    }
+}

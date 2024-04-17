@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int sayi;
+
+        System.out.println("Bir sayi girin : ");
+        sayi= input.nextInt();
+
+        if(sayi%2 == 0){
+            System.out.println("Girdiginiz sayi cift !");
+        }
+        else
+            System.out.println("Girdiginiz sayi tek !");
+    }
+}

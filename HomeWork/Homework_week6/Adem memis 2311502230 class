@@ -1,0 +1,36 @@
+    package code;
+    public class Example {
+
+        public static void main(String[] args)
+        {
+        Code a = new Code();
+        a.isim = "Adem";
+        a.soyisim = "Memis";
+        a.yas = 19;
+        a.dogumtarihi = "27.04.2005";
+        a.uni ="17 eylul universitesi";
+        a.buguntarihi ="1.04.2005";
+        a.bolum = "bilgisayar muhendisligi";
+        a.sacrengi ="Kahverengi";
+        a.boy =1.75;
+        a.bıyık = false;
+        a.sakal = false;
+        a.hobi ="oyun oynamak";
+
+
+
+            System.out.println(a.isim);
+            System.out.println(a.soyisim);
+            System.out.println(a.yas);
+            System.out.println(a.dogumtarihi);
+            System.out.println(a.uni);
+            System.out.println(a.buguntarihi);
+            System.out.println(a.bolum);
+            System.out.println(a.sacrengi);
+            System.out.println(a.boy);
+            System.out.println(a.bıyık);
+            System.out.println(a.sakal);
+            System.out.println(a.hobi);
+
+        }
+    }

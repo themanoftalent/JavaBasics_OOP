@@ -1,0 +1,35 @@
+public class VariableExamples {
+	
+	public String ad= "Ad: Eleanor";
+	public String soyad= "Soyad: Beez";
+	public int yas= 20;
+	public double boy=1.70;
+	public double kilo= 60;
+	public String universite= "Boğaziçi Üniversitesi";
+	public String bolum= "Tıp Fakültesi";
+	public String sac= "Kahverengi";
+	public boolean sakal= false;
+	public String hobi="Şarkı söylemek";		
+
+}
+
+
+public class MainDrive {
+	public static void main(String[] args) {
+
+		VariableExamples degisken= new VariableExamples();
+		
+		System.out.println(degisken.ad);
+		System.out.println(degisken.soyad);
+		System.out.println("Yaş: " +degisken.yas);
+		System.out.println("Boy: " +degisken.boy +" m");
+		System.out.println("Kilo: " +degisken.kilo);
+		System.out.println("Üniversite: " +degisken.universite);
+		System.out.println("Bölüm: " +degisken.bolum);
+		System.out.println("Saç rengi: " +degisken.sac);
+		System.out.println("Sakal: " +degisken.sakal);
+		System.out.println("Hobi: " +degisken.hobi);
+
+	}
+
+}

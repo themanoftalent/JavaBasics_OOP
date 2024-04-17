@@ -1,0 +1,32 @@
+public class   Bilgi {
+
+    public String isim = "Alperen";
+    public String soyIsim = "Aygun";
+    public int yas = 20 ;
+    public String unv = "ogrenci";
+    public String sac = "siyah";
+    public int boy = 179;
+    public boolean sakal = true ;
+    public boolean biyik = false ;
+    public String hobby = "muzik";
+    public int weight = 70 ;
+
+//drive kismi 
+
+public class BilgiTest {
+    public static void main(String[] args) {
+        Bilgi cagirma = new Bilgi();
+        System.out.print("isim : " + cagirma.isim + " ");
+        System.out.println("soyad : " +cagirma.soyIsim);
+        System.out.println("yas : "+cagirma.yas);
+        System.out.println("unvan : "+cagirma.unv);
+        System.out.println("boy :"+cagirma.boy);
+        System.out.println("kilo :"+cagirma.weight);
+        System.out.println("sac rengi :"+cagirma.sac);
+        System.out.println("sakal :"+cagirma.sakal);
+        System.out.println("biyik :"+cagirma.biyik);
+        System.out.println("hobi :"+cagirma.hobby);
+    }
+}
+
+//Alperen Aygun

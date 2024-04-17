@@ -1,0 +1,55 @@
+//4. örnek faktoriyel hesaplama
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
+        int num;
+        int sonuc=1;
+        Scanner oku =new Scanner(System.in);
+        System.out.print("faktoriyeli alınacak sayiyi girin:");
+        num=oku.nextInt();
+        for(int i=1;i<=num;i++){
+            sonuc*=i;
+        }
+        System.out.printf("girdigin sayinin faktoriyeli %d",sonuc);
+
+    }
+}
+//5. örnek belirli sayıda terime kadar fibonacci dizisini yazdırma
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> dizi=new ArrayList<>();
+        int a;
+        dizi.add(1);
+        dizi.add(1);
+        for(int i=0;i<=5;i++){
+            a= dizi.get(i)+ dizi.get(i+1);
+            dizi.add(a);
+        }
+        System.out.println(dizi);
+    }
+}
+//6. örnek palidrom kontrolü
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        int num;
+        System.out.print("sayi giriniz:");
+        num=oku.nextInt();
+        int ind=num;
+        int sonuc=0;
+        while(ind>0){
+            sonuc=(sonuc*10)+(ind%10);
+            ind/=10;
+        }
+        if(sonuc==num){
+            System.out.println("girdigin sayi palidrom");
+        }
+        else {
+            System.out.println("girdigin sayi palidrom degil");
+        }
+
+    }
+}

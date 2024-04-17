@@ -1,0 +1,60 @@
+7.Ödev
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Pozitif bir sayı giriniz: ");
+        int number = input.nextInt();
+
+        int sum = 0;
+        int originalNumber = number;
+
+        while (number > 0) {
+            int digit = number % 10;
+            sum += digit;
+            number /= 10;
+        }
+
+        System.out.println( originalNumber + " sayısının rakamlar toplamı " + " = " + sum);
+    }
+}
+
+8.Ödev
+import java.util.Scanner;
+
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Çarpım tablosunu görmek istediğiniz sayıyı giriniz: ");
+        int number = input.nextInt();
+
+        System.out.println( number + " sayısının çarpım tablosu "  + ":");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
+    }
+}  
+
+9.Ödev
+import java.util.Scanner;
+
+public class PrimeNumberChecker {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Sayı giriniz: ");
+        int number = sc.nextInt();
+        boolean asalmi = true;
+
+        for(int i = 2; i<number/2; i++){
+            if(number % i == 0){
+                asalmi = false;
+                break;
+            }
+        }
+        if(asalmi) System.out.println("Asal");
+        else System.out.println("asal değil.");
+    }
+}  

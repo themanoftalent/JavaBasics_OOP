@@ -1,0 +1,47 @@
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Hello, World!");
+    }
+}
+
+//basit hesap makinesi
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+        double sayi1,sayi2;
+        System.out.println("sayi1'i giriniz:");
+        sayi1= scan.nextDouble();
+        System.out.println("sayi2'yi giriniz:");
+        sayi2= scan.nextDouble();
+        double toplam=sayi1+sayi2;
+        System.out.println("toplam = " + toplam);
+        double cikarma=sayi1-sayi2;
+        System.out.println("cikarma = " + cikarma);
+        double carpim=sayi1*sayi2;
+        System.out.println("carpim = " + carpim);
+        double bolme =sayi1/sayi2;
+        System.out.println("bolme = " + bolme);
+
+ //sayi cift mi tek mi
+ 
+ import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+        int sayi;
+        System.out.println("sayiyi giriniz:");
+        sayi= scan.nextInt();
+        if(sayi%2==0){
+            System.out.println("sayi cifttir");
+        }
+        else {
+            System.out.println("sayi tektir.");
+        }
+
+    }
+}
+
+ 
