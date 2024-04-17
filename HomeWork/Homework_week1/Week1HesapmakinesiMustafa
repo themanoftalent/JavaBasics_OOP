@@ -28,14 +28,10 @@ public class BasitHesapMakinesi {
             case '/':
                 if(sayi2 != 0) {
                     sonuc = sayi1 / sayi2;
-                } else {
-                    System.out.println("Hata: Sıfıra bölme!");
-                    return;
-                }
-                break;
+                } 
             default:
                 System.out.println("Hata: Geçersiz işlem!");
-                return;
+                
         }
         
         System.out.println("Sonuç: " + sonuc);
