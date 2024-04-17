@@ -1,0 +1,20 @@
+//kader güneş
+//odev3->çift veya tek:kullanıcı tarafından girilen bir sayının çift mi yoksa tek mi olduğunu belirleyin.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("İşlem yapmak istediğiniz sayıyı giriniz:");
+        int a;
+        Scanner input = new Scanner(System.in);
+        a = input.nextInt();
+
+        if(a%2==0){
+            System.out.println("Girdiğiniz sayı çifttir.");
+        }
+        else{
+            System.out.println("Girdiğiniz sayı tektir.");
+        }
+
+
+    }
+}
