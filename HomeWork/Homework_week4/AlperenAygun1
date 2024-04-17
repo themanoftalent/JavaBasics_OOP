@@ -1,0 +1,47 @@
+//Alperen Aygun
+//ornek10
+
+//ornek11
+import java.util.Scanner ;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz");
+        int sayi = scanner.nextInt();
+        int [] dizi = new int[sayi];
+        int toplam = 0 ;
+        float ortalama = 0;
+        for(int i = 0 ; i <= sayi  ; i ++){
+            toplam += i ;
+        }
+        ortalama = toplam / (sayi + 1 );
+        System.out.println("dizi ortlamasi = "+ ortalama);
+        System.out.println("dizi elemanlari toplami ="+ toplam);
+       }
+    }
+
+
+ornek//12
+public class Main {
+    public static void main(String[] args) {
+        int[] dizi = new int[]{5,14,67,36,3,9,11};
+        int eb = 0;
+        int j = 0 ;
+        int x = 0 ;
+        for (int i = 0; i < dizi.length  ; i ++) {
+            for ( j = 1 ; j < dizi.length  ; j ++) {
+                if (dizi[j] > eb) {
+                    eb = dizi[j];
+                    x = j ;
+                }
+
+            }
+            eb  = 0 ;
+            System.out.println(dizi[x]);
+            dizi[x]= 0 ;
+        }
+
+
+    }
+}

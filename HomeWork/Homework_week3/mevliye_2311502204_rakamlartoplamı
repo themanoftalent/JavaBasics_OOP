@@ -1,0 +1,17 @@
+//MEVLİYE BALANDI
+//Pozitif bir tamsayıdaki rakamların toplamını hesaplayın.
+import java.util.Scanner;
+public class Ödev7 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.println("bir sayi girin:  ");
+        int sayi= input.nextInt();
+      int toplam=0;
+            while(sayi>0){
+                int temp= sayi%10;
+                toplam+=temp;
+                sayi/=10;
+            }
+        System.out.println("rakamlar toplami: " + toplam);
+        }
+    }
