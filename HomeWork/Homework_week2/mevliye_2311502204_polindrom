@@ -1,0 +1,25 @@
+//MEVLİYE BALANDI
+//Belirli bir dizenin bir palindrom olup olmadığını belir
+ import java.util.Scanner;
+public class Ödev6 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.println("bir sayi girin: ");
+        int sayi= input.nextInt();
+        int kalan;
+        int orijinal_sayi= sayi;
+        int ters_sayi=0;
+        while(sayi>0){
+            kalan= sayi%10;
+            ters_sayi= ters_sayi*10 + kalan;
+            sayi= sayi/10;
+        }
+        if(orijinal_sayi== ters_sayi){
+            System.out.println("girilen sayi polindrom sayidir..");
+        }
+else {
+            System.out.println("girilen sayi polindrom degildir..");
+        }
+
+    }
+}

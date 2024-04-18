@@ -1,0 +1,16 @@
+//MEVLİYE BALANDI
+//Döngüleri kullanarak bir sayının faktöriyelini hesaplayın
+import java.util.Scanner;
+public class Ödev4{
+    public static void main(String[] args) {
+        Scanner sayii= new Scanner(System.in);
+        System.out.println("bir sayi girin: ");
+        int sayi= sayii.nextInt();
+     int carpim=1;
+     for(int i=1;i<=sayi;i++){
+         carpim*=i;
+     }
+        System.out.println("girilen sayinin faktoriyeli: "+carpim);
+
+    }
+}

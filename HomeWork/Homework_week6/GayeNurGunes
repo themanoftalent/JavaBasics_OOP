@@ -1,0 +1,95 @@
+Gaye Nur Güneş
+
+//16.Ödev-Armstrong Sayısı
+
+import java.util.Scanner;
+
+public class ArmstrongSayisi {
+    public static void main(String[]args){
+        int sayi;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Sayı girin: ");
+        sayi = scan.nextInt();
+
+        int temp = sayi;
+        int basamakSay=0;
+
+        while(temp > 0){
+            temp = temp / 10;
+            basamakSay++;
+        }
+
+        int temp1 = sayi;
+        int toplam=0;
+        for(int i = 0; i < basamakSay; i++){
+            toplam += Math.pow((temp1%10),basamakSay);
+            temp1 = temp1 / 10;
+        }
+        if(toplam==sayi){
+            System.out.println("Armstrongdur..");
+        }
+        else{
+            System.out.println("Armstrong değildir..");
+        }
+    }
+}
+
+
+
+
+//17.Ödev-Dosya Okuma ve Yazma
+
+import java.util.Scanner;
+
+public class DosyaOkumaYazma {
+    public static void main(String[]args){
+        String[] dizi = {"kalem","kitap","defter","masa"};
+
+        String kelime;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Eklemek istediğiniz veriyi girin: ");
+        kelime = scan.nextLine();
+
+        int x;
+        Scanner scan1=new Scanner(System.in);
+        System.out.println("Yer değiştirmek istediğiniz eleman için dizideki yerini girin: ");
+        x = scan1.nextInt();
+
+        dizi[x] = kelime;
+
+        for(int i=0;i<4;i++){
+            System.out.println(dizi[i]);}
+    }
+}
+
+
+
+
+18.Ödev-İsitisna
+
+import java.util.Scanner;
+
+public class Istisna {
+    public static void main(String[]args){
+        System.out.println("Bölme işlemi üzerinden bir istisna gösterelim..\n");
+        System.out.print("Bölünen sayıyı giriniz: ");
+        int bolunen;
+        Scanner scan = new Scanner(System.in);
+        bolunen = scan.nextInt();
+
+        int bolen;
+        Scanner scan1 = new Scanner(System.in);
+        System.out.print("Bölen sayıyı giriniz: ");
+        bolen = scan1.nextInt();
+
+        int bolum = 1;
+
+        if(bolen==0){
+            System.out.println("0 a bölünme hatası!!");
+        }
+        else{
+            bolum = bolunen / bolen;
+            System.out.printf("%d / %d = %d",bolunen,bolen,bolum);
+        }
+    }
+}

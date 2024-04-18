@@ -1,0 +1,45 @@
+//kader güneş
+//kader güneş
+//odev2->Basit hesap makinesi:kullanıcı girişine dayalıolarak temel aritmetik işlemleri gerçekleştiren bir hesap makinesi oluşturun.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double n1,n2,select;
+        System.out.println("İşlem yapmak istediğiniz ilk sayıyı giriniz:");
+        Scanner input=new Scanner(System.in);
+        n1=input.nextDouble();
+        System.out.println("İşlem yapmak istediğiniz ikinci sayıyı giriniz:");
+        Scanner input2=new Scanner(System.in);
+        n2=input2.nextDouble();
+        System.out.println("Yapmak istediğiniz işlemi giriniz:");
+        System.out.println("1->toplama\n2->çıkarma\n3->çarpma\n4->bölme");
+        System.out.println("->\t");
+        Scanner input3=new Scanner(System.in);
+        select=input3.nextDouble();
+        if(select==1) {
+            System.out.println(n1 + n2);
+        }
+        else if(select==2) {
+            System.out.println(n1 - n2);
+        }
+        else if(select==3){
+            System.out.println(n1*n2);
+        }
+        else if(select==4){
+            if(n2==0&&n2!=0){
+                System.out.println("sıfıra bölünemez/tanımsızdır.");
+            }
+            else if(n1==0&&n2==0){
+                System.out.println("sonuç belirsizdir.");
+            }
+            else {
+                System.out.println(n1 / n2);
+            }
+        }
+        else{
+            System.out.println("Hatalı giriş yaptınız.");
+
+        }
+    }
+}

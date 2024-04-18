@@ -1,0 +1,33 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        float num1, num2;
+        System.out.println("Birinci sayıyı giriniz:");
+        num1 = girdi_degeri.nextFloat();
+        System.out.println("İkinci sayıyı giriniz:");
+        num2 = girdi_degeri.nextFloat();
+
+        System.out.println("Yapacağınız işlemi seçin:");
+        char operator = girdi_degeri.next().charAt(0);
+        float result=0;
+        switch (operator){
+            case '+':
+              result = num1+num2;
+              break;
+            case '-':
+                result = num1-num2;
+                break;
+            case '*':
+                result = num1*num2;
+                break;
+            case '/':
+                result = num1/num2;
+                break;
+            default:
+                System.out.println("Yanlış işlem.");
+                break;
+        }
+        System.out.println(num1 + " " + operator + " " + num2 + "="+result);
+
+    }
+}
