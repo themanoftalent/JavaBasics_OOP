@@ -1,0 +1,60 @@
+16.ödev
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner oku=new Scanner(System.in);
+        System.out.print("bir sayi giriniz:");
+        int num=oku.nextInt();
+        int bassay=bassaybul(num);
+        int ind=num;
+        int sonuc=0;
+        int bas;
+        while(ind>0){
+            bas=ind%10;
+            sonuc+=usal(bas,bassay);
+            ind/=10;
+        }
+        if(sonuc==num){
+            System.out.println("girdiginiz sayi armstrong sayisi");
+        }
+        else{
+            System.out.println("girdiginiz sayi armstrong sayisi degil");
+        }
+    }
+
+    private static int usal(int bas, int bassay) {
+        int sonuc=1;
+        for(int i=1;i<=bassay;i++){
+            sonuc*=bas;
+        }
+        return sonuc;
+    }
+
+
+    private static int bassaybul(int sayi) {
+        int sonuc=0;
+        while(sayi>0){
+            sayi/=10;
+            sonuc++;
+        }
+        return sonuc;
+    }
+}
+
+18.ödev
+public class Main {
+    public static void main(String[] args) {
+        int numara = 10;
+        int sifir = 0;
+
+        try {
+            int result = numara / sifir;
+            System.out.println("Sonuç: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Sıfıa bölünmüyor.");
+        }
+    }
+}
+  
+  

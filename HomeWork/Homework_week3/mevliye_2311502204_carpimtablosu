@@ -1,0 +1,16 @@
+//MEVLİYE BALANDI
+//Bir sayının çarpım tablosunu görüntüleyin.
+import java.util.Scanner;
+public class Ödev8 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.println("bir sayi girin:  ");
+        int sayi= input.nextInt();
+        int carpim=1;
+      for(int i=1;i<=10;i++){
+          carpim= sayi*i;
+          System.out.println(sayi+"*"+i+"="+carpim);
+      }
+
+    }
+}

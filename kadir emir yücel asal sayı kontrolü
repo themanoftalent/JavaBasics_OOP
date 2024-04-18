@@ -1,0 +1,35 @@
+package javamedhod;
+import java.net.SocketTimeoutException;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import java.util.function.IntToDoubleFunction;
+
+import javax.crypto.Cipher;
+import javax.sql.rowset.JoinRowSet;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+
+        System.out.println("Asal sayı olup kontrolü için bir sayı giriniz:");
+        int sayi = scanner.nextInt();
+     
+for(int i=2;i<=sayi/2;i++) {
+	if(sayi%2==0)
+	{
+		System.out.println("girdiğiniz sayı asal sayı değildir");
+		break;
+	}
+	else {
+		System.out.println("girdiğiniz sayı asal sayıdır");
+		break;
+	}
+}
+	}
+}	

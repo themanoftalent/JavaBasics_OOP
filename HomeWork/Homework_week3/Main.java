@@ -1,20 +1,15 @@
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int sayi;
+        int carpim;
+        System.out.println("sayi giriniz:");
+        sayi=scan.nextInt();
+        for(int i=1;i<=9;i++){
+            carpim=i*sayi;
+            System.out.println(carpim);
+        }
 
-        int sayi1 = 40;
-        int sayi2 = 20;
-        int sonuc = sayi1 + sayi2;
-        System.out.println("toplama sonuc=" + sonuc);
-        int sonuc2 = sayi1 * sayi2;
-        System.out.println("carpma sonuc=" + sonuc2);
-        int sonuc3 = sayi1 / sayi2;
-        System.out.println("bölme sonuc=" + sonuc3);
-        int sonuc4 = sayi1 - sayi2;
-        System.out.println("cikarma sonuc=" + sonuc4);
     }
 }
-
-

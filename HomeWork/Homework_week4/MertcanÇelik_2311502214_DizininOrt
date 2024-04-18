@@ -1,0 +1,23 @@
+import java.util.*;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int toplam=0;
+        int dizi[] = new int[5];
+        System.out.println("Dizinin elemanlarini girin: ");
+
+        for(int i=0;i<dizi.length;i++){
+            dizi[i]= sc.nextInt();
+            toplam+=dizi[i];
+        }
+
+        System.out.println("Dizinin elemanlarinin toplami: "+toplam);
+        System.out.println("Dizinin ortalamasi :" +(toplam/5));
+
+
+    }
+}

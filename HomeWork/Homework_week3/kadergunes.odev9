@@ -1,0 +1,37 @@
+//kader güneş
+//odev9->asal sayı:belirli bir sayının asal mı yoksa bileşik mi olduğunu kontrol edin.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Sayı giriniz:");
+        int a;
+        int x = 0;
+        Scanner input = new Scanner(System.in);
+        a = input.nextInt();
+       if(a==0||a==1){
+           System.out.println("Ne asal sayıdır ne de bileşik sayıdır.");
+       }
+       else if(a==2){
+           System.out.println("Asal sayıdır.");
+       }
+       else if (a<0) {
+           System.out.println("Geçerli sayı girmediniz.");
+       }
+       else  {
+           boolean isAsal= true;
+           for (int i = 2; i < a; i++) {
+               if (a % i == 0) {
+                   isAsal= false;
+                   break;
+               }
+           }
+           if (isAsal) {
+               System.out.println("Asal sayıdır.");
+           } else {
+               System.out.println("Bileşik sayıdır.");
+           }
+       }
+
+       }
+
+    }

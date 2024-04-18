@@ -1,0 +1,70 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int sayi;
+        System.out.println("bir sayi giriniz:");
+        sayi = scan.nextInt();
+        int sayix = sayi;
+        int toplam = 0;
+        if (sayi < 0) {
+            System.out.println("tekrar sayi giriniz");
+        } else {
+            while (sayi > 0) {
+                sayix = sayi % 10;
+                sayi = sayi / 10;
+                toplam = toplam+sayix;
+            }
+
+        }
+        System.out.println("toplam="+toplam);
+    }
+}
+
+//carpim
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int sayi;
+        int carpim;
+        System.out.println("sayi giriniz:");
+        sayi=scan.nextInt();
+        for(int i=1;i<=9;i++){
+            carpim=i*sayi;
+            System.out.println(carpim);
+        }
+
+    }
+}
+
+//asal mi degil mi kontrol
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int sayi;
+        System.out.println("bir sayi giriniz:");
+        sayi=scan.nextInt();
+        int sayac=0;
+        for(int i=2;i<sayi;i++){
+            if(sayi%i==0){
+                sayac++;
+                break;
+            }
+
+
+            }
+        if(sayac==0){
+            System.out.println("asal sayidir.");
+        }
+        else{
+            System.out.println("asal sayi degildir.");
+        }
+
+
+        }
+
+    }

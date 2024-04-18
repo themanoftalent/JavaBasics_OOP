@@ -1,0 +1,19 @@
+// Zehre İnce 2311502231
+public class HeapExample {
+
+    public static void main(String[] args) {
+        // dizi ve dizi heap belleğine yazdırsın
+        int[] numbers = new int[5];
+   int i;
+        // numbers dizisine elemanları atayalım
+
+        for (i = 0; i < numbers.length; i++) {
+            numbers[i] = i * 10;
+        }
+        System.out.println("Numbers dizisi içeriği");
+        for(i=0;i<numbers.length;i++) {
+        System.out.print(" " + numbers[i]);
+        }
+    }
+
+}

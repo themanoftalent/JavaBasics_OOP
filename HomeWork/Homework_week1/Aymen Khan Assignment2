@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+// BASIT HESAP MAKINASI | CALCULATOR 
+public class Main {
+    public static void main(String[] args) {
+    
+    	Scanner scanner = new Scanner(System.in);
+        int num1 , num2 , add , sub , multiply , divison;
+        
+        System.out.println("Enter a value= ");
+        num1 = scanner.nextInt();
+        System.out.println("Enter another value= ");
+        num2 = scanner.nextInt();
+        
+        add = num1+num2;
+        sub = num1-num2;
+        multiply = num1*num2;
+        divison = num1/num2;
+        
+        System.out.println("Toplam: "+add+""  +"Cikarma: "+sub+""  +"Carpim: "+multiply+""  +"Bolum: "+divison+"");
+        
+  }
+}
