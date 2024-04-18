@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class fibonacciDizi {
+    public static void main(String[] args) {
+     int i;
+     int []dizi=new int[7];
+        dizi[0]=1;
+        dizi[1]=1;
+
+     for( i=2;i<7;i++){
+
+         dizi[i]=dizi[i-2]+dizi[i-1];
+
+
+     }
+     for( i=0;i<7;i++)
+
+        System.out.println(dizi[i]+" ");
+
+    }
+}
