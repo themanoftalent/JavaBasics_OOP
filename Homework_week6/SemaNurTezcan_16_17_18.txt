@@ -1,0 +1,111 @@
+16-
+import java.util.Scanner;
+
+public class Armstrong {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        
+        int sayi;
+        System.out.println("Lütfen sayı giriniz: ");
+        sayi = scanner.nextInt();
+
+        if (armstrongMu(sayi))
+            System.out.println(sayi +" armstrong sayıdır.");
+        else
+            System.out.println("Sayı armstrong değildir.");
+
+    }
+
+    public static boolean armstrongMu(int sayi) {
+        int basamak = 0;
+        int toplam = 0;
+        int gecici = sayi;
+        int n = String.valueOf(sayi).length();
+
+        while (gecici!= 0) {
+            basamak= gecici%10;
+            int sonuc= 1;
+            for (int i= 1; i<=n; i++) {
+                sonuc*= basamak;
+            }
+            toplam+= sonuc;
+            gecici/= 10;
+        }
+
+        if (toplam== sayi)
+            return true;
+        else
+            return false;
+        
+    }
+
+}
+
+
+
+17-
+import java.io.*;
+
+public class DosyaIslemi {
+    public static void main(String[] args) {
+        String okunacakDosyaYolu = "okunacak_dosya.txt";
+        String yazilacakDosyaYolu = "yazilacak_dosya.txt";
+
+        try {
+            BufferedReader okuyucu = new BufferedReader(new FileReader(okunacakDosyaYolu));
+            
+            BufferedWriter yazici = new BufferedWriter(new FileWriter(yazilacakDosyaYolu));
+
+            String satir;
+            while ((satir = okuyucu.readLine()) != null) {
+                String yeniSatir = satir.toUpperCase();
+                
+                yazici.write(yeniSatir);
+               
+                yazici.newLine();
+            }
+
+            okuyucu.close();
+            yazici.close();
+
+            System.out.println("Dosya işlemleri başarıyla tamamlandı.");
+        } catch (IOException e) {
+            System.out.println("Dosya işlemleri sırasında bir hata oluştu: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+
+
+
+18-
+import java.util.Scanner;
+
+public class ExceptionHandlingExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bölünecek sayıyı girin: ");
+        int numerator = scanner.nextInt();
+
+        System.out.print("Bölen sayıyı girin: ");
+        int denominator = scanner.nextInt();
+
+        try {
+            int result = divide(numerator, denominator);
+            System.out.println("Bölme işleminin sonucu: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Hata: " + e.getMessage());
+        }
+
+        scanner.close();
+    }
+
+    public static int divide(int numerator, int denominator) {
+        if (denominator == 0) {
+            throw new ArithmeticException("Sıfıra bölme hatası!");
+        }
+        return numerator / denominator;
+    }
+}
