@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args){
+       Scanner girdi_degeri = new Scanner(System.in);
+       int temp, toplam = 0, basamakSayisi=0, sayi, sayi2, carpim=1,gecici;
+        System.out.println("Sayi girin:");
+        sayi = girdi_degeri.nextInt();
+        temp = sayi;
+        sayi2 = sayi;
+        while(temp>0){
+            basamakSayisi++;
+            temp/=10;
+        }
+        while(sayi2>0){
+            carpim = 1;
+            gecici = sayi2%10;
+            for(int i=0; i<basamakSayisi;i++){
+                carpim*=gecici;
+            }
+            toplam+=carpim;
+            sayi2/=10;
+        }
+        if(toplam == sayi){
+            System.out.println("girilen sayi armstrong sayisidir.");
+        }
+        else
+            System.out.println("girilen sayi armstrong sayisi degildir.");
+    }
+}
