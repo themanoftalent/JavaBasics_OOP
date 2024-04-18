@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class KaanBaskanElemanBul {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Dizi eleman sayisini girin: ");
+        int elemanS = scanner.nextInt();
+
+        int[] dizi = new int[elemanS];
+
+        System.out.println("Dizinin elemanlarını girin:");
+        for (int i = 0; i < elemanS; i++) {
+            dizi[i] = scanner.nextInt();
+        }
+
+        System.out.print("Bulunack öğeyi girin: ");
+        int aranan = scanner.nextInt();
+
+        boolean bul = false;
+
+        for (int i = 0; i < elemanS; i++) {
+            if (dizi[i] == aranan) {
+                bul = true;
+                break;
+            }
+        }
+
+        if (bul) {
+            System.out.println(aranan + " dizide bulunuyor.");
+        } else {
+            System.out.println(aranan + " dizide bulunmuyor.");
+        }
+    }
+}
