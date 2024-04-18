@@ -1,0 +1,87 @@
+//16.Determine if a number is an Armstrong number.
+//import java.util.Scanner;
+
+public class ArmstrongNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int number = scanner.nextInt();
+        
+        if (isArmstrong(number)) {
+            System.out.println(number + " bir Armstrong sayısıdır.");
+        } else {
+            System.out.println(number + " bir Armstrong sayısı değildir.");
+        }
+        
+        scanner.close();
+    }
+    
+ 
+    public static boolean isArmstrong(int number) {
+        int originalNumber, remainder, result = 0, n = 0;
+        originalNumber = number;
+        
+        
+        for (originalNumber = number; originalNumber != 0; originalNumber /= 10, ++n);
+        
+        
+        for (originalNumber = number; originalNumber != 0; originalNumber /= 10) {
+            remainder = originalNumber % 10;
+            result += Math.pow(remainder, n);
+        }
+        
+       
+        if (result == number)
+            return true;
+        else
+            return false;
+    }
+}16
+//17.Read data from a file, manipulate it, and write the results back to a file.
+//import java.io.*;
+
+public class FileManipulator {
+    public static void main(String[] args) {
+        String inputFilePath = "input.txt";
+        String outputFilePath = "output.txt";
+
+        
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath));
+             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath))) {
+            
+            String line;
+            while ((line = reader.readLine()) != null) {
+               
+                String processedLine = line.toUpperCase();
+
+              
+                writer.write(processedLine);
+                writer.newLine(); 
+            }
+        } catch (IOException e) {
+            System.err.println("Error handling the file operations: " + e.getMessage());
+        }
+
+        System.out.println("Processing complete. Check '" + outputFilePath + "' for results.");
+    }
+}
+//18.Handle exceptions (e.g., division by zero) in a Java program.
+//public class ExceptionHandlingExample {
+    public static void main(String[] args) {
+        try {
+            int result = divide(10, 0); // Sıfıra bölme hatası oluşturuluyor
+            System.out.println("Bölme sonucu: " + result); // Bu satır çalışmayacak
+        } catch (ArithmeticException e) {
+            // Sıfıra bölme hatası ele alınıyor
+            System.out.println("Hata: Sıfıra bölme hatası!");
+            e.printStackTrace(); // Hata izleme bilgisini yazdır
+        } finally {
+            // Her durumda çalışacak kod
+            System.out.println("İşlem tamamlandı.");
+        }
+    }
+
+    public static int divide(int a, int b) {
+        return a / b; // Sıfıra bölme hatası fırlatılacak
+    }
+}
