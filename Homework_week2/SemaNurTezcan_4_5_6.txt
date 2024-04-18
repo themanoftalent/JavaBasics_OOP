@@ -1,0 +1,87 @@
+4-
+import java.util.Scanner;
+
+public class Faktoriyel {
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int sayi;
+		int sonuc=1;
+		
+		System.out.println("Lütfen sayı giriniz: ");
+		sayi= scanner.nextInt();
+		
+		for(int i=sayi; i>=1; i--) 
+			sonuc*= i;
+	
+		System.out.println("Sayının faktöriyeli: " +sonuc);	
+		
+	}
+
+}
+
+
+
+5-
+import java.util.Scanner;
+
+public class Fibonacci {
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int sayi1=0;
+		int sayi2=1;
+		int toplam=0;
+		int terim;
+	
+		System.out.println("Fibonacci dizisi için terim sayısını girin: ");
+		terim= scanner.nextInt();
+		
+		for(int i=1; i<=terim; i++) {
+			toplam= sayi1+sayi2;
+			sayi1= sayi2;
+			sayi2= toplam;	
+		}
+		
+		System.out.println( terim +" terimli fibonacci sayısı: " +toplam);
+	}
+
+}
+
+
+
+6-
+import java.util.Scanner;
+
+public class Palindrom {
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int sayi;
+		System.out.println("Lütfen sayı giriniz: ");
+		sayi= scanner.nextInt();
+		
+		int orijinalsayi= sayi;
+		int palindrom= 0;
+		int kalan=0;
+		
+		while(sayi!=0) {
+			kalan= sayi%10;
+			palindrom= palindrom*10+kalan; 
+			sayi/=10;
+			
+		}
+		
+		if(orijinalsayi==palindrom)
+			System.out.println("Sayı palindromik sayıdır.");
+		else
+			System.out.println("Sayı palindromik değildir.");
+		
+	}
+
+}
+
+
