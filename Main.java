@@ -1,26 +1,45 @@
-public class Main {
+//Segbe Abdoul Aziz Diomande
+import java.util.Scanner;
+public class Assigment2 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter the number :");
+            int number1 = scanner.nextInt();
+            System.out.println("Enter an operator (+, -, *, /) :");
+            char operator = scanner.next().charAt(0);
+            System.out.println("Enter the second number :");
+            int number2 = scanner.nextInt();
+            int result = 0;
+            switch (operator) {
+                case '+':
+                    result = number1 + number2;
+                    System.out.println("The result of the addition is : " + result);
+                    break;
+                case '-':
+                    result = number1 - number2;
+                    System.out.println("The result of the soustration is  : " + result);
+                    break;
+                case '*':
+                    result = number1 * number2;
+                    System.out.println("The result of the multiplication is  : " + result);
+                    break;
+                case '/':
+                    if (number2 != 0) {
+                        result = number1 / number2;
+                        System.out.println("The result of the division is  : " + result);
+                    } else {
+                        System.out.println("erreur");
+                    }
+                    break;
+                default:
+                    System.out.println("Opérateur non valide ");
+            }
+        }
 
-    public static void main(String[] args) {
 
-        int num1=10;
-        int num2=2;
-        int sum;
-        int substrac;
-        int divis;
-        int mutipli;
-        int remaind;
+}
 
-        sum = num1 + num2;
-        substrac = num1 - num2;
-        divis = num1 / num2;
-        mutipli = num1 * num2;
-        remaind = num1 % num2;
 
-        System.out.println("\nsum:" +sum);
-        System.out.println("substraction :" +substrac);
-        System.out.println("division :"+divis);
-        System.out.println("multiplication:" +mutipli);
-        System.out.println("remainder :" +remaind);
 
 
     }
