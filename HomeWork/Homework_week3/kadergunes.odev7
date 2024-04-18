@@ -1,0 +1,28 @@
+//kader güneş
+//odev7->rakam toplamı:pozitif bir tam sayıdakirakamların toplamını hesaplayın.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Sayı giriniz:");
+        int a;
+        int x=0;
+        Scanner input = new Scanner(System.in);
+        a = input.nextInt();
+
+        if(a<=0){
+            System.out.println("Geçerli sayı girmediniz.");
+        }
+        else{
+            int b=a;
+            while(b>0){
+                int y=b%10;
+                x+=y;
+                b/=10;
+            }
+            System.out.println("Girilen sayıların rakamları toplamı:"+x);
+
+        }
+
+
+    }
+}
