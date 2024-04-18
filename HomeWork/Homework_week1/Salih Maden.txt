@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    static Scanner sa = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int sayi1;
+        int sayi2;
+        float sonuc = 0;
+
+        System.out.println("lütfen isaret seciniz(+,-,/,*):");
+
+        char isaret = sa.next().charAt(0);
+
+        System.out.println("sayi1 giriniz:");
+
+        sayi1 = sa.nextInt();
+
+        System.out.println("sayi2 giriniz:");
+
+        sayi2 = sa.nextInt();
+        if (isaret == '+') {
+            sonuc = sayi1 + sayi2;
+        } else if (isaret == '-') {
+            sonuc = sayi1 - sayi2;
+        } else if (isaret == '*') {
+            sonuc = sayi1 * sayi2;
+
+        } else if (isaret == '/') {
+            sonuc = sayi1 / sayi2;
+        }
+        System.out.println(sonuc);
+    }
+}
