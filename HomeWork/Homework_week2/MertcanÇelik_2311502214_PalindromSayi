@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int sayi,a,eski;
+        int tersi=0;
+
+        System.out.println("Sayi giriniz :");
+        sayi = input.nextInt();
+        eski=sayi;
+        while(sayi >0){
+            a= sayi%10;
+            sayi= (sayi-a)/10;
+            tersi = tersi*10+a;
+        }
+        if(tersi == eski){
+            System.out.println("Bu bir palindrom sayi");
+        }
+        else
+            System.out.println("Bu bir palindrom sayi degil !");
+
+    }
+}

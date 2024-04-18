@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+        Scanner oku= new Scanner(System.in);
+       int sayi = 0;
+       int faktoriyel=1;
+        System.out.print("sayi giriniz:");
+        sayi=oku.nextInt();
+       for(int i=1 ; i<=sayi ;i++){
+           faktoriyel*=i;
+       }
+        System.out.println(sayi +" sayinin faktoriyeli: "+faktoriyel);
+    }
+
+}
+//Faktöriyel Hesaplayıcı
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+        Scanner oku = new Scanner(System.in);
+        int[] dizi = new int[15];
+        dizi[0] = 1;
+        dizi[1] = 1;
+        for (int i = 0; i < dizi.length - 2; i++) {
+            dizi[i + 2] = dizi[i] + dizi[i + 1];
+        }
+        for (int i = 0; i < dizi.length; i++) {
+            System.out.printf("%d ", dizi[i]);
+        }
+    }
+}
+//Belirli sayıda terime kadar fibonacci dizisi oluştur.
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        System.out.println("Bir sayi giriniz:");
+        int sonuc=0;
+        int sayi;
+        sayi=oku.nextInt();
+        int ind=sayi;
+        while(ind>0){
+            sonuc=(sonuc*10) +(ind%10);
+            ind/=10;
+        }
+        if(sonuc==sayi){
+            System.out.println("sayi palidromdur");
+        }
+        else{
+            System.out.println("palidrom değil");
+        }
+    }
+}
+//Bir sayının palindrom olup olmadığını söyleyen kod

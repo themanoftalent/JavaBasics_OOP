@@ -1,0 +1,17 @@
+//MEVLİYE BALANDI
+//Kullanıcının girdiği sayının tek mi çift mi olduğunu belirleyin.
+import java.util.Scanner;
+public class Ödev3{
+    public static void main(String[] args) {
+        Scanner sayii= new Scanner(System.in);
+        System.out.println("bir sayi girin: ");
+        int sayi= sayii.nextInt();
+        if(sayi%2==0){
+            System.out.println("girilen sayi cift sayidir..");
+        }
+        else{
+            System.out.println("girilen sayi tek sayidir..");
+        }
+
+    }
+}

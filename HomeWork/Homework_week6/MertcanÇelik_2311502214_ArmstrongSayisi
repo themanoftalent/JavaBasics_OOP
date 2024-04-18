@@ -1,0 +1,29 @@
+import java.util.*;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+
+        System.out.println("Bir sayi girin : ");
+        int sayi = scanner.nextInt();
+        int klon;
+        klon= sayi;
+        int bas=0, kontrol=0;
+        while(sayi>0){
+            sayi=sayi/10;
+            bas++;
+        }
+        sayi= klon;
+        while(sayi>0){
+            kontrol+= (int) Math.pow(sayi%10,bas);
+            sayi= sayi/10;
+        }
+        if(kontrol == klon){
+            System.out.println("Bu bir Armstrong sayisidir");
+        }
+        else
+            System.out.println("Bu bir Armstrong sayisi degil ! ");
+    }
+}

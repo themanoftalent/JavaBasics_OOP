@@ -1,0 +1,104 @@
+//16. örnek armstrong sayı
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner oku=new Scanner(System.in);
+        System.out.print("bir sayi giriniz:");
+        int num=oku.nextInt();
+        int bassay=bassaybul(num);
+        int ind=num;
+        int sonuc=0;
+        int bas;
+        while(ind>0){
+            bas=ind%10;
+            sonuc+=usal(bas,bassay);
+            ind/=10;
+        }
+        if(sonuc==num){
+            System.out.println("girdigin sayi armstrong sayi");
+        }
+        else{
+            System.out.println("girdigin sayi armstrong sayi degil");
+        }
+    }
+
+    private static int usal(int bas, int bassay) {
+        int sonuc=1;
+        for(int i=1;i<=bassay;i++){
+            sonuc*=bas;
+        }
+        return sonuc;
+    }
+
+
+    private static int bassaybul(int sayi) {
+        int sonuc=0;
+        while(sayi>0){
+            sayi/=10;
+            sonuc++;
+        }
+        return sonuc;
+    }
+}
+
+
+
+//17. örnek dosya okuma ve yazma
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+         String [] dizi= {"1-ev","2-araba","3-kalem","4-defter","5-canta"};
+        for(int i=0;i< dizi.length;i++){
+            System.out.println(dizi[i]);
+        }
+        System.out.print("eklemek istediğiniz kelimeyi girin:");
+        String ekleme=oku.nextLine();
+        System.out.print("ekleyeceginiz sirai girin:");
+        int sira =oku.nextInt();
+        dizi[sira-1]=ekleme;
+
+        System.out.println("yeni dizi:");
+        for(int i=0;i< dizi.length;i++){
+            System.out.println(dizi[i]);
+        }
+    }
+}
+
+ 
+//18. örnek istisna işlemler  0 a bölme hatasını try-catch ile yakalayan kodum
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        System.out.printf("bolünen sayiyi girin:");
+        int num1= oku.nextInt();
+
+        int ind=0;
+        double sonuc=0;
+        try{
+            System.out.printf("bölen sayiyi girin:");
+            int num2=oku.nextInt();
+            if(num2==0){
+                throw new ArithmeticException("sıfıra bölme hatası!!");
+            }
+            sonuc=(float)num1/num2;
+        }
+        catch (ArithmeticException e){
+            System.out.println("hatalı bölen girişi: "+e.getMessage());
+            ind=1;
+        }
+        if(ind==0){
+            System.out.printf("bölme işleminin sonucu:%.2f",sonuc);
+        }
+        
+    }
+}
+ 
+

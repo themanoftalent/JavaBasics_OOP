@@ -1,0 +1,70 @@
+//13. örnek doğrusal arama
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        int []dizi=new int[]{5,2,4,8,16,59,87,44};
+        System.out.print("aradiginiz sayiyi girin:");
+        int num=oku.nextInt();
+        int ind=0;
+        for(int i=0;i<dizi.length;i++){
+            if(num==dizi[i]){
+                System.out.printf("%d sayisi bu dizinin %d. elemanidir \n",num,i+1);
+                ind++;
+                break;
+            }
+        }
+        if(ind==0){
+            System.out.println("aradigin eleman bu dizide yok");
+        }
+        for(int i=0;i< dizi.length;i++){
+            System.out.printf("%d ",dizi[i]);
+        }
+
+    }
+}
+
+
+//15. örnek matrislerde toplama ve çarpma
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        int [][] matris1= new int [][]{{1,1,2},{2,5,4},{1,3,2}};
+        int [][] matris2= new int [][]{{2,1,3},{1,3,1},{1,2,4}};
+        int [][] matristoplam= new int [3][3];
+        int [][] matriscarpim= new int [3][3];
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                matristoplam[i][j]=matris1[i][j]+matris2[i][j];
+            }
+        }
+        System.out.println("matris1+matris2");
+        for(int j=0;j<3;j++){
+            for(int k=0;k<3;k++){
+                System.out.printf("%d ",matristoplam[j][k]);
+            }
+            System.out.println();
+        }
+        System.out.println();
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                int ind=0;
+                for(int k=0;k<3;k++){
+                    ind+=matris1[i][k]*matris2[k][j];
+                }
+                matriscarpim[i][j]=ind;
+            }
+        }
+        System.out.println("matris1*matris2");
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                System.out.printf("%d ",matriscarpim[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}

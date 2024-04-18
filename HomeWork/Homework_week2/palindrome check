@@ -1,0 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("Sayi giriniz:");
+        int sayi = girdi_degeri.nextInt();
+
+        int temp,yeniSayi=0,geciciSayi;
+        temp = sayi;
+        while(temp>0){
+            geciciSayi = temp%10;
+            yeniSayi = yeniSayi*10+geciciSayi;
+            temp/=10;
+        }
+        if(yeniSayi == sayi){
+            System.out.println("girilen sayi palindrom sayidir.");
+        }
+        else
+            System.out.println("girilen sayi palindrom sayi degildir.");
+    }
+}

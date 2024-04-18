@@ -1,0 +1,55 @@
+//13.Ödev-Doğrusal Arama
+
+
+import java.util.Scanner;
+
+public class DogrusalArama {
+    public static void main(String[]args){
+        int[] dizi={1,2,3,4,5,6};
+
+        int sayi;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Sayı giriniz: ");
+        sayi=scan.nextInt();
+
+        for(int i=0;i<6;i++){
+            if(dizi[i]==sayi){
+                System.out.printf("Dizi[%d] = %d ",i,sayi);
+                break;
+            }
+        }
+    }
+}
+
+
+//15.Ödev-Matris İşlemleri
+
+
+public class MatrisIslemleri {
+    public static void main(String[]args){
+        int[][] matris1= {{1,1},{2,2}};
+        int[][] matris2= {{3,3},{4,4}};
+        int[][] matrisToplam= new int[2][2];
+        int[][] matrisCarpim= new int[2][2];
+
+        System.out.println("Toplam: ");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                matrisToplam[i][j]= matris1[i][j]+matris2[i][j];
+                System.out.print(matrisToplam[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+
+        System.out.println("Çarpım: ");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                for (int k = 0; k < 2; k++) {
+                    matrisCarpim[i][j] += matris1[i][k] * matris2[k][j];
+                }
+                System.out.print(matrisCarpim[i][j] + " ");
+            }
+            System.out.print("\n");
+        }
+    }
+}
