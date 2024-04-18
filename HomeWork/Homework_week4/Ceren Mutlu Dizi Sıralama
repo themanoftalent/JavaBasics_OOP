@@ -1,0 +1,28 @@
+public class DiziSiralama {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Dizinin eleman sayisini giriniz: ");
+        int eleman = input.nextInt();
+        int dizi[] = new int [eleman];
+        for(int i = 0; i < eleman; i++) {
+            System.out.println("Dizi icin eleman giriniz: ");
+            int sayi = input.nextInt();
+            dizi[i] = sayi;
+        }
+        int enk;
+        for(int i = 0;i < eleman; i++) {
+            for (int j = 1; j < eleman; j++) {
+                if(dizi[j] < dizi[i]){
+                    enk = dizi[i];
+                    dizi[i] = dizi[j];
+                    dizi[j] = enk;
+                }
+            }
+          for(int k = 0; k < eleman ; k++) {
+              System.out.println(Arrays.toString(dizi));
+          }
+        }
+    }
+} 
+
+Ceren Mutlu 2311502264
