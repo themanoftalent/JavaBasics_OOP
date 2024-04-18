@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class DogrusalArama {
+    public static void main(String[] args) {
+        Scanner oku = new Scanner(System.in);
+        int[]dizi = {24,5,8,6,9};
+        System.out.print("Aramak istediğiniz sayıyı girin: ");
+        int num = oku.nextInt();
+        int ind = 0;
+        for (int i = 0; i < dizi.length; i++) {
+            if (num == dizi[i]) {
+                System.out.printf("%d sayısı bu dizinin %d. elemanıdır.\n", num, i + 1);
+                ind++;
+                break;
+            }
+        }
+        if (ind == 0) {
+            System.out.println("Aramış olduğunuz eleman bu dizide bulunmamaktadır.");
+        }
+        for (int i = 0; i < dizi.length; i++) {
+            System.out.printf("%d ", dizi[i]);
+        }
+
+    }
+}
