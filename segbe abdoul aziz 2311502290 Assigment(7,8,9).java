@@ -1,0 +1,58 @@
+//Segbe Abdoul Aziz Diomande
+//Assigment7
+import java.util.Scanner;
+public class Assigment7 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter a positive integer: ");
+            int number = scanner.nextInt();
+            int sum = sumOfDigits(number);
+            System.out.println("The sum of digits of " + number + " is: " + sum);
+        }
+        public static int sumOfDigits(int number) {
+            int sum = 0;
+            while (number != 0) {
+                sum += number % 10;
+                number /= 10;
+            }
+            return sum;
+        }
+}
+//Assigment8
+import  java.util.Scanner;
+public class Assigment8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        System.out.println("Multiplication table of " + number + ":");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
+    }
+}
+//Assigment9
+import java.util.Scanner;
+public class Assigment9 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter a number: ");
+            int number = scanner.nextInt();
+            if (isPrime(number)) {
+                System.out.println(number + " is a prime number.");
+            } else {
+                System.out.println(number + " is a composite number.");
+            }
+        }
+        public static boolean isPrime(int number) {
+            if (number <= 1) {
+                return false;
+            }
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+}
