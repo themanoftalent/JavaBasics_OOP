@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+// FIBONACCI SIRALAMA | FIBONACCI SEQUENCE
+public class Main {
+    public static void main(String[] args) {
+    
+    	Scanner scanner = new Scanner(System.in);
+        int num1 = 0 , num2 = 1 , toplam;
+        
+        System.out.println("Enter a value= ");
+        int deger = scanner.nextInt();
+        
+        for(int i = 1 ; i <= deger ; i++) {
+        	System.out.print(num1 + ", ");
+        	toplam = num1+num2;
+        	num1 = num2;
+        	num2 = toplam;
+        } 
+  }
+}
