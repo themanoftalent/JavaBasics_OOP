@@ -1,19 +1,15 @@
-package Ödevler2.hafta;
-
 import java.util.Scanner;
-//2311502229 Ali Eren Hakut
-public class Faktoriyel {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Bir sayi giriniz: ");
-		int sayi = scanner.nextInt();
-		int fakt = 1;
-		for (int i = 1; i != sayi+1; i++) {
-			fakt = i * fakt;
-			System.out.println(+i + ". faktoriyeli: " + fakt);
 
-		}
-		System.out.println("Sayının faktoriyeli: " + fakt);
-        scanner.close();
-	}
+public class Main {
+    static Scanner input=new Scanner(System.in);
+    public static void main(String[] args) {
+        int faktoriyel=1;
+        System.out.println("faktoriyel hesaplayan program");
+        System.out.println("n! bulmak için bir n sayisi giriniz");
+        int number=input.nextInt();
+        for(int a=1;a<=number;a++){
+            faktoriyel*=a;
+        }
+        System.out.println(faktoriyel);
+    }
 }
