@@ -1,4 +1,13 @@
 //Segbe Abdoul Aziz Diomande
+//Assigment1
+public class Assigment1 {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+
+}
+
+//Assigment2
 import java.util.Scanner;
 public class Assigment2 {
         public static void main(String[] args) {
@@ -35,8 +44,6 @@ public class Assigment2 {
                     System.out.println("Opérateur non valide ");
             }
         }
-
-
 }
 
 
@@ -44,3 +51,19 @@ public class Assigment2 {
 
     }
 }
+
+//Assigment3
+import java.util.Scanner;
+public class Assigment3 {
+        public static void main(String[] args){
+            System.out.println("Enter the number please");
+            Scanner scanner = new Scanner(System.in);
+            int number= scanner.nextInt();
+            if (number % 2 == 0){
+                System.out.println("the number is even");
+            }else{
+                System.out.println("the number is odd");
+            }
+        }
+}
+
