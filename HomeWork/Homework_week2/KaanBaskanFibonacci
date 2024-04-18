@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class KaanBaskanFibonacci {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("kaçıncı terime kadar yazdırılmasını istiyorsunuz?");
+        int n = scan.nextInt();
+
+        int ilk = 0;
+        int iki = 1;
+
+        System.out.println("Fibonacci dizisi:");
+        for (int i = 1; i <= n; i++) {
+            System.out.print(ilk + " ");
+
+            int sonrakiTerim = ilk + iki;
+            ilk = iki;
+            iki = sonrakiTerim;
+        }
+    }
+}
