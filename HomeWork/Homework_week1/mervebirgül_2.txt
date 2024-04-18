@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class HesapMakinesi {
+
+    public static void main(String[] args) {
+        int sonuc = 0;
+        System.out.println("a sayisi giriniz:");
+        Scanner sayilar = new Scanner(System.in);
+        int a = sayilar.nextInt();
+
+        System.out.println("b sayisi giriniz:");
+        Scanner sayilarr = new Scanner(System.in);
+        int b = sayilarr.nextInt();
+
+        System.out.println("yapmak istediğiniz islemi giriniz: 1-çıkarma 2-toplama 3-çarpma 4-bölme");
+        Scanner islem = new Scanner(System.in);
+        int islem1 = islem.nextInt();
+
+        if (islem1 == 1)
+               sonuc = a - b;
+            else if (islem1==2)
+              sonuc=a+b;
+            else if (islem1==3)
+                sonuc=a*b;
+            else if (islem1==4)
+                sonuc=a/b;
+            else
+            System.out.println("hatalı işlem girdiniz.");
+
+
+        System.out.println("islem sonucunuz: "+sonuc);
+
+    }
+}
