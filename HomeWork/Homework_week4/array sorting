@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args){
+        Scanner girdi_degeri = new Scanner(System.in);
+        int [] sayilar = new int[5];
+        System.out.println("sayi girin:");
+        for(int i=0; i<5; i++){
+            System.out.println("sayi"+(i+1)+": ");
+            sayilar[i] = girdi_degeri.nextInt();
+        }
+        int temp;
+        for(int i=0; i<4; i++){
+            for(int j=i+1; j<5; j++){
+                if(sayilar[i]<sayilar[j]){
+                    temp = sayilar[j];
+                    sayilar[j] = sayilar[i];
+                    sayilar[i] = temp;
+                }
+            }
+        }
+        for(int i=0; i<5; i++){
+            System.out.println(sayilar[i]+" ");
+        }
+    }
+}
