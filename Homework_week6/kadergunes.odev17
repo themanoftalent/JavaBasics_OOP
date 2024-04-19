@@ -1,0 +1,21 @@
+//kader güneş
+//odev17->istisna işleme:bir java programında istisnaları (örneğin sıfıra bölme)işleyin.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("bölünen giriniz:");
+        Scanner input=new Scanner(System.in);
+        double a=input.nextDouble();
+        System.out.println("bölen giriniz:");
+        Scanner input1=new Scanner(System.in);
+        double b=input1.nextDouble();
+        if( b==0){
+            System.out.println("İstisnai bir durum.Sıfıra bölünemez.");
+        }
+        else{
+            double sonuç=(a/b);
+            System.out.print("sonuç: "+sonuç);
+        }
+    }
+
+}
