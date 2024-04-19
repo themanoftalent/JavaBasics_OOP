@@ -1,0 +1,45 @@
+//2311502231 Zehre İnce
+package zehrejava;
+import java.util.Scanner;
+public class odev {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("İlk sayıyı giriniz: ");
+        int num1 = scan.nextInt();
+
+        System.out.println("İkinci sayıyı giriniz: ");
+        int num2 = scan.nextInt();
+
+        System.out.println("Bir işlem giriniz: ");
+        char islem = scan.next().charAt(0);;
+
+        double sonuc;
+
+        switch (islem) {
+            case '+':
+                sonuc = num1 + num2;
+                break;
+            case '-':
+                sonuc = num1 - num2;
+                break;
+            case '*':
+                sonuc= num1 * num2;
+                break;
+            case '/':
+                if (num2 != 0) {
+                    sonuc = num1 / num2;
+                } else {
+                    System.out.println("Tanımsız");
+                    return;
+                }
+                break;
+            default:
+                System.out.println("İşlem türünü hatalı girdiniz");
+                return;
+        }
+
+        System.out.println("Sonuç: " + sonuc);
+
+    }
+}
