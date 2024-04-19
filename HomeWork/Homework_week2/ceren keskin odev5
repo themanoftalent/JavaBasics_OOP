@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		
+		 System.out.println("Lutfen kac terim istediginizi girin: ");
+		 Scanner sc = new Scanner(System.in);
+		 
+		 int terim = sc.nextInt();
+		 int toplam = 0;
+		 
+		 for (int i = 0; i < terim; i++) 
+		 {
+	            
+	            if (i <= 1) 
+	            {
+	                toplam = 1;
+	                
+	            } 
+	            else 
+	            {
+	                int temp = toplam;
+	                toplam += i;
+	                i = temp;
+	            }
+	            
+	            
+	            System.out.print(toplam + " ");
+	            
+		 }
+
+	        sc.close();
+		
+		
+		
+	}
+}
