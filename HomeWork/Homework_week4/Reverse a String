@@ -1,0 +1,26 @@
+//Reverse a String 
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+
+public class Kelimeters {
+	public static void main(String[]args) {
+	  
+    Scanner deger = new Scanner(System.in);
+    System.out.print("Bir kelime gir: ");
+    String aString = deger.nextLine();
+    
+    
+    char[] Dizi = new char[aString.length()];
+    
+    
+    for (int i = aString.length() - 1; i >= 0; i--) {
+        Dizi[aString.length() - 1 - i] = aString.charAt(i);
+    }
+    
+  
+    System.out.println("kelimenin tersten yazilisi: " + new String(Dizi));
+    
+
+}
+}
