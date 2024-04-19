@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir cumle girin: ");
+        String cumle = scanner.nextLine();
+
+        System.out.print("Aranacak elemani girin: ");
+        String aranan = scanner.nextLine();
+
+        int index = cumle.indexOf(aranan);
+
+        if (index != -1) {
+            System.out.println(aranan);
+        } else {
+            System.out.println(aranan + " cümlede bulunamadi.");
+        }
+
+        scanner.close();
+    }
+}
