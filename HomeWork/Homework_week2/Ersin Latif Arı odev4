@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class odev4 {
+
+        public static void main(String[] args) {
+
+            Scanner scan = new Scanner(System.in);
+            int sayi= 0;
+            int toplam= 1;
+
+            System.out.println("Bir sayi girin :");
+            sayi= scan.nextInt();
+
+
+
+            while(sayi>0){
+
+                toplam*= sayi;
+                sayi= sayi-1;
+            }
+            System.out.println("Faktoriyel :" +toplam);
+        }
+    }

@@ -1,0 +1,6 @@
+//Ersin Latif Arı 2211502011
+public class ödev1 {
+	public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}

@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public odev8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("hangi sayinin carpim tablosunu gormek istiyorsunuz: ");
+        int sayi = scanner.nextInt(); 
+        System.out.println(sayi + " carpim tablosu:");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(sayi + " * " + i + " = " + (sayi * i));
+        }
+      }
+      }
