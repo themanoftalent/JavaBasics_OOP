@@ -1,0 +1,33 @@
+writing
+import java.io.*;
+ class Main {
+    public static void main(String[] args) {
+        try{
+            BufferedWriter yaz = new BufferedWriter(
+                new FileWriter("cikti.txt"));
+            yaz.write("betty\n");
+            yaz.write("james\n");
+            yaz.write("august");
+            yaz.close();
+            }catch(Exception ex){
+            return;
+        }
+    }
+}
+reading
+import java.io.*;
+ class Main {
+    public static void main(String[] args) {
+        try{
+            BufferedReader oku = new BufferedReader(
+                new FileReader("cikti.txt"));
+            String s;
+            while((s = oku.readLine()) != null){
+                System.out.println(s);
+            }
+            oku.close();
+            }catch(Exception ex){
+            return;
+        }
+    }
+}
