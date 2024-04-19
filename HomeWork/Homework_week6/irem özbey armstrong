@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+         Scanner input = new Scanner(System.in);
+        System.out.println("Sayı giriniz:");
+        int sayi;
+       sayi = input.nextInt();
+        int yeni=sayi;
+        int bas=0,toplam=0;
+       while(sayi!=0){
+            sayi/=10;
+            bas++; }
+       sayi = yeni; 
+	        while (sayi != 0) {
+	            int a= sayi % 10;
+	            toplam +=Math.pow(a ,bas);
+	            sayi /= 10;  }
+
+	        if (toplam == yeni) {
+	            System.out.println(" Armstrong sayısıdır");
+	        } else {
+	            System.out.println("Armstrong sayısı değildir");
+	        } }}
