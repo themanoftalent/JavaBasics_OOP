@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class AsalSayiDenetleyici {
+    public static void main(String[] args) {
+        System.out.print("Bir sayi giriniz:  ");
+        Scanner input = new Scanner(System.in);
+        int sayi = input.nextInt();
+        int sayac = 0, bolen = 2;
+
+        while (true) {
+            if (sayi % bolen == 0) {
+                sayac++;
+                break;
+            }
+            bolen++;
+            if (bolen == sayi) {
+                break;
+            }
+        }
+        if (sayac == 0) {
+            System.out.println("Girdiginiz sayi asaldir.");
+        } else {
+            System.out.println("Girdiginiz sayi asal degildir.");
+        }
+    }
+} 
+
+Ceren Mutlu 2311502264
