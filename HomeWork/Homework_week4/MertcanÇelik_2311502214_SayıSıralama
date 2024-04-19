@@ -1,0 +1,33 @@
+import java.util.*;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Dizinin eleman sayisini giriniz :");
+        int sayi = scanner.nextInt();
+
+        int[] dizi = new int[sayi];
+        int[] dizi2 = new int[sayi];
+        int i,j,k,l;
+
+        for(i=0;i< dizi.length;i++){
+            System.out.println("Dizinin "+(i+1)+". elemanini giriniz :");
+            dizi[i] = scanner.nextInt();
+            dizi2[i] = dizi[i];
+        }
+        for(j=0;j< dizi.length;j++){
+            for(k=1;k< dizi.length;k++){
+                if(dizi[j] < dizi[k]){
+                    dizi2[j] = dizi[k];
+                }
+            }
+        }
+
+        for(l=0;l< dizi.length;l++){
+            System.out.println(""+dizi2[l]);
+        }
+    }
+}
