@@ -1,0 +1,31 @@
+//2311502260
+//Palindrome Check
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Sayı girin:");
+        int sayi = num.nextInt();
+
+        int gecici_sayi, kalan, ters_sayi = 0;
+        gecici_sayi = sayi;
+
+        while(gecici_sayi != 0) {
+            kalan = gecici_sayi % 10;
+            ters_sayi = ters_sayi * 10 + kalan;
+            gecici_sayi /= 10;
+        }
+            if(sayi == ters_sayi) {
+                System.out.println("Bu bir polindrom sayıdır.");
+
+            }
+
+            else {
+                System.out.println("Bu bir polindrom sayi değildir.");
+            }
+
+
+    }
+}
