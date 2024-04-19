@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        System.out.println("sayi giriniz");
+        int sayi=oku.nextInt();
+        int ind =sayi;
+        int basamaksayisi=0;
+        while(ind>0){
+            basamaksayisi++;
+            ind/=10;
+        }
+        ind=sayi;
+        int sonuc=0;
+        while(ind>0){
+            sonuc+=Math.pow(ind%10,basamaksayisi);
+            ind/=10;
+        }
+        if(sonuc==sayi){
+            System.out.println("girdigin sayi armstrong sayi");
+        }
+        else {
+            System.out.println("girdigin sayi armstrong sayi değil");
+        }
+
+    }
+}
+
+
+//örnek 16 armstrong sayı
