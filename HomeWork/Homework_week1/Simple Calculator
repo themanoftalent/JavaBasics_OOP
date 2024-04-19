@@ -1,0 +1,63 @@
+//Simple Calculator
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Hesapmachine {
+	
+	
+
+	
+
+		public static void main(String[] args) {
+			
+			Scanner deger =new Scanner(System.in);
+			
+			int a,b;
+			char islem;
+			
+			System.out.print("a sayisini giriniz : ");
+			a = deger.nextInt();
+			
+			deger.nextLine();
+			
+			System.out.print("islem giriniz : ");
+			islem = deger.nextLine().charAt(0);
+			
+			System.out.print("b sayisini giriniz : ");
+			b = deger.nextInt();
+			
+			
+			switch(islem) {
+			
+			case '+':
+				System.out.print("a + b = "+(a+b));
+			break;
+			
+			
+			
+			case '-':
+				System.out.print("a - b = "+(a-b));
+				break;
+		
+			
+			
+			case '*':
+				System.out.print("a * b = "+(a*b));
+				break;
+			
+			
+			case '/':
+				if(b!=0) {
+					System.out.print("a / b = "+(a/b));
+				}
+				else {
+					System.out.print("yaptiginiz islem tanimsiz.");
+				}
+				break;
+				default : 
+					System.out.print("hatalı islem girdiniz.");
+			}
+		}
+	}
+
+
