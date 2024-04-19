@@ -1,4 +1,4 @@
-1.HAFTA ÖDEVİ 
+1.ÖDEV 
 
 public class Main {
     public static void main(String[] args) 
@@ -9,7 +9,7 @@ public class Main {
 
 
 
-2.HAFTA ÖDEVİ
+2.ÖDEV
 
 import java.util.Scanner;
 
@@ -31,7 +31,7 @@ public class Main {
 
 
 
-3.HAFTA ÖDEVİ
+3.ÖDEV
 import java.util.Scanner;
 
 public class Main {
