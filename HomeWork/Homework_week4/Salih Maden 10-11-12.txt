@@ -1,0 +1,44 @@
+10-
+public class Main{
+    public static void main(String[] args) {
+
+        String Str= "Hello World!";
+        System.out.println("Orijinal:" +Str);
+
+        char[] charStr= Str.toCharArray();
+
+        ters(charStr);
+
+        String tersdStr= new String(charStr);
+        System.out.println("Tersten:" +tersdStr);
+    }
+    public static void ters(char[] charStr) {
+        int bas= 0;
+        int son= charStr.length-1;
+
+        while (bas<son) {
+            char gecici= charStr[bas];
+            charStr[bas]= charStr[son];
+            charStr[son]= gecici;
+            bas++;
+            son--;
+        }
+    }
+
+}
+
+
+11-
+
+public class Main {
+    public static void main(String[] args) {
+        double[] sayilar= {28,7,11,23,71,48,59};
+        double toplam=0;
+        double ortalama=0;
+        for(double sayi: sayilar)
+            toplam+=sayi;
+        ortalama= toplam/ sayilar.length;
+        System.out.println("sayilarin toplami: " +toplam +"\n" +"sayilarin ortalamasi: " +ortalama);
+    }
+}
+
