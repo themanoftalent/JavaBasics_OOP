@@ -1,0 +1,160 @@
+//4.Calculate the factorial of a number using loops.
+
+import java.util.Scanner;
+public class Hello world {
+    public static void main(String[] args) {
+
+      Scanner scanner = new Scanner(System.in);
+
+      String options = "1-Addition\n" + "2-Subtraction\n" + "3-Division\n" + "4-Multiplication";
+      System.out.println(options);
+
+      System.out.print("Select the option: ");
+      String option = scanner.nextLine();
+
+      int number1, number2, result;
+
+      switch (option){
+          case "1":
+              System.out.print("Enter first number: ");
+              number1 = scanner.nextInt();
+
+              System.out.print("Enter second number: ");
+              number2 = scanner.nextInt();
+
+              result = number1 + number2;
+
+              System.out.print("Result: " + result);
+          break;
+
+          case "2":
+              System.out.print("Enter first number:");
+              number1 = scanner.nextInt();
+
+              System.out.print("Enter second number:");
+              number2 = scanner.nextInt();
+
+              result = number1 - number2;
+
+              System.out.print("Result: " + result);
+          break;
+
+          case "3":
+              System.out.print("Enter first number:");
+              number1 = scanner.nextInt();
+
+              System.out.print("Enter second number:");
+              number2 = scanner.nextInt();
+
+              if(number2 == 0){
+                  System.out.println("Division by zero error!");
+                  System.exit(1);
+              }
+              else{
+                  result = number1 / number2;
+
+                  System.out.print("Result: " + result);
+              }
+          break;
+
+          case "4":
+              System.out.print("Enter first number:");
+              number1 = scanner.nextInt();
+
+              System.out.print("Enter second number:");
+              number2 = scanner.nextInt();
+
+              result = number1 * number2;
+
+              System.out.print("Result: " + result);
+          break;
+          default:
+              System.out.print("Invalid option!");
+      }
+      scanner.close();
+    }
+}
+
+//5.Generate the Fibonacci sequence up to a specified number of terms.
+import java.util.Scanner;
+
+public class Hello world {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of terms for Fibonacci sequence: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not a valid number!");
+            scanner.next(); 
+            System.out.print("Please enter an integer: ");
+        }
+        int terms = scanner.nextInt();
+
+        if (terms <= 0) {
+            System.out.println("Please enter a positive integer greater than 0.");
+        } else {
+            System.out.println("Fibonacci sequence up to " + terms + " terms:");
+
+            long a = 0, b = 1;
+            if (terms == 1) {
+                System.out.println(a);
+            } else {
+                System.out.print(a + ", " + b);
+                for (int i = 2; i < terms; i++) {
+                    long next = a + b;
+                    System.out.print(", " + next);
+                    a = b;
+                    b = next;
+                }
+                System.out.println(); 
+            }
+        }
+
+        scanner.close();
+    }
+}
+
+//6.Determine whether a given string is a palindrome.
+
+	import java.util.Scanner;
+
+	public class  Hello world {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        // Prompt the user for a string
+	        System.out.print("Enter a string to check if it's a palindrome: ");
+	        String input = scanner.nextLine();
+
+	        // Normalize the string by removing non-alphanumeric characters and converting to lower case
+	        String normalized = input.replaceAll("[\\W_]+", "").toLowerCase();
+
+	        // Check if the string is a palindrome
+	        boolean isPalindrome = isPalindrome(normalized);
+	        if (isPalindrome) {
+	            System.out.println("\"" + input + "\" is a palindrome.");
+	        } else {
+	            System.out.println("\"" + input + "\" is not a palindrome.");
+	        }
+
+	        scanner.close();
+	    }
+
+	    // Method to determine if a string is a palindrome
+	    private static boolean isPalindrome(String text) {
+	        int left = 0;
+	        int right = text.length() - 1;
+
+	        while (left < right) {
+	            if (text.charAt(left) != text.charAt(right)) {
+	                return false; // Not a palindrome
+	            }
+	            left++;
+	            right--;
+	        }
+	        return true; // It's a palindrome
+	    }
+	}
+
+//2311502298
+
