@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner gir = new Scanner(System.in);
+        int a = gir.nextInt();
+        int[] sayidizisi = new int[a];
+        for (int i = 0;i<a;i++){
+            sayidizisi[i] = gir.nextInt();
+        }
+        int toplam = 0;
+        for (int i = 0;i < a;i++){
+            toplam += sayidizisi[i];
+        }
+        float b = toplam/a;
+        System.out.println("dizideki sayıların toplamı = "+toplam+"ortalama = "+ b );
+    }
+}
+
