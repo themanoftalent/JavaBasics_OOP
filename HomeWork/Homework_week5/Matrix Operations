@@ -1,0 +1,95 @@
+// Matrix Operations 
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Matrisler  {
+public static void main(String[]args) {
+			
+	        Scanner deger = new Scanner(System.in);
+	        System.out.print("İlk matrisin satır sayısını gir: ");
+	        int satir1 = deger.nextInt();
+	        System.out.print("İlk matrisin sütun sayısını gir: ");
+	        int sutun1 = deger.nextInt();
+	        System.out.print("İkinci matrisin satır sayısını gir: ");
+	        int satir2 = deger.nextInt();
+	        System.out.print("İkinci matrisin sütun sayısını gir: ");
+	        int sutun2 = deger.nextInt();
+
+	        
+	        
+	        
+	        
+	        int[][] matris1 = new int[satir1][sutun1];
+	        System.out.println("İlk matrisin elemanlarını gir:");
+	        for (int i = 0; i < satir1; i++) {
+	            for (int j = 0; j < sutun1; j++) {
+	                matris1[i][j] = deger.nextInt();
+	         }
+	        }
+
+	      
+	        int[][] matris2 = new int[satir2][sutun2];
+	        System.out.println("İkinci matrisin elemanlarını gir:");
+	        for (int i = 0; i < satir2; i++) {
+	            for (int j = 0; j < sutun2; j++) {
+	                matris2[i][j] = deger.nextInt();
+	         }
+	        }
+
+	        
+	        
+	        
+	        
+	        
+	        if (satir1 == satir2 && sutun1 == sutun2) {
+	            int[][] toplam = new int[satir1][sutun1];
+	            for (int i = 0; i < satir1; i++) {
+	                for (int j = 0; j < sutun1; j++) {
+	                    toplam[i][j] = matris1[i][j] + matris2[i][j];
+	            }
+	            }
+	            System.out.println("Toplam Matris:");
+	            Matrix(toplam);
+	        } else {
+	            System.out.println("Matrislerin boyutları uyumsuz. Toplama işlemi yapılamaz.");
+	        }
+
+	        
+	        
+	        
+	        
+	        
+	  
+	        if (sutun1 == satir2) {
+	            int[][] carpim = new int[satir1][sutun2];
+	            for (int i = 0; i < satir1; i++) {
+	                for (int j = 0; j < sutun2; j++) {
+	                    for (int k = 0; k < sutun1; k++) {
+	                        carpim[i][j] += matris1[i][k] * matris2[k][j];
+	              }
+	             }
+	            }
+	            System.out.println("Çarpım Matris:");
+	        Matrix(carpim);
+	        } else {
+	            System.out.println("Matrislerin boyutları uyumsuz. Çarpma işlemi yapılamaz.");
+	        }
+
+	     
+	        
+	        
+	        
+	        
+	        
+	    }
+
+	    
+	    public static void Matrix(int[][] matris) {
+	        for (int i = 0; i < matris.length; i++) {
+	            for (int j = 0; j < matris[i].length; j++) {
+	                System.out.print(matris[i][j] + " ");
+	            }
+	            System.out.println();
+      }
+	 }
+	}
