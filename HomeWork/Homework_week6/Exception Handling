@@ -1,0 +1,46 @@
+//Exception Handling
+////Fatih Selim ADALI 2311502248
+
+
+import java.util.Scanner;
+public class Method  {
+  public static void main(String[]args) {
+	  
+	  int[] dizi = new int[5]; 
+
+      Scanner deger = new Scanner(System.in);
+      int girilenSayi;
+      int girilenSayiSayaci = 0;
+      int bossayi;
+      
+      
+      System.out.println("Hafızada 5 adet int türünde veri yer açan bir dizinin elemanlarını girin");
+      System.out.println();
+      System.out.println();
+      
+      while (girilenSayiSayaci < 5) { 
+          System.out.print("Lütfen " + (girilenSayiSayaci + 1) + ". sayıyı girin: ");
+          girilenSayi = deger.nextInt();
+          if (girilenSayiSayaci == 4) {
+          System.out.print("Lütfen 6. sayıyı girin: ");
+          bossayi = deger.nextInt();
+          }
+          
+          
+          if (girilenSayiSayaci == 4) {
+        	  System.out.println();
+              System.out.println();
+              System.out.println("Bu dizi hafızada 5 adet veri için yer açtığından 6. sayıyı giremezsin ve hata alırsın !");
+              break;
+          }
+
+          dizi[girilenSayiSayaci] = girilenSayi;
+          girilenSayiSayaci++;
+      }
+
+     
+     
+  }
+
+
+}
