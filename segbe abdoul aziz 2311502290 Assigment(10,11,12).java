@@ -1,0 +1,75 @@
+//Segbe Abdoul Aziz Diomande
+//Assigment10
+import java.util.Scanner;
+public class Assigment10 {
+    public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter a string: ");
+            String input = scanner.nextLine();
+            String reversed = reverseString(input);
+            System.out.println("Reversed string: " + reversed);
+        }
+        public static String reverseString(String str) {
+            char[] chars = str.toCharArray();
+            int left = 0;
+            int right = chars.length - 1;
+            while (left < right) {
+                char temp = chars[left];
+                chars[left] = chars[right];
+                chars[right] = temp;
+                left++;
+                right--;
+            }
+            return new String(chars);
+        }
+    }
+//Assigment11
+import java.util.Scanner;
+public class Assigment11 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter the number of elements in the array: ");
+            int n = scanner.nextInt();
+            int[] arr = new int[n];
+            System.out.println("Enter the elements of the array:");
+            for (int i = 0; i < n; i++) {
+                arr[i] = scanner.nextInt();
+            }
+            int sum = 0;
+            for (int num : arr) {
+                sum += num;
+            }
+            double average = (double) sum / n;
+            System.out.println("Sum of elements: " + sum);
+            System.out.println("Average of elements: " + average);
+        }
+}
+//Assigment12
+import java.util.Arrays;
+public class Assigment12 {
+        public static void main(String[] args) {
+            int[] arr = {42, 12, 76, 89, 33, 16, 80};
+            System.out.println("Original array: " + Arrays.toString(arr));
+            bubbleSort(arr);
+            System.out.println("Sorted array: " + Arrays.toString(arr));
+        }
+        public static void bubbleSort(int[] arr) {
+            int n = arr.length;
+            boolean swapped;
+            for (int i = 0; i < n - 1; i++) {
+                swapped = false;
+                for (int j = 0; j < n - i - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                        swapped = true;
+                    }
+                }
+                if (!swapped) {
+                    break;
+                }
+            }
+        }
+}
+
