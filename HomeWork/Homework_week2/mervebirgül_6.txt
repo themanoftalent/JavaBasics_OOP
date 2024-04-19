@@ -1,0 +1,25 @@
+
+public class palindrom {
+
+    public static void main(String[] args) {
+
+        String kelime = "yapay";
+        String tersKelime= "";
+        int uzunluk=kelime.length();
+
+
+        for (int i = uzunluk-1; i >=0 ; i--) {
+
+            tersKelime += kelime.charAt(i);
+
+
+        }
+        if(tersKelime.equals(kelime))
+            System.out.println("palindrom sayidir"+ " "+kelime);
+        else
+            System.out.println("degildir" + " "+ kelime);
+
+
+    }
+}
+
