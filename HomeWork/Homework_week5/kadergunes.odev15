@@ -1,0 +1,50 @@
+//kader güneş
+// odev15->matris işlemleri:iki matrisin toplanmasını ve çarpılmasını gerçekleştirin.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+
+        System.out.println("Lütfen ilk matrisin elemanlarını girin :");
+        int[][] matris1 = new int[2][2];
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                matris1[i][j] = input.nextInt();
+            }
+        }
+        System.out.println("Lütfen ikinci matrisin elemanlarını girin :");
+        int[][] matris2 = new int[2][2];
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                matris2[i][j] = input.nextInt();
+            }
+        }
+        int[][] matris3 = new int[2][2];
+        for (int i = 0; i < 2; i++) {
+            for (int j=0;j<2;j++) {
+                matris3[i][j] =matris1[i][j] + matris2[i][j];
+            }
+        }
+        int [][] matris4=new int[2][2];
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                matris4[i][j]=matris1[i][j]*matris2[i][j];
+            }
+        }
+        System.out.println("Matris toplamı:");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print( " "+matris3[i][j] );
+            }
+            System.out.println();
+        }
+        System.out.println("Matris çarpımı:");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                System.out.print(" "+matris4[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
