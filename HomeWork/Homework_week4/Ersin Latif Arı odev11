@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class odev11 {
+public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+    System.out.println("dizinin boyutunu girin:");
+     int size = scanner.nextInt();
+
+     int[] array = new int[size];
+     System.out.println("dizinin elemanlarını girin:");
+     for (int i = 0; i < size; i++) {
+        array[i] = scanner.nextInt();
+    }
+
+     int sum = 0;
+    for (int num : array) {
+            sum += num;
+     }
+    double average = (double) sum / size;
+
+    System.out.println("Dizi elemanlarinin toplami: " + sum);
+    System.out.println("dizi elemanlarinin ortalaması: " + average);
+
+        scanner.close();
+	}
