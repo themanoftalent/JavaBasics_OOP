@@ -1,0 +1,92 @@
+//2311502260
+//Matrix Operations
+
+import java.util.Random;
+
+public class Odev {
+    public static void main(String[] args) {
+        Random num = new Random();
+        int dizi1[][], dizi2[][], sonuc_dizi1[][], sonuc_dizi2[][];
+
+        int satir, sutun;
+
+        satir = num.nextInt(9);
+        sutun = num.nextInt(9);
+
+        dizi1 = new int[satir][sutun];
+        dizi2 = new int[satir][sutun];
+        sonuc_dizi1 = new int[satir][sutun];
+        sonuc_dizi2 = new int[satir][sutun];
+
+
+        for(int i = 0; i < satir; i++) {
+            for(int j = 0; j < sutun; j++) {
+                dizi1[i][j] = num.nextInt(5);
+
+            }
+        }
+
+
+        for(int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                dizi2[i][j] = num.nextInt(5);
+            }
+        }
+
+
+        for(int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                sonuc_dizi1[i][j] = dizi1[i][j] + dizi2[i][j];
+            }
+        }
+
+
+        for(int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                sonuc_dizi2[i][j] = dizi1[i][j] * dizi2[i][j];
+            }
+        }
+
+        System.out.println("1. Matris =");
+        for(int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+
+                System.out.print(dizi1[i][j] + "");
+
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n");
+        System.out.println("2. Matris =");
+        for(int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+
+                System.out.print(dizi2[i][j] + "");
+
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n");
+        System.out.println("Toplam Matris =");
+        for(int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                System.out.print(sonuc_dizi1[i][j] + "");
+
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n");
+        System.out.println("Çarpım Matris =");
+        for(int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                System.out.print(sonuc_dizi2[i][j] + "");
+
+            }
+            System.out.println();
+        }
+
+    }
+}
