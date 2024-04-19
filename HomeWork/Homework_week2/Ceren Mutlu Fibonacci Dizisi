@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class FibonacciDizisi {
+    public static void main(String[] args) {
+        int i = 0, a = 1, b = 1, c = 1;
+        System.out.println(a);
+        System.out.println(b);
+        while(i<=10) {
+            a = b;
+            b = c;
+            c = a + b;
+            System.out.println(c);
+            i++;
+        }
+    }
+} 
+
+Ceren Mutlu 2311502264

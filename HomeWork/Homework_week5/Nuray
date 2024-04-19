@@ -1,0 +1,24 @@
+public class LinearSearch {
+    public static void main(String args[]){
+        int[] liste = {1, 4, 99, 2, 5, -3, 6, 2,-49,52};
+
+        int sayiIndex = linearSearch(liste,52); 
+        if(sayiIndex != -1){ 
+            System.out.println("Aranan sayının index'i :"+sayiIndex);
+        }else{ 
+            System.out.println("Aranan sayı bulunamadı");
+        }
+    }
+
+    private static int linearSearch(int[] liste, int arananSayi) { 
+
+        for (int i = 0; i <liste.length; i++) { 
+            if(liste[i] == arananSayi){ 
+                return i; 
+            }
+        }
+        return -1;
+    }
+}
+
+

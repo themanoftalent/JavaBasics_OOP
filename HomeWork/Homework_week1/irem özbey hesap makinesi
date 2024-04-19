@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class HesapMakinesi {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("1.sayiyi girin:");
+        int sayi1 = input.nextInt();
+        System.out.println("2.sayiyi girin:");
+        int sayi2 =input.nextInt();
+        System.out.println("istediğiniz işlem nedir:");
+        String islemler = input.next();
+        double sonuc=0;
+        
+        switch(islemler)  {
+        case "+":
+        sonuc = sayi1 + sayi2;
+        break;
+        case "-":
+        sonuc = sayi1 - sayi2;
+        break;
+        case "*":
+        sonuc=sayi1*sayi2;
+        break;
+        case "/":
+        sonuc=sayi1/sayi2;
+        break;
+        default :
+        System.out.println ("hatalı islem "); 
+        return;
+        }
+       System.out.println("Cevap"+ sonuc);
+}
+   }
+

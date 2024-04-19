@@ -1,0 +1,84 @@
+// Nisanur GÖREN 2311502215
+
+// 10. Reverse a String
+
+import java.util.Scanner;
+
+public class Ters {
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		String duz = scanner.nextLine();
+		int uzunluk = duz.length();
+		String ters = "";
+
+		for (int i = uzunluk - 1; i >= 0; i--) {
+			ters += duz.charAt(i);
+
+		}
+
+		for (int i = 0; i < uzunluk; i++) {
+			System.out.println(ters.charAt(i));
+
+		}
+		scanner.close();
+	}
+}
+
+
+// 11. Array Sum and Average
+
+import java.util.Scanner;
+
+public class ArraySumandAverage {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Eleman sayısını giriniz: ");
+        int terim = scanner.nextInt();
+        int[] dizi = new int[terim];
+        int toplam = 0;
+
+        for(int i=0; i<terim; i++) {
+
+            System.out.println(i + ". terimi giriniz: ");
+            int eleman = scanner.nextInt();
+            toplam = toplam + eleman;
+        }
+
+        double ortalama = (double) toplam / terim;
+
+        System.out.println("Dizinin elemanlarının toplamı: "+toplam);
+        System.out.println("Dizinin elemanlarının ortalaması: "+ortalama);
+
+    }
+}
+
+
+// 12. Array Sorting
+
+public class Main {
+    public static void main(String[] args) {
+
+        int[] dizi = new int[] {12, 3, 26, 89, 43, 32, 126};
+        int[] sirali = new int[7]; 
+        for (int i = 0; i < sirali.length; i++) {
+            int eb = Integer.MIN_VALUE;
+            int b = -1;
+
+            for (int j = 0; j < dizi.length; j++) {
+                if (dizi[j] > eb) {
+                    eb = dizi[j];
+                    b = j;
+                }
+            }
+
+            sirali[i] = eb;
+            dizi[b] = Integer.MIN_VALUE;
+        }
+        
+        for (int c = 0; c < sirali.length; c++) {
+            System.out.printf("%d ", sirali[c]);
+        }
+    }
+}

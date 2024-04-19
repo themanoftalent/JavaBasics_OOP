@@ -1,0 +1,24 @@
+//kadergunes
+//odev5->fibonacci dizisi:belirli sayıda terime terime kadar fibonacci dizisini oluşturun.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int a;
+        System.out.println("Sayı giriniz:");
+        Scanner input = new Scanner(System.in);
+        a= input.nextInt();
+            for (int i = 0; i < a; i++) {
+                System.out.print( " "+fibonacci(i) );
+            }
+        }
+
+        public static int fibonacci(int a) {
+            if (a== 0) {
+              return 0;
+            } else if (a== 1) {
+                return 1;
+            } else {
+                return fibonacci( a- 1) + fibonacci(a- 2);
+            }
+        }
+    }

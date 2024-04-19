@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class DiziToplamiVeOrtalamasi {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int toplam = 0;
+        System.out.println("Dizinin eleman sayisini giriniz: ");
+        int eleman = input.nextInt();
+        int dizi[] = new int [eleman];
+        for(int i = 0; i < eleman; i++) {
+            System.out.println("Dizi icin eleman giriniz: ");
+            int sayi = input.nextInt();
+            toplam = toplam + sayi;
+        }
+        double ort = toplam / eleman;
+        System.out.println("Girdiginiz sayilarin toplami: "+toplam);
+        System.out.println("Girdiginiz sayilarin ortalamasi: "+ort);
+    }
+} 
+
+Ceren Mutlu 2311502264

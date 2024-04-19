@@ -1,0 +1,86 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Sayiyi giriniz: ");
+        int sayi = scan.nextInt();
+        int sayix = sayi;
+        int uzunluk =0,toplam =0,carpma;
+
+        int sayi1 = sayi;
+        while (sayi1 != 0) {
+            sayi1 /= 10;
+            uzunluk++;
+        }
+        sayi = sayix;
+        while (sayi != 0) {
+            int basamak = sayi % 10;
+             carpma = 1;
+
+            for (int i = 0; i < uzunluk; i++) {
+                carpma *= basamak;
+            }
+            toplam += carpma;
+            sayi = sayi / 10;
+        }
+        if (sayix == toplam) {
+            System.out.println(sayix + " armstrong sayisidir.");
+        } else {
+            System.out.println(sayix + " armstrong sayisi degildir.");
+        }
+
+
+    }
+}
+
+//17.ornek
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileOperations {
+
+    public static void main(String[] args) {
+        String inputFile = "input.txt";
+        String outputFile = "output.txt";
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+            
+            BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String processedLine = "Merhaba " + line;
+                writer.write(processedLine);
+                writer.newLine();
+            }
+
+            reader.close();
+            writer.close();
+
+            System.out.println("veri manipüle edildi ve '" + outputFile + "' dosyasina yazildi.");
+        } catch (IOException e) {
+            e.printStackTrace();
+         
+        }
+    }
+}
+
+//18.ornek
+
+public class Aritmetikhata {
+    public static void main(String[] args) {
+        int sonuc;
+        try {
+          sonuc = 10 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("sifira bolme hatasi olustu");
+            e.printStackTrace(); 
+            return;
+        }
+        System.out.println("Sonuç: " + sonuc);
+    }
+}

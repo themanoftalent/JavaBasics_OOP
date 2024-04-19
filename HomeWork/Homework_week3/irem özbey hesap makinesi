@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Hesap {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("sayi girin");
+        int carpim;
+        int sayi = input.nextInt();
+        for(int i =1;i<=9;i++){
+            carpim=sayi*i;
+            System.out.println(sayi+ "*"  +i+"=" +carpim);
+        }}}

@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+       Scanner oku=new Scanner(System.in);
+        String duz=oku.nextLine();
+        String ters="";
+        for(int i=duz.length()-1;i>=0;i--){
+            ters+=duz.charAt(i);
+        }
+        System.out.println("girdiginiz seyin tersi:");
+        System.out.println(ters);
+    }
+}
+//Bir stringi ters çevirme
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+       Scanner oku=new Scanner(System.in);
+        int [] dizi={1,2,3,4,5};
+        int toplam=0;
+        for(int i=0 ; i< dizi.length ;i++){
+            toplam+=dizi[i];
+        }
+        double ortalama= (double) toplam/dizi.length;
+        System.out.println("dizi toplami:" +toplam);
+        System.out.println("dizi ortalaması:" +ortalama);
+    }
+}
+//Dizi toplamı ve ortalaması
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String[] args) {
+       Scanner oku=new Scanner(System.in);
+        int [] dizi= new int [] {5,9,12,30,2,6,1};
+        int [] siralidizi=new int [7];
+        for(int j=0;j< 7;j++){
+            int eb=0;
+            int ind =-1;
+            for(int i=0;i<7;i++) {
+                if (dizi[i] > eb) {
+                    eb = dizi[i];
+                    ind = i;
+                }
+            }
+                siralidizi[j]=eb;
+                dizi[ind]=0;
+        }
+            for(int k=0;k< siralidizi.length;k++){
+                System.out.printf("%d ",siralidizi[k]);
+        }
+    }
+}
+//Dizi Sıralama

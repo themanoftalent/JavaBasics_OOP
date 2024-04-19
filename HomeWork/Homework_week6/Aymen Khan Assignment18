@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+// ISTISNA ISLEME | EXCEPTION HANDLING
+public class Main {
+    public static void main(String[] args) {
+   
+   try {
+	   Scanner scanner = new Scanner(System.in);
+	   
+	   System.out.println("Bolmek icin bir sayi giriniz: ");
+	   int x = scanner.nextInt();
+	   
+	   System.out.println("Bolunecek icin bir sayi giriniz: ");
+	   int y = scanner.nextInt();
+	   
+	   int z = x/y;
+	   
+	   System.out.println("sonuc: " + z);	   
+       }
+       catch(ArithmeticException e) {
+    	   System.out.println("Sifira bolemezsin!");
+       }  
+    }
+}

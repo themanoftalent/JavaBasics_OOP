@@ -1,0 +1,115 @@
+//Furkan Tatar 2311502208;
+
+//7.Soru
+
+import java.util.Scanner;
+
+class RakamlarToplam {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Rakamlar toplamini hesaplamak istediginiz sayiyi giriniz: ");
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		
+		int rakamlarToplam = 0;
+		
+		while(number != 0) {
+			rakamlarToplam += (number%10);
+			number /= 10;
+		}
+		
+		System.out.println("Girdiginiz sayinin rakamlar toplami: " +rakamlarToplam);
+		
+		input.close();
+	}
+}
+
+//8.Soru
+
+import java.util.Scanner;
+
+class CarpimTablosu {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Carpim sonuclarini görmek istediginiz sayiyi giriniz: ");
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();				
+		System.out.print("Kaca Kadar olan sayilarla carpimini görmek istiyorsunuz: ");
+		int hedef = input.nextInt();
+		
+		for(int sayac=0; sayac <= hedef; sayac++) {
+		System.out.println(number +"x"+ sayac + " = "+ (number*sayac));	
+		}
+		
+		input.close();
+	}
+}
+
+//9.Soru (2 Class)
+
+(1. class)
+import java.util.Scanner;
+
+class AsalOrBilesik {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Asal/Birlesik özelliklerini görmek istediginiz sayiyi giriniz: ");
+		int number = input.nextInt();
+		NumberCheck.sayiAralik(number, input);
+		
+		if(NumberCheck.sayiAsalMi(number) == true) {
+			System.out.println("Asal sayi girdiniz. ");
+		}
+		else {
+			if(NumberCheck.sayiBilesikMi(number) == true) {
+				System.out.println("Bilesik sayi girdiniz.");
+			}
+			else {
+				System.out.println("Girdiginiz sayi Asal ya da Bilesik degildir. ");
+			}
+		}
+		
+	}
+}
+
+(2. Class)
+import java.util.Scanner;
+
+class NumberCheck {
+
+	static void sayiAralik(int number, Scanner input) {
+		
+		while(number<10) {
+			System.out.print("Gecersiz deger girdiniz tekrar giriniz: ");
+			number = input.nextInt();
+		}
+	}
+	
+	
+	static boolean sayiAsalMi(int number) {
+		
+		for(int sayac=2; sayac <= number/2; sayac++) {
+			if(number%sayac == 0) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+	
+	static boolean sayiBilesikMi(int number) {
+		for(int sayac = 1; sayac<number/2; sayac++) {
+			if(sayiAsalMi(sayac) && sayiAsalMi(number/sayac)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+}
+

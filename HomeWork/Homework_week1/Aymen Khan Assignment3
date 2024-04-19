@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+// CIFT VEYA TEK | EVEN OR ODD 
+public class Main {
+    public static void main(String[] args) {
+    
+    	Scanner scanner = new Scanner(System.in);
+        int num;
+        
+        System.out.println("Enter a value= ");
+        num = scanner.nextInt();
+        
+        if(num%2 == 0) {
+        	System.out.println("Girdiginiz sayi cift sayidir");
+        }
+        
+        else {
+        	System.out.println("Girdiginiz sayi tek sayidir");
+        }               
+  }
+}
+
+	

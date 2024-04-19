@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class KaanBaskanÖzYinelemeliFonksiyon {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Faktoriyeli hesaplanacak sayıyı girin: ");
+        int sayi = scanner.nextInt();
+        long faktoriyel = faktoriyelHesapla(sayi);
+        System.out.println(sayi + " sayısının faktöriyeli: " + faktoriyel);
+    }
+
+    public static long faktoriyelHesapla(int sayi) {
+        if (sayi == 0) {
+            return 1;
+        } else {
+            return sayi * faktoriyelHesapla(sayi - 1);
+        }
+    }
+}

@@ -1,0 +1,66 @@
+//Factorial Calculator
+import java.util.Scanner;
+
+public class FactorialCalculator {
+    public FactorialCalculator() {
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Please enter a positive number:");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        int fac = 1;
+
+        for(int i = 1; i <= number; ++i) {
+            fac *= i;
+        }
+
+        System.out.println("Factorial is:" + fac);
+    }
+}
+
+
+//Fibonacci Numbers
+import java.util.Scanner;
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Until which term do you want to see?");
+        int number = scanner.nextInt();
+        System.out.println("Fibonacci sequence:");
+        int a = 0, b = 1;
+        for (int i = 0; i < number; i++) {
+
+            int temp = a + b;
+            a=b;
+            b= temp;
+            System.out.print(" " + temp);
+        }
+
+    }
+}
+
+//Palindrome 
+import java.util.Scanner;
+public class Palindrome {
+    public static void main(String[] args) {
+        Scanner scanner=   new Scanner(System.in);
+        System.out.println("Enter a word!!");
+        String kelime= scanner.nextLine();
+        String tmp= "";
+
+        for(int i= kelime.length()-1; i>=0; i--) {
+            tmp += kelime.charAt(i);
+        }
+        if(tmp.equals(kelime)){
+            System.out.println("Palindrome word");
+        }
+        else {
+            System.out.println("İsn't palindrome word");
+        }
+
+
+
+
+}
+}
