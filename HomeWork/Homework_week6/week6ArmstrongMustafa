@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Armstrong {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+
+        if (armstrongSayisiMi(sayi)) {
+            System.out.println(sayi + " bir Armstrong sayısıdır.");
+        } else {
+            System.out.println(sayi + " bir Armstrong sayısı değildir.");
+        }
+
+        scanner.close();
+    }
+
+    public static boolean armstrongSayisiMi(int sayi) {
+        int basamakSayisi = basamakSayisiHesapla(sayi);
+        int geciciSayi = sayi;
+        int toplam = 0;
+
+        while (geciciSayi != 0) {
+            int rakam = geciciSayi % 10;
+            toplam += Math.pow(rakam, basamakSayisi);
+            geciciSayi /= 10;
+        }
+
+        return (toplam == sayi);
+    }
+
+    public static int basamakSayisiHesapla(int sayi) {
+        int basamakSayisi = 0;
+        while (sayi != 0) {
+            basamakSayisi++;
+            sayi /= 10;
+        }
+        return basamakSayisi;
+    }
+}
