@@ -1,0 +1,164 @@
+/13.Perform a linear search in an array to find a specific element.
+//import java.util.Scanner;
+
+public class LinearSearch {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        System.out.print("Enter the number of elements in the array: ");
+        int n = scanner.nextInt();
+        int[] numbers = new int[n];
+
+       
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+
+        
+        System.out.print("Enter the element to search for: ");
+        int target = scanner.nextInt();
+
+      
+        int result = linearSearch(numbers, target);
+
+        
+        if (result == -1) {
+            System.out.println("Element not found in the array.");
+        } else {
+            System.out.println("Element found at index: " + result);
+        }
+
+        scanner.close();
+    }
+
+    
+    public static int linearSearch(int[] array, int target) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                return i; 
+            }
+        }
+        return -1; 
+    }
+}
+//14.Implement binary search on a sorted array.
+//public class BinarySearch {
+    public static int binarySearch(int[] array, int target) {
+        int left = 0;
+        int right = array.length - 1;
+        
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            
+            // Eğer ortadaki öğe aradığımız öğeyle eşleşirse, arama tamamlandı
+            if (array[mid] == target) {
+                return mid;
+            }
+            
+            // Eğer ortadaki öğe aradığımız öğeden büyükse, arama sol yarıya odaklanır
+            if (array[mid] > target) {
+                right = mid - 1;
+            }
+            // Eğer ortadaki öğe aradığımız öğeden küçükse, arama sağ yarıya odaklanır
+            else {
+                left = mid + 1;
+            }
+        }
+        
+        // Öğe bulunamadıysa -1 döndürülür
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] array = {1, 3, 5, 7, 9, 11, 13};
+        int target = 7;
+        int index = binarySearch(array, target);
+        if (index != -1) {
+            System.out.println("Öğe bulundu, indis: " + index);
+        } else {
+            System.out.println("Öğe bulunamadı.");
+        }
+    }
+}
+//15.Perform addition and multiplication of two matrices.
+//public class MatrixOperations {
+    public static void main(String[] args) {
+       
+        int[][] matrixA = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+
+        int[][] matrixB = {
+            {7, 8, 9},
+            {10, 11, 12}
+        };
+
+   
+        int[][] sum = addMatrices(matrixA, matrixB);
+        System.out.println("Sum of Matrix A and Matrix B:");
+        printMatrix(sum);
+
+     
+        int[][] matrixC = {
+            {1, 2},
+            {3, 4},
+            {5, 6}
+        };
+
+        int[][] matrixD = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+
+    
+        int[][] product = multiplyMatrices(matrixC, matrixD);
+        System.out.println("Product of Matrix C and Matrix D:");
+        printMatrix(product);
+    }
+
+    
+    public static int[][] addMatrices(int[][] A, int[][] B) {
+        int rows = A.length;
+        int cols = A[0].length;
+        int[][] result = new int[rows][cols];
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                result[i][j] = A[i][j] + B[i][j];
+            }
+        }
+        return result;
+    }
+
+   
+    public static int[][] multiplyMatrices(int[][] A, int[][] B) {
+        int aRows = A.length;
+        int aCols = A[0].length;
+        int bCols = B[0].length;
+        int[][] result = new int[aRows][bCols];
+
+        for (int i = 0; i < aRows; i++) {
+            for (int j = 0; j < bCols; j++) {
+                for (int k = 0; k < aCols; k++) {
+                    result[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+        return result;
+    }
+
+  
+    public static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int value : row) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+

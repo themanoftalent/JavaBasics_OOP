@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class KaanBaskanPalindrom {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Bir kelime veya cümle girin:");
+        String kelime = scan.nextLine();
+
+        if (Palindromm(kelime)) {
+            System.out.println("Girilen kelime veya cümle bir palindromdur.");
+        } else {
+            System.out.println("Girilen kelime veya cümle bir palindrom değildir.");
+        }
+    }
+
+    public static boolean Palindromm(String kelime) {
+
+        int baslangic = 0;
+        int bitis = kelime.length() - 1;
+
+        while (baslangic < bitis) {
+
+            if (kelime.charAt(baslangic) != kelime.charAt(bitis)) {
+                return false;
+            }
+            baslangic++;
+            bitis--;
+        }
+        return true;
+    }
+}

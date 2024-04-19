@@ -1,0 +1,41 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class diziArama {
+
+    public static void main(String[] args) {
+        Scanner elema=new Scanner(System.in);
+        System.out.println("dizi için eleman sayısı belirleyiniz:");
+        int elemanSayi=elema.nextInt();
+
+        int dizi[]=new int[elemanSayi];
+
+
+
+
+
+
+        for(int i=0;i<elemanSayi;i++){
+
+            Scanner scanner=new Scanner(System.in);
+            System.out.println("dizinin "+(i+1)+". elemanini girinz:");
+            dizi[i]=scanner.nextInt();
+
+        }
+        Scanner ara=new Scanner(System.in);
+        System.out.println("aramak istediğiniz sayyı giriniz:");
+        int aranan=ara.nextInt();
+
+        System.out.println(Arrays.toString(dizi));
+
+        for(int i=0;i<elemanSayi;i++){
+            if(dizi[i]==aranan)
+                System.out.println("aradığınız sayı bulundu"+" dizinin "+(i+1)+ " . elemanında "+ aranan);
+
+
+        }
+
+
+
+    }
+}
+

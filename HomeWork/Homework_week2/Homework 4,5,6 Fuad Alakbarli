@@ -1,0 +1,88 @@
+//4.Calculate the factorial of a number using loops.
+import java.util.Scanner;
+
+
+
+	public class FactorialCalculator {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        while (true) {
+	            System.out.print("Faktöriyelini hesaplamak için negatif olmayan bir tamsayı girin (veya çıkmak için -1 girin): ");
+	            int num = scanner.nextInt();
+
+	            if (num == -1) {
+	                System.out.println("Faktöriyel hesap makinesinden çıkılıyor.");
+	                break;
+	            } else if (num < 0) {
+	                System.out.println("Lütfen negatif olmayan bir tamsayı girin.");
+	            } else {
+	                long faktöriyel= calculateFactorial(num);
+	                System.out.println("Faktöriyel " + num + " is: " +faktöriyel);
+	            }
+	        }
+
+	        scanner.close();
+	    }
+
+	    public static long calculateFactorial(int n) {
+	        if (n == 0 || n == 1) {
+	            return 1;
+	        } else {
+	            return n * calculateFactorial(n - 1);
+	        }
+	    }
+	}
+//5.Generate the Fibonacci sequence up to a specified number of terms.
+import java.util.Scanner;
+
+public class FibonacciSequence {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the number of terms in the Fibonacci sequence: ");
+        int count = scanner.nextInt();
+        
+        // Checking if the input is valid
+        if (count <= 0) {
+            System.out.println("Please enter a positive integer.");
+        } else {
+            System.out.print("Fibonacci sequence up to " + count + " terms: ");
+            for (int i = 0; i < count; i++) {
+                System.out.print(fibonacci(i) + " ");
+            }
+        }
+        
+        scanner.close();
+    }
+
+    // Method to calculate Fibonacci number recursively
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+}
+//6.Determine whether a given string is a palindrome.
+public class PalindromeChecker {
+    public static boolean isPalindrome(String str) {
+        // Boşlukları, noktalama işaretlerini ve özel karakterleri kaldırın
+        str = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        
+        // Dizeyi tersine çevirin
+        String reversedStr = new StringBuilder(str).reverse().toString();
+        
+        // Tersine çevrilmiş dize ile orijinal dizeyi karşılaştırın
+        return str.equals(reversedStr);
+    }
+
+    public static void main(String[] args) {
+        String testString = "A man, a plan, a canal: Panama";
+        System.out.println(isPalindrome(testString));  // true
+    }
+}
+
+
+

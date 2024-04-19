@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner gir = new Scanner(System.in);
+        System.out.println("sayı gir:");
+        int sayi = gir.nextInt();
+        int sonuc = sayi,toplam=0;
+
+        while(sonuc>0){
+            toplam*=10;
+            toplam+= + sonuc % 10;
+            sonuc= sonuc/ 10;
+        }
+        if(toplam == sayi){
+            System.out.println("Palindrom");
+        }
+        else{
+            System.out.println("Palindrom değil.");
+        }
+    }
+}

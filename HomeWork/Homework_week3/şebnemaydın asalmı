@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gir = new Scanner(System.in);
+        System.out.println("sayi gir");
+        int sayi = gir.nextInt();
+        boolean asalMi = true;
+        int i;
+
+        for(i = 2; i<sayi/2; i++){
+            if(sayi % i == 0){
+                asalMi = false;
+                break;
+            }
+        }
+        if(asalMi){
+            System.out.println("Asal");
+        }
+        else{
+            System.out.println("Asal değil");
+        }
+    }
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class FaktoriyelHesaplayici {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz: ");
+        int sayi = input.nextInt();
+        int sonuc = 1;
+        for (int i = 1; i <= sayi; i++) {
+            sonuc = sonuc * i;
+        }
+        System.out.println(sonuc);
+    }
+} 
+
+Ceren Mutlu 2311502264

@@ -1,0 +1,59 @@
+//Sum of Digits
+import java.util.Scanner;
+public class  SumOfDigits{
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter a Number");
+        int number= scanner.nextInt();
+        int sum=0;
+        while (number>0){
+            int a=number%10;
+            number=number/10;
+            sum=a+sum;
+        }
+        System.out.println("Sum of digits: " + sum);
+
+
+    }
+}
+
+//Multiplication Table
+public class MultiplicationTable{
+    public static void main(String[] args) {
+        for(int i=1; i<=9;i++) {
+            for (int j=1;j<=9;j++){
+                int multiplication=i*j;
+                System.out.print(" "+ multiplication);
+            }
+            System.out.println(" ");
+        }
+        }
+    }
+
+//Prime Number Checker
+import java.util.Scanner;
+public class PrimeNumberChecker{
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter a number!");
+        int number= scanner.nextInt();
+        boolean Prime = true;
+
+        for(int i=2; i<=number/2;i++)
+        {
+        if (number%i==0)
+            Prime = false;
+        else
+            Prime=true;
+
+
+        }
+        if (Prime){
+            System.out.println("Prime number");
+
+        }
+        else {
+            System.out.println("Not a prime number5i");
+        }
+    }
+}

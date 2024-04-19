@@ -1,0 +1,17 @@
+//kader güneş
+//odev11->dizi toplamı ve ortalaması:bir dizideki öğelerin toplamını ve ortalamasını hesaplayın.
+public class Main {
+    public static void main(String[] args) {
+        double toplam=0;
+        double ortalama;
+        int[]dizi={1,2,3,4,5,6};
+        for(int i=0;i<6;i++){
+            toplam+=dizi[i];
+        }
+        ortalama=toplam/6;
+        System.out.println("toplam="+toplam);
+        System.out.println("ortalama="+ortalama);
+        
+
+    }
+}

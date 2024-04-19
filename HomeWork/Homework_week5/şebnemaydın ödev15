@@ -1,0 +1,63 @@
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Satır ve sütun gir");
+        int satır1,sütun1,satır2,sütun2;
+        Scanner gir = new Scanner(System.in);
+        satır1 = gir.nextInt();
+        sütun1 = gir.nextInt();
+        int[][] matris1= new int[satır1][sütun1];
+        for (int i = 0;i < satır1;i++){
+            for (int j = 0 ;j < sütun1;j++){
+                matris1[i][j] = gir.nextInt();
+            }
+        }
+        System.out.println("matris1 =");
+        for (int i = 0;i < satır1;i++){
+            for (int j = 0 ;j < sütun1;j++){
+                System.out.print(matris1[i][j]+ "  ");
+
+            }
+            System.out.println("\n");
+        }
+        System.out.println("Satır ve sütun gir");
+        satır2 = gir.nextInt();
+        sütun2 = gir.nextInt();
+        int[][] matris2 = new int[satır2][sütun2];
+        for (int i = 0;i < satır2;i++){
+            for (int j = 0 ;j < sütun2;j++){
+                matris2[i][j] = gir.nextInt();
+            }
+        }
+        System.out.println("matris2 =");
+
+        for (int i = 0;i < satır2;i++) {
+            for (int j = 0; j < sütun2; j++) {
+                System.out.print(matris2[i][j] + "  ");
+
+            }
+            System.out.println("\n");
+        }
+
+        int[][] carpımatrisi = new int[satır1][sütun2];
+
+        for (int i =0 ; i<satır1 ;i++){
+            for (int j = 0;j<sütun2;j++){
+                for (int m = 0 ;m < satır2; m++){
+                    carpımatrisi[i][j] += matris1[i][m]* matris2[m][j];
+                }
+            }
+        }
+        System.out.println("Çarpım Matrisimiz =");
+
+        for (int i = 0;i < satır1;i++) {
+            for (int j = 0; j < sütun2; j++) {
+                System.out.print(carpımatrisi[i][j] + "  ");
+
+            }
+            System.out.println("\n");
+        }
+
+    }
+}

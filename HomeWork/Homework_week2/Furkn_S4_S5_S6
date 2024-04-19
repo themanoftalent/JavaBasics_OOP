@@ -1,0 +1,83 @@
+//Furkan Tatar 2311502208
+
+
+//4. Soru
+
+import java.util.Scanner;
+
+class Faktoriyel {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Faktoriyelini görmek istediginiz sayiyi giriniz: ");
+		Scanner input = new Scanner(System.in);
+		int sayi = input.nextInt();
+		int girdi = sayi;
+		long fact = 1;
+		
+		for(; sayi > 0; sayi--) {
+			fact *= sayi;
+		}
+		
+		System.out.println(girdi + "! = "+ fact);
+	}
+}
+
+
+//5. soru
+
+import java.util.Scanner;
+
+class Fibo {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Lütfen dizinin kacinci elemanini görmek istediginizi yaziniz. ");
+		int boyut = input.nextInt();
+		
+		int[] fibo = new int[boyut];
+		
+			fibo[0]=1;
+			fibo[1]=1;
+			
+			for(int ind=2; ind<boyut; ind++) {
+				fibo[ind]= fibo[ind-1]+fibo[ind-2];
+			}
+			
+			System.out.println(boyut +". eleman degeri: "+ fibo[boyut-1]);
+			
+			input.close();
+	}
+	
+}
+
+//6. Soru
+
+import java.util.Scanner;
+
+class Palindrome {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Palindrom Kontrolü yapmak istediginiz sayiyi giriniz: ");
+		Scanner input = new Scanner(System.in);
+		int girdi = input.nextInt();
+		
+		int tut = girdi;
+		int tersi = 0;
+		
+		while(tut != 0) {
+			tersi = (tersi * 10) + (tut%10);
+			tut /= 10;
+		}
+		
+		if(tersi == girdi) {
+			System.out.println("Girdiginiz "+ girdi +" sayisi Palindrom degildir. ");
+		}
+		else{
+			System.out.println("Girdiginiz "+ girdi + " sayisi Palindrom bi sayidir. ");
+		}
+		
+		input.close();
+	}
+}

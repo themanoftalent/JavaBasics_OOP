@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+// PALINDROM KONTROLLU | PALINDROME CHECK
+public class Main {
+    public static void main(String[] args) {
+    
+    	Scanner scanner = new Scanner(System.in);
+        int num , toplam=0;
+        
+        System.out.println("Enter a value= ");
+        num = scanner.nextInt();
+        
+        int temp = num;
+        
+        while(temp>0) {
+        	toplam = toplam*10;
+        	toplam = toplam + (temp%10);
+        	temp = temp/10;
+        } 
+        if(toplam == num) {
+        	System.out.println("Bu sayi bir Palindrom sayisidir");
+        }
+        else {
+        	System.out.println("Bu sayi Palindrom sayisi degildir");
+        }
+  }
+}

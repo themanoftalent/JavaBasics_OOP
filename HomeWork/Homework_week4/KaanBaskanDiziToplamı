@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class KaanBaskanDiziToplamOrtalama {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Dizi sayı adedini girin: ");
+        int adet = scanner.nextInt();
+
+        int[] dizi = new int[adet];
+
+        System.out.println("Dizinin elemanlarını girin:");
+        for (int i = 0; i < adet; i++) {
+            dizi[i] = scanner.nextInt();
+        }
+
+        int toplam = 0;
+        double ortalama;
+
+        for (int i = 0; i < adet; i++) {
+            toplam += dizi[i];
+        }
+
+        ortalama =  toplam / adet;
+
+        System.out.println("Dizinin toplamı: " + toplam);
+        System.out.println("Dizinin ortalaması: " + ortalama);
+    }
+}

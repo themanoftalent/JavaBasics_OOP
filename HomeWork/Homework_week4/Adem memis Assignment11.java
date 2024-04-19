@@ -1,0 +1,21 @@
+import java.util.Scanner;
+// Adem memis 2311502230
+public class Ders {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Dizinini uzunluğunu giriniz:");
+        int dizisayisi = scan.nextInt();
+        int[] dizi = new int[dizisayisi];
+        int toplam = 0;
+
+        for (int i = 0; i < dizisayisi; i++) {
+            int sayi = scan.nextInt();
+            System.out.println("sayilari giriniz: " + sayi);
+            dizi[i] = sayi;
+            toplam = sayi + toplam;
+        }
+
+        float ort = (float) toplam / dizisayisi;
+        System.out.println("Toplamı: " + toplam +" "+"Ortalaması:"+ort);
+    }
+}
