@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class CiftVeyaTek {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz: ");
+        int sayi = input.nextInt();
+        if(sayi%2==0) {
+            System.out.println("Girdiginiz sayi cift sayidir.");
+        }
+        else {
+            System.out.println("Girdiginiz sayi tek sayidir.");
+        }
+    }
+} 
+
+Ceren Mutlu 2311502264
