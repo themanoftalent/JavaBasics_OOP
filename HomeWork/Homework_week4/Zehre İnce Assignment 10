@@ -1,0 +1,17 @@
+//2311502231 Zehre İnce - Reverse
+package zehrejava;
+import java.util.Scanner;
+
+public class odev {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Bir cümle giriniz:");
+        String temp = scan.nextLine();
+        String ters = "";
+
+        for(int i = temp.length()-1;i>=0;i--){
+            ters = ters + temp.charAt(i);
+        }
+        System.out.println(ters);
+    }
+}
