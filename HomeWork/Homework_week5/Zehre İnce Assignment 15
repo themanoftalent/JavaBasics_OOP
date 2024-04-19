@@ -1,0 +1,42 @@
+//2311502231 Zehre İnce - Matrix Operator
+package zehrejava;
+import java.util.Scanner;
+import java.util.*;
+
+public class odev {
+  public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+
+      System.out.println("Birinci matrisin satır sayısı ");
+      int x1 = scan.nextInt();
+      System.out.println("Birinci matrisin sütun sayısı ");
+      int y1 = scan.nextInt();
+      System.out.println("İkinci matrisin satır sayısı ");
+      int x2 = scan.nextInt();
+      System.out.println("İkinci matrisin sütun sayısı ");
+      int y2 = scan.nextInt();
+
+      int[][] matrix1 = new int[x1][y1];
+      int[][] matrix2 = new int[x2][y2];
+      int[][] top = new int[x1][y2];
+
+      for(int i=0; i<x1;i++){
+          if((x1 != x2) || (y1 != y2)){
+              System.out.println("İşlem yapılamaz");
+              break;
+          }
+          for(int j=0 ; j<y1; j++){
+              System.out.println("Birinci matrisin "+(j+1)+". elemanını giriniz: ");
+              int eleman1 = scan.nextInt();
+              matrix1[i][j] = eleman1;
+              System.out.println("İkinci matrisin "+(j+1)+". elemanını giriniz: ");
+              int eleman2 = scan.nextInt();
+              matrix2[i][j] = eleman2;
+              top[i][j] = matrix1[i][j] + matrix2[i][j];
+          }
+      }
+          for(int i = 0; i<y1;i++){
+              System.out.println(Arrays.toString(top[i]));
+          }
+  }
+}
