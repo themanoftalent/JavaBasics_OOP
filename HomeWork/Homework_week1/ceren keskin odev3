@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		System.out.print("Please enter a number:");
+		
+		Scanner sc=new Scanner(System.in);
+		int number=sc.nextInt();
+		
+		if(number%2==0)
+		{
+			System.out.print("Number is even.");
+		}
+		else
+		{
+			System.out.print("Number is odd.");
+		}
+		
+		sc.close();
+		
+		
+	}
+}
