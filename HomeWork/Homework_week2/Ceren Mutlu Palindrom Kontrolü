@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class PalindromKontrolu {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz: ");
+        int sayi = input.nextInt();
+        int temp = sayi;
+        int tersi =0;
+        while(temp>0)
+        {
+            tersi=(tersi*10)+(temp%10);
+            temp=temp/10;
+        }
+        if(tersi==sayi) {
+            System.out.println("Girdiginiz sayi palindromdur.");
+        }
+        else {
+            System.out.println("Girdiginiz sayi palindrom degildir.");
+        }
+    }
+}
+Ceren Mutlu 2311502264
