@@ -1,0 +1,39 @@
+//Array Sorting 
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Dizisıralama {
+	
+	public static void main(String[]args) {
+				  
+		
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("dizi boyutunu gir: ");
+        int b = scanner.nextInt();
+
+        int[] dizi = new int[b];
+        for (int i = 0; i < b; i++) {
+            System.out.print("Dizinin " + (i + 1) + ". elemanını gir: ");
+            dizi[i] = scanner.nextInt();
+        }
+
+        
+        int n = b;
+        for (int i = 0; i < (n - 1); i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (dizi[j] > dizi[j + 1]) {
+                    
+                    int a = dizi[j];
+                    dizi[j] = dizi[j + 1];
+                    dizi[j + 1] = a;
+          }
+         }
+        }
+
+        
+        System.out.println("sıralanmış diziniz:");
+        for (int e : dizi) {
+            System.out.print(e + " ");
+        }
+}
+}
