@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+MEVSIM | ARRAY SORTING
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir ay giriniz: ");
+        int ay = scanner.nextInt();
+
+        String season;
+
+        switch (ay) {
+            case 12:
+            case 1:
+            case 2:
+                season = "Kis";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                season = "İlkbahar";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                season = "Yaz";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                season = "Sonbahar";
+                break;
+            default:
+                season = "hatali ay!";
+                break;
+        }
+
+        System.out.println("" + season + " mevsimine aittir.");
+    }
+}
