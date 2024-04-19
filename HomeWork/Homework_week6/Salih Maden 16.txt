@@ -1,0 +1,71 @@
+7-
+import java.util.Scanner;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int sayi;
+        System.out.println("bir sayi giriniz:");
+        sayi= sc.nextInt();
+        int sayi1;
+        int sayi2;
+        int toplam=0;
+        sayi1=sayi%10;
+        sayi2=sayi/10;
+        toplam=sayi1+sayi2;
+
+        System.out.println(toplam);
+
+
+    }
+}
+
+8-
+
+import java.util.Scanner;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int sayi;
+        int toplam=1;
+        System.out.println("bir sayi giriniz:");
+        sayi= sc.nextInt();
+        for(int i=1;i<10;i++)
+        {
+            toplam=sayi*i;
+            System.out.println(toplam+"");
+        }
+
+
+    }
+}
+9-
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+
+        int sayi;
+        System.out.println("sayı giriniz: ");
+        sayi= sc.nextInt();
+
+        if(AsalMi(sayi))
+            System.out.println("Sayi asaldir.");
+        else
+            System.out.println("Sayi asal degildir.");
+    }
+
+
+    public static boolean AsalMi(int sayi) {
+        if(sayi<=1)
+            return false;
+        for(int i=2; i<sayi; i++) {
+            if(sayi%i==0)
+                return false;
+        }
+        return true;
+    }
+
+}
