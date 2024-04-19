@@ -1,0 +1,26 @@
+//2311502260
+//Prime Number Checker
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Sayı girin:");
+        int sayi = num.nextInt();
+
+        boolean asal_mi = true;
+
+        int i;
+        for (i = 2; i < sayi; i++) {
+        }
+        if (sayi % i == 0) {
+            System.out.println("Sayı asal değildir.");
+
+        } else {
+            System.out.println("Sayı asaldır.");
+        }
+
+
+    }
+}
