@@ -1,0 +1,81 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+
+		Scanner sc = new Scanner(System.in);
+
+        System.out.print("Matrislerin satır sayısını girin: ");
+        int satir = sc.nextInt();
+        System.out.print("Matrislerin sütun sayısını girin: ");
+        int sutun = sc.nextInt();
+
+        int[][] matris1 = new int[satir][sutun];
+        int[][] matris2 = new int[satir][sutun];
+        int[][] toplam = new int[satir][sutun];
+        int[][] carpim = new int[satir][sutun];
+
+        System.out.println("1. Matrisi girin:");
+        matrisiGir(matris1, sc);
+        System.out.println("2. Matrisi girin:");
+        matrisiGir(matris2, sc);
+
+        
+        for (int i = 0; i < satir; i++) 
+        {
+            for (int j = 0; j < sutun; j++) 
+            {
+                toplam[i][j] = matris1[i][j] + matris2[i][j];
+            }
+        }
+
+        
+        for (int i = 0; i < satir; i++) 
+        {
+            for (int j = 0; j < sutun; j++) 
+            {
+                for (int k = 0; k < sutun; k++) 
+                {
+                    carpim[i][j] += matris1[i][k] * matris2[k][j];
+                }
+            }
+        }
+
+        System.out.println("Toplam Matrisi:");
+        matrisiYazdir(toplam);
+        System.out.println("Çarpım Matrisi:");
+        matrisiYazdir(carpim);
+
+       sc.close();
+    }
+
+    public static void matrisiGir(int[][] matris, Scanner scanner) 
+    {
+        for (int i = 0; i < matris.length; i++) 
+        {
+            for (int j = 0; j < matris[0].length; j++) 
+            {
+                System.out.print("[" + i + "][" + j + "]: ");
+                matris[i][j] = scanner.nextInt();
+            }
+        }
+    }
+
+    public static void matrisiYazdir(int[][] matris) 
+    {
+        for (int i = 0; i < matris.length; i++) 
+        {
+            for (int j = 0; j < matris[0].length; j++) 
+            {
+                System.out.print(matris[i][j] + " ");
+            }
+            System.out.println();
+        }
+		
+        
+      
+        
+	}
+}
