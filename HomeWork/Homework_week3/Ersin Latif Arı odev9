@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class odev9 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("bir sayi giriniz:");
+        int sayi = scanner.nextInt();
+
+        if (sayi == 1)
+            System.out.println("asal degil");
+
+        boolean asal = true;
+        for (int i = 2; i <=Math.sqrt(sayi) ; i++) {
+            if (sayi % i == 0) {
+                asal = false;
+            }
+        }
+        if(asal)
+            System.out.println("sayi asaldir");
+        else
+            System.out.println("sayi asal degildir");
+    }
+}

@@ -1,0 +1,30 @@
+//MEVLİYE BALANDI16
+//Bir sayının Armstrong sayısı olup olmadığını belirleyin.(407)
+import java.util.Scanner;
+public class Ödev16 {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int bsmk=0;
+        System.out.println("bir sayi girin: ");
+        int sayi= input.nextInt();
+        while(sayi>0){
+            sayi/=10;
+            bsmk++;
+        }
+        int temp=sayi;
+        int toplam=0;
+        while(temp>0) {
+            int N = temp % 10;
+            toplam += N ^ bsmk;
+            temp = (temp - temp % 10) / 10;
+        }
+        if(toplam==sayi){
+            System.out.println("armstrongdur..");
+        }
+        else {
+            System.out.println("armstrong degildir");
+        }
+
+
+    }
+}

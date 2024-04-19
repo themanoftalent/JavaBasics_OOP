@@ -1,0 +1,13 @@
+public class odev18 {
+    public static void main(String[] args) {
+        bolme(10, 0);
+    }
+    public static void bolme(int sayi, int bolen) {
+        if (bolen != 0) {
+            int sonuc = sayi / bolen;
+            System.out.println("bolme sonucu: " + sonuc);
+        } else {
+            System.out.println("bolen 0 olamaz.");
+        }
+    }
+}

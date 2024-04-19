@@ -1,0 +1,41 @@
+//Ersin Latif Arı 2211502011
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int sayi1,sayi2,islem;
+
+        System.out.println("lutfen 1. sayiyi giriniz: ");
+        sayi1= input.nextInt();
+
+        System.out.println("lutfen 2. sayiyi giriniz: ");
+        sayi2= input.nextInt();
+
+        System.out.println("1- toplama/n 2-cikarma/n 3-carpma/n 4-bolme");
+        System.out.println("Yapilacak islemi seciniz: ");
+        islem = input.nextInt();
+
+        int sonuc= 0;
+
+        if(islem == 1){
+            sonuc= sayi1+sayi2;
+            System.out.println("Sonuc : " +sonuc);
+        }else if(islem == 2){
+            sonuc= sayi1-sayi2;
+            System.out.println("Sonuc : " +sonuc);
+        }else if(islem == 3){
+            sonuc = sayi1*sayi2;
+            System.out.println("Sonuc : " +sonuc);
+        }else if(islem == 4){
+            sonuc = sayi1/sayi2;
+            System.out.println("Sonuc : " +sonuc);
+        }
+
+
+
+    }
+}
