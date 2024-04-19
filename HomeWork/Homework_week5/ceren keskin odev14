@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+
+        System.out.print("Lutfen dizinin boyutunu girin:");
+        Scanner sc=new Scanner(System.in);
+        
+        int boyut = sc.nextInt();
+
+        int[] dizi = new int[boyut];
+        
+        System.out.println("Lutfen diziyi sirali şekilde girin:");
+        
+        for (int i = 0; i< boyut; i++) 
+        {
+            dizi[i] = sc.nextInt();
+        }
+
+        System.out.print("Lutfen arayacagimiz elemani girin: ");
+        int aranan = sc.nextInt();
+
+        int sol = 0;		
+        int sag = boyut - 1;
+        int sonuc = -1;
+
+        while (sol <= sag) 
+        {
+            int orta = sol + (sag - sol) / 2;
+            
+            if (dizi[orta] == aranan) 
+            {
+                sonuc = orta;
+                break;
+            }
+            
+            if (dizi[orta] < aranan) 
+            {
+                sol = orta + 1;
+            }
+            else 
+            {
+                sag = orta - 1;
+            }
+        }
+
+        
+        if (sonuc == -1) 
+        {
+            System.out.println("Eleman bulunamadı.");
+        }
+        else 
+        {
+        	sonuc++;
+            System.out.println("Eleman " + sonuc + ". sirada bulundu.");
+        }
+        
+        
+
+        sc.close();
+		
+        
+	}
+}
