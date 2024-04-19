@@ -1,0 +1,82 @@
+//Reverse String
+import java.util.Scanner;
+
+public class ReverseString {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String originalString = scanner.nextLine();
+
+        char[] charArray = originalString.toCharArray();
+
+        int left = 0;
+        int right = charArray.length - 1;
+
+        while (left < right) {
+
+            char temp = charArray[left];
+
+            charArray[left] = charArray[right];
+
+            charArray[right] = temp;
+
+
+            left++;
+            right--;
+        }
+
+
+        System.out.print("Reverse String: ");
+        for (char c : charArray) {
+            System.out.print(c);
+        }
+        System.out.println();
+    }
+}
+//Array sum and Average
+import java.util.Scanner;
+public class ArraySumAndAverage{
+    public static void main (String... Args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Array Size" );
+        int size= scanner.nextInt();
+        int sum=0;
+        int [] array=new int[size];
+
+        for(int i=0; i<=size-1; i++) {
+            System.out.println("Enter Number" + (i+1));
+            array [i]= scanner.nextInt();
+            sum = sum + array[i];
+        }
+        int average= sum/size;
+        System.out.println("Arrays Sum:"+sum+"Arrays Average:"+average);
+    }
+}
+//Array sorting
+import java.util.Scanner;
+
+public class ArraySorting {
+    public static void main(String[] Args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Array size:");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        int tmp;
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter number" + (i + 1));
+            array[i] = scanner.nextInt();
+        }
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size - 1 - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    tmp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = tmp;
+                }
+            }
+        }
+        for (int i = 0; i < size; i++) 
+            System.out.print(" " + array[i]);
+    }
+}
+
