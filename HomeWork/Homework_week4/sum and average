@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args){
+        Scanner girdi_degeri = new Scanner(System.in);
+        int [] sayilar = new int[5];
+        System.out.println("sayi girin:");
+        for(int i=0; i<5; i++){
+            System.out.println("sayi"+(i+1)+": ");
+            sayilar[i] = girdi_degeri.nextInt();
+        }
+        int toplam =0;
+        float ort;
+        for(int i=0; i<5; i++){
+            toplam+=sayilar[i];
+        }
+        ort = toplam/5;
+        System.out.println("sayilarin toplami: "+toplam+" ortalamasi: "+ort);
+    }
+}
