@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		
+		System.out.print("Lutfen bir sayi giriniz:");
+        Scanner sc = new Scanner(System.in);
+
+        int sayi = sc.nextInt();
+        boolean asallik = true;
+
+        if (sayi <= 1)
+        {
+            asallik = false;
+        } 
+        else
+        {
+            for (int i = 2; i < sayi; i++) 
+        {
+            	
+            	
+                if (sayi % i == 0) 
+                {
+                    asallik = false;
+                    break; 
+                }
+            }
+        }
+
+        
+        if (asallik) 
+        {
+            System.out.println("Sayi asaldir.");
+        }
+        else 
+        {
+            System.out.println("Sayi asal degildir.");
+        }
+        
+
+        sc.close();
+	}
+}
