@@ -1,0 +1,69 @@
+ Elif Nur Aydın 2311502211
+
+7. Rakamların Toplamı
+
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        System.out.print("Bir sayi girin:");
+        sayi = scanner.nextInt();
+        int temp = sayi;
+        int sonuc = 0;
+        while(temp>0){
+            sonuc += temp%10;
+            temp /= 10;
+        }
+        System.out.println(sayi + " sayisinin rakamlari toplami:  "+sonuc);
+
+    }
+}
+
+// 8. Çarpım Tablosu
+
+import java.util.Scanner;
+
+public class CarpimTablosu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi girin:");
+        int sayi= scanner.nextInt();
+        for(int i=1; i<=10; i++) {
+            int a= sayi*i;
+            System.out.println(i +"x"+sayi+"="+a);
+        }
+    }
+}
+
+// 9. Asal Sayı Bulma
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz");
+        int sayi = scanner.nextInt();
+        boolean asal = true;
+        
+        if (sayi <= 1) {
+            asal = false;
+        } else {
+            for (int i = 2; i <= sayi / 2; i++) {
+                if (sayi % i == 0) {
+                    asal = false;
+                    break;
+                }
+            }
+        }
+        
+        if (asal) {
+            System.out.println(sayi + " Girdiğiniz sayı asaldır.");
+        } else {
+            System.out.println(sayi + " Girdiğiniz sayı asal değildir.");
+        }
+    }
+}
