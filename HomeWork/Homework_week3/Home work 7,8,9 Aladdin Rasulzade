@@ -1,0 +1,118 @@
+//7. Calculate the sum of digits in a positive integer.
+
+import java.util.Scanner;
+
+public class Hello word {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a positive integer: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not a valid number!");
+            scanner.next(); 
+            System.out.print("Please enter a positive integer: ");
+        }
+        int number = scanner.nextInt();
+
+
+        if (number < 0) {
+            System.out.println("Please enter a positive integer.");
+        } else {
+
+            int sum = sumOfDigits(number);
+
+            System.out.println("The sum of the digits in " + number + " is " + sum);
+        }
+
+        scanner.close();
+    }
+
+
+    private static int sumOfDigits(int number) {
+        int sum = 0;
+        while (number > 0) {
+            sum += number % 10;  
+            number /= 10;       
+        }
+        return sum;
+    }
+}
+
+// 8.Display the multiplication table of a number.
+
+import java.util.Scanner;
+
+public class Hello word{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Enter the number to display its multiplication table: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not a valid number!");
+            scanner.next(); 
+            System.out.print("Please enter an integer: ");
+        }
+        int number = scanner.nextInt();
+
+
+        System.out.print("Enter the number of terms (e.g., 10 for a table up to 10x): ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not a valid number!");
+            scanner.next();
+            System.out.print("Please enter an integer: ");
+        }
+        int terms = scanner.nextInt();
+
+        System.out.println("Multiplication Table of " + number);
+        for (int i = 1; i <= terms; i++) {
+            System.out.println(number + " * " + i + " = " + (number * i));
+        }
+
+        scanner.close();
+    }
+}
+
+//9.Check if a given number is prime or composite.
+
+import java.util.Scanner;
+
+public class Hello word {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Enter a number to check if it is prime or composite: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not a valid number!");
+            scanner.next(); 
+            System.out.print("Please enter an integer: ");
+        }
+        int number = scanner.nextInt();
+
+
+        if (isPrime(number)) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is a composite number.");
+        }
+
+        scanner.close();
+    }
+
+    // Method to determine if a number is prime
+    private static boolean isPrime(int num) {
+        // Check if number is less than 2
+        if (num < 2) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true; 
+    }
+}
+
+//2311502202
