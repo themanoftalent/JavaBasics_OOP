@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		
+		 System.out.print("Lutfen bir sayi giriniz:");
+		 Scanner sc= new Scanner(System.in);
+		 
+		 int sayi= sc.nextInt();
+		 int sonuc = 1;
+		 
+		 for(int i = 1 ; i<11 ; i++)
+		 {
+			 sonuc = i * sayi;
+			 
+			 System.out.println(sonuc);
+			 
+		 }
+	      
+	      sc.close();
+	     
+	      
+	}
+}
