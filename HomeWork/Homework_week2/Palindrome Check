@@ -1,0 +1,30 @@
+//Palindrome Check
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Palindromkontrolu {
+
+	public static void main(String[] args) {
+		
+		Scanner deger = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int psayi = deger.nextInt();
+        int kalansayi,tersSayi = 0, testsayi = psayi;
+        
+        
+        while (testsayi != 0) {
+            kalansayi = testsayi % 10;
+            tersSayi = tersSayi * 10 + kalansayi;
+            testsayi /= 10;
+        }
+        
+       
+        if (psayi == tersSayi) {
+            System.out.println(psayi + " bir palindromdur.");
+        } else {
+            System.out.println(psayi + " bir palindrom değildir.");
+        }
+		
+	}
+
+}
