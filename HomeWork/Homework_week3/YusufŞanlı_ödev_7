@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Rakamları_toplami {
+	public static void main(String[] args) {
+	int rakam=0;
+			Scanner d = new Scanner(System.in);
+		System.out.println("Bir sayı  giriniz.");
+        int sayi =d.nextInt();
+        while(sayi>0)
+{
+ rakam =rakam+sayi%10;
+ sayi=sayi/10;
+ }   
+System.out.println("Sayının rakamları toplamı = "+rakam);
+
+
+	}
+}
