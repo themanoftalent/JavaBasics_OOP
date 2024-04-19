@@ -1,0 +1,37 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        int[][] birinciMatris = new int[3][3];
+        int[][] ikinciMatris = new int[3][3];
+        int[][] toplamMatris = new int[3][3];
+
+        System.out.println("birinci matrisin degerlerini girin:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print((i + 1) + "." + (j + 1)+": ");
+                birinciMatris[i][j] = girdi_degeri.nextInt();
+            }
+        }
+        System.out.println("ikinci matrisin degerlerini girin:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print((i + 1) + "." + (j + 1)+": ");
+                ikinciMatris[i][j] = girdi_degeri.nextInt();
+            }
+        }
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                toplamMatris[i][j] = birinciMatris[i][j] + ikinciMatris[i][j];
+
+            }
+        }
+        System.out.println("matrislerin toplami:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print((i + 1) + "." + (j + 1)+": ");
+                System.out.println(toplamMatris[i][j]);
+            }
+        }
+    }
+}
