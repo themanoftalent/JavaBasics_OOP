@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Palindrom {
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int sayi;
+		System.out.println("Lütfen sayı giriniz: ");
+		sayi= scanner.nextInt();
+		
+		int orijinalsayi= sayi;
+		int palindrom= 0;
+		int kalan=0;
+		
+		while(sayi!=0) {
+			kalan= sayi%10;
+			palindrom= palindrom*10+kalan; 
+			sayi/=10;
+			
+		}
+		
+		if(orijinalsayi==palindrom)
+			System.out.println("Sayı palindromik sayıdır.");
+		else
+			System.out.println("Sayı palindromik değildir.");
+		
+	}
+
+}
