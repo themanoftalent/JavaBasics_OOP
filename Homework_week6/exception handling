@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        try{
+            int a,b;
+            System.out.println("a ve b degerlerini giriniz:");
+            System.out.println("a: ");
+            a = girdi_degeri.nextInt();
+            System.out.println("b: ");
+            b = girdi_degeri.nextInt();
+            System.out.println("Sonuc: "+(a/b));
+            }catch(java.lang.ArithmeticException e){
+            System.out.println("0'a bolme islemi yapilamaz.");
+        }
+    }
+}

@@ -1,0 +1,20 @@
+//MEVLİYE BALANDI
+//Bir Java programındaki istisnaları (örneğin, sıfıra bölme) ele alın
+import java.util.Scanner;
+public class Ödev18 {
+    public static void main(String[] args) {
+Scanner input= new Scanner(System.in);
+        System.out.println("bolunecek sayiyi girin: ");
+        int bolunen=input.nextInt();
+        System.out.println("bolecek sayiyi girin: ");
+        int bolen= input.nextInt();
+        int sonuc=0;
+        if(bolen!=0){
+            sonuc=bolunen/bolen;
+            System.out.println("sonuc= "+sonuc);
+        }
+        else {
+            System.out.println("maalesef bolen 0 oldugu icin islem tanımsız!..");
+        }
+    }
+}
