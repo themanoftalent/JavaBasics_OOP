@@ -1,0 +1,156 @@
+//Melih Evecen 2211502012  
+//Linear Search
+import java.util.Scanner;
+public class LinearSearch{
+    public static void main(String[]Args){
+        Scanner scanner =new Scanner(System.in);
+        System.out.println("Enter Array Size:");
+        int size =scanner.nextInt();
+        int[] array=new int[size];
+        for(int i=0; i<size; i++){
+            System.out.println("Enter number"+(i+1));
+            array[i]=scanner.nextInt();
+        }
+        System.out.println("Enter a number to find:");
+        int searchkey =scanner.nextInt();
+
+        for(int i=0 ;i<=size; i++){
+            if(array[i]==searchkey)
+                System.out.println("This array contains this element.");
+            else {
+                System.out.println("This array dont contains this element.");
+                break;
+            }
+
+        }
+
+    }
+}
+//Matrix operations
+import java.util.Scanner;
+public class MatrixOperations{
+    public static void main(String[]Args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the number of rows and columns for Matrix A:");
+        int rowsA= scanner.nextInt();
+        int colmsA= scanner.nextInt();
+        System.out.println("Enter the number of rows and columns for Matrix B:");
+        int rowsB= scanner.nextInt();
+        int colmsB= scanner.nextInt();
+
+        if(rowsA!=rowsB || colmsA!=colmsB)
+        {
+            System.out.println("Matrix dimensions are not same");
+        }
+        int [][] matrixA=new int[rowsA][colmsA];
+        int [][] matrixB=new int[rowsB][colmsB];
+        int [][] SumMatrix=new int [colmsA][rowsB];
+        int [][] MultiplyMatrix= new int [rowsA][colmsA];
+        int [][] SubtractionMatrix= new int [rowsA][colmsA];
+        double [][] DivisionMatrix= new double[rowsA][colmsA];
+        System.out.println("Enter elements of matrixA:");
+        for (int i=0; i<matrixA.length; i++ )
+        {
+            for(int j=0; j<matrixA.length; j++)
+                matrixA[i][j]=scanner.nextInt();
+
+        }
+        System.out.println("Enter elements of matrixB:");
+        for (int i=0; i<matrixA.length; i++ )
+        {
+            for(int j=0; j<matrixB.length; j++)
+                matrixB[i][j]=scanner.nextInt();
+        }
+        System.out.println("MatrixA:");
+        for (int i=0; i<matrixA.length; i++ )
+        {
+            for(int j=0; j<matrixA.length; j++)
+            {
+        System.out.print(" "+matrixA[i][j]);
+
+        }
+            System.out.println("");}
+        System.out.println("MatrixB:");
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for(int j=0; j<matrixB.length; j++)
+            {
+                System.out.print(" "+matrixB[i][j]);
+
+            }
+            System.out.println("");}
+
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for(int j=0; j<matrixB.length; j++)
+            {
+                SumMatrix[i][j]=matrixA[i][j]+matrixB[i][j];
+            }
+
+            }
+        System.out.println("SumMatrix:");
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for (int j = 0; j < matrixB.length; j++)
+            {
+                System.out.print(" " + SumMatrix[i][j]);
+            }
+            System.out.println();
+        }
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for(int j=0; j<matrixB.length; j++)
+            {
+                MultiplyMatrix[i][j]=matrixA[i][j]*matrixB[i][j];
+            }
+
+        }
+
+        System.out.println("Multiplication of matrices:");
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for (int j = 0; j < matrixB.length; j++)
+            {
+                System.out.print(" " + MultiplyMatrix[i][j]);
+            }
+            System.out.println();
+        }
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for(int j=0; j<matrixB.length; j++)
+            {
+                SubtractionMatrix[i][j]=matrixA[i][j]-matrixB[i][j];
+            }
+
+        }
+        System.out.println("Subtraction of matrices:");
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for (int j = 0; j < matrixB.length; j++)
+            {
+                System.out.print(" " + SubtractionMatrix[i][j]);
+            }
+            System.out.println();
+        }
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for(int j=0; j<matrixB.length; j++)
+            {
+                DivisionMatrix[i][j]=matrixA[i][j]/matrixB[i][j];
+            }
+
+        }
+        System.out.println("Division of matrices:");
+        for (int i=0; i<matrixB.length; i++ )
+        {
+            for (int j = 0; j < matrixB.length; j++)
+            {
+                System.out.print(" " + DivisionMatrix[i][j]);
+            }
+            System.out.println();
+        }
+
+
+
+    }
+}
