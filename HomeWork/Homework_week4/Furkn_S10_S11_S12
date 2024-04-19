@@ -1,0 +1,124 @@
+//Furkan Tatar 2311502208
+
+import java.util.Scanner;
+
+//10.Soru
+class MetinTersi {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Tersini yazdirmak istediginiz metini giriniz. ");
+		String metin = input.next();
+		
+		int son = metin.length();
+		
+		char[] tersMetin = new char[metin.length()];
+		
+		for(int sayac=0; son>0; sayac++) {
+			tersMetin[sayac] = metin.charAt(son-1);
+			son--;
+		}
+		
+		System.out.print("Metninizin tersi: ");
+		
+		for(char x: tersMetin) {
+			System.out.print(x);
+		}
+		
+		input.close();
+	}
+
+}
+
+//11.Soru
+import java.util.Scanner;
+
+class DiziOrt {
+
+	public static void main(String[] args) {
+
+		System.out.print("Kac adet elemanın ortalamasını alacaksınız?: ");
+		Scanner input = new Scanner(System.in);
+		int adet = input.nextInt();
+
+		int[] dizi = new int[adet];
+
+		for (int ind = 0; ind < adet; ind++) {
+			System.out.print((ind + 1) + ". elemani giriniz: ");
+			int number = input.nextInt();
+				while (number < 0) {
+					System.out.print("Hatali deger girdiniz, yeni deger giriniz: ");
+					number = input.nextInt();
+				}
+			dizi[ind] = number;
+		}
+		
+		int toplam = 0;
+		for(int x : dizi) {
+			toplam += x;
+		}
+		
+		System.out.println("Toplam sonucunuz: "+ toplam);
+		System.out.println("Ortalama sonucunuz: "+ toplam/adet);
+
+		input.close();
+	}
+
+}
+
+//12.Soru
+import java.util.Scanner;
+
+class DiziSirala {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Kac eleman girmek istersiniz. ");
+		int adet = input.nextInt();
+		
+		int[] dizi = new int[adet];
+		
+		System.out.println("\nelemanlari girebilirsiniz.(oto girmek için ilk elemani '-1' giriniz.) ");
+		int number;
+		
+		int first = 0;
+			for(int ind = 0; ind<adet; ind++) {
+				System.out.print((ind+1)+". eleman: ");
+				number=input.nextInt();
+				
+				if(number == -1 && first == 0) {
+					for(int indIki=0; indIki<adet; indIki++) {
+						number = (int) (Math.random()*100);
+						System.out.println((indIki+1) +". girilen eleman: "+ number);
+						dizi[indIki] = number;
+					}
+					break;
+				}
+				dizi[ind] = number;
+			}
+		
+
+		for(int i=0; i < adet; i++) {
+			if(i==adet) break;
+			
+			for(int j=adet-1; j>i; j--) {
+				if(dizi[i] > dizi[j]) {
+					int temp = dizi[i];
+					dizi[i] = dizi[j];
+					dizi[j] = temp;
+				}
+			}
+		}
+		
+		int sayac=0;
+		for(int t: dizi) {
+			
+			System.out.println("\n"+ (sayac+1) +". eleman "+ t);
+			sayac++;
+		}
+		
+		input.close();
+	}
+
+}
