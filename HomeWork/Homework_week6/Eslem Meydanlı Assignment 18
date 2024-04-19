@@ -1,0 +1,29 @@
+//2311502260
+//Exception Handling
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Bölünen sayı = ");
+        int sayi = num.nextInt();
+
+        System.out.println("Bölen sayı = ");
+        int sayi1 = num.nextInt();
+
+
+
+        if(sayi1 == 0) {
+            System.out.println("Sıfıra bölme hatası. İSTİSNA!! ");
+        }
+
+
+
+        else {
+            int sonuc = sayi / sayi1;
+            System.out.println("Sonuç = " + sonuc);
+        }
+    }
+}
+
