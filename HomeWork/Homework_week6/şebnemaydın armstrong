@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {	
+        Scanner gir = new Scanner(System.in);
+        System.out.println("sayi gir ");
+        int sayi = gir.nextInt();
+        int toplam = 0;
+        int a = sayi;
+        int basayi = 0;
+        
+        while(a > 0){
+            a = a/ 10;
+            basayi++;
+        }
+        int b = sayi;
+        while(b > 0){
+            int c = 1;
+            for(int j = 0;j < basayi;j++){
+                c = c * (b % 10);
+            }
+            toplam = toplam + c;
+            b = b / 10;
+        }
+        if(sayi == toplam){
+            System.out.println("armstrong");
+        }
+        else{
+            System.out.println("armstrong değil");
+        }
+  }
+}
