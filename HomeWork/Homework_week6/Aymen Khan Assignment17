@@ -1,0 +1,33 @@
+import java.io.FileWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+// DOSYA OKUMAK VE YAZMAK | FILE READING AND WRITING 
+public class Main {
+         public static void main(String[] args) {
+ 
+       try {
+             FileReader reader = new FileReader("aymen.txt");
+             int data = reader.read();
+             while(data != -1) {			
+		System.out.print((char)data);
+		data = reader.read();
+	}
+	reader.close();
+
+ 	} catch (FileNotFoundException e){
+                        e.printStackTrace();
+	} catch (IOException e){
+                        e.printStackTrace();
+                 }
+        try {
+               FileWriter writer = new FileWriter("aymen.txt");
+               writer.write("Ben Aymen Khan");
+               writer.close();
+              }
+     	 catch (IOException e){
+                        e.printStackTrace();
+                 }
+              }
+           }
