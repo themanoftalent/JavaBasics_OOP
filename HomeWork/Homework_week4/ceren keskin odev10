@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		
+		System.out.print("Lutfen bir kelime girin:");
+		Scanner sc = new Scanner(System.in);
+		
+        String kelime = sc.nextLine();
+        String ters = "";
+
+        for (int i= kelime.length()-1; i >= 0; i--) 
+        {
+            ters += kelime.charAt(i);
+        }
+
+        System.out.println("Ters kelime: " + ters);
+        
+        
+        sc.close();
+
+	           
+	}
+}
