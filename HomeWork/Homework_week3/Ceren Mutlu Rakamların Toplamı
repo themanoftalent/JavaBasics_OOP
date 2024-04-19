@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class RakamlarinToplami {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Pozitif bir sayi giriniz: ");
+        int sayi = input.nextInt();
+        int toplam = 0, i = 1;
+        if(sayi>0) {
+            while (sayi > 0) {
+                toplam = (sayi % 10) + toplam;
+                sayi /= 10;
+            }
+        }
+        else {
+            System.out.println("Gecersiz sayi girdiniz.");
+        }
+        System.out.println(toplam);
+    }
+} 
+
+Ceren Mutlu 2311502264
