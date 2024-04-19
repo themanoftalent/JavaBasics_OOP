@@ -1,0 +1,25 @@
+//Zehre İnce 2311502231 - Palindrome
+package zehrejava;
+import java.util.Scanner;
+
+public class odev {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz:");
+        int sayi = scan.nextInt();
+        int temp = sayi;
+        int top=0;
+
+        while(temp>0){
+            top = top * 10;
+            top = top + temp % 10;
+            temp = temp / 10;
+        }
+        if(top == sayi){
+            System.out.println("Girdiğiniz sayı palindrom.");
+        }
+        else{
+            System.out.println("Girdiğiniz sayı palindrom değil");
+        }
+    }
+}
