@@ -1,0 +1,43 @@
+// Prime Number Checker 
+//Fatih Selim ADALI 2311502248
+
+
+import java.util.Scanner;
+public class Asalsayilar {
+
+	public static void main(String[] args) {
+	
+		Scanner deger = new Scanner(System.in);
+		int asalmı;
+		  int deney;
+		boolean asal=true;
+		System.out.print("sayi gir : ");
+		asalmı = deger.nextInt();
+		       
+		for(int i=2;i<=(asalmı/2);i++ ) {
+		
+			if(asalmı%i==0) {
+				asal=false;
+				break;
+				
+			}
+			else 
+			    asal=true;
+			
+		}
+		
+		if(asal==true) {
+			System.out.println(+asalmı+" asaldır");
+			
+		}
+		else
+			System.out.println(+asalmı+" asal değildir");
+		
+		
+		
+		
+
+		
+	}
+
+}
