@@ -1,0 +1,84 @@
+//10. Reverse a string without using built-in functions.
+
+import java.util.Scanner;
+
+public class Hello word {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number to display its multiplication table: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not a valid number!");
+            scanner.next(); 
+            System.out.print("Please enter an integer: ");
+        }
+        int number = scanner.nextInt();
+
+        System.out.print("Enter the number of terms (e.g., 10 for a table up to 10x): ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not a valid number!");
+            scanner.next();
+            System.out.print("Please enter an integer: ");
+        }
+        int terms = scanner.nextInt();
+
+        System.out.println("Multiplication Table of " + number);
+        for (int i = 1; i <= terms; i++) {
+            System.out.println(number + " * " + i + " = " + (number * i));
+        }
+
+        scanner.close();
+    }
+}
+
+//11. Calculate the sum and average of elements in an array.
+
+public class Hello word {
+
+	public static void main(String[] args) {
+
+		int[] numbers = {10, 20, 30, 40, 50};
+
+
+		int sum = 0;
+
+		for (int number : numbers) {
+            sum += number;
+        }
+
+
+		double average = (double) sum / numbers.length;
+
+
+		System.out.println("Sum of array elements: " + sum);
+
+		System.out.println("Average of array elements: " + average);
+    }
+}
+
+//12.Implement a sorting algorithm for an integer array.
+
+public class Hello word {
+
+	public static void main(String[] args) {
+
+		int[] numbers = {10, 20, 30, 40, 50};
+
+
+		int sum = 0;
+
+		for (int number : numbers) {
+            sum += number;
+        }
+
+
+		double average = (double) sum / numbers.length;
+
+
+		System.out.println("Sum of array elements: " + sum);
+
+		System.out.println("Average of array elements: " + average);
+    }
+}
+
+//2311502202
