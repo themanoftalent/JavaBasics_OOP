@@ -1,0 +1,19 @@
+//kader güneş
+//odev13->doğrusal arama:belirli bir öğeyi bulmak için bir dizide doğrusal arama gerçekleştirin.
+public class Main {
+    public static void main(String[] args) {
+        int dizi[]={1,2,3,4,5,6};
+        int aranan=99;
+        int n=dizi.length;
+        for(int i=0;i<n;i++){
+            if(dizi[i]==aranan){
+                System.out.println("Aranan sayı dizide mevcuttur.");
+                break;
+            }
+        }
+        if(dizi[n-1]!=aranan){
+            System.out.println("Aranan sayı dizide mevcut değildir.");
+        }
+
+    }
+}
