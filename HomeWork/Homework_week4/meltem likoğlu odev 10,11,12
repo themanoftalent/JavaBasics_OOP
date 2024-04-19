@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("string giriniz:");
+        String duzu=scan.nextLine();
+        int boyut=duzu.length();
+         String tersi="";
+
+         for(int i=boyut-1;i>=0;i--){
+             tersi+=duzu.charAt(i);
+
+         }
+         for(int i=0;i<=boyut;i++){
+             System.out.print(tersi.charAt(i));
+         }
+        }
+
+    }
+
+//dizi toplam ve ortalaması bulma
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+          int[]dizi=new int[] {9,11,8,20,1};
+          double ortalama;
+          int toplam=0;
+          for(int i=0;i<dizi.length;i++){
+              toplam+=dizi[i];
+          }
+          ortalama=toplam/5;
+        System.out.println(toplam);
+        System.out.println(ortalama);
+         }
+        }
+
+
+//dizi siralama
+
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+          int[]dizi=new int[5];
+        System.out.println("dizinin elemanlarini belirleyiniz:");
+        for(int i=0;i< dizi.length;i++){
+            dizi[i]= scan.nextInt();
+        }
+
+        Arrays.sort(dizi);
+        for(int i=0;i< dizi.length;i++){
+            System.out.println(dizi[i]);
+        }
+
+
+         }
+        }
