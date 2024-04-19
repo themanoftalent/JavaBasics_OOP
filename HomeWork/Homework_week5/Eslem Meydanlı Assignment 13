@@ -1,0 +1,39 @@
+//2311502260
+//Linear Search 
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Eleman sayısını giriniz:");
+        int eleman = num.nextInt();
+        int[] dizi = new int[eleman];
+
+        for(int i = 0; i < eleman; i++) {
+            System.out.println("Sayı giriniz:");
+            int sayi = num.nextInt();
+            dizi[i] = sayi;
+
+        }
+
+        System.out.println("İstediğiniz elemanı giriniz:");
+        int istenen = num.nextInt();
+        boolean bulundu = false;
+
+        for (int i = 0; i < dizi.length; i++) {
+            if (dizi[i] == istenen) {
+                bulundu = true;
+                break;
+            }
+        }
+            if(bulundu) {
+                System.out.println("Sayı dizide bulunuyor.");
+
+            }
+            else {
+                System.out.println("Sayı dizide bulunmuyor.");
+            }
+
+    }
+}
