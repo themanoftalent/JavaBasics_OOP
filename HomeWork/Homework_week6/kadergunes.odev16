@@ -1,0 +1,31 @@
+//kader güneş
+//odev16->armstrong numarası:bir sayının armstrong sayısı olup olmadığını belirleyin.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Sayı giriniz:");
+        int a;
+        Scanner input = new Scanner(System.in);
+        a = input.nextInt();
+        int n=0;
+        int x=a;
+        int c=a;
+        int toplam=0;
+        while(c!=0){
+            c/=10;
+            n++;
+        }
+
+        while(x!=0){
+            int b=x%10;
+            x=x/10;
+            toplam+=Math.pow(b,n);
+        }
+        if(toplam==a){
+            System.out.println("armstrong sayıdır.");
+        }
+        else{
+            System.out.println("armstrong değildir.");
+        }
+    }
+}
