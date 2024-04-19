@@ -1,0 +1,24 @@
+//Zehre İnce 2311502231 - Array Sum and Average
+package zehrejava;
+import java.util.Scanner;
+
+public class odev {
+ public static void main(String[] args) {
+     Scanner scan = new Scanner(System.in);
+     System.out.println("Dizi kaç elemanlı olsun:");
+     int kac = scan.nextInt();
+     int[] dizi = new int[kac];
+     int top = 0;
+     double ort;
+     
+     for (int i = 0; i < kac; i++) {
+    	 System.out.println(i+1+". elemanı giriniz: " );
+         int sayi = scan.nextInt();
+         dizi[i] = sayi;
+         top+=sayi;
+     }
+
+     ort = (double) top / kac;
+     System.out.println("Toplamı: " + top +" "+"Ortalaması:"+ort);
+ }
+}
