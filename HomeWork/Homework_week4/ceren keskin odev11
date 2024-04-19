@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		
+		System.out.print("Lutfen dizinin uzunlugunu girin:");
+        Scanner sc = new Scanner(System.in);
+        int diziSayisi = sc.nextInt();
+
+        int[] dizi = new int[diziSayisi];
+        int toplam = 0;
+
+        for (int i = 0; i < diziSayisi; i++) 
+        {
+            System.out.print("Lutfen bir sayi girin:");
+            int sayi = sc.nextInt();
+            dizi[i] = sayi;
+            toplam = sayi + toplam;
+        }
+
+        float ort = (float) toplam / diziSayisi;
+        System.out.println("Toplam: " + toplam + " Ortalama: " + ort);
+
+        sc.close();
+
+	           
+	}
+}
