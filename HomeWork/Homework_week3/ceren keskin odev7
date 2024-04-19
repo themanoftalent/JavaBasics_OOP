@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		
+		 System.out.print("Lutfen bir sayi giriniz:");
+		 Scanner sc= new Scanner(System.in);
+		 
+		 int sayi= sc.nextInt();
+		 
+		 int kontrol = sayi;
+		 int toplam = 0;
+				 
+
+	      while(kontrol>0)
+	      {
+	          toplam += kontrol%10;
+	          kontrol = kontrol / 10;
+
+	      }
+	   
+	      System.out.println(toplam);
+	      
+	      sc.close();
+	     
+	      
+	}
+}
