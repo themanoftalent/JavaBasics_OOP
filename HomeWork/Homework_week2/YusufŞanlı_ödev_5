@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Fibonacci_Dizisi {
+	public static void main(String[] args) {
+	int sayi1=1,sayi2=1,sonsayi;	
+		Scanner d =new Scanner(System.in);
+		System.out.println("Fibonacci dizisinde ilk n terim için (n) sayısını giriniz ");
+		int n =d.nextInt();
+		System.out.println(sayi1);
+		System.out.println(sayi2);
+	
+		for(int i=1;i<(n-1);i++)
+		{sonsayi=sayi1+sayi2;
+		System.out.println(sonsayi);
+		    sayi1=sayi2;
+		    sayi2=sonsayi;
+		    }
+	}
+}

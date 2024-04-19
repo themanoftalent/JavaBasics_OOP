@@ -1,0 +1,12 @@
+public class Basithesapmakinesi {
+    public static void main(String[] args) {
+        int a,b;
+        a = 30;
+        b = 15;
+        System.out.println("Toplam = "+ (a+b));
+        System.out.println("Çıkarma = "+ (a-b));
+        System.out.println("Çarpma = "+ (a*b));
+        System.out.println("Bölme = "+ (a/b));
+        System.out.println("Kalan = "+ (a%b));
+    }
+}

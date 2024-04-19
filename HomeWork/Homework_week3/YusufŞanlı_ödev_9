@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Asalsayıbulma {
+	public static void main(String[] args) {
+	int sayac=0,i=2;
+	Scanner d =new Scanner(System.in);
+	System.out.println("Pozitif bir tam sayı giriniz ");
+	int sayi =d.nextInt();
+	while(i<sayi)
+			{if(sayi%i==0)
+			    {sayac++;
+			    }i++;
+			}
+			    if(sayac==0)
+               	System.out.println(" bu sayı asal sayıdır..");
+        	
+              else 
+        System.out.println("bu sayı asal değil..");	
+     
+			}
+}

@@ -1,0 +1,33 @@
+import java.io.FileWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+ 
+public class DosyaokumaYazma{
+         public static void main(String[] args) {
+ 
+       try {
+             FileReader reader = new FileReader("yusuf.txt");
+             int data = reader.read();
+             while(data != -1) {			
+		System.out.print((char)data);
+		data = reader.read();
+	}
+	reader.close();
+
+ 	} catch (FileNotFoundException e){
+                        e.printStackTrace();
+	} catch (IOException e){
+                        e.printStackTrace();
+                 }
+        try {
+               FileWriter writer = new FileWriter("yusuf.txt");
+               writer.write("Ben Yusuf Şanlı");
+               writer.close();
+              }
+     	 catch (IOException e){
+                        e.printStackTrace();
+                 }
+              }
+           }
