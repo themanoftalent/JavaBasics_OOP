@@ -1,0 +1,114 @@
+13.ÖDEV
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Bir cümle giriniz: ");
+        String cumle = sc.nextLine();
+
+        System.out.print("Aranacak kelimeyi girin: ");
+        String kelime = sc.nextLine();
+
+        if (arananKelime(cumle, kelime)) {
+            System.out.println("'" + kelime + "' kelimesi cümlede bulunuyor.");
+        } else {
+            System.out.println("'" + kelime + "' kelimesi cümlede bulunmuyor.");
+        }
+    }
+    public static boolean arananKelime(String cumle, String kelime) {
+        String[] kelimeler = cumle.split("\\s+");
+
+        for (String w : kelimeler) {
+            if (w.equals(kelime)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+
+
+
+
+15.ÖDEV
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int dizi1 = 3;
+        int sütun1 = 3;
+        int dizi2 = 3;
+        int sütun2 = 3;
+
+        int[][] matris1 = new int[dizi1][sütun1];
+        int[][] matris2 = new int[dizi2][sütun2];
+
+        System.out.println("Birinci matrisi girin:");
+        for (int i = 0; i < dizi1; i++) {
+            for (int j = 0; j < sütun1; j++) {
+                matris1[i][j] = scanner.nextInt();
+            }
+        }
+
+        System.out.println("İkinci matrisi girin:");
+        for (int i = 0; i < dizi2; i++) {
+            for (int j = 0; j < sütun2; j++) {
+                matris2[i][j] = scanner.nextInt();
+            }
+        }
+
+        int[][] toplam = toplamMatris(matris1, matris2);
+        int[][] carpim = carpimMatris(matris1, matris2);
+
+        System.out.println("Matrislerin toplamı:");
+        printMatris(toplam);
+
+        System.out.println("Matrislerin çarpımı:");
+        printMatris(carpim);
+    }
+
+    public static int[][] toplamMatris(int[][] matris1, int[][] matris2) {
+        int dizi = matris1.length;
+        int sütun = matris2[0].length;
+        int[][] sonuc = new int[dizi][sütun];
+
+        for (int i = 0; i < dizi; i++) {
+            for (int j = 0; j < sütun; j++) {
+                sonuc[i][j] = matris1[i][j] + matris2[i][j];
+            }
+        }
+
+        return sonuc;
+    }
+
+    public static int[][] carpimMatris(int[][] matris1, int[][] matris2) {
+        int dizi1 = matris1.length;
+        int sütun1 = matris1[0].length;
+        int sütun2 = matris2[0].length;
+        int[][] sonuc = new int[dizi1][sütun2];
+
+        for (int i = 0; i < dizi1; i++) {
+            for (int j = 0; j < sütun2; j++) {
+                for (int k = 0; k < sütun1; k++) {
+                    sonuc[i][j] += matris1[i][k] * matris2[k][j];
+                }
+            }
+        }
+
+        return sonuc;
+    }
+
+    public static void printMatris(int[][] matris) {
+        for (int[] dizi : matris) {
+            for (int element : dizi) {
+                System.out.print(element + " ");
+            }
+            System.out.println();
+        }
+    }
+}

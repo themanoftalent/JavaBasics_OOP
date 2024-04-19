@@ -1,0 +1,72 @@
+10.ÖDEV
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Bir metin giriniz:");
+        String text = s.nextLine();
+        
+        String tersi = new StringBuilder(text).reverse().toString();
+
+        System.out.println("Metnin tersi: " + tersi);
+    }
+}
+
+
+
+11.Ödev
+import java.util.Scanner;
+public class Main {
+    static Scanner input=new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println("dizi kac karakterden olusacak?");
+        int karakter=input.nextInt();
+        float ort=0;
+        float toplam=0;
+        int a=1;
+        int[] stringNumber=new int[karakter];
+        for(int i=0;i<karakter;i++){
+            int b=a+i;
+            System.out.println(+b+".karakteri gir");
+            stringNumber[i]=input.nextInt();
+            toplam+=stringNumber[i];  }
+        System.out.println("Karakterler toplamı: "+toplam);
+        ort=toplam/karakter;
+        System.out.println("Dizinin ortalaması: "+ort);
+    } }
+
+
+
+12.ÖDEV
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Dizinin uzunluğunu giriniz: ");
+        int uzunluk = s.nextInt();
+
+        int[] sayilar = new int[uzunluk];
+
+        System.out.println("Dizinin elemanlarını girin:");
+        for (int i = 0; i < uzunluk; i++) {
+            sayilar[i] = s.nextInt();
+        }
+        for (int i = 0; i < uzunluk - 1; i++) {
+            for (int j = i + 1; j < uzunluk; j++) {
+                if (sayilar[i] > sayilar[j]) {
+                    int temp = sayilar[i];
+                    sayilar[i] = sayilar[j];
+                    sayilar[j] = temp;
+                }
+            }
+        }
+
+        System.out.println("Sıralanmış dizi:");
+        for (int number : sayilar) {
+            System.out.print(number + " ");
+        }
+    }
+}
