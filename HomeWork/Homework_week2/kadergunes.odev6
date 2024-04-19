@@ -1,0 +1,36 @@
+//kader güneş
+//odev6->palindrom kontrolü:belirli bir dizgenin palinfrom olup olmadığını belirleyin.
+import java.util.Scanner;
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        int a;
+        System.out.println("Sayı giriniz:");
+        Scanner input = new Scanner(System.in);
+        a = input.nextInt();
+
+        int x=a;
+        int y=a;
+        int total=0;
+        int n=0;
+        while(x>0){
+             x=x/10;
+            n++;
+        }
+
+        for(int i=n;i>0;i--){
+            int c=y%10;
+            total+=Math.pow(c,n);
+            y=y/10;
+
+        }
+
+        if(total==a){
+            System.out.println("polindrom sayıdır.");
+        }
+        else{
+            System.out.println("polindrom sayı değildir.");
+        }
+    }
+}
