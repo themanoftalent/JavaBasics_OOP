@@ -1,0 +1,29 @@
+//2311502260
+//Array Sum and Average
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Uzunluk giriniz:");
+        int dizi_uzunluk = num.nextInt();
+        int[] dizi = new int[dizi_uzunluk];
+        int toplam = 0;
+
+        for(int i = 0; i < dizi_uzunluk; i++) {
+            int deger = num.nextInt();
+
+
+            System.out.println("Değer giriniz:" + deger);
+            dizi[i] = deger;
+            toplam += deger;
+
+        }
+
+
+        float ortalama = toplam / dizi_uzunluk;
+        System.out.println("Toplam = " + toplam);
+        System.out.println("Ortalama = " + ortalama);
+    }
+}
