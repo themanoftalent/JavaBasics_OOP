@@ -1,0 +1,38 @@
+//2311502260
+//Armstrong Number
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Sayı giriniz:");
+        int sayi = num.nextInt();
+
+        int toplam = 0;
+        int gecici_sayi = sayi;
+
+
+        while(gecici_sayi > 0) {
+            int basamak_degeri = gecici_sayi % 10;
+            int kup = basamak_degeri * basamak_degeri * basamak_degeri;
+            toplam += kup;
+            gecici_sayi /= 10;
+
+
+
+        }
+
+        if(toplam == sayi) {
+            System.out.println(sayi + " " + "Armstrong sayıdır.");
+        }
+
+        else {
+            System.out.println(sayi + " " + "Armstrong sayi değildir.");
+        }
+
+
+
+
+    }
+}
