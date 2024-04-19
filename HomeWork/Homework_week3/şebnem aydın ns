@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        java.util.Scanner isimsoyisim = new Scanner(System.in);  
+        System.out.println("ismini gir");
+        String isim = isimsoyisim.nextLine();
+
+        System.out.println("soyismini gir");
+        String soyisim = isimsoyisim.nextLine();
+        System.out.println("senin ismin ve soyismin: " + isim + " " + soyisim);
+
+        if (isim.equals("şebnem") && soyisim.equals("aydın")) {
+
+            System.out.println("ismin ve soyismin doğru");
+        } else {
+            System.out.println("ismin ve soyismin yanlış");
+        }
+    }
+}

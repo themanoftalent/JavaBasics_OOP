@@ -1,0 +1,5 @@
+public class GurhanK_week1_HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}

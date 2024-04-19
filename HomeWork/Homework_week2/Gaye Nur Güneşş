@@ -1,0 +1,67 @@
+//7.Ödev-RakamlarToplamı
+
+
+import java.util.Scanner;
+
+public class RakamlarToplamı {
+    public static void main(String[]args){
+        int sayi;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Sayı girin: ");
+        sayi=scan.nextInt();
+        int sonuc=0;
+        int toplam=0;
+
+        while(sayi>0){
+            sonuc=sayi%10;
+            toplam=toplam+sonuc;
+            sayi = sayi/10;
+
+        }
+        System.out.println(toplam);
+    }
+}
+
+//8.Ödev-ÇarpımTablosu
+
+import java.util.Scanner;
+
+public class CarpimTablosu {
+    public static void main(String[]args){
+        int sayi;
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Sayı girin: ");
+        sayi=scan.nextInt();
+        int carpim=1;
+
+        for(int i=1;i<=9;i++){
+            carpim=sayi*i;
+            System.out.printf("%d * %d = %d\n",sayi,i,carpim);
+        }
+    }
+}
+
+//9.Ödev-Asal Sayı Olup Olmadığını Bulma
+
+import java.util.Scanner;
+
+public class AsalSayiMi {
+    public static void main(String[]args){
+        int sayi;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Sayı gir: ");
+        sayi=scan.nextInt();
+
+        for(int i=2;i<sayi/2;i++){
+            if(sayi%i==0){
+                System.out.println("Asal değildir!!!");
+                break;
+
+            }else{
+                System.out.println("Asaldır..");
+                break;
+            }
+        }
+
+    }
+}

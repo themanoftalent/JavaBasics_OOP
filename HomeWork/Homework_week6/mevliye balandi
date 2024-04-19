@@ -1,0 +1,22 @@
+// mevliye balandi
+public class MyClass{
+    public String isim= "Mevliye";
+    public String soyisim= "Balandi";
+    public int dtarih= 2005;
+    public int btarih= 2024;
+    public int yas= btarih - dtarih;
+    public String unv= "bandirma on yedi eylul unv";
+    public String bolum= "bilgisayar mühendisligi";
+    public String sac = "siyah";
+}
+public class MyClassDrive {
+    public static void main(String[] args) {
+      MyClass cv= new MyClass();
+        System.out.println(cv.isim);
+        System.out.println(cv.soyisim);
+        System.out.println(cv.yas);
+        System.out.println(cv.unv);
+        System.out.println(cv.bolum);
+        System.out.println(cv.sac);
+    }
+}

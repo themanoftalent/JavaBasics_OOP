@@ -1,0 +1,14 @@
+//isim ve soy ismi soran kod
+import java.util.Scanner;
+public  class İsimSoyisimSor {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner (System.in);
+        System.out.println ("isminizi girin") ;
+        String isim= scanner.nextLine();
+        System.out.println("soyisminizi girin");
+        String soyisim=scanner.nextLine();
+        System.out.println("isim ve soyisim\n"+isim +soyisim);
+
+
+    }
+}

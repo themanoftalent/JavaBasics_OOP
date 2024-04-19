@@ -1,0 +1,39 @@
+//Özge Sanal
+//Girilen ayin mevsimini veren switchcase
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args) {
+        Scanner ay = new Scanner(System.in);
+        System.out.println("Ayı giriniz:");
+        String month = ay.nextLine();
+
+        switch(month) {
+            case "aralik":
+            case "ocak":
+            case "subat":
+                System.out.println("kıs");
+                break;
+
+            case "mart":
+            case "nisan":
+            case "mayis":
+                System.out.println("ilkbahar");
+                break;
+
+            case "haziran":
+            case "temmuz":
+            case "agustos":
+                System.out.println("yaz");
+                break;
+
+            case "eylul":
+            case "ekim":
+            case "kasim":
+                System.out.println("SONBAHAR");
+                break;
+
+            default:
+                System.out.println("hatali giris yaptiniz");
+        }
+    }
+}

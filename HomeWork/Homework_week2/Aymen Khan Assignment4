@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+// FAKTORIYEL HESAPLAMA | FACTORIAL CALCULATOR
+public class Main {
+    public static void main(String[] args) {
+    
+    	Scanner scanner = new Scanner(System.in);
+        int num , fac = 1;
+        
+        System.out.println("Enter a value= ");
+        num = scanner.nextInt();
+        
+        for(int i=num ; num>=1 ; num--) {
+        	fac *= num;
+        }
+        System.out.print(fac);
+        
+  }
+}

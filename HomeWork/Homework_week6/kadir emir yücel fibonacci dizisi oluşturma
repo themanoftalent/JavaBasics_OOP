@@ -1,0 +1,37 @@
+package javamedhod;
+import java.net.SocketTimeoutException;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import java.util.function.IntToDoubleFunction;
+
+import javax.crypto.Cipher;
+import javax.sql.rowset.JoinRowSet;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+	System.out.println("fibonacci bulam uygulamamıza hoşgeldiniz");
+	System.out.println("fibonacci dizisinin kaç terimli olucağınını girin  ");
+	int n=scanner.nextInt();
+	  int[] fibonacci = new int[n];
+      
+      fibonacci[0] = 0;
+      fibonacci[1] = 1;
+      
+      for (int i = 2; i < n; i++) {
+          fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+      }
+      
+      System.out.println("Fibonacci dizisi:");
+      for (int i = 0; i < n; i++) {
+          System.out.print(fibonacci[i] + " ");
+      }
+    }
+
+}	

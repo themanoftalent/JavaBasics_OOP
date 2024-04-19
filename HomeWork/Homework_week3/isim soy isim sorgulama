@@ -1,0 +1,30 @@
+package isimsorgu;
+import java.util.Scanner;
+public class isimsorgulamaca {
+
+	public static void main(String[] args) {
+		
+		Scanner sorgu =new Scanner(System.in);
+		
+		String disim1 = "Fatih";
+		String disim2 = "fatih";
+		String dsoyisim1 = "Adali";
+		String dsoyisim2 = "adali";
+		
+		
+		System.out.print("isim giriniz : ");
+		String isim = sorgu.nextLine();
+		
+		
+		System.out.print("soyisim giriniz : ");
+		String soyisim = sorgu.nextLine();
+		
+if((disim1.equals(isim) || disim2.equals(isim)) && (dsoyisim1.equals(soyisim) || dsoyisim2.equals(soyisim))) {
+	System.out.print("dogru girdiniz");
+}
+else
+	System.out.print("yanlis girdiniz");
+
+	}
+
+}

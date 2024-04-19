@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+
+    public static void main(String[] args) {
+        Scanner hesap = new Scanner(System.in);
+        System.out.println("İki tane sayi giriniz:");
+        int sayi = hesap.nextInt();
+        int sayi1= hesap.nextInt();
+
+        int toplama = sayi+sayi1;
+        int cikarma = sayi-sayi1;
+        int carpma = sayi*sayi1;
+        int bolme = sayi/sayi1;
+
+        System.out.println("Toplam:"+toplama+" "+"Cikarma:"+cikarma+" "+"Carpım:"+carpma+" "+"Bolum:"+bolme);
+
+
+    }
+}

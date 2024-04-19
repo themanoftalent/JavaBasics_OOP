@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class KaanBaskanHesapMakinesi {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("birinci sayıyı giriniz giriniz: ");
+        int sayi1 = scan.nextInt();
+        System.out.print("ikinci sayıyı giriniz giriniz: ");
+        int sayi2 = scan.nextInt();
+        System.out.println("toplama yapmak için:1 "+ "cıkarma yapmak icin:2 "+ "carpma yapmak için:3 " + "bölme yapmak için:4 " );
+int secim =scan.nextInt();
+switch(secim){
+    case(1):
+           int toplam = sayi1 + sayi2;
+           System.out.println("sonuç "+ toplam);
+    break;
+    case(2):
+          int fark = sayi1 - sayi2;
+          System.out.println("farkları: "+ fark);
+    break;
+    case (3):
+        int carpım = sayi1* sayi2;
+          System.out.println("carpımları" + carpım);
+    break;
+    case(4):
+        int bolüm = sayi1/sayi2;
+          System.out.println("bölümleri:"+ bolüm);
+    break;
+    default:
+          System.out.println("geçersiz işlem");
+    break;
+    }
+}
+    }

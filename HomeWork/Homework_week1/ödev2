@@ -1,0 +1,29 @@
+//MEVLİYE BALANDI
+//Kullanıcı girdisine dayalı olarak temel aritmetik işlemleri gerçekleştiren bir hesap makinesi oluşturun.
+import java.util.Scanner;
+public class Ödev2 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.println("enter the number1");
+        int number1= input.nextInt();
+        System.out.println("enter the number2");
+        int number2= input.nextInt();
+        System.out.println("yapilacak islem girin:");
+        char islem = input.next().charAt(0);
+       switch(islem){
+            case '*':
+            System.out.println(number1*number2);
+            break;
+            case '/':
+            System.out.println(number1/number2);
+            break;
+            case '+':
+            System.out.println(number1+number2);
+            break;
+           case '-':
+               System.out.println(number1-number2);
+        default :
+            System.out.println("gecersiz islem girdiniz");
+       }
+    }
+}

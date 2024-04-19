@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class derslik {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int yas;
+        System.out.println("yasi giriniz");
+        yas= scan.nextInt();
+        switch(yas){
+            case 0:
+                System.out.println("yeni dogdu");
+                break;
+            case 1:
+                System.out.println("bir yasinda");
+                break;
+            case 2:
+                System.out.println("iki yasinda");
+                break;
+            case 10:
+                System.out.println("okula basladi");
+                break;
+            case 20:
+                System.out.println("üni ogrencisi");
+                break;
+            default:
+                System.out.println("yanlis deger");
+                break;
+        }
+    }
+}

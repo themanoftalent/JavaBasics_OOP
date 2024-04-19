@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class SayiYazdirma {
+public static void main(String[] args) { 
+	Scanner input = new Scanner(System.in);
+	int sayi = input.nextInt();
+	if(sayi<100)
+	{ 
+		System.out.println("Yanlis tercih yaptiniz.");
+	} 
+	for(int i=100;i<=sayi;i++)
+	{ 
+		System.out.println(i);
+	}
+}
+}

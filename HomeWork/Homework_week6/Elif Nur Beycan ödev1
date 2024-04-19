@@ -1,0 +1,31 @@
+public class MyClass {
+    public String isim="elif";
+    public String soyisim="beycan";
+    public int yas=20;
+    public double boy=1.60;
+    public boolean biyik=false;
+    public boolean sakal=false;
+    public String hobi="kitap okumak";
+    public String sacRengi="kumral";
+    public String uni="bandırma onyedi eylul universitesi";
+    public String bolum="bilgisayar muhendisligi";
+
+    public static void main(String[] args) {
+
+    }
+}
+public class MyClassDrive {
+    public static void main(String[] args) {
+        MyClass degisken=new MyClass();
+        System.out.println(degisken.sacRengi);
+        System.out.println(degisken.sakal);
+        System.out.println(degisken.biyik);
+        System.out.println(degisken.hobi);
+        System.out.println(degisken.uni);
+        System.out.println(degisken.yas);
+        System.out.println(degisken.bolum);
+        System.out.println(degisken.isim);
+        System.out.println(degisken.soyisim);
+    }
+}
+

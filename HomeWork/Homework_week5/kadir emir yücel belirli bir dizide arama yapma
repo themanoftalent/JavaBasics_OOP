@@ -1,0 +1,30 @@
+package javamedhod;
+import java.security.DigestInputStream;
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+
+int []dizi= {21,12,345,767,87,24,98,3213};
+System.out.println("aramak istediğiniz sayıyı girin");
+int sayi=scanner.nextInt();
+
+boolean bulmak=false;
+
+for(int i=0;i<=dizi.length;i++) {
+if(sayi==dizi[i]) {
+	bulmak=true;
+	System.out.println("aradığınız elemanı buldunuz  :"+i+".eleman");
+	break;
+	}
+	if(sayi!=dizi[i])
+	{
+		System.out.println("aradığınız sayı bu dizide yok");
+		 break;
+	}
+	}
+}	
+	}

@@ -1,0 +1,73 @@
+Furkan Tatar 2311502208
+
+//1.Soru
+package HocaS_01;
+
+class HelloWorld {
+
+	public static void main(String[] args) {
+
+		System.out.println("Hello World!");
+
+	}
+
+}
+
+//2.Soru
+package HocaS_02;
+
+import java.util.Scanner;
+
+class HesapMakinesi {
+
+	public static void main(String[] args) {
+		System.out.println("Lütfen Sayi ve işlemi giriniz. ");
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Ilk sayi: ");
+		int sayiBir = input.nextInt();
+		
+		System.out.print("Ikinci sayi: ");
+		int sayiIki = input.nextInt();
+		
+		System.out.print("Lütfen islemi giriniz (+ , - , * , /): ");
+		char operator = input.next().charAt(0);
+		
+		switch(operator) {
+		case '+': System.out.println("Toplama "+ (sayiBir+sayiIki));  	break;
+		case '-': System.out.println("Cikartma "+  (sayiBir-sayiIki));	break;
+		case '*': System.out.println("Carpim "+ (sayiBir*sayiIki)); 	break;
+		case '/': System.out.println("Bölüm "+ (sayiBir/sayiIki));		break;
+		}
+		
+		input.close();
+
+	}
+
+}
+
+//3.Soru
+
+package HocaS_03;
+
+import java.util.Scanner;
+
+class TekCift {
+
+	public static void main(String[] args) {
+		System.out.println("Tek/Cift görmek istediginiz sayiyi giriniz. ");
+		Scanner input = new Scanner(System.in);
+		int sayi = input.nextInt();
+		
+		if(sayi%2 == 0) {
+			System.out.println("Cift sayi girdiniz. ");
+		}
+		else {
+			System.out.println("Tek sayi girdiniz. ");
+		}
+		
+		input.close();
+	}
+
+}
+

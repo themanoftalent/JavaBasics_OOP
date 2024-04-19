@@ -1,0 +1,20 @@
+package hello1;
+
+public class hello1 {
+
+	public static void main(String[] args) {
+		float toplama, çıkarma, çarpma, bölme;
+		float sayı1= 3;
+		float sayı2= 5;
+		
+		toplama= sayı1+ sayı2;
+		çıkarma= sayı1- sayı2;
+		çarpma= sayı1* sayı2;
+		bölme= sayı1/ sayı2;
+		
+		System.out.println("Sayılar toplamı= "+toplama +"\nçıkarma="+çıkarma +"\nçarpma="+çarpma +"\nbölme="+bölme);
+		
+
+	}
+
+}

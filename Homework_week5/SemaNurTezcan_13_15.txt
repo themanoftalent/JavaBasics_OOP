@@ -1,0 +1,102 @@
+13-
+public class SayıBulma {
+	public static void main(String[] args) {
+		
+		int[] sayilar= {56, 4, 16, 7, 88, 92, 17, 45, 32};
+		int aranacak= 7;
+		boolean varMi= false;
+		
+		for(int sayi: sayilar) {
+			if(sayi==aranacak) {
+				varMi= true;
+			    break;
+			}
+		}
+		
+		if(varMi) 
+			System.out.println("Sayı mevcuttur: " +aranacak);
+		else
+			System.out.println("Sayı mevcut değildir.");
+			
+	}
+
+}
+
+
+
+15-
+public class Matris {
+	public static void main(String[] args) {
+		
+		int[][] matris1= {
+				{4, 7, 9},
+				{24, 56, 3},
+				{13, 34, 11}
+		};
+		
+		int[][] matris2= {
+				{32, 2, 8},
+				{74, 3, 14},
+				{22, 1, 45}
+		};
+		
+		System.out.println("Matris 1: ");
+		matrisYazdirma1(matris1);
+		
+		System.out.println("\nMatris 2: ");
+		matrisYazdirma2(matris2);
+		
+                System.out.println("\nMatrisler toplamı: ");
+                matrisToplam(matris1, matris2);
+  
+                System.out.println("\nMatrisler çarpımı: ");
+                matrisCarpim(matris1, matris2); 
+        }
+			
+	
+	public static void matrisYazdirma1(int[][] matris1) {
+		for(int i=0; i<3; i++) {
+			for(int j=0; j<3; j++) {
+				System.out.print(matris1[i][j] +" ");
+		    }
+		    System.out.println();
+	        }    
+        }
+	
+
+	public static void matrisYazdirma2(int[][] matris2) {
+		for(int i=0; i<3; i++) {
+			for(int j=0; j<3; j++) {
+				System.out.print(matris2[i][j] +" ");
+			}
+			System.out.println();
+		}
+	}
+	
+
+	public static int[][] matrisToplam(int[][] matris1, int[][] matris2) {
+            int[][] toplam = new int[3][3];
+            for (int i=0; i<3; i++) {
+                for (int j=0; j<3; j++) {
+            	    toplam[i][j] = matris1[i][j] + matris2[i][j];
+                    System.out.print(toplam[i][j] +" ");
+                }
+                System.out.println();
+            }
+            return toplam;
+         }	
+	
+
+	 public static int[][] matrisCarpim(int[][] matris1, int[][] matris2) { 
+             int[][] carpim = new int[3][3];
+             for (int i=0; i<3; i++) {
+                 for (int j=0; j<3; j++) {
+            	     carpim[i][j]+= matris1[i][j]* matris2[i][j];
+                     System.out.print(carpim[i][j] +" ");
+                 }
+                 System.out.println();
+             } 
+             return carpim;
+	  }
+
+}

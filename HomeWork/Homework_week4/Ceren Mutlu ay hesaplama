@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class AyHesaplama {
+public static void main(String[] args) { 
+	System.out.println("1-Ocak");
+	System.out.println("2-Subat");
+	System.out.println("3-Mart");
+	System.out.println("4-Nisan");
+	System.out.println("5-Mayis");
+	System.out.println("6-Haziran");
+	System.out.println("7-Temmuz");
+	System.out.println("8-Agustos");
+	System.out.println("9-Eylul");
+	System.out.println("10-Ekim");
+	System.out.println("11-Kasim");
+	System.out.println("12-Aralik");
+	Scanner input = new Scanner(System.in);
+	int ay = input.nextInt();
+	switch(ay) {
+	case 1: 
+		System.out.println("Kis");
+		break;
+	case 2: 
+		System.out.println("Kis");
+		break;
+	case 3: 
+		System.out.println("Ilkbahar");
+		break;
+	case 4: 
+		System.out.println("Ilkbahar");
+		break;
+	case 5: 
+		System.out.println("Ilkbahar");
+		break;
+	case 6: 
+		System.out.println("Yaz");
+		break;
+	case 7: 
+		System.out.println("Yaz");
+		break;
+	case 8: 
+		System.out.println("Yaz");
+		break;
+	case 9: 
+		System.out.println("Sonbahar");
+		break;
+	case 10: 
+		System.out.println("Sonbahar");
+		break;
+	case 11: 
+		System.out.println("Sonbahar");
+		break;
+	case 12: 
+		System.out.println("Kis");
+		break;
+}
+} 
+} 
+
+Ceren Mutlu

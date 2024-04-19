@@ -1,0 +1,87 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class KaanBaskanMatrisHesaplama {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("İlk matrisin satır sayısını girin: ");
+        int satir1 = scanner.nextInt();
+        System.out.print("İlk matrisin sütun sayısını girin: ");
+        int sutun1 = scanner.nextInt();
+
+        System.out.print("İkinci matrisin satır sayısını girin: ");
+        int satir2 = scanner.nextInt();
+        System.out.print("İkinci matrisin sütun sayısını girin: ");
+        int sutun2 = scanner.nextInt();
+
+        if (sutun1 != satir2) {
+            System.out.println("İlk matrisin sütun sayısı ile ikinci matrisin satır sayısı eşit olmalıdır.");
+            return;
+        }
+
+        int[][] matris1 = matrisOlustur(satir1, sutun1, scanner);
+        int[][] matris2 = matrisOlustur(satir2, sutun2, scanner);
+        
+        int[][] toplamMatris = matrisTopla(matris1, matris2);
+        System.out.println("Matris Toplamı:");
+        matrisiYazdir(toplamMatris);
+
+        int[][] carpimMatris = matrisCarp(matris1, matris2);
+        System.out.println("Matris Çarpımı:");
+        matrisiYazdir(carpimMatris);
+
+        scanner.close();
+    }
+
+    public static int[][] matrisOlustur(int satir, int sutun, Scanner scanner) {
+        int[][] matris = new int[satir][sutun];
+        System.out.println("Matrisin elemanlarını girin:");
+        for (int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                System.out.print("[" + i + "][" + j + "]: ");
+                matris[i][j] = scanner.nextInt();
+            }
+        }
+        return matris;
+    }
+
+    public static int[][] matrisTopla(int[][] matris1, int[][] matris2) {
+        int satirSayisi = matris1.length;
+        int sutunSayisi = matris1[0].length;
+        int[][] toplamMatris = new int[satirSayisi][sutunSayisi];
+
+        for (int i = 0; i < satirSayisi; i++) {
+            for (int j = 0; j < sutunSayisi; j++) {
+                toplamMatris[i][j] = matris1[i][j] + matris2[i][j];
+            }
+        }
+
+        return toplamMatris;
+    }
+
+    public static int[][] matrisCarp(int[][] matris1, int[][] matris2) {
+        int satirSayisi1 = matris1.length;
+        int sutunSayisi1 = matris1[0].length;
+        int sutunSayisi2 = matris2[0].length;
+        int[][] carpimMatris = new int[satirSayisi1][sutunSayisi2];
+
+        for (int i = 0; i < satirSayisi1; i++) {
+            for (int j = 0; j < sutunSayisi2; j++) {
+                for (int k = 0; k < sutunSayisi1; k++) {
+                    carpimMatris[i][j] += matris1[i][k] * matris2[k][j];
+                }
+            }
+        }
+
+        return carpimMatris;
+    }
+
+    public static void matrisiYazdir(int[][] matris) {
+        for (int[] row : matris) {
+            System.out.println(Arrays.toString(row));
+        }
+        System.out.println();
+    }
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class İkisayislemleri {
+    public static <scanner> void main(String[] args) {
+        Scanner ad = new Scanner(System.in);
+        System.out.println("isim giriniz:");
+        String isim=ad.nextLine();
+
+        System.out.println("soyadininizi giriniz:");
+        String soyad=ad.nextLine();
+
+        System.out.println("isim:"+isim+"\nsoyisim:"+soyad);
+
+        if(isim.equals("meltem")){
+            System.out.println("isim:"+isim);
+            System.out.println("isminizi dogru girdiniz");
+        } else{
+            System.out.println("isminizi yanlis girdiniz");
+        }
+
+
+
+
+
+    }
+}

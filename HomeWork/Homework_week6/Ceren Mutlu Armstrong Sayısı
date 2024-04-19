@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class ArmstrongSayisi {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz: ");
+        int sayi = input.nextInt();
+        int basamak = 0;
+        int toplam = 0;
+        int a = sayi;
+       while(a > 0) {
+           a = a / 10;
+           basamak++;
+       }
+        int b = sayi;
+        while(b > 0) {
+            int c = 1;
+            for (int j = 0; j < basamak; j++) {
+                c = c * (b % 10);
+            }
+            toplam = toplam + c;
+            b = b / 10;
+        }
+        if(toplam == sayi) {
+            System.out.println("Girdiginiz sayi bir armstrong sayisidir. ");
+        }
+        else {
+            System.out.println("Girdiginiz sayi bir armstrong sayisi degildir. ");
+        }
+    }
+} 
+
+Ceren Mutlu 2311502264

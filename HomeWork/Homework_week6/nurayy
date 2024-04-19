@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+        ///---> Değişken ve File Sınıfının Tanımlanma İşlemleri <---\\\
+        String ayrac = new String(new char[15]).replace("\0", "-");
+        String okunanVeri = null;
+        File dosya = new File("C:\\Users\\winem\\Desktop\\fileReader-dosya-okuma.txt");
+        ///---> FileReader ile Dosya Okuma İşlemi İçin Gerekli Tanımlamalar <---\\\
+        FileReader fileReader;
+        char veriler [] = new char [(int) dosya.length()];
+        ///---> Dosya Okuma İşlemini Gerçekleştirelim <---\\\
+        System.out.println(ayrac+"\n< Java FileReader Dosya Okuma İşlemi >\n"+ayrac);
+        try {
+            fileReader = new FileReader(dosya);
+            fileReader.read(veriler);
+            okunanVeri = new String(veriler);
+            System.out.println(veriler);
+        }
+        catch (FileNotFoundException e){
+            System.out.println("-> Aradığınız Dosyaya Ulaşamadım.\n-> Hata Mesajım: "+ e.getMessage());
+        }
+        catch (IOException e){
+            System.out.println("-> Aradığınız Dosya Üzerinde Veri Okuyamıyorum.\n-> Hata Mesajım: "+ e.getMessage());
+        }
+        finally {
+            System.out.println(ayrac);
+        }
+    }
+}

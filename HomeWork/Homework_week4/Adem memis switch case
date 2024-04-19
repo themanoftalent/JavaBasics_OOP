@@ -1,0 +1,38 @@
+package Projeler;
+import java.util.Scanner;
+public class Switchcaseyapi {
+
+	public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);
+	System.out.println("1. notu giriniz");
+	int not1 =  scanner.nextInt();
+	System.out.println("2. notu giriniz");
+	int not2 =  scanner.nextInt();
+	System.out.println("3. notu giriniz");
+	int not3 =  scanner.nextInt();
+	System.out.println("4. notu giriniz");
+	int not4 =  scanner.nextInt();
+	System.out.println("5. notu giriniz");
+	int not5 =  scanner.nextInt();
+	int Gpa = (not1+not2+not3+not4+not5)/5;
+	int deger;
+	if(Gpa>50)
+	{
+		 deger=1;
+	}
+	else 
+	{
+		 deger=2;
+	}
+	switch(deger) {
+	case 1:
+		System.out.println("Geçti");
+		break;
+	case 2: 
+		System.out.println("Kaldı");
+		break;
+		
+	}
+	
+	}
+}

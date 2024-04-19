@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+        int sayi,i;
+
+        do{
+            System.out.println("100 den buyuk bir sayi giriniz: ");
+            sayi= input.nextInt();
+          }
+            while (sayi<100);
+        {
+            for(i=sayi;i>0;i--)
+            {
+            System.out.println(i);
+            }
+        }
+
+        }
+    }

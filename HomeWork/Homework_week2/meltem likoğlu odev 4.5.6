@@ -1,0 +1,62 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+        int faksonuc=1;
+        int sayi;
+        System.out.println("sayiyi giriniz:");
+        sayi=scan.nextInt();
+        for(int i=1;i<=sayi;i++){
+            faksonuc*=i;
+        }
+        System.out.println("sayinin faktoriyeli:"+faksonuc);
+    }
+}
+
+//Fibonacci Sequence
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+       int terimsayisi;
+        System.out.println("terim sayisini giriniz:");
+        terimsayisi= scan.nextInt();
+        int x=0,y=1,z;
+        for(int i=1;i<=terimsayisi;i++){
+            System.out.println(x +" ");
+            z=x+y;
+            x=y;
+            y=z;
+
+
+        }
+
+    }
+}
+
+//Palindrome Check
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int sayi;
+        System.out.println("bir sayi giriniz:");
+        sayi=scan.nextInt();
+        int sayix=sayi ,toplam=0;
+
+        while(sayix>0){
+            toplam=toplam*10;
+            toplam=toplam+(sayix%10);
+            sayix=sayix/10;
+        }
+        if(sayi==toplam){
+            System.out.println("palindromdur");
+
+        }
+        else{
+            System.out.println("palindrom degildir");
+        }
+    }
+}

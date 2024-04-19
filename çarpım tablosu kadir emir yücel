@@ -1,0 +1,27 @@
+package javamedhod;
+import java.net.SocketTimeoutException;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import java.util.function.IntToDoubleFunction;
+
+import javax.crypto.Cipher;
+import javax.sql.rowset.JoinRowSet;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+		for(int i=1;i<=9;i++) {
+			System.out.println("\n");
+			for(int j=0;j<=9;j++) {
+				System.out.println(i+"*"+j+"="+i*j);
+			}
+		}
+		
+	}
+}	

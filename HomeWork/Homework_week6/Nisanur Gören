@@ -1,0 +1,31 @@
+// Nisanur GÖREN 2311502215
+
+// 16. Armstrong Number
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(" Bir sayı giriniz: ");
+        int sayi = scanner.nextInt();
+        scanner.close();
+
+        int gecici = sayi;
+        int basamakSayisi = String.valueOf(sayi).length();
+        int toplam = 0;
+
+        while (gecici != 0) {
+            int rakam = gecici % 10;
+            toplam += Math.pow(rakam, basamakSayisi);
+            gecici /= 10;
+        }
+
+        if (toplam == sayi) {
+            System.out.println(sayi + " bir Armstrong sayısıdır.");
+        } else {
+            System.out.println(sayi + " bir Armstrong sayısı değildir.");
+        }
+    }
+}

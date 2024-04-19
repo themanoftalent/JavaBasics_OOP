@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Onur_M_U_Homework10ReverseaString {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir metin girin: ");
+        String metin = scanner.nextLine();
+
+        String tersMetin = reverseString(metin);
+
+        System.out.println("Metnin ters çevrilmiş hali: " + tersMetin);
+
+        scanner.close();
+    }
+    public static String reverseString(String metin) {
+        char[] karakterler = metin.toCharArray();
+        int uzunluk = metin.length();
+        for (int i = 0; i < uzunluk / 2; i++) {
+            char gecici = karakterler[i];
+            karakterler[i] = karakterler[uzunluk - i - 1];
+            karakterler[uzunluk - i - 1] = gecici;
+        }
+        return new String(karakterler);
+    }
+}

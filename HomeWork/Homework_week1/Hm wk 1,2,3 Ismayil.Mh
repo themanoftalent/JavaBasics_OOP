@@ -1,0 +1,57 @@
+  //1.Write a Java program that prints "Hello, World!" to the console.
+
+public class HelloWorld {
+    
+    public static void main(String[] args) {
+        
+        System.out.println("Hello, World!");
+    }
+
+//2.Create a calculator that performs basic arithmetic operations based on user inpu
+
+import java.util.Scanner;
+public class  HelloWorld {
+    public static void main(String[] args) {
+        Scanner number = new Scanner(System.in);
+
+        System.out.print("Pozitif bir sayı giriniz: ");
+        int n = number.nextInt();
+        int i;
+        int factorial = 1;
+        if(n < 0){
+            System.out.println("Negatif bir sayı girdiniz. Faktöriyel hesaplanamaz.");
+        }
+        else{
+            for(i = 1; i<= n; i++){
+                factorial = factorial * i;
+            }
+            System.out.println (n + " sayısının faktöriyeli " + n + "! = "  + factorial);
+        }
+
+    number.close();
+    }
+}
+
+
+
+//3.Determine whether a number entered by the user is even or odd.
+import java.util.Scanner;
+public class  HelloWorld {
+    public static void main(String[] args) {
+
+        int number;
+        System.out.print("Bir sayı giriniz:");
+        Scanner kontrol = new Scanner(System.in);
+
+        number = kontrol.nextInt();
+
+        if(number%2 == 0){
+            System.out.println(number + " çift sayıdır");
+        }
+        else{
+            System.out.println(number + " tek sayıdır");
+        }
+        kontrol.close();
+    }
+}
+//2311502298

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner d = new Scanner(System.in);
+		System.out.println("Bir sayı giriniz...");
+	int sayi=d.nextInt();
+	if(sayi<100 && sayi>0)
+	{for(int i=sayi;i>0;i--)
+	  System.out.println(i);}
+	  else 
+	  System.out.println("başka bir sayı giriniz");
+	
+	}
+}

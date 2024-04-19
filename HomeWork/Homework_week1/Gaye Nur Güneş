@@ -1,0 +1,84 @@
+//1.Ödev-HelloWorld yazımı
+
+
+
+public class HelloWorld {
+    public static void main(String[] args) {
+
+        System.out.println("Hello world");
+    }
+}
+
+
+
+
+//2.Ödev-HesapMakinesi yapımı
+
+
+
+import java.util.Scanner;
+
+public class HesapMakinesi {
+    public static void main(String[]args){
+        int sayi1,sayi2;
+        char isaret;
+        float sonuc=0;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Birinci sayıyı girin: ");
+        sayi1=scan.nextInt();
+
+        System.out.println("İkinici sayıyı girin: ");
+        sayi2=scan.nextInt();
+
+        System.out.println("Yapmak istediğiniz işlemi girin: ");
+        isaret = scan.next().charAt(0);
+
+        switch(isaret){
+            case '+':
+                sonuc= sayi2+sayi1;
+                break;
+            case '-':
+                sonuc= sayi2-sayi1;
+                break;
+            case '*':
+                sonuc= sayi2*sayi1;
+                break;
+            case '/':
+                sonuc= (float)sayi2/sayi1;
+                break;
+
+        }
+
+        System.out.println("Sonuç= "+sonuc);
+
+    }
+}
+
+
+
+
+
+3.Ödev-ÇiftTek bulma
+
+
+
+import java.util.Scanner;
+
+public class CiftTek {
+    public static void main(String[]args){
+        int sayi;
+
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Sayı girin: ");
+        sayi=scan.nextInt();
+
+        if(sayi%2==0){
+            System.out.println("Girdiğiniz sayı çifttir.");
+        }
+        else{
+            System.out.println("Girdiğiniz sayı tektir. ");
+        }
+    }
+}
+

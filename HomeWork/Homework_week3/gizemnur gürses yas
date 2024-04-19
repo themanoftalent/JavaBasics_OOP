@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int yas;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Lütfen yaşınızı girin: ");
+        yas = input.nextInt();
+        
+        switch (yas) {
+            case 0:
+                System.out.println("yeni doğmuş=\n");
+                break;
+            case 1:
+                System.out.println("1 yaşında=\n");
+                break;
+            case 2:
+                System.out.println("5 yaşında=\n");
+                break;
+            case 3:
+                System.out.println("10 yaşında=\n");
+                break;
+            case 4:
+                System.out.println("15 yaşında=\n");
+                break;
+            case 5:
+                System.out.println("20 yaşında=\n");
+                break;
+            default:
+                System.out.println("yaslısın=\n");
+        }
+    }
+}

@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        String metin;
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("metin girin:");
+        metin = girdi_degeri.nextLine();
+
+        System.out.println("girilen metnin tersi:");
+        for(int i=metin.length(); i>0; i--){
+            System.out.print(metin.charAt(i-1));
+        }
+    }
+}

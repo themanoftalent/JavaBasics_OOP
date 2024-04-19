@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class ArmstrongSayi {
+
+    public static void main(String[] args) {
+
+        //basamak bul üs al rakamları bul
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("bir sayi giriniz:");
+        int sayi=scanner.nextInt();
+        int basamak_sayisi=0;
+        int gecici=sayi, kalan=0,toplam=0;
+
+        while(gecici!=0){
+           gecici/=10;
+            basamak_sayisi++;
+        }
+        gecici=sayi;
+
+        while(gecici!=0) {
+
+            kalan = gecici % 10;
+            gecici /= 10;
+            toplam += Math.pow(kalan,basamak_sayisi);
+        }
+
+       if(toplam==sayi)
+           System.out.println("armstrongur"+ sayi);
+       else
+           System.out.println("değildir"+ sayi);
+
+
+
+
+
+    }
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+// ARMSTRONG SAYISI | ARMSTRONG NUMBER
+public class Main {
+    public static void main(String[] args) {	
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int num = scanner.nextInt();
+        int toplam = 0;
+        int temp = num;
+        int basamaksayisi = 0;
+        
+        while(temp > 0){
+            temp = temp / 10;
+            basamaksayisi++;
+        }
+        int temp2 = num;
+        while(temp2 > 0){
+            int us = 1;
+            for(int j = 0;j < basamaksayisi;j++){
+                us = us * (temp2 % 10);
+            }
+            toplam = toplam + us;
+            temp2 = temp2 / 10;
+        }
+        if(num == toplam){
+            System.out.println("Girdiginiz sayi "+num+" Armstrong sayidir.");
+        }
+        else{
+            System.out.println("Girdiginiz sayi "+num+" Armstrong sayi degildir.");
+        }
+  }
+}

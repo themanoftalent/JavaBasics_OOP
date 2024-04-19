@@ -1,0 +1,34 @@
+package javamedhod;
+import java.security.DigestInputStream;
+import java.security.PublicKey;
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		   Scanner scanner = new Scanner(System.in);
+	        System.out.println("*****Armstrong sayı uygulaması*****");
+	        System.out.println("Sayı giriniz:");
+	        int sayi = scanner.nextInt();
+	        int yeniSayi = sayi;
+	        int basamak = 0;
+	        int toplam = 0;
+	        while (sayi != 0) {
+	            sayi /= 10;
+	            basamak++;
+	        }
+	        sayi = yeniSayi; 
+	        while (sayi != 0) {
+	            int kalan = sayi % 10;
+	            toplam +=Math.pow(kalan ,basamak);
+	            sayi /= 10;
+	        }
+
+	        if (toplam == yeniSayi) {
+	            System.out.println("Girilen sayı bir Armstrong sayısıdır.");
+	        } else {
+	            System.out.println("Girilen sayı bir Armstrong sayısı değildir.");
+	        }
+	}
+}

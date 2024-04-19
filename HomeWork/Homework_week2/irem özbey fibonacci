@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sayi1 = 0;
+        int sayi2 = 1;
+        int toplam;
+        System.out.println("sayı girin");
+        int abc = input.nextInt();
+        System.out.print(sayi1 + ", " + sayi2 + ", "); 
+        for (int i = 3; i <= abc; i++) { 
+            toplam = sayi1 + sayi2;
+            System.out.print(toplam + ", "); 
+            sayi1 = sayi2;
+            sayi2 = toplam;
+        }
+    }
+}

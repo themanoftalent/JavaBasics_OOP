@@ -1,0 +1,14 @@
+public class KaanBaskanSıfıraBölme {
+    public static void main(String[] args) {
+        bolme(10, 0);
+    }
+
+    public static void bolme(int sayi, int bolen) {
+        if (bolen != 0) {
+            int sonuc = sayi / bolen;
+            System.out.println("Bölme sonucu: " + sonuc);
+        } else {
+            System.out.println("Sıfıra bölme hatası: Bölen sıfır olamaz.");
+        }
+    }
+}

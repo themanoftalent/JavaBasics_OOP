@@ -1,0 +1,41 @@
+package javamedhod;
+import java.net.SocketTimeoutException;
+import java.security.DrbgParameters;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+import java.util.function.IntToDoubleFunction;
+
+import javax.crypto.Cipher;
+import javax.sql.rowset.JoinRowSet;
+import javax.swing.plaf.metal.MetalInternalFrameTitlePane;
+
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+	System.out.println("polindom sayı bulama uygulamamıza hoşgeldiniz");
+	System.out.println("lütfen bir sayı giriniz  ");
+	int sayi=scanner.nextInt();
+	 if(sayi>0 && sayi<10) {
+		 System.out.println("girilen sayı polindom sayıdır");
+	 }
+	 else {
+		 int temp=sayi;
+		 int tersSayi=0;
+		 while (temp != 0) {
+	            int kalan = temp % 10;
+	            tersSayi = tersSayi * 10 + kalan;
+	            temp /= 10;
+	        }
+		 if(sayi==tersSayi)
+			 System.out.println("girilen sayı polindrom sayıdır");
+		 else
+			 System.out.println("girilen sayi polindrom sayı değildir");
+		}
+	
+    }
+
+}	

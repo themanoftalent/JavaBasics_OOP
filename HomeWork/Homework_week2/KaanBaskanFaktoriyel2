@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class KaanBaskanFaktoriyelHesapla {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Faktöriyelini almak istediğiniz sayıyı giriniz:");
+        int sayi = scan.nextInt();
+        int carpim = 1;
+        for (int i = 1; i <= sayi; i++) {
+            carpim *= i;
+        }
+        System.out.println("Faktöriyeli: " + carpim);
+    }
+}

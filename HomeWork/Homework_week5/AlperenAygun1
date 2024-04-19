@@ -1,0 +1,85 @@
+//Alperen Aygun
+
+//15.ornek
+public class Main {
+    public static void main(String[] args) {
+        // İlk matris
+        int[][] matris1 = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+
+        // İkinci matris
+        int[][] matris2 = {
+                {9, 8, 7},
+                {6, 5, 4},
+                {3, 2, 1}
+        };
+
+        // Matris toplama
+        int[][] toplam = new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                toplam[i][j] = matris1[i][j] + matris2[i][j];
+            }
+        }
+
+        // Matris çarpma
+        int[][] carpim = new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    carpim[i][j] += matris1[i][k] * matris2[k][j];
+                }
+            }
+        }
+        
+        System.out.println("Toplam Matris:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(toplam[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Çarpım Matris:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(carpim[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//16.ornek
+import java.util.Scanner;
+
+public class ArmstrongSayi {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bir sayı giriniz: ");
+        int sayi = scanner.nextInt();
+        
+        int orijinalSayi = sayi;
+        int rakamSayisi = String.valueOf(sayi).length();
+        int toplam = 0;
+        
+        while (sayi != 0) {
+            int rakam = sayi % 10;
+            toplam += Math.pow(rakam, rakamSayisi);
+            sayi /= 10;
+        }
+        
+        if (toplam == orijinalSayi) {
+            System.out.println(orijinalSayi + " bir Armstrong sayısıdır.");
+        } else {
+            System.out.println(orijinalSayi + " bir Armstrong sayısı değildir.");
+        }
+        
+        scanner.close();
+    }
+}
+

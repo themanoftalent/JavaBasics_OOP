@@ -1,0 +1,126 @@
+Furkan Tatar 2311502208
+
+package ödev5;
+
+class Kimlik {
+	
+	//total kimlik Adeti sınıfın özelligi olarak duracak,
+	//fakat total kimlik adeti üzerinden verilecek seriNo'lar nesnenin bi özelligi olacak.
+	//o yüzden seriNo'yu static yapmadım kimlige ait çünkü o.
+	private static int kimlikAdet = 0;
+	
+	private String isim;
+	private String soyAd;
+	private String dogumTarih;
+	private String gender;
+	private int seriNo;
+	
+	
+	
+	
+	static int getTotalAdet() {
+		return kimlikAdet;
+	}
+	
+	
+	
+	
+	//kurucu methot oluşturuyorum ki nesnesini ilk oluşturdugumda 
+	//halihazırda bi atamalar dizisi olsun.
+	
+	Kimlik(){
+		isim = "Bilinmeyen";
+		soyAd = "Bilinmeyen";
+		dogumTarih = "Bilinmeyen";
+		gender = "Bilinmeyen";
+		seriNo=kimlikAdet;
+		kimlikAdet++;
+	}
+	
+	
+	void kimlikInfo() {
+		System.out.println("Kimlik Seri No'su: "+ seriNo);
+		System.out.println("Ad: "+isim);
+		System.out.println("Soyad: "+ soyAd);
+		System.out.println("Dogum Tarihi: "+ dogumTarih);
+		System.out.println("Cinsiyeti: "+ gender);
+	}	
+	
+	
+	void setKimlikInfo(String isim, String soyAd, String dogumTarih, String gender) {
+		this.isim = isim;
+		this.soyAd = soyAd;
+		this.dogumTarih = dogumTarih;
+		this.gender = gender;
+	}
+	
+}
+
+
+
+
+package ödev5;
+
+import java.util.Scanner;
+
+class KimlikTest {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Henüz hiç kimlik bulunmamakta, kimlik olusturunuz.");
+		System.out.println("Kac adet kimlik olusturmak istersiniz? (maks 30 adet)");
+		
+		Kimlik[] kimlikler = new Kimlik[30];
+		
+		Scanner input = new Scanner(System.in);
+		int adet = input.nextInt();
+		
+		while(adet<0 || adet>30) {
+			System.out.print("Tekrar giriniz,\nhatali miktar girdiniz. ");
+			adet = input.nextInt();
+		}
+		
+		//kimliklere atanan seriNo ile o anki totalAdet eş oldugundan,
+		//artık seriNo'lar kimlikler için benzersiz ve bu bana,
+		//kimliklere benzersiz bi erisim noktası saglıyor.
+		while(Kimlik.getTotalAdet() < adet){
+			kimlikler[Kimlik.getTotalAdet()] = new Kimlik();
+		}
+		
+		System.out.println("\nMenüye Hoşgeldiniz.\n ");
+		System.out.println("SeriNo'lar sıra numarası ile üretilmektedir. ");
+		System.out.println("!!!Unutmayınız seriNo olusturdugunuz Kimlik Adeti ile sınırlıdır. \n");
+		System.out.println("!Menüden cikmak için '-1' giriniz.\n");
+		
+		while(true) {
+			System.out.println("\nYapmak istediginiz islemi seciniz");
+			System.out.println("1-Bilgi cekmek\n2-Kimlik düzenlemek");
+			int talimat = input.nextInt();
+			
+			if(talimat == -1) {
+			System.out.println("Menüden çıkılıyor. , iyi günler.");
+			break;
+			
+			}
+			else if(talimat == 1) {
+				System.out.print("\nErismek istediginiz kimligin seriNo'sunu giriniz.\n");
+				int hedefSeriNo = input.nextInt();
+				kimlikler[hedefSeriNo].kimlikInfo();
+				
+			}
+			else if(talimat == 2) {
+				System.out.println("\nDüzenlenmesini istediginiz Kimlik seriNo giriniz. ");
+				int hedefSeriNo = input.nextInt();
+				System.out.println("\nLütfen düzenlemek istediginiz bilgileri giriniz. ");
+				System.out.print("İsim: ");   String isim = input.next();
+				System.out.print("Soy Ad: ");  String soyAd = input.next();
+				System.out.print("Dogum Tarihi !!bosluksuz (gün/ay/yıl): ");  String date = input.next();
+				System.out.print("Cinsiyet: ");   String gender = input.next();
+				kimlikler[hedefSeriNo].setKimlikInfo(isim, soyAd, date, gender);
+			}	
+		}
+		
+		input.close();
+	}
+
+}

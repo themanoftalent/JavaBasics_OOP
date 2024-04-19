@@ -1,0 +1,26 @@
+//2311502231 Zehre İnce - Fibonacci
+package zehrejava;
+import java.util.Scanner;
+public class odev {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int s1=0;
+        int s2=1;
+        int top;
+        System.out.println("Fibonacci dizisinin kacinci elemanina kadar dizi istediginizi giriniz");
+        int j = scan.nextInt();
+        for(int i =1;i<=j;i++){
+        	if (i==j) {
+        		System.out.print(s1);
+        		break;
+        	}
+        	
+            System.out.print(s1+" - ");
+            top=s1+s2;
+            s1=s2;
+            s2=top;
+
+        }
+
+    } 
+    }

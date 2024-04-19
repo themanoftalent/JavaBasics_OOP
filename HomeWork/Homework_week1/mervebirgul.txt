@@ -1,0 +1,21 @@
+public class HelloWorld
+ {
+    public static void main(String[] args)
+ {
+        System.out.println("Hello World"); 
+ }
+}
+*************************************************************
+çay algoritması
+1-başla
+2-Çaydanlığı al
+3-Çaydanlığın kapağını aç
+4-çeşmeyi aç
+5-çaydanlığı suyla doldur
+6-çeşmeyi kapat
+7-çaydanlığı ocağa koy
+8-ocağı yak
+9-su kaynayınca ocağı kapat
+10-çayı al ve çaydanlığa dök
+11- bekle biraz
+12- bitti

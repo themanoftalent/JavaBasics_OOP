@@ -1,0 +1,29 @@
+public class   Intro {
+
+    public String name = "Aymen";
+    public String surname = "Khan";
+    public int age = 20 ;
+    public String profession = "ogrenci";
+    public String hair = "siyah";
+    public int height = 159;
+    public int weight = 50 ;
+    public boolean beard = false ;
+    public boolean moustache = false ;
+    public String hobby = "Mobile Legends";
+  
+
+public class IntroCheck {
+    public static void main(String[] args) {
+        Intro check = new Intro();
+        System.out.print("isim : " + check.name + " ");
+        System.out.println("soyad : " +check.surname);
+        System.out.println("yas : "+check.age);
+        System.out.println("unvan : "+check.profession);
+        System.out.println("boy :"+check.height);
+        System.out.println("kilo :"+check.weight);
+        System.out.println("sac rengi :"+check.hair);
+        System.out.println("sakal :"+check.beard);
+        System.out.println("biyik :"+check.moustache);
+        System.out.println("hobi :"+check.hobby);
+    }
+}

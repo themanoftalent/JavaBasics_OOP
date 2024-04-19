@@ -1,0 +1,69 @@
+// Nisanur GÖREN 2311502215
+
+// 7. Sum of Digits 
+
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        System.out.print("Bir sayi giriniz:");
+        sayi = scanner.nextInt();
+        int temp = sayi;
+        int sonuc = 0;
+        while(temp>0){
+            sonuc += temp%10;
+            temp /= 10;
+        }
+        System.out.println(sayi + " sayisinin rakamlari toplami:  "+sonuc);
+
+    }
+}
+
+// 8. Multiplication Table
+
+import java.util.Scanner;
+
+public class CarpimTablosu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz:");
+        int sayi= scanner.nextInt();
+        for(int i=1; i<=10; i++) {
+            int a= sayi*i;
+            System.out.println(i +"x"+sayi+"="+a);
+        }
+    }
+}
+
+// 9. Prime Number Checker 
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz");
+        int sayi = scanner.nextInt();
+        boolean asal = true;
+        
+        if (sayi <= 1) {
+            asal = false;
+        } else {
+            for (int i = 2; i <= sayi / 2; i++) {
+                if (sayi % i == 0) {
+                    asal = false;
+                    break;
+                }
+            }
+        }
+        
+        if (asal) {
+            System.out.println(sayi + " Asal sayıdır.");
+        } else {
+            System.out.println(sayi + " Asal sayı değildir.");
+        }
+    }
+}

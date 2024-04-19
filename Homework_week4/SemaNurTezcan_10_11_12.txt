@@ -1,0 +1,92 @@
+10-
+public class TerstenYazma {
+	public static void main(String[] args) {
+		
+		String Str= "Hello World!";
+        System.out.println("Orijinal string: " +Str);
+        
+        char[] charStr= Str.toCharArray();
+        
+        ters(charStr);
+        
+        String tersdStr= new String(charStr);
+        System.out.println("Tersten string: " +tersdStr);
+    }
+    
+	
+    public static void ters(char[] charStr) {
+        int bas= 0;
+        int son= charStr.length-1;
+        
+        while (bas<son) {
+            char gecici= charStr[bas];
+            charStr[bas]= charStr[son];
+            charStr[son]= gecici;
+            bas++;
+            son--;
+        }
+    }		
+
+}
+
+
+
+
+11-
+public class DizideOrtalamaHesaplama {
+	public static void main(String[] args) {
+		
+		double[] sayilar= {7.15, 14, 28, 36.57, 9.22, 76};
+		double toplam=0;
+		double ortalama=0;
+		
+		for(double sayi: sayilar) 
+			toplam+=sayi;
+		
+		ortalama= toplam/ sayilar.length;
+		
+		System.out.println("Sayıların toplamı: " +toplam +"\n" +"Sayiların ortalaması: " +ortalama);
+		
+	}
+
+}
+
+
+
+12-
+public class SayılarıSıralama {
+	public static void main(String[] args) {
+        int[] dizi= {66, 34, 25, 12, 34, 3, 90};
+        
+        System.out.println(" Orijinal dizi: ");
+        diziYazdır(dizi);
+        
+        sıralama(dizi);
+        
+        System.out.println("\n\n Sıralanan dizi: ");
+        diziYazdır(dizi);
+    }
+    
+	
+    public static void sıralama(int[] dizi) {
+        int n = dizi.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (dizi[j] > dizi[j + 1]) {
+                    int gecici = dizi[j];
+                    dizi[j] = dizi[j + 1];
+                    dizi[j + 1] = gecici;
+                }
+            }
+        }
+    }
+    
+    
+    public static void diziYazdır(int[] dizi) {
+        for (int i = 0; i < dizi.length; i++) {
+            System.out.print(dizi[i] + " ");
+        }
+       
+    }
+
+}

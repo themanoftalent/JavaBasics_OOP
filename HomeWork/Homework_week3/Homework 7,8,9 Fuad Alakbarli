@@ -1,0 +1,81 @@
+//7.Calculate the sum of digits in a positive integer.
+//import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a positive integer: ");
+        int number = scanner.nextInt();
+
+        // Ensure the number is positive
+        if (number < 0) {
+            System.out.println("The number must be positive.");
+            scanner.close();
+            return;
+        }
+        
+        int sum = 0;
+        int originalNumber = number;  // Store the original number for displaying later
+
+        // Calculate the sum of digits
+        while (number > 0) {
+            int digit = number % 10;  // Get the last digit
+            sum += digit;             // Add the last digit to the sum
+            number /= 10;             // Remove the last digit
+        }
+
+        System.out.println("The sum of the digits in " + originalNumber + " is " + sum);
+        
+        scanner.close();
+    }
+}
+//8.Display the multiplication table of a number.
+//public class CarpimTablosu {
+    public static void main(String[] args) {
+        int boyut = 10; 
+        
+        // Çarpım tablosunu oluşturma
+        for (int i = 1; i <= boyut; i++) {
+            for (int j = 1; j <= boyut; j++) {
+                System.out.printf("%4d", i * j); 
+            }
+            System.out.println();
+//9.Check if a given number is prime or composite.
+//import java.util.Scanner;
+
+public class PrimeCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a positive integer: ");
+        int number = scanner.nextInt();
+        
+        if (number <= 1) {
+            System.out.println(number + " is neither prime nor composite.");
+        } else if (isPrime(number)) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is a composite number.");
+        }
+        
+        scanner.close();
+    }
+
+    // Helper method to check if a number is prime
+    private static boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+//2311502201
+
+
+

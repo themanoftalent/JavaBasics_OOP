@@ -1,0 +1,18 @@
+//Zehre İnce 2311502231 - Even or Odd
+package zehrejava;
+import java.util.Scanner;
+public class odev {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Bir sayı giriniz");
+        int sayi = scan.nextInt();
+ if (sayi%2==0) {
+	 System.out.println("Sayı çifttir.");
+ }
+ else {
+	 System.out.println("Sayı tektir.");
+ }
+
+    }
+}
