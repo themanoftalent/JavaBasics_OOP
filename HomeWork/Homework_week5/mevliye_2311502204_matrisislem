@@ -1,0 +1,50 @@
+//MEVLİYE BALANDI
+//İki matrisin toplama ve çarpımını gerçekleştirin
+ import java.util.Scanner;
+        public class Ödev15{
+            public static void main(String[] args) {
+                Scanner input= new Scanner(System.in);
+
+
+                System.out.println("Lütfen ilk matrisin elemanlarını girin :");
+                int[][] matris1 = new int[3][3];
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        matris1[i][j] = input.nextInt();
+                    }
+                }
+                System.out.println("Lütfen ikinci matrisin elemanlarını girin :");
+                int[][] matris2 = new int[3][3];
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        matris2[i][j] = input.nextInt();
+                    }
+                }
+                int[][] toplammatris = new int[3][3];
+                for (int i = 0; i < 3; i++) {
+                    for (int j=0;j<3;j++) {
+                        toplammatris[i][j] =matris1[i][j] + matris2[i][j];
+                    }
+                }
+                int [][] carpımmatris=new int[3][3];
+                for(int i=0;i<3;i++){
+                    for(int j=0;j<3;j++){
+                        carpımmatris[i][j]=matris1[i][j]*matris2[i][j];
+                    }
+                }
+                System.out.println("Matris toplamı:");
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        System.out.print( " "+toplammatris[i][j] );
+                    }
+                    System.out.println();
+                }
+                System.out.println("Matris çarpımı:");
+                for(int i=0;i<3;i++){
+                    for(int j=0;j<3;j++){
+                        System.out.print(" "+carpımmatris[i][j]);
+                    }
+                    System.out.println();
+                }
+            }
+        }
