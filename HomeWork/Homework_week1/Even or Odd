@@ -1,0 +1,24 @@
+//Even or Odd
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Tekcifttest {
+	
+	
+	public static void main(String[]args) {
+		
+	 Scanner deger = new Scanner(System.in);
+	 
+	 
+	 
+     System.out.print("Bir sayı girin ");
+     int sayi = deger.nextInt();
+     
+     
+     if (sayi % 2 == 0) {
+         System.out.println(sayi + " çifttir.");
+     } else {
+         System.out.println(sayi + " tektir.");
+     }
+}
+}
