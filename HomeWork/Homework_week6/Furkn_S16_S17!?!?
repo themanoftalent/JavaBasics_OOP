@@ -1,0 +1,42 @@
+//Furkan Tatar 2311502208
+
+//!!!!!!  17. Soru Yok çünkü biz File islemlerini görmedik.
+
+
+//16.Soru
+import java.util.Scanner;
+
+class ArmStrongMu {
+
+	public static void main(String[] args) {
+		
+		System.out.print("ArmStrong'lugunu kontrol etmek istediginiz sayiyi giriniz: ");
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		
+		int basAdet=0;
+		
+		int copyBir = number;
+		while(copyBir != 0) {
+			copyBir /= 10;
+			basAdet++;
+		}
+		
+		int checkNumber=0;
+		int copyIki = number;
+		while(copyIki != 0) {
+			checkNumber += (Math.pow(copyIki%10, basAdet));
+			copyIki /= 10;
+		}
+		
+		if(checkNumber == number) {
+			System.out.println("Girdiginiz "+ number + " sayisi ArmStrong sayidir. ");
+		}
+		else {
+			System.out.println("Girdiginiz "+ number +" sayisi ArmStrong degildir. ");
+		}
+		
+		input.close();
+	}
+
+}
