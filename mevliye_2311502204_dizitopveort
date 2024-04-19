@@ -1,0 +1,16 @@
+/MEVLİYE BALANDI
+//Bir dizideki öğelerin toplamını ve ortalamasını hesaplayın.
+ import java.util.Scanner;
+public class Ödev11 {
+    public static void main(String[] args) {
+        int[] dizi = new int[]{5, 7, 8, 9, 12};
+        System.out.println("dizi={5,7,8,9,12}");
+        int toplam = 0, ort = 0;
+        for (int i = 0; i < dizi.length; i++) {
+            toplam += dizi[i];
+        }
+        ort = toplam / dizi.length;
+        System.out.println("toplam= " + toplam);
+        System.out.println("ortalama= " + ort);
+    }
+}
