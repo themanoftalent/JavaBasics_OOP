@@ -1,0 +1,30 @@
+//Fibonacci Sequence 
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		Scanner deger = new Scanner(System.in);
+		double a;
+		System.out.println("fibonacci ne kadar devam etsin: ");
+		a = deger.nextInt();
+
+		double c=0,b=1;
+		
+		for(int i=1;i<=a;i++){
+			System.out.print(i+". sayi : ");
+		System.out.println((int)c);
+        double next = c + b;
+        c = b;
+        b = next;
+
+			
+		}
+		
+		
+		
+		
+	}
+
+}
