@@ -1,0 +1,110 @@
+//16. Determine if a number is an Armstrong number.
+
+public class Hello world {
+
+    public static boolean isArmstrong(int number) {
+        int originalNumber = number;
+        int sum = 0;
+        int digits = String.valueOf(number).length(); 
+
+        while (number > 0) {
+            int digit = number % 10; 
+            sum += Math.pow(digit, digits); 
+            number /= 10; 
+        }
+
+        return sum == originalNumber;
+    }
+
+    public static void main(String[] args) {
+        int num = 153; 
+
+        if (isArmstrong(num)) {
+            System.out.println(num + " is an Armstrong number.");
+        } else {
+            System.out.println(num + " is not an Armstrong number.");
+        }
+    }
+}
+
+//17. Read data from a file, manipulate it, and write the results back to a file.
+
+
+import java.io.*;
+import java.nio.file.*;
+import java.util.*;
+
+public class Hello world {
+
+    public static void main(String[] args) {
+        String inputFile = "input.txt";  
+        String outputFile = "output.txt"; 
+
+        List<String> processedLines = new ArrayList<>();
+        Path inputPath = Paths.get(inputFile);
+
+        try (BufferedReader reader = Files.newBufferedReader(inputPath)) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                try {
+                    int number = Integer.parseInt(line);
+                    int doubledValue = number * 2;
+                    processedLines.add(String.valueOf(doubledValue));
+                } catch (NumberFormatException e) {
+                    System.out.println("Skipping invalid integer: " + line);
+                }
+            }
+        } catch (IOException e) {
+            System.err.println("Failed to read from " + inputFile + ": " + e.getMessage());
+            return;
+        }
+
+
+        Path outputPath = Paths.get(outputFile);
+        try (BufferedWriter writer = Files.newBufferedWriter(outputPath)) {
+            for (String line : processedLines) {
+                writer.write(line);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            System.err.println("Failed to write to " + outputFile + ": " + e.getMessage());
+        }
+    }
+}
+
+//18. Handle exceptions (e.g., division by zero) in a Java program.
+
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Hello world {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.print("Enter the numerator: ");
+            int numerator = scanner.nextInt();
+
+            System.out.print("Enter the denominator: ");
+            int denominator = scanner.nextInt();
+
+            int result = divide(numerator, denominator);
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.err.println("Error: Cannot divide by zero.");
+        } catch (InputMismatchException e) {
+            System.err.println("Error: Invalid input. Please enter an integer.");
+        } finally {
+            scanner.close();
+            System.out.println("Operation completed.");
+        }
+    }
+
+    private static int divide(int numerator, int denominator) {
+        return numerator / denominator; 
+    }
+}
+
+//2311502202
