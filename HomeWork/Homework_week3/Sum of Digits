@@ -1,32 +1,15 @@
-//Sum of Digits
-//Fatih Selim ADALI 2311502248
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("sayi girin:");
+        int sayi = girdi_degeri.nextInt();
 
-import java.util.Scanner;
-public class Rakamlarıtop {
-	
-	
-	public static void main(String[]args) {
-		
-		
-        Scanner deger = new Scanner(System.in);
-        System.out.print("pozitif tamsayı girin: ");
-        int sayi = deger.nextInt();
-        
-       
-        int toplam = 0,geciciSayi = sayi;;
-        
-        
-       
-        
-        
-        while (geciciSayi != 0) {
-            int rakam = geciciSayi % 10;
-            toplam += rakam;
-            geciciSayi /= 10;
+        int temp = sayi, geciciSayi, toplam = 0;
+        while(temp>0){
+            geciciSayi = temp%10;
+            toplam+=geciciSayi;
+            temp/=10;
         }
-        
-        
-        System.out.println("rakamlari toplamı : " + toplam);
-        
-}
+        System.out.println(sayi + " sayisinin rakamlari toplami : "+toplam);
+    }
 }

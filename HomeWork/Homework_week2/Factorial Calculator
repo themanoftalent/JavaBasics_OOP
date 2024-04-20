@@ -1,37 +1,18 @@
-//Factorial Calculator 
-//Fatih Selim ADALI 2311502248
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("Sayi giriniz:");
+        int sayi = girdi_degeri.nextInt();
+        int faktoriyel = 1;
 
-import java.util.Scanner;
-
-public class Faktoriyel {
-	
-	
-
-
-		public static void main(String[] args) {
-			
-			Scanner deger =new Scanner(System.in);
-			
-			int a;
-			
-			System.out.print("faktöriyelini bulmak istediginiz sayiyi giriniz : ");
-			
-			a = deger.nextInt();
-			int i = 1;
-			int b=1;
-			
-			
-			while(i<=a) {
-				b*=i;
-				i++;
-				System.out.println(b);
-				
-			}
-			System.out.println();
-			System.out.print("cevabınız : "+b);
-			
-		}
-
-	}
-
-
+        if(sayi<0){
+            System.out.println("faktoriyel degeri hesaplanamaz.");
+        }
+        else {
+            for (int i = 1; i <= sayi; i++) {
+                faktoriyel *= i;
+            }
+        }
+        System.out.println("faktoriyel degeri : "+faktoriyel);
+    }
+}

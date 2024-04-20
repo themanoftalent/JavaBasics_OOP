@@ -1,37 +1,45 @@
-package Ödevler5.hafta;
+package ödev13;
 
 import java.util.Scanner;
 
-//2311502229 Ali Eren Hakut
-public class Dogrusalarama {
+class dogrusalArama {
 
 	public static void main(String[] args) {
-		int j = 0;
-		boolean varmi = false;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Dizinizin eleman sayısını giriniz: ");
-		int terim = sc.nextInt();
+		Scanner scanner = new Scanner(System.in);
 
-		int[] numbers = new int[terim];
+        System.out.println("Dizinin boyutunu girin:");
+        int size = scanner.nextInt();
 
-		for (int i = 0; i < terim; i++) {
-			System.out.println((i + 1) + ". Elemanı giriniz: ");
-			int eleman = sc.nextInt();
-			numbers[i] = eleman;
-		}
-		System.out.println("Aranacak elemanı giriniz: ");
-		int arananeleman = sc.nextInt();
+        int[] array = new int[size];
+        System.out.println("Dizinin elemanlarını girin:");
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
+        }
 
-		for (int i = 0; i < terim; i++) {
-			if (numbers[i] == arananeleman) {
-				varmi = true;
-				j = (i + 1);
-			}
+        System.out.println("Aranacak elemanı girin:");
+        int target = scanner.nextInt();
 
-		}
-		if (varmi)
-			System.out.println("ARadığınız eleman bulunuyor. Bu sırada: " + j);
-		else
-			System.out.println("Aradığınız eleman yok.");
+        int index = linearSearch(array, target);
+
+        if (index != -1) {
+            System.out.println("Eleman " + index + ". pozisyonda bulundu.");
+        } else {
+            System.out.println("Eleman bulunamadı.");
+        }
+
+        scanner.close();
+    }
+
+    public static int linearSearch(int[] array, int target) {
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            if (array[i] == target) {
+                return i; 
+            }
+        }
+        return -1; 
+
 	}
+
 }
+//Emiralp Yakalı 2311502251

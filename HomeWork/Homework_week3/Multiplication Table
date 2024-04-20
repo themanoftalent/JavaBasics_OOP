@@ -1,27 +1,11 @@
-//Multiplication Table 
-//Fatih Selim ADALI 2311502248
-import java.util.Scanner;
-public class Carpimtablosucikarma {
-	
-	
-	
-		
-		public static void main(String[] args) {
-	 
-	        Scanner deger = new Scanner(System.in);
-	        System.out.print("hangi sayinin carpim tablosunu gormek istersin: ");
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("sayi girin:");
+        int sayi = girdi_degeri.nextInt();
 
-	        int sayi = deger.nextInt();
-	        
-	     
-	        
-	        
-	        
-	        for (int i = 1; i <= 10; i++) {
-	            System.out.println(sayi + " . " + i + " = " + (sayi * i));
-	        }
-
-
-    
-     }
+        for(int i=0; i<10; i++){
+            System.out.println(sayi +"x"+i+"="+i*sayi);
+        }
+    }
 }

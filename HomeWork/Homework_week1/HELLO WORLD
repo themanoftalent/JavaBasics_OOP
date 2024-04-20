@@ -1,16 +1,5 @@
-//HELLO WORLD
-//Fatih Selim ADALI 2311502248
-
-
-
-
-public class Merhabadunya {
+public class Main {
     public static void main(String[] args) {
-
-
-        System.out.print("Hello World!");
-
-
-
+        System.out.println("Hello World!");
     }
 }

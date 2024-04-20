@@ -1,39 +1,24 @@
-//Array Sorting 
-//Fatih Selim ADALI 2311502248
-
-import java.util.Scanner;
-public class Dizisıralama {
-	
-	public static void main(String[]args) {
-				  
-		
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("dizi boyutunu gir: ");
-        int b = scanner.nextInt();
-
-        int[] dizi = new int[b];
-        for (int i = 0; i < b; i++) {
-            System.out.print("Dizinin " + (i + 1) + ". elemanını gir: ");
-            dizi[i] = scanner.nextInt();
+public class Main {
+    public static void main(String[] args){
+        Scanner girdi_degeri = new Scanner(System.in);
+        int [] sayilar = new int[5];
+        System.out.println("sayi girin:");
+        for(int i=0; i<5; i++){
+            System.out.println("sayi"+(i+1)+": ");
+            sayilar[i] = girdi_degeri.nextInt();
         }
-
-        
-        int n = b;
-        for (int i = 0; i < (n - 1); i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (dizi[j] > dizi[j + 1]) {
-                    
-                    int a = dizi[j];
-                    dizi[j] = dizi[j + 1];
-                    dizi[j + 1] = a;
-          }
-         }
+        int temp;
+        for(int i=0; i<4; i++){
+            for(int j=i+1; j<5; j++){
+                if(sayilar[i]<sayilar[j]){
+                    temp = sayilar[j];
+                    sayilar[j] = sayilar[i];
+                    sayilar[i] = temp;
+                }
+            }
         }
-
-        
-        System.out.println("sıralanmış diziniz:");
-        for (int e : dizi) {
-            System.out.print(e + " ");
+        for(int i=0; i<5; i++){
+            System.out.println(sayilar[i]+" ");
         }
-}
+    }
 }

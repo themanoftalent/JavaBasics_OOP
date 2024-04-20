@@ -1,8 +1,11 @@
-package Ödevler1.hafta;
+package ödev1;
 
-//2311502229 Ali Eren Hakut
-public class Helloworld {
+class helloWorld {
+
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		System.out.println("Hello, World!");
+
 	}
+
 }
+//Emiralp Yakalı 2311502251

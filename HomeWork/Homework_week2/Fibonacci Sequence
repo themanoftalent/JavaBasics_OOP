@@ -1,30 +1,22 @@
-//Fibonacci Sequence 
-//Fatih Selim ADALI 2311502248
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        int sayi1=0, sayi2=1,temp;
+        int sayi3 = sayi1+sayi2;
+        System.out.println("sayi girin:");
+        temp = girdi_degeri.nextInt();
 
-import java.util.Scanner;
-public class Fibonacci {
-
-	public static void main(String[] args) {
-		Scanner deger = new Scanner(System.in);
-		double a;
-		System.out.println("fibonacci ne kadar devam etsin: ");
-		a = deger.nextInt();
-
-		double c=0,b=1;
-		
-		for(int i=1;i<=a;i++){
-			System.out.print(i+". sayi : ");
-		System.out.println((int)c);
-        double next = c + b;
-        c = b;
-        b = next;
-
-			
-		}
-		
-		
-		
-		
-	}
-
+        if(temp==1)
+            System.out.println(sayi1);
+        else {
+            System.out.print(sayi1 + " " + sayi2 + " ");
+            while (temp > 2) {
+                System.out.print(sayi3 + " ");
+                sayi1 = sayi2;
+                sayi2 = sayi3;
+                sayi3 = sayi1 + sayi2;
+                temp--;
+            }
+        }
+    }
 }

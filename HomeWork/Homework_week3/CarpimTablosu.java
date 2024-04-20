@@ -1,16 +1,23 @@
+package ödev8;
+
 import java.util.Scanner;
 
-public class Main {
-    static Scanner input=new Scanner(System.in);
-    public static void main(String[] args) {
-        int[][] CarpimToblusu= new int[10][10];
-        for(int a=0;a<10;a++){
-            for(int b=0;b<10;b++){
-                CarpimToblusu[a][b]=(a*10)+b+1;
-                System.out.print(CarpimToblusu[a][b]+"  ");
+class carpimTablosu {
 
-            }
-            System.out.println();
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Çarpım tablosunu görmek istediğiniz sayıyı girin:");
+        int number = scanner.nextInt();
+
+        System.out.println("***** " + number + " Çarpım Tablosu *****");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
         }
-    }
+
+        scanner.close();
+	}
+
 }
+//Emiralp Yakalı 2311502251
