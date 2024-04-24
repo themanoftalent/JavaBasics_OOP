@@ -1,0 +1,174 @@
+//Ömer Faruk Bakırcı 2211502042
+
+//13. Linear Search 
+
+import java.util.Scanner;
+ class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int[]dizi=new int[] {45,234,5,9,22,17};
+        System.out.println("sayiyi giriniz:");
+        int sayi,arama=0;
+        sayi=scan.nextInt();
+        for(int i=0;i< dizi.length;i++){
+            if(dizi[i]==sayi){
+                System.out.println("girdiginiz sayi:"+sayi+" "+"bu dizide bulunuyor.");
+                arama++;
+            }
+
+        }
+        if(arama==0){
+            System.out.println("girdiginiz eleman dizide bulunmamaktadir.");
+        }
+
+
+
+    }
+}
+
+
+//14. Binary Search 
+
+import java.util.Scanner;
+
+ class IkiliArama {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Dizi boyutunu girin: ");
+        int boyut = scanner.nextInt();
+
+        int[] siraliDizi = new int[boyut];
+        System.out.println("Dizi elemanlarını girin (sıralı):");
+        for (int i = 0; i < boyut; i++) {
+            siraliDizi[i] = scanner.nextInt();
+        }
+
+        System.out.print("Aranacak sayıyı girin: ");
+        int aranan = scanner.nextInt();
+
+        int indeks = ikiliArama(siraliDizi, aranan);
+
+        if (indeks != -1) {
+            System.out.println(aranan + " sayısı, dizide bulundu ve indeksi: " + indeks);
+        } else {
+            System.out.println(aranan + " sayısı, dizide bulunamadı.");
+        }
+
+        scanner.close();
+    }
+
+    public static int ikiliArama(int[] dizi, int aranan) {
+        int baslangic = 0;
+        int son = dizi.length - 1;
+
+        while (baslangic <= son) {
+            int orta = (baslangic + son) / 2;
+
+            if (dizi[orta] == aranan) {
+                return orta;
+            }
+
+            if (dizi[orta] < aranan) {
+                baslangic = orta + 1;
+            } else {
+                son = orta - 1;
+            }
+        }
+
+        return -1;
+    }
+}
+
+
+
+
+
+//15. Matrix Operations 
+
+import java.util.Scanner;
+
+ class MatrisIslemleri {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Matris boyutlarını girin:");
+        System.out.print("Satır sayısı: ");
+        int satir = scanner.nextInt();
+        System.out.print("Sütun sayısı: ");
+        int sutun = scanner.nextInt();
+
+
+        System.out.println("İlk matrisi girin:");
+        int[][] matris1 = matrisOlustur(scanner, satir, sutun);
+
+
+        System.out.println("İkinci matrisi girin:");
+        int[][] matris2 = matrisOlustur(scanner, satir, sutun);
+
+
+        int[][] toplamMatris = matrisTopla(matris1, matris2);
+
+
+        int[][] carpimMatris = matrisCarp(matris1, matris2);
+
+
+        System.out.println("Toplam Matris:");
+        matrisYazdir(toplamMatris);
+        System.out.println("Çarpım Matris:");
+        matrisYazdir(carpimMatris);
+
+        scanner.close();
+    }
+
+ 
+    public static int[][] matrisOlustur(Scanner scanner, int satir, int sutun) {
+        int[][] matris = new int[satir][sutun];
+        for (int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                System.out.print("Matris[" + i + "][" + j + "]: ");
+                matris[i][j] = scanner.nextInt();
+            }
+        }
+        return matris;
+    }
+    
+    public static int[][] matrisTopla(int[][] matris1, int[][] matris2) {
+        int satir = matris1.length;
+        int sutun = matris1[0].length;
+        int[][] toplamMatris = new int[satir][sutun];
+        for (int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                toplamMatris[i][j] = matris1[i][j] + matris2[i][j];
+            }
+        }
+        return toplamMatris;
+    }
+
+
+    public static int[][] matrisCarp(int[][] matris1, int[][] matris2) {
+        int satir = matris1.length;
+        int sutun = matris2[0].length;
+        int[][] carpimMatris = new int[satir][sutun];
+        for (int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                for (int k = 0; k < matris1[0].length; k++) {
+                    carpimMatris[i][j] += matris1[i][k] * matris2[k][j];
+                }
+            }
+        }
+        return carpimMatris;
+    }
+
+
+    public static void matrisYazdir(int[][] matris) {
+        for (int i = 0; i < matris.length; i++) {
+            for (int j = 0; j < matris[0].length; j++) {
+                System.out.print(matris[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
