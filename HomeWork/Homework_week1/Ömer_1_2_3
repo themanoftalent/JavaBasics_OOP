@@ -1,0 +1,72 @@
+// Ömer Faruk Bakırcı 2211502042
+
+//1. Hello, World!
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+
+//2. Simple Calculator
+
+import java.util.Scanner;
+
+class SimpleCalculator {
+
+    public static void main(String[] args) {
+        System.out.println("Basit hesap makinesinesine hoş geldiniz ");
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("İlk sayi: ");
+        int sayiBir = input.nextInt();
+
+        System.out.print("Ikinci sayi: ");
+        int sayiIki = input.nextInt();
+
+        System.out.print("Lütfen islemi giriniz (+ , - , * , /): ");
+        char islem = input.next().charAt(0);
+
+        switch(islem) {
+            case '+': System.out.println("Toplama "+ (sayiBir+sayiIki));
+            break;
+            case '-': System.out.println("Cikartma "+  (sayiBir-sayiIki));
+            break;
+            case '*': System.out.println("Carpim "+ (sayiBir*sayiIki));
+            break;
+            case '/': System.out.println("Bölüm "+ (sayiBir/sayiIki));
+            break;
+        }
+
+        input.close();
+
+    }
+
+}
+
+
+
+
+//3.Even or Odd
+
+
+import java.util.Scanner;
+ class  HelloWorld {
+    public static void main(String[] args) {
+
+        int number;
+        System.out.print("Tek mi çift mi hesaplamak için bir sayı giriniz:");
+        Scanner input = new Scanner(System.in);
+
+        int sayi = input.nextInt();
+
+        if(sayi%2 == 0){
+            System.out.println(sayi + " çift sayıdır");
+        }
+        else{
+            System.out.println(sayi + " tek sayıdır");
+        }
+        input.close();
+    }
+}
