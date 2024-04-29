@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class fibonacci {
+    public static void main(String[] args) {
+        Scanner hafiza= new Scanner(System.in);
+        System.out.println("Terim sayisi giriniz");
+        int n = hafiza.nextInt();
+        int c=0,a=1;
+        System.out.println("ilk "+n+" terim");
+        for(int i=0;i<n;i++) {
+            System.out.println(c);
+            int b=a+c;
+            c=a;
+            a=b;
+        }
+    }

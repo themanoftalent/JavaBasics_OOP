@@ -1,0 +1,29 @@
+// Zehre İnce 2311502231 - Armstrong Number
+package zehrejava;
+import java.util.Scanner;
+import java.util.*;
+import java.lang.Math;
+
+public class odev {
+  public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+
+      System.out.println("Bir sayı giriniz ");
+      int sayi = scan.nextInt();
+      int basamak=0 , kalan , toplam=0,orj= sayi;
+      do{
+    		sayi/=10;
+    		basamak++;
+    	}while(sayi>0);
+    	sayi=orj;
+    	for(int j=0;j<basamak;j++){
+    		kalan=sayi%10;
+    		toplam+=Math.pow(kalan,basamak);
+    		sayi/=10;
+    	}
+    	if(toplam==orj) {
+    		System.out.println("Sayi armstrong sayısıdır");
+    	}
+    	else System.out.println("Sayi armstrong sayısı değil");
+  }
+}

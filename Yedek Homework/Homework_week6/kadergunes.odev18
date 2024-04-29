@@ -1,0 +1,31 @@
+//kader güneş
+// ödev18->dosya okuma ve yazma:bir dosyadaki verileri okuyun,değiştirinve sonuçları bir dosyaya geri yazın.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String [] dizi={"bileklik","kolye","toka"};
+        int x;
+        System.out.println("sıfır ve iki arasında sayı seçiniz.");
+        Scanner input=new Scanner(System.in);
+        x=input.nextInt();
+        if(x<0||x>2){
+            System.out.println("hatalı giriş yaptınız.");
+        }
+        else{
+
+            System.out.println("yerine yazmak istediğiniz eleman nedir?");
+            String b;
+            Scanner input1=new Scanner(System.in);
+            b=input1.nextLine();
+            dizi[x]=b;
+            input1.close();
+        }
+        for(int i=0;i<3;i++){
+            System.out.print(" "+dizi[i]+" ");
+        }
+        System.out.println();
+        input.close();
+
+
+    }
+}

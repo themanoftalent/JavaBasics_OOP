@@ -1,0 +1,33 @@
+16.ÖDEV
+import java.util.Scanner;
+public class AnaClass {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        int sayi = scanner.nextInt();
+
+        if (armstrongMu(sayi)) {
+            System.out.println(sayi + " bir Armstrong sayısıdır.");
+        } else {
+            System.out.println(sayi + " bir Armstrong sayısı değildir.");
+        }
+    }
+    public static boolean armstrongMu(int sayi) {
+        int asilsayi, kalan, sonuc = 0, n = 0;
+        asilsayi = sayi;
+
+        for (; asilsayi != 0; asilsayi /= 10, ++n);
+
+        asilsayi = sayi;
+
+        for (; asilsayi != 0; asilsayi /= 10) {
+            kalan = asilsayi % 10;
+            sonuc += Math.pow(kalan, n);
+        }
+        if (sonuc == sayi) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}

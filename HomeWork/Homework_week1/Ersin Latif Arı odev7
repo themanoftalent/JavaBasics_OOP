@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class odev7 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int sayi;
+        System.out.println("lutfen bir sayi giriniz:");
+        sayi = scan.nextInt();
+        int sayix = sayi;
+        int toplam = 0;
+        if (sayi < 0) {
+            System.out.println("tekrar sayi giriniz");
+        } else {
+            while (sayi > 0) {
+                sayix = sayi % 10;
+                sayi = sayi / 10;
+                toplam = toplam+sayix;
+            }
+
+        }
+        System.out.println("toplam="+toplam);
+    }
+}

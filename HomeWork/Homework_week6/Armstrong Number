@@ -1,0 +1,28 @@
+// Armstrong Number
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Armstrongsayilar {
+
+	public static void main(String[] args) {
+		Scanner deger = new Scanner(System.in);
+		int arm;
+		System.out.print("sayi giriniz : ");
+		arm = deger.nextInt();
+		
+		int ilk,ikinci,üçüncü;
+		ilk=arm%10;
+		ikinci=((arm-ilk)/10)%10;
+		üçüncü=(arm-(10*ikinci)-ilk)/100;
+		
+        if(arm==(ilk*ilk*ilk)+(ikinci*ikinci*ikinci)+(üçüncü*üçüncü*üçüncü)) {
+        	System.out.print(+arm+" Armstrong sayidir");
+        }
+	
+        else
+        	
+        	System.out.print(+arm+" Armstrong sayi degildir");
+		
+	}
+
+}

@@ -1,0 +1,59 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("ilk matris için satır sayısını girin");
+        int satir1 = input.nextInt();
+        System.out.print("ilk matris için sütun sayısını girin");
+        int sütun1 = input.nextInt();
+        
+        System.out.print("ikinci matris için satır sayısını girin");
+        int satir2 = input.nextInt();
+        System.out.print("ikinci matris için sütun sayısını girin");
+        int sütun2 = input.nextInt();
+
+        if(sütun1 != satir2) {
+            System.out.println("Matrislerin boyutları uyumsuz");
+            return;}
+
+        int[][] matris1 = new int[satir1][sütun1];
+        int[][] matris2 = new int[satir2][sütun2];
+        int[][] carpim = new int[satir1][sütun2];
+        int[][] toplam = new int[satir1][sütun1];
+
+        System.out.println("Birinci matrisin elemanlarını girin ");
+        for(int i = 0; i < satir1; i++) {
+            for(int k = 0; k < sütun1; k++) {
+                System.out.print("[" + (i+1) + "][" + (k+1) + "]: ");
+                int eleman1 = input.nextInt();
+                matris1[i][k] = eleman1;
+            }}
+         System.out.println("İkinci matrisin elemanlarını girin");
+        for(int i = 0; i < satir2; i++) {
+            for(int k = 0; k < sütun2; k++) {
+                System.out.print("[" + (i+1) + "][" + (k+1) + "]: ");
+                int eleman2 = input.nextInt();
+                matris2[i][k] = eleman2;
+            } }
+        for(int i = 0; i < satir1; i++) {
+            for(int k = 0; k < sütun2; k++) {
+                for(int j = 0; j < sütun1; j++) {
+                    carpim[i][k] += matris1[i][j] * matris2[j][k];
+                } } }
+        for(int i = 0; i < satir1; i++) {
+            for(int j = 0; j < sütun1; j++) {
+                toplam[i][j] = matris1[i][j] + matris2[i][j];
+            } }
+
+        System.out.println("Matrislerin çarpımı");
+        for(int i = 0; i < satir1; i++) {
+            System.out.println(Arrays.toString(carpim[i]));
+        }
+
+        System.out.println("Matrislerin toplamı");
+        for(int i = 0; i < satir1; i++) {
+            System.out.println(Arrays.toString(toplam[i]));
+        } } }

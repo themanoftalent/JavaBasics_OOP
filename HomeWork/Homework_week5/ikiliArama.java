@@ -1,55 +1,47 @@
-package ödev14;
+package Ödevler5.hafta;
 
 import java.util.Scanner;
 
-class ikiliArama {
+//2311502229 Ali Eren Hakut
+public class ikiliarama {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		    boolean varmi = false;
+	        int satir = -1;
+	        int sutun = -1;
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Dizinizin boyutunu giriniz: ");
+	        int terim = sc.nextInt();
 
-        System.out.println("Dizinin boyutunu girin:");
-        int size = scanner.nextInt();
+	        int[][] numbers = new int[terim][terim];
 
-        int[] array = new int[size];
-        System.out.println("Sıralı dizinin elemanlarını girin:");
-        for (int i = 0; i < size; i++) {
-            array[i] = scanner.nextInt();
-        }
+	        for (int i = 0; i < terim; i++) {
+	            for (int j = 0; j < terim; j++) {
+	                System.out.println((i + 1) + ". satır " + (j + 1) + ". sütun elemanını giriniz: ");
+	                int eleman = sc.nextInt();
+	                numbers[i][j] = eleman;
+	            }
+	        }
 
-        System.out.println("Aranacak elemanı girin:");
-        int target = scanner.nextInt();
+	        System.out.println("Aranacak elemanı giriniz: ");
+	        int arananeleman = sc.nextInt();
 
-        int index = binarySearch(array, target);
+	        for (int i = 0; i < terim; i++) {
+	            for (int j = 0; j < terim; j++) {
+	                if (numbers[i][j] == arananeleman) {
+	                    varmi = true;
+	                    satir = i + 1; 
+	                    sutun = j + 1; 
+	                    break; 
+	                }
+	            }
+	            if (varmi) 
+	                break;
+	        }
 
-        if (index != -1) {
-            System.out.println("Eleman " + index + ". pozisyonda bulundu.");
-        } else {
-            System.out.println("Eleman bulunamadı.");
-        }
-
-        scanner.close();
-    }
-
-    public static int binarySearch(int[] array, int target) {
-        int left = 0;
-        int right = array.length - 1;
-
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
-            if (array[mid] == target) {
-                return mid;
-            }
-            else if (array[mid] < target) {
-                left = mid + 1;
-            }
-            else {
-                right = mid - 1;
-            }
-        }
-
-        return -1;
+	        if (varmi)
+	            System.out.println("Aranan eleman bulundu. Bulunduğu sıra ve sütun: " + satir + ". satır, " + sutun + ". sütun");
+	        else
+	            System.out.println("Aranan eleman bulunamadı.");
+	    }
 	}
-
-}
-//Emiralp Yakalı 2311502251

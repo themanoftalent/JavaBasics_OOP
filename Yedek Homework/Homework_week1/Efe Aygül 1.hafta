@@ -1,0 +1,48 @@
+1.ÖDEV 
+
+public class Main {
+    public static void main(String[] args) 
+{    
+ System.out.println("Hello World");
+}
+}
+
+
+
+2.ÖDEV
+
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input =new Scanner(System.in);
+    public static void main(String[] args) {
+        double a,b,carpma,bolme,toplam,fark;
+        a=input.nextInt();
+        b=input.nextInt();
+        carpma=a*b;
+        bolme=a/b;
+        fark=a-b;
+        toplam=a+b;
+        System.out.println("toplam="+toplam);
+        System.out.println("fark="+fark);
+        System.out.println("carpma="+carpma);
+        System.out.println("bolme="+bolme); }
+}
+
+
+
+3.ÖDEV
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input=new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println("tek mi cift mi");
+        System.out.println("bir sayi giriniz");
+        int sayi =input.nextInt();
+        if(sayi%2==0){
+            System.out.println("cift");
+             }
+        else  {
+            System.out.println("tek");
+        } } }

@@ -1,0 +1,58 @@
+4.ÖDEV
+import java.util.Scanner;
+public class Main {
+       static Scanner input=new Scanner(System.in);
+       public static void main(String[] args) {
+        int faktoriyel=1;
+        System.out.println("x sayisinin faktoriyelini bulmak için bir x sayisi giriniz");
+        int sayi=input.nextInt();
+        for(int a=1;a<=sayi;a++){
+            faktoriyel*=a;
+      }
+        System.out.println(faktoriyel); }}
+
+
+5.ÖDEV
+import java.util.Scanner;
+public class Fibonacci {
+  static Scanner input=new Scanner(System.in);
+	public static void main(String[] args) {
+		int number1=0;
+		int number2=1;
+		int top=0;
+		int terim;
+		System.out.println("Fibonacci dizisi icin bir terim sayisi giriniz: ");
+		terim=scanner.nextInt();
+		for(int a=1; a<=terim; a++) {
+			top=number1+number2;
+			number1=number2;
+			number2=toplam;		}
+		System.out.println( "Sonuc:"+toplam);
+} }
+
+6.ÖDEV
+import java.util.Scanner;
+public class Main {
+    static Scanner input=new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println("girdiginiz sayinin palindrom sayi olup olmadigini bilmek icin herhangi bir sayi giriniz");
+        int sayi=input.nextInt();
+        int toplam=0;
+        int palindrom;
+        palindrom=sayi;
+        while(sayi>0)
+        {
+          int i=sayi%10;
+          sayi=(sayi-i)/10;
+          toplam=(toplam*10)+i;
+        }
+        if(toplam==palindrom)
+        {
+         System.out.println("girdiginiz sayi palindrom sayidir");
+        } 
+        else 
+        {
+         System.out.println("girdiginiz sayi palindrom sayi degildir");
+        } 
+     } 
+}

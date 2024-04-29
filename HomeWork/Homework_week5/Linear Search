@@ -1,0 +1,39 @@
+//Linear Search 
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class Dogrusalsearch {
+	
+	public static void main(String[]args) {
+				  
+		
+		 Scanner deger = new Scanner(System.in);
+	        System.out.print("Dizi boyutunu girin: ");
+	        int boyut = deger.nextInt();
+
+	        int[] dizi = new int[boyut];
+	        System.out.println("Dizi elemanlarını girin:");
+	        for (int i = 0; i < boyut; i++) {
+	            dizi[i] = deger.nextInt();
+	        }
+
+	        System.out.print("Aranacak öğeyi girin: ");
+	        int aranan = deger.nextInt();
+
+	        
+	        int sonuc = -1;
+	        for (int i = 0; i < boyut; i++) {
+	            if (dizi[i] == aranan) {
+	                sonuc = i;
+	                break; 
+	            }
+	        }
+
+	        
+	        if (sonuc == -1) {
+	            System.out.println("Aradıgın öge bulunamadı.");
+	        } else {
+	            System.out.println("Aradıgın oge " + (sonuc + 1) + ". indeksinde bulundu.");
+	        }
+}
+}

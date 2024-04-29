@@ -1,0 +1,17 @@
+package zehrejavadiye;
+import java.util.Scanner;
+public class odev {
+    public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+       int Ne = scan.nextInt();
+
+int a;
+int sonuc;
+for (a=1;a<11;a++){
+    sonuc = Ne * a;
+    String mesaj = String.format("%d x %d = %d", Ne, a, sonuc);
+System.out.println(mesaj);
+    
+}
+} 
+    }

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bölünen");
+        int sayi1 = input.nextInt();
+
+        System.out.println("Bölen ");
+        int sayi2= input.nextInt();
+
+        try {
+            if(sayi1 == 0) {
+                throw new ArithmeticException("hata");
+            }
+            else {
+                int sonuc = sayi1 / sayi2;
+                System.out.println("Sonuç" + sonuc);
+            }
+        } catch (ArithmeticException e) {
+            System.out.println("Hata" + e.getMessage());
+        }
+    }
+}

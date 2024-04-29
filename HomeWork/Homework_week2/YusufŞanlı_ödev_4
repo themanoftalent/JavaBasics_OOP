@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Faktoriyel {
+	public static void main(String[] args) {
+		int fak=1;
+		Scanner d = new Scanner(System.in);
+System.out.println("Faktöriyeli girilecek sayıyı giriniz ");
+	int sayi =d.nextInt();
+	for(int i=1;i<=sayi;i++)
+		{fak*=i;}	
+	System.out.println(sayi+" sayısının  faktöriyeli = "+fak);}
+}

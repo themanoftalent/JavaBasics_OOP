@@ -1,59 +1,48 @@
+package Ödevler1.hafta;
+
 import java.util.Scanner;
+//2311502229 Ali Eren Hakut
+public class basithesapmakinesi {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 
-public class Main {
-    static Scanner input=new Scanner(System.in);
-    public static void main(String[] args) {
-        double islemSonucu=0;
-        System.out.println("islem yapmak istediginiz 1. sayiyi giriniz");
-        double numberOne=input.nextDouble();
-        System.out.println("islem yapmak istediginiz 2. sayiyi giriniz");
-        double numberTwo=input.nextDouble();
-        System.out.println("bir islem numarası giriniz");
-        System.out.println("1=toplama\n" +
-                "2=cıkarma\n" +
-                "3=bolme\n" +
-                "4=carpma\n");
-        int islem=input.nextInt();
+		System.out.println("Toplama için-> 1");
+		System.out.println("Çıkartma için-> 2");
+		System.out.println("Bolme için-> 3");
+		System.out.println("çarpma için-> 4");
+		System.out.println("Çıkış için-> 5");
 
-        switch (islem){
-            case 1:{
-                islemSonucu=numberTwo+numberOne;
-                System.out.println("sonucunuz = " +
-                islemSonucu);
-                break;
+		int secim = scanner.nextInt();
 
-            }
-            case 2:{
-                islemSonucu=numberOne-numberTwo;
-                System.out.println("sonucunuz = " + islemSonucu);
-                break;
-            }
-            case 3:{
-                if(numberTwo==0){
-                    if(numberOne==0){
-                        System.out.println("0 / 0 sonsuzluk hatasi");
+		if (secim == 5) {
+			System.out.println("Hesap Makinesi kapanıyor");
+			return;
+		}
 
-                    }
-                    else {
-                        System.out.println("0 'a bolunme hatasi");
-                    }
-                  break;
-                }
-                islemSonucu=numberOne/numberTwo;
-                System.out.println(" sonucunuz = " + islemSonucu );
-
-                break;
-
-            }
-            case 4:{
-                islemSonucu=numberOne*numberTwo;
-                System.out.println("sonucunuz = "+islemSonucu);
-                break;
-
-            }
-            default:{
-                System.out.println("hatali islem türü sectiniz");
-            }
-        }
-    }
+		System.out.println("1.Sayı giriniz: ");
+		double sayi1 = scanner.nextDouble();
+		System.out.println("2. sayı giriniz: ");
+		double sayi2 = scanner.nextDouble();
+		switch (secim) {
+		case 1:
+			System.out.println("Sayıların toplamı: " + (sayi1 + sayi2));
+			break;
+		case 2:
+			System.out.println("Sayıların cıkartması: " + (sayi1 - sayi2));
+			break;
+		case 3:
+			if (sayi2 != 0) {
+				System.out.println("Sayıların bölümü: " + (sayi1 / sayi2));
+			} else {
+				System.out.println("Sayı sıfıra bölünemez.");
+			}
+			break;
+		case 4:
+			System.out.println("Sayıların çarpımı: " + (sayi1 * sayi2));
+			break;
+		default:
+			System.out.println("Geçersiz işlem");
+		}
+		scanner.close();
+	}
 }

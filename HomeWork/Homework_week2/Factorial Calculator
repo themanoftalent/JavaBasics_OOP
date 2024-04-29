@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("Sayi giriniz:");
+        int sayi = girdi_degeri.nextInt();
+        int faktoriyel = 1;
+
+        if(sayi<0){
+            System.out.println("faktoriyel degeri hesaplanamaz.");
+        }
+        else {
+            for (int i = 1; i <= sayi; i++) {
+                faktoriyel *= i;
+            }
+        }
+        System.out.println("faktoriyel degeri : "+faktoriyel);
+    }
+}

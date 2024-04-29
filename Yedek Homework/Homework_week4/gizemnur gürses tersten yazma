@@ -1,0 +1,29 @@
+public class Main {
+	public static void main(String[] args) {
+		
+		String Str= "Hello World!";
+        System.out.println("Orijinal string: " +Str);
+        
+        char[] charStr= Str.toCharArray();
+        
+        ters(charStr);
+        
+        String tersdStr= new String(charStr);
+        System.out.println("Tersten string: " +tersdStr);
+    }
+    
+	
+    public static void ters(char[] charStr) {
+        int bas= 0;
+        int son= charStr.length-1;
+        
+        while (bas<son) {
+            char gecici= charStr[bas];
+            charStr[bas]= charStr[son];
+            charStr[son]= gecici;
+            bas++;
+            son--;
+        }
+    }		
+
+}

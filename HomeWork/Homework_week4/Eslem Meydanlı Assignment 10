@@ -1,0 +1,25 @@
+//2311502260
+//Reverse a String
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        String[] listele = new String[10];
+        Scanner deger = new Scanner(System.in);
+        System.out.println("Girdi:");
+        String tersi = deger.nextLine();
+        String girdi = "";
+
+        for(int i = tersi.length()-1; i >= 0; i-- ) {
+            girdi += tersi.charAt(i);
+
+
+        }
+
+        System.out.println(girdi);
+
+
+
+    }
+}

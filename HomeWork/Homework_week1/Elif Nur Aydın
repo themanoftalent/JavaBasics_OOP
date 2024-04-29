@@ -1,0 +1,79 @@
+Elif Nur Aydın 2311502211
+
+// 1. Hello World!
+
+public class HelloWorld {
+
+    public static void main(String[] args){
+        System.out.println("Hello World!");
+    }
+}
+
+
+// 2.HesapMakinasi 
+
+import java.util.Scanner;
+
+public class HesapMakinasi  {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("1. sayıyı giriniz:");
+        int sayi1 = scanner.nextInt();
+
+        System.out.println("2. sayıyı giriniz:");
+        int sayi2 = scanner.nextInt();
+
+        System.out.println("Yapmak istediğiniz işlemi seçiniz: ");
+        System.out.println("1. Toplama");
+        System.out.println("2. Çıkarma");
+        System.out.println("3. Bölme");
+        System.out.println("4. Çarpma");
+
+	int islem = scanner.nextInt();
+
+	double sonuc = 0;
+
+	switch (islem) {
+                case 1:
+                    System.out.println("Sonuc: " + (sayi1 + sayi2));
+                    break;
+                case 2:
+                    System.out.println("Sonuc: " + (sayi1 - sayi2));
+                    break;
+                case 3:
+                    System.out.println("Sonuc: " + (sayi1 * sayi2));
+                    break;
+                case 4:
+                    if (sayi2 != 0) {
+                        System.out.println("Sonuc: " + (sayi1 / sayi2));
+                    } else {
+                        System.out.println("geçersiz");
+                    }
+                    break;
+                default:
+                    System.out.println("geçersiz");
+            }
+        scanner.close();
+    }
+}
+
+
+// 3. Tek ve Çift
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("bir sayi giriniz:");
+        int sayi=scanner.nextInt();
+        if(sayi %2 == 0){
+            System.out.println("Girilen sayı çift");
+        }
+        else {
+            System.out.println("Girilen sayı tek");
+        }
+
+    }
+}

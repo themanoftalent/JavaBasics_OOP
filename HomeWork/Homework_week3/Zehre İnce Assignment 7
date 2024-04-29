@@ -1,0 +1,19 @@
+// Zehre İnce 2311502231 - Sum of digits
+package zehrejava;
+import java.util.Scanner;
+public class odev {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        int sayi = scan.nextInt();
+        int temp = sayi;
+        int top=0;
+        while(temp>0){
+            top = top + temp%10;
+            temp = temp / 10;
+
+        }
+        
+        System.out.println("Girdiğiniz sayının rakamlar toplamı: " +top);
+    }
+}

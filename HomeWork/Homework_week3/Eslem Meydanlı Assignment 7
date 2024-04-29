@@ -1,0 +1,24 @@
+//2311502260
+//Sum of Digits 
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Sayı girin:");
+        int sayi = num.nextInt();
+
+        int toplam = 0;
+        int gecici_sayi;
+
+        while(sayi > 0) {
+            gecici_sayi = sayi % 10;
+            toplam = toplam + gecici_sayi;
+            sayi /= 10;
+
+        }
+
+        System.out.println("Toplam = " + toplam);
+    }
+}
