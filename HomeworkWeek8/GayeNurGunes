@@ -1,0 +1,72 @@
+//Gaye Nur Güneş-2211502017
+
+//class Calculator
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Calculator {
+    public void Operations() {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.println("İşlem seçin:");
+            System.out.println("1. Toplama");
+            System.out.println("2. Çıkarma");
+            System.out.println("3. Çarpma");
+            System.out.println("4. Bölme");
+
+            int secim = scanner.nextInt();
+
+            System.out.print("İlk sayıyı girin: ");
+            double num1 = scanner.nextDouble();
+
+            System.out.print("İkinci sayıyı girin: ");
+            double num2 = scanner.nextDouble();
+
+            double result = 0;
+
+            switch (secim) {
+                case 1:
+                    result = num1 + num2;
+                    break;
+                case 2:
+                    result = num1 - num2;
+                    break;
+                case 3:
+                    result = num1 * num2;
+                    break;
+                case 4:
+                    if (num2 != 0) {
+                        result = num1 / num2;
+                    } else {
+                        throw new ArithmeticException("Bölme işlemi geçersiz! İkinci sayı sıfır olamaz.");
+                    }
+                    break;
+                default:
+                    System.out.println("Geçersiz seçim!");
+                    return;
+            }
+
+            System.out.println("Sonuç: " + result);
+        } catch (InputMismatchException e) {
+            System.out.println("Hata: Geçersiz giriş. Lütfen bir sayı girin.");
+        } catch (ArithmeticException e) {
+            System.out.println("Hata: " + e.getMessage());
+        } finally {
+            scanner.close();
+        }
+    }
+}
+
+
+
+//class Main
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+
+        calculator.Operations();
+    }
+}
