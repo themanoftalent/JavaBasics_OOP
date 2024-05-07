@@ -1,0 +1,71 @@
+// Ömer Faruk Bakırcı 2211502042
+
+//4. Factorial Calculator
+
+import java.util.Scanner;
+
+class Faktoriyel {
+
+    public static void main(String[] args) {
+
+        System.out.print("Faktoriyelini hesaplamak istediginiz sayıyı giriniz: ");
+        Scanner input = new Scanner(System.in);
+        int sayi = input.nextInt();
+        int fact = 1;
+
+        for(; sayi > 0; sayi--) {
+            fact *= sayi;
+        }
+
+        System.out.println("Sonuç= "+ fact);
+    }
+}
+
+
+//5. Fibonacci Sequence
+
+import java.util.Scanner;
+ class Fibonacci {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Kaçıncı terime kadar görmek istiyorsun");
+        int number = scanner.nextInt();
+        System.out.println("Fibonacci sayıları:");
+        int a = 0, b = 1;
+        for (int i = 0; i < number; i++) {
+
+            int temp = a + b;
+            a=b;
+            b= temp;
+            System.out.print(" " + temp);
+        }
+
+    }
+}
+
+//6. Palindrome Check
+
+import java.util.Scanner;
+ class Palindrome {
+    public static void main(String[] args) {
+        Scanner scanner=   new Scanner(System.in);
+        System.out.println("Kelime giriniz:");
+        String kelime= scanner.nextLine();
+        String tmp= "";
+
+        for(int i= kelime.length()-1; i>=0; i--) {
+            tmp += kelime.charAt(i);
+        }
+        if(tmp.equals(kelime)){
+            System.out.println("Girdiğiniz Palindrome kelimedir");
+        }
+        else {
+            System.out.println("palindrome kelime değildir ");
+        }
+
+
+
+
+    }
+}
+

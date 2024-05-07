@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+    static Scanner gir =new Scanner(System.in);
+    public static void main(String[] args) {
+        int faktoriyel,sonuc=1;
+        System.out.println("sayi gir: ");
+        faktoriyel = gir.nextInt();
+        for(int i=1; i<=faktoriyel; i++){
+            sonuc *= i;
+        }
+        System.out.println("sonuç : " + sonuc);
+    }
+}

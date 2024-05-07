@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		System.out.println("Lutfen bir sayi girin:");
+		Scanner sc= new Scanner(System.in);
+		int sayi=sc.nextInt();
+		
+		int toplam=1;
+		
+		for(int x=1; x<=sayi+1 ; x++)
+		{
+			toplam=toplam*x;
+			
+			
+		}
+		
+		System.out.println(toplam);
+		
+		sc.close();
+		
+		
+	}
+}

@@ -1,0 +1,83 @@
+1-
+public class Hello {
+	public static void main(String[] args) {
+		
+		System.out.println("Hello, World!");
+
+	}
+
+}
+
+
+
+2-
+import java.util.Scanner;
+
+public class HesapMakinesi {
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		double sayi1, sayi2, sonuc=0;
+		int islem;
+		
+		System.out.println("Birinci sayıyı giriniz: ");
+		sayi1= scanner.nextDouble();
+		
+		System.out.println("İkinci sayıyı giriniz: ");
+		sayi2= scanner.nextDouble();
+		
+		System.out.println(" 1-Toplama\n 2-Çıkarma\n 3-Çarpma\n 4-Bölme\n Yapmak istediğiniz işlemin numarasını giriniz:  ");
+		islem= scanner.nextInt();
+		
+		switch(islem) {
+		
+		case(1):
+			sonuc= sayi1+sayi2;
+			break;
+		case(2):
+			sonuc= sayi1-sayi2;
+			break;
+		case(3):
+			sonuc= sayi1*sayi2;
+			break;
+		case(4):
+			if(sayi2!=0)
+			    sonuc= sayi1/sayi2;
+			else
+				System.out.println("Sayı 0'a bölünemez! ");
+			break;
+		default:
+			System.out.println("Hatalı işlem girdiniz! ");
+			break;
+		}
+		
+		System.out.println("Sonuç: " +sonuc);
+		
+	}
+
+}
+
+
+
+3-
+import java.util.Scanner;
+
+public class CiftTek {
+	public static void main(String[] args){
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int sayi;
+
+		System.out.println("Lütfen sayı giriniz: ");
+		sayi= scanner.nextInt();
+		
+		if(sayi%2==0) 
+			System.out.println("Girdiğiniz sayı çifttir.");
+		else
+			System.out.println("Girdiğiniz sayı tektir.");
+			
+	}
+
+}

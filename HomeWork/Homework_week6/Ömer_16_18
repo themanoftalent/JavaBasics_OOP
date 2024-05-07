@@ -1,0 +1,69 @@
+// Ömer Faruk Bakırcı   2211502042
+
+//16. Armstrong Number 
+
+
+import java.util.Scanner;
+
+ class ArmstrongSayisi {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+        scanner.close();
+
+        if (armstrongSayisiMi(sayi)) {
+            System.out.println(sayi + " bir Armstrong sayısıdır.");
+        } else {
+            System.out.println(sayi + " bir Armstrong sayısı değildir.");
+        }
+    }
+
+    public static boolean armstrongSayisiMi(int sayi) {
+        int toplam = 0;
+        int geciciSayi = sayi;
+        int basamakSayisi = String.valueOf(sayi).length();
+
+        while (geciciSayi != 0) {
+            int basamak = geciciSayi % 10;
+            toplam += Math.pow(basamak, basamakSayisi);
+            geciciSayi /= 10;
+        }
+
+        return toplam == sayi;
+    }
+}
+
+
+
+
+//18. Exception Handling 
+
+
+import java.util.Scanner;
+
+ class IstisnaYonetimi {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.print("(100 ü bölecek) bir sayı girin: ");
+            int sayi = scanner.nextInt();
+
+            int sonuc = 100 / sayi;
+            System.out.println("Sonuç: " + sonuc);
+        } catch (ArithmeticException e) {
+            System.out.println("Hata: Sıfıra bölme hatası!");
+            // Hata ayrıntılarını yazdırma:
+            // e.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("Beklenmeyen bir hata oluştu.");
+        } finally {
+            scanner.close();
+            System.out.println("Program sonlandırıldı.");
+        }
+    }
+}
+

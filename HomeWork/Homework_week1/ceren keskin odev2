@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class ODEVLER {
+
+	public static void main(String[] args) 
+	{
+		    System.out.print("Lutfen iki sayi giriniz:");
+        Scanner sc = new Scanner(System.in);
+
+        int sayi1 = sc.nextInt();
+        int sayi2 = sc.nextInt();
+
+        System.out.println("Lutfen islem operatorunu secin:");
+        System.out.println("1=Toplama");
+        System.out.println("2=Cikartma");
+        System.out.println("3=Carpma");
+        System.out.println("4=Bolme");
+
+        int islem = sc.nextInt();
+
+        switch (islem) 
+        {
+            case 1:
+                System.out.println(sayi1 + sayi2);
+                break;
+
+            case 2:
+                System.out.println(sayi1 - sayi2);
+                break;
+
+            case 3:
+                System.out.println(sayi1 * sayi2);
+                break;
+
+            case 4:
+                if (sayi2 != 0) {
+                    System.out.println(sayi1 / sayi2);
+                } else {
+                    System.out.println("Hata: Sifira bolme");
+                }
+                break;
+
+            default:
+                System.out.println("Gecersiz operator");
+                break;
+        }
+
+        sc.close();
+			
+
+	}
+
+}

@@ -1,0 +1,73 @@
+//10.Reverse a string without using built-in functions.
+//public class StringReverse {
+    public static String reverseString(String str) {
+        // Stringi karakter dizisine dönüştürün
+        char[] charArray = str.toCharArray();
+        
+        // Karakter dizisinin başını ve sonunu işaretleyen indisleri tanımlayın
+        int start = 0;
+        int end = charArray.length - 1;
+        
+        // İlk ve son indisler birbirine eşit olana kadar karakterleri yer değiştirin
+        while (start < end) {
+            // Baş ve son indislerdeki karakterleri yer değiştirin
+            char temp = charArray[start];
+            charArray[start] = charArray[end];
+            charArray[end] = temp;
+            
+            // İndisleri bir sonraki karaktere ve bir önceki karaktere taşıyın
+            start++;
+            end--;
+        }
+        
+        // Yer değiştirilmiş karakter dizisini Stringe dönüştürün ve döndürün
+        return new String(charArray);
+    }
+
+    public static void main(String[] args) {
+        String originalString = "hello";
+        String reversedString = reverseString(originalString);
+        System.out.println(reversedString); // olleh
+    }
+}
+//11.Calculate the sum and average of elements in an array
+//public class ArraySumAndAverage {
+    public static void main(String[] args) {
+        // Define and initialize the array
+        int[] numbers = {10, 20, 30, 40, 50};
+        
+        // Calculate the sum of the array elements
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        
+        // Calculate the average of the array elements
+        double average = (double) sum / numbers.length;
+
+        // Output the results
+        System.out.println("Sum of array elements: " + sum);
+        System.out.println("Average of array elements: " + average);
+    }
+}
+//12.Implement a sorting algorithm for an integer array.
+import java.util.Arrays;
+
+public class DiziSiralama {
+    public static void main(String[] args) {
+        // Sıralanacak dizi
+        int[] dizi = {5, 2, 9, 1, 7, 3};
+
+        // Diziyi sıralama
+        Arrays.sort(dizi);
+
+        // Sıralanmış diziyi yazdırma
+        System.out.println("Dizi sıralandıktan sonra:");
+        for (int eleman : dizi) {
+            System.out.print(eleman + " ");
+        }
+    }
+}
+
+
+

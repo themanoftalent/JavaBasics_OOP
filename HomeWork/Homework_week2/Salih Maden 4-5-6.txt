@@ -1,0 +1,78 @@
+4-
+
+import java.util.Scanner;
+public class Main {
+    static Scanner sa = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int sayi;
+        int toplam = 1;
+        System.out.println("bir sayi giriniz:");
+        sayi = sa.nextInt();
+        for(int i=1;i<=sayi;i++)
+        {
+            toplam = i*toplam;
+        }
+        System.out.println(toplam);
+    }
+}
+
+
+5-
+
+import java.util.Scanner;
+public class Main {
+    static Scanner sa = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int sayi1=1;
+        int sayi2=1;
+        int sonrakisayi,sayi;
+        System.out.println("kac eleman istiyorsunuz?");
+        sayi=sa.nextInt();
+        System.out.println(sayi1+"");
+        System.out.println(sayi2+"");
+        for(int i =0;i<sayi-2;i++)
+        {
+            sonrakisayi=sayi1+sayi2;
+            sayi1=sayi2;
+            sayi2=sonrakisayi;
+
+            System.out.println(sonrakisayi+"");
+
+        }
+    }
+}
+
+6-
+
+import java.util.Scanner;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int sayi;
+        int sayi1;
+        System.out.println("sayi giriniz:");
+        sayi = sc.nextInt();
+        sayi1=sayi;
+        int palin=0;
+        int kalan=0;
+
+        while(sayi!=0)
+        {
+            kalan = sayi%10;
+            palin = palin*10+kalan;
+            sayi/=10;
+        }
+        if(sayi1==palin)
+        {
+            System.out.println("sayi palindrom sayidir");
+        }
+        else
+        {
+            System.out.println("sayi palindrom sayi degildir");
+        }
+
+    }
+}

@@ -1,0 +1,57 @@
+public static void main(String [] args) {
+	     
+		 Scanner klavye=new Scanner(System.in);
+		 System.out.println("Matrislerin satır satısı kaç olsun?");
+		 int satir=klavye.nextInt();
+		 
+		 System.out.println("Matrislerin sutun satısı kaç olsun?");
+		 int sutun=klavye.nextInt();
+		 
+		 int[][] matris1=new int[satir][sutun];
+		 int[][] matris2=new int[satir][sutun];
+		 int[][] matrisCarpim=new int[satir][sutun];
+		 
+		 for (int i=0; i < satir; i++)
+		 {
+			 for (int j=0; j < sutun; j++)
+			 {
+				 System.out.println("Lütfen 1. matris için ["+i+"]["+j+"] konumundaki elemani yazin");
+				 matris1[i][j]=(int)(Math.random()*10)+1;
+				 
+				 System.out.println("Lütfen 2. matris için ["+i+"]["+j+"] konumundaki elemani yazin");
+				 matris2[i][j]=(int)(Math.random()*10)+1;
+				 
+				 matrisCarpim[i][j]=matris1[i][j]*matris2[i][j];
+			 }
+		 }
+		 
+		 System.out.println("matris1:");
+		 
+		 for (int i = 0; i < satir; i++) 
+		 	{
+				for (int j = 0; j < sutun; j++) {
+					System.out.print(matris1[i][j] + "\t");
+				}
+				System.out.println();
+			}
+		 
+		 System.out.println("matris2:");
+		 
+		 for (int i = 0; i < satir; i++) 
+		 	{
+				for (int j = 0; j < sutun; j++) {
+					System.out.print(matris2[i][j] + "\t");
+				}
+				System.out.println();
+			}
+		 
+		 System.out.println("matris1 ve matris2'nin çarpımı:");
+		 
+		 for (int i = 0; i < satir; i++) 
+		 	{
+				for (int j = 0; j < sutun; j++) {
+					System.out.print(matrisCarpim[i][j] + "\t");
+				}
+				System.out.println();
+			}
+	    }

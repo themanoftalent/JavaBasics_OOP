@@ -1,0 +1,46 @@
+package ;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class Calculator {
+    public void Operations() {
+        Scanner sc = new Scanner(System.in);
+        try {
+            System.out.print("ilk sayıyı giriniz: ");
+            int number1 = sc.nextInt();
+
+            System.out.print("işlem seçiniz (+, -, *, /) ");
+            char selection = sc.next().charAt(0);
+
+            System.out.print("ikinci sayıyı giriniz: ");
+            int number2 = sc.nextInt();
+
+            switch (selection) {
+                case '+':
+                    System.out.println("islem sonucunuz: " + (number1 + number2));
+                    break;
+                case '-':
+                    System.out.println("islem sonucunuz: " + (number1 - number2));
+                    break;
+                case '*':
+                    System.out.println("islem sonucunuz: " + (number1 * number2));
+                    break;
+                case '/':
+                    if (number2 != 0) {
+                        System.out.println("islem sonucunuz: " + (number1 / number2));
+                    } else {
+                        throw new ArithmeticException("ikinci sayı 0'a eşit olamaz");
+                    }
+                    break;
+                default:
+                    throw new InputMismatchException("yanlis bir input girdiniz, lütfen tekrar deneyiniz");
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("yanlis bir input girdiniz, lütfen tekrar deneyiniz");
+        } catch (ArithmeticException e) {
+            System.out.println("hata! " + e.getMessage());
+        } finally {
+            sc.close();
+        }
+    }
+}
+

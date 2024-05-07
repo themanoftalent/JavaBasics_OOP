@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int j = 0;
+        boolean varmi = false;
+        Scanner gir = new Scanner(System.in);
+        System.out.println("eleman sayısı gir ");
+        int a = gir.nextInt();
+
+        int[] sayilar = new int[a];
+
+        for(int i = 0; i < a ; i++){
+            System.out.println("Elemanları gir");
+            int eleman = gir.nextInt();
+            sayilar[i] = eleman;
+        }
+        System.out.println("Aranacak elemanı gir ");
+        int arananeleman = gir.nextInt();
+
+        for(int i = 0; i<a; i++){
+            if(sayilar[i] == arananeleman) {
+                varmi = true;
+                j = i;
+            }
+
+        }
+        if(varmi) System.out.println("sırası: "+j);
+        else System.out.println("eleman yok.");
+    }
+}

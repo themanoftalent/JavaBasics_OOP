@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Palindrom {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Sayı giriniz:");
+        int sayi = input.nextInt();
+        int temp = sayi;
+        int ters = 0;
+
+        while (temp > 0) {
+            int sonBasamak = temp % 10;
+            ters = ters * 10 + sonBasamak;
+            temp /= 10;
+        }
+
+        if (ters == sayi) {
+            System.out.println(sayi + " palindrom sayıdır");
+        } else {
+            System.out.println(sayi + " palindrom sayı değildir");
+        }
+    }
+}

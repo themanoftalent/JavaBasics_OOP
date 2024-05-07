@@ -1,0 +1,21 @@
+//MEVLİYE BALANDI
+//Belirli bir öğeyi bulmak için dizide doğrusal bir arama yapın.
+import java.util.Scanner;
+public class Ödev13 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int dizi[] = new int[] {4,96,785,568,25,1,2,9,7,35};
+        System.out.println("aradiginiz sayiyi girin: ");
+        int sayi = input.nextInt();
+        for(int i = 0; i < dizi.length; i++)
+        {
+            if (dizi[i] == sayi) {
+                System.out.println("girdiginiz sayi dizide mevcut");
+            }
+            else {
+                System.out.println("maalesef girdiginiz sayi dizide mevcut degil");
+            }
+        }
+        
+    }
+}

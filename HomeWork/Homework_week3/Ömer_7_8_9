@@ -1,0 +1,84 @@
+// Ömer Faruk Bakırcı 2211502042
+
+
+//7. Sum of Digits
+
+import java.util.Scanner;
+
+class RakamlarToplam {
+
+    public static void main(String[] args) {
+
+        System.out.print("Rakamlarının toplamını hesaplamak istediginiz sayıyı giriniz: ");
+        Scanner input = new Scanner(System.in);
+        int sayi = input.nextInt();
+
+        int sonuc = 0;
+
+        while(sayi != 0) {
+             sonuc += (sayi%10);
+            sayi /= 10;
+        }
+
+        System.out.println("Girdiginiz sayının rakamlarının toplamı: " +sonuc);
+
+        input.close();
+    }
+}
+
+
+//8. Multiplication Table 
+
+import java.util.Scanner;
+
+class CarpimTablosu {
+
+    public static void main(String[] args) {
+
+        System.out.print("Çarpımını görmek istediginiz sayıyı giriniz: ");
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
+        System.out.print("Kaca Kadar olan  çarpımını görmek istiyorsunuz: ");
+        int hedef = input.nextInt();
+
+        for(int sayac=0; sayac <= hedef; sayac++) {
+            System.out.println(number +"x"+ sayac + " = "+ (number*sayac));
+        }
+
+        input.close();
+    }
+}
+
+
+//9. Prime Number Checker
+
+import java.util.Scanner;
+
+ class AsalSayiKontrolu {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+        scanner.close();
+
+        boolean asalMi = true;
+
+        if (sayi <= 1) {
+            asalMi = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(sayi); i++) {
+                if (sayi % i == 0) {
+                    asalMi = false;
+                    break;
+                }
+            }
+        }
+
+        if (asalMi) {
+            System.out.println(sayi + " asal bir sayıdır.");
+        } else {
+            System.out.println(sayi + " asal bir sayı değildir.");
+        }
+    }
+}

@@ -1,0 +1,50 @@
+//File Reading and Writing
+//Fatih Selim ADALI 2311502248
+
+import java.util.Scanner;
+public class seviyetespit {
+
+	public static void main(String[] args) {
+	
+		
+		int mevcutseviye;
+		
+		Scanner deger = new Scanner(System.in);
+
+		
+		System.out.print("Seviye atlama lobisine hoşgeldiniz...");
+		System.out.println("    Mevcut seviyenizi öğrenebilimiyim ? (bir sayı) ");
+		mevcutseviye = deger.nextInt();
+		
+		
+		Somecode seviye = new Somecode();
+        int yeniSayi = seviye.sayiyiAl(mevcutseviye);
+		
+		
+        Somecodetwo seviyebelirt = new Somecodetwo();
+        seviyebelirt.sayiyiYazdir(yeniSayi);
+		
+	}
+
+}
+
+
+
+public class Somecode {
+
+	public int sayiyiAl(int sayi) {
+        return sayi + 2;
+    }
+
+}
+
+
+
+public class Somecodetwo {
+	 public void sayiyiYazdir(int sayi) {
+   System.out.println("Tebrikler Yeni seviyeniz  ---------> " + sayi);
+	    }
+}
+
+
+

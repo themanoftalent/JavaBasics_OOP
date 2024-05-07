@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class MatrisIslemleri {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[][] matris1 = new int[][] {{1,2},{3,4}};
+        int[][] matris2 = new int[][] {{5,6},{7,8}};
+        int[][] toplam = new int[2][2];
+        int[][] carpim = new int[2][2];
+        System.out.println("Matrislerin Toplami: ");
+        for(int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                toplam[i][j] = matris1[i][j] + matris2[i][j];
+                System.out.println(toplam[i][j]+" ");
+            }
+        }
+        System.out.println("Matrislerin Carpimi: ");
+        for(int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                int a = 0;
+                for(int k = 0; k < 2; k++) {
+                    a = a + (matris1[i][k] * matris2[k][j]);
+                }
+                carpim[i][j] = a;
+            }
+        }
+        for(int i = 0; i < 2; i++) {
+            for (int j = 0; j <2;j++)
+            {
+                System.out.println(carpim[i][j] + " ");
+            }
+        }
+    }
+} 
+
+Ceren Mutlu 2311502264

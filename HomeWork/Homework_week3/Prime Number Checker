@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("sayi girin:");
+        int sayi = girdi_degeri.nextInt();
+
+        int bolenSayisi = 0;
+        if(sayi<0)
+            System.out.println("Asalliga bakilamaz.");
+        else if(sayi>=0 || sayi<2)
+            System.out.println("Sayi asal degildir.");
+        else {
+            for (int i = 2; i < (sayi / 2); i++) {
+                if (sayi % i == 0)
+                    bolenSayisi++;
+            }
+            if (bolenSayisi > 0)
+                System.out.println("Sayi asal degil.");
+            else
+                System.out.println("sayi asaldir.");
+        }
+    }
+}

@@ -1,0 +1,44 @@
+//2311502260
+// Simple Calculator
+
+import java.util.Scanner;
+
+public class Odev {
+    public static void main(String[]args) {
+        Scanner girdi_sayisi = new Scanner(System.in);
+        System.out.println("1. sayıyı girin:");
+        int number1 = girdi_sayisi.nextInt();
+
+        System.out.println("2. sayıyı girin:");
+        int number2 = girdi_sayisi.nextInt();
+
+        girdi_sayisi.nextLine();
+
+        System.out.println("İşlem girin:");
+        String operation = girdi_sayisi.nextLine();
+
+
+
+        switch(operation) {
+            case "-":
+                System.out.println("sonuç=" + (number1 - number2));
+                break;
+
+            case "+":
+                System.out.println("sonuç=" + (number1 + number2));
+                break;
+
+            case "/":
+                System.out.println("sonuç=" + (number1 / number2));
+                break;
+
+            case "*":
+                System.out.println("sonuç=" + (number1 * number2));
+                break;
+
+            default:
+                System.out.println("Yanlış işlem yaptınız");
+        }
+    }
+
+}

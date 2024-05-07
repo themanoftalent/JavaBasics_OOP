@@ -1,0 +1,30 @@
+//2311502231 Zehre İnce - Array Sorting
+package zehrejava;
+import java.util.Scanner;
+import java.util.*;
+public class odev {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Dizi eleman sayısını giriniz");
+        int kac = scan.nextInt();
+        int[] dizi = new int[kac];
+        int buyukolan;
+
+        for(int i=0;i<kac;i++){
+            System.out.print((i+1)+". eleman:");
+            int eleman = scan.nextInt();
+            dizi[i] = eleman;
+        }
+        
+        for(int i=0;i<kac;i++){
+            for(int j=1;j<kac;j++){
+                if(dizi[j]>dizi[j-1]){
+                    buyukolan = dizi[j];
+                    dizi[j] = dizi[j-1];
+                    dizi[j-1] = buyukolan;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(dizi));
+    }
+}

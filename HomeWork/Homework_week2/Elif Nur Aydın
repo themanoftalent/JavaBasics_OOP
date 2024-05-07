@@ -1,0 +1,71 @@
+Elif Nur Aydın 2311502211
+
+4. Faktoriyel Bulma
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+   	System.out.println("Sayı giriniz:");
+    	int sayi = scanner.nextInt();
+    	int faktoriyel = 1 ;
+    	for(int  i = sayi; i > 0; i --) {
+        	faktoriyel *= i;
+
+    	}
+
+    System.out.println( sayi + " sayının faktoriyeli : " + faktoriyel);
+
+    }
+}
+
+// 5. Fibonacci Dizisi
+
+import java.util.Scanner;
+
+public class Ders {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int sayi1 = 0;
+        int sayi2 = 1;
+        int toplam;
+        System.out.println("Bir sayı giriniz:");
+        int sayi = scan.nextInt();
+        System.out.print("Fibonacci dizisinin ilk " + sayi + " terimi: ");
+        for(int i = 1; i <= sayi; i++){
+            System.out.print(sayi1);
+            if (i < sayi) {
+                System.out.print(", ");
+            }
+            toplam = sayi1 + sayi2;
+            sayi1 = sayi2;
+            sayi2 = toplam;
+        }
+    }
+}
+
+
+// 6. Palindrom Sayı Bulma
+import java.util.Scanner;
+
+public class Palindrome {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz:");
+        int sayi = scan.nextInt();
+        int check = sayi;
+        int toplam = 0;
+
+        while (check > 0) {
+            toplam = (toplam * 10) + (check % 10);
+            check = check / 10;
+        }
+        
+        if (toplam == sayi) {
+            System.out.println(sayi + " Girdiğiniz sayi polindromdur.");
+        } else {
+            System.out.println(sayi + " Girdiğiniz sayi polindrom değildir.");
+        }
+    }
+}

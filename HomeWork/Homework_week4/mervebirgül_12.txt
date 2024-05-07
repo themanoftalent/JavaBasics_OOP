@@ -1,0 +1,29 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class diziSiralama {
+    //buyukten kücüge sirala
+    public static void main(String[] args) {
+        Scanner eleman = new Scanner(System.in);
+        System.out.println("dizi için eleman sayisi belirtin");
+        int elemanSayisi = eleman.nextInt();
+        int dizi[] = new int[elemanSayisi];
+        int enbuyuk = -3445;
+
+        for (int i = 0; i < elemanSayisi; i++) {
+            Scanner dizib = new Scanner(System.in);
+            System.out.println("dizi " + (i + 1) + " elemanı giriniz:");
+            dizi[i] = dizib.nextInt();
+        }
+        for (int i = 0; i < elemanSayisi - 1; i++) {
+            for (int j = 0; j < elemanSayisi - i - 1; j++) {
+                if (dizi[j] < dizi[j + 1]) {
+                    enbuyuk = dizi[j];
+                    dizi[j] = dizi[j + 1];
+                    dizi[j + 1] = enbuyuk;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(dizi));
+    }
+}

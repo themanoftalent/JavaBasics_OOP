@@ -1,0 +1,42 @@
+//Array Sum and Average 
+//Fatih Selim ADALI 2311502248
+
+
+
+import java.util.Scanner;
+public class Dizitoplamıveortalaması {
+
+	public static void main(String[] args) {
+		
+		
+		
+        Scanner deger = new Scanner(System.in);
+        System.out.print("Dizi boyutu ne olsun: ");
+        int boyut = deger.nextInt();
+        
+        
+
+       
+        int[] dizi = new int[boyut];
+        for (int i = 0; i < boyut; i++) {
+            System.out.print("Dizinin " + (i+1) + ". elemanını girin: ");
+            dizi[i] = deger.nextInt();
+        }
+        
+        
+
+        
+        int toplam = 0;
+        for (int i = 0; i < boyut; i++) {
+            toplam += dizi[i];
+        }
+        double ort =  toplam / boyut;
+
+      
+        System.out.println("dizinin Toplami: " + toplam);
+        System.out.println("dizinin Ortalamasi: " + ort);
+
+	}
+
+}
+

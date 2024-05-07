@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TersCevirme {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir string girin: ");
+        String orijinal = scanner.nextLine();
+
+        String ters = "";
+        for (int i = orijinal.length() - 1; i >= 0; i--) {
+            ters += orijinal.charAt(i);
+        }
+
+        System.out.println("Ters çevrilmiş hali: " + ters);
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,21 @@
+public class Palindrom {
+    public static void main(String[] args) {
+        int sayi = 12321; 
+        int orijinalSayi = sayi;
+        int tersSayi = 0;
+        
+        // Sayının tersini almak için while döngüsü
+        while (sayi != 0) {
+            int basamak = sayi % 10;
+            tersSayi = tersSayi * 10 + basamak;
+            sayi /= 10;
+        }
+
+        // Ters çevrilmiş sayı ile orijinal sayıyı karşılaştırma
+        if (orijinalSayi == tersSayi) {
+            System.out.println(orijinalSayi + " bir palindromdur.");
+        } else {
+            System.out.println(orijinalSayi + " bir palindrom değildir.");
+        }
+    }
+}

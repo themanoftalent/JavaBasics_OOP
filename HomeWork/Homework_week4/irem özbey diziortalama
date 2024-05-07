@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Dizinizin eleman sayısını girin");
+    int sayi = input.nextInt();
+    int[] dizi = new int[sayi];
+    int toplam = 0;
+
+    for(int i=0;i<sayi;i++){
+            System.out.println("Eleman girin ");
+            int abc = input.nextInt();
+            toplam = toplam + abc;}
+    double ortalama = toplam / sayi;
+          System.out.println("dizinin toplamı"+toplam);
+        System.out.println("dizininortalaması"+ortalama);
+}   }

@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("sayi girin:");
+        int sayi = girdi_degeri.nextInt();
+
+        for(int i=0; i<10; i++){
+            System.out.println(sayi +"x"+i+"="+i*sayi);
+        }
+    }
+}

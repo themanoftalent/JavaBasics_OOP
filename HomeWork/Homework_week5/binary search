@@ -1,0 +1,27 @@
+public class Main {
+    public static void main(String[] args){
+
+        Scanner girdi_degeri = new Scanner(System.in);
+        int [] sayilar = new int[6];
+        System.out.println("dizideki sayilari girin:");
+
+        for(int i=0; i<6;i++){
+            System.out.print((i+1)+": ");
+            sayilar[i] = girdi_degeri.nextInt();
+        }
+        System.out.println("aramak istediginiz sayiyi seciniz:");
+        int sayi = girdi_degeri.nextInt();
+        int sayac=0;
+
+        for(int i=0; i<6; i++){
+            if(sayi == sayilar[i]){
+                System.out.println("sayi dizinin "+(i+1)+". sirasinda bulunuyor.");
+                sayac++;
+            }
+        }
+        if(sayac == 0){
+            System.out.println("girdiginiz sayi dizide bulunmuyor.");
+        }
+
+    }
+}

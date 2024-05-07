@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class RakamlarToplamı {
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int sayi;
+		
+		System.out.println("Lütfen bir sayı giriniz: ");
+		sayi= scanner.nextInt();
+		
+		int rakamlarToplamı2= rakamlarToplamı(sayi);
+		System.out.println("Sayının rakamlar toplamı: " +rakamlarToplamı2);
+}
+}

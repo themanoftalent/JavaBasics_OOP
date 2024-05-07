@@ -1,0 +1,16 @@
+public class SifirHatasi {
+    public static void main(String[] args) {
+
+                int sayi1 = 24;
+                int sayi2 = 0;
+
+                try {
+                    int sonuc = sayi1 / sayi2;
+                    System.out.println("Çarpma Sonucu: " + sonuc);
+                } catch (ArithmeticException e) {
+                    System.out.println("bir sayı sıfıra bölünmez hatalı giriş.");
+                }
+            }
+        }
+
+

@@ -1,0 +1,21 @@
+//kader güneş
+//odev12->dizi sıralama:Tam sayı dizisi için bir sıralama algoritması uygulayın.
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        int []dizi={1,99,23,-1,4,8,2};
+        int min;
+        for(int i=0;i<7;i++){
+            for(int j=0;j<6;j++){
+                if(dizi[j]>dizi[j+1]){
+                    min=dizi[j];
+                    dizi[j] = dizi[j + 1];
+                    dizi[j+1]=min;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(dizi));
+
+
+    }
+}

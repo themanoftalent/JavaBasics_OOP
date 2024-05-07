@@ -1,0 +1,57 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class DosyaOku {
+
+    public static void main(String[] args) {
+        dosyaOlustur();
+       dosyaYaz();
+
+
+
+
+    }
+    public static void dosyaOlustur() {
+        File dosya=new File("C:\\Users\\merve\\yapılacaklar\\malzemeler.txt");
+        try {
+           if(dosya.createNewFile()){
+               System.out.println("dosya oluşturuldu.");
+           } else
+               System.out.println("dosya mevcut");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void dosyaIcindeki(){
+        File dosya=new File("C:\\Users\\merve\\yapılacaklar\\malzemeler.txt");
+        if(dosya.exists()){
+            System.out.println("dosya adı:"+dosya.getName());
+            System.out.println("dosya konumu:"+dosya.getAbsoluteFile());
+            System.out.println("dosya okunabilir mi :"+dosya.canRead());
+            System.out.println("dosya yazilabilir mi:"+dosya.canWrite());
+            System.out.println("dosya boyutu:"+dosya.length());
+        }
+    }
+    public static void DosyaOku(){
+        File dosya=new File("C:\\Users\\merve\\yapılacaklar\\malzemeler.txt");
+        try {
+            Scanner oku=new Scanner(dosya);
+            while (oku.hasNextLine()){
+                String line= oku.nextLine();
+                System.out.println(line);
+            } oku.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void dosyaYaz(){
+        try {
+        BufferedWriter writer=new BufferedWriter(new FileWriter("C:\\Users\\merve\\yapılacaklar\\malzemeler.txt",true));
+        writer.write("yag");
+        writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+}

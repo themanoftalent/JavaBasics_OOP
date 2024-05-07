@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+// KELIMEYI BULMA | LINEAR SEARCH
+public class Main {
+    public static void main(String[] args) {
+    
+    	Scanner scanner = new Scanner(System.in);
+    	 System.out.println("Dizimiz renklerden olusmus");
+         System.out.println("Aramak istediginiz renk yazınız");
+         String renk = scanner.nextLine();
+         
+         String[] renkler = {"kirmizi","siyah","yesil","sari","mavi","portkal","pembe","mor","kahverengi","beyaz"};
+    
+         int renkcheck =0;
+         for (int i =0;i < renkler.length;i++){
+             if (renkler[i].equals(renk)){
+                 System.out.println("Aradığınız renk dizide bulunuyor :"+ renkler[i]);
+                 renkcheck =0;
+                 break;
+             }
+             else {
+                 renkcheck = 1;
+             }
+         }
+         if (renkcheck == 1){
+             System.out.println("Girdiğiniz renk dizimizde yok!");
+         }      
+  }
+}

@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi_degeri = new Scanner(System.in);
+        System.out.println("sayi girin:");
+        int sayi = girdi_degeri.nextInt();
+
+        int temp = sayi, geciciSayi, toplam = 0;
+        while(temp>0){
+            geciciSayi = temp%10;
+            toplam+=geciciSayi;
+            temp/=10;
+        }
+        System.out.println(sayi + " sayisinin rakamlari toplami : "+toplam);
+    }
+}

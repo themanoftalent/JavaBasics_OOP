@@ -1,0 +1,25 @@
+import java.util.*;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir sayi girin : ");
+        double sayi = scanner.nextDouble();
+
+        int toplam = 0;
+        String sayistr = Double.toString(sayi);
+
+        for (int i = 0; i < sayistr.length(); i++) {
+            char karakter = sayistr.charAt(i);
+            if (karakter != '.' && karakter != '-') {
+                int rakam = Character.getNumericValue(karakter);
+                toplam += rakam;
+            }
+        }
+
+        System.out.println("Rakamlarin toplami: " + toplam);
+    }
+}

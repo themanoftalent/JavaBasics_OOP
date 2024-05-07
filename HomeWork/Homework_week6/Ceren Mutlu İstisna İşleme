@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class IstisnaIsleme {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ilk sayiyi giriniz: ");
+        int sayi1 = input.nextInt();
+        System.out.println("Ikinci sayiyi giriniz: ");
+        int sayi2 = input.nextInt();
+        double sonuc;
+        sonuc = sayi1 / sayi2;
+        if(sayi2 == 0) {
+            System.out.println("Bu bolme islemi yapilamaz. ");
+        }
+        else {
+            System.out.println(sonuc);
+        }
+    }
+} 
+
+Ceren Mutlu 2311502264

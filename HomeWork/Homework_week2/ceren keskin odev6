@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		Scanner sc=new Scanner(System.in);
+		
+
+		 int sayi1;
+		 int sayi2=0;
+		 int sayi3;
+		 int x;
+		 int bas=0;
+	        System.out.printf("Lutfen bir sayi girin: ");
+	   
+	        sayi1 = sc.nextInt();
+	        sayi3=sayi1;
+	            do
+	            {
+	                x=sayi1%10;
+	                sayi1=(sayi1-x)/10;
+	                bas++;
+	                sayi2=(10*sayi2)+x;
+	            }   
+	            while (sayi1>0);
+	            
+	        System.out.printf(""+sayi2);
+	        
+	        if(sayi3==sayi2)
+	        {
+	            System.out.println("Polindrom sayi");
+
+	        }
+	        else
+	            System.out.println("Polindrom sayi degil");
+	        
+	        sc.close();
+       
+        
+	}
+}

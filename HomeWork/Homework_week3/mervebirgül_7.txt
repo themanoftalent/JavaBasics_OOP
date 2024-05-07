@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class rakamToplamlari {
+
+public static void main(String[]args ){
+
+    System.out.println("bir sayi giriniz:");
+    int basamakSayisi=0;
+    int toplam=0,kalan;
+    Scanner scanner=new Scanner(System.in);
+    int sayi= scanner.nextInt();
+    int yeniSayi=sayi;
+
+
+    while(yeniSayi!=0)
+    {
+        yeniSayi=yeniSayi/10;
+        basamakSayisi ++;
+    }
+    for(int i=0;i<basamakSayisi;i++){
+        kalan=sayi%10;
+        sayi=sayi/10;
+        toplam+=kalan;
+    }
+    System.out.println(toplam);
+
+}
+
+}

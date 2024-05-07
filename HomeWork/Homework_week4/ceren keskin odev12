@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class ODEV
+{
+	public static void main(String[]args)
+	{
+		
+		System.out.print("Lutfen dizinin boyutunu girin:");
+        Scanner sc = new Scanner(System.in);
+        
+        int uz = sc.nextInt();
+
+        int[] dizi = new int[uz];
+        System.out.println("Diziyi girin: ");
+        
+        for (int i = 0; i < uz; i++) 
+        {
+            dizi[i] = sc.nextInt();
+        }
+
+        
+        for (int i=0; i<uz - 1; i++) 
+        {
+        	
+            for (int j=0; j<uz - i - 1; j++) 
+            {
+            	
+                if (dizi[j] > dizi[j + 1]) 
+                {
+                	
+                    int temp = dizi[j];
+                    dizi[j] = dizi[j + 1];
+                    dizi[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.println("Sıralı dizi:");
+        for (int i = 0; i < uz; i++) 
+        {
+            System.out.print(dizi[i] + " ");
+        }
+
+        
+        sc.close();
+		
+		
+		
+	           
+	}
+}

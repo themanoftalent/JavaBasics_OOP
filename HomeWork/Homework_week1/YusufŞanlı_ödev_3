@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class TEK_ÇİFT_BULMA {
+	public static void main(String[] args) {
+		System.out.println(" Bİr sayı giriniz ");
+		Scanner d = new Scanner(System.in);
+		int sayi=d.nextInt();
+		if(sayi%2==0)
+	System.out.println("sayı çifttir.");
+		else 
+		System.out.println("sayı tektir.");
+		
+	}
+}

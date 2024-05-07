@@ -1,0 +1,18 @@
+//kader güneş
+//odev10->bir dizeyi ters çevir:yerleşik işlevleri kullanmadan bir dizeyi ters çevirin.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int[] dizi = {1, 2, 3, 4, 5, 6, 7};
+        int dizi1[] = new int[7];
+        int j = 0;
+
+        for (int i = 6; i >= 0; i--) {
+            dizi1[j] = dizi[i];
+            j++;
+        }
+        for (j = 0; j < 7; j++) {
+            System.out.print(" " + dizi1[j]);
+        }
+    }
+}

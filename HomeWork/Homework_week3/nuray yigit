@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class AsalSayi {
+
+public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in); 
+   System.out.println("Sayi giriniz:");
+   int sayi = sc.nextInt(); 
+   int a=0;
+   for (int i = 1; i <= sayi; i++) { 
+       if(sayi%i == 0){ 
+       a++;
+       }
+   }
+   if(a==2)
+   System.out.println("Seçtiğiniz sayı asaldır.");
+   else
+   System.out.println("Seçtiğiniz sayı asal değildir.");
+   }
+}
+
+

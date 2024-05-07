@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+   try {
+	   Scanner gir = new Scanner(System.in);
+	   System.out.println("sayi gir ");
+	   int a = gir.nextInt();
+     System.out.println("sayi gir ");
+	   int b = gir.nextInt();
+	   int c = a/b;
+	   System.out.println("cevap: " + c);	   
+       }
+       catch(ArithmeticException e) {
+    	   System.out.println("hata");
+       }  
+}}

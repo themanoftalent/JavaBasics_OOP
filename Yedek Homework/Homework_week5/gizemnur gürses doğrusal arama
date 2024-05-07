@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int j = 0;
+        boolean abc = false;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Eleman sayısı ");
+        int elemanSayisi = input.nextInt();
+
+        int[] numara = new int[elemanSayisi];
+
+        for (int i = 0; i < elemanSayisi; i++) {
+            System.out.println("Elemanları giriniz:");
+            int eleman = input.nextInt();
+            numara[i] = eleman;
+        }
+
+        System.out.println("Aranacak elemanı giriniz: ");
+        int arananEleman = input.nextInt();
+
+        for (int i = 0; i < elemanSayisi; i++) {
+            if (numara[i] == arananEleman) {
+                abc = true;
+                j = i;
+                break;
+            }
+        }
+
+        if (abc) 
+            System.out.println("eleman bulundu sırada: " + j);
+        else 
+            System.out.println("eleman bulunamadı");
+    }
+}

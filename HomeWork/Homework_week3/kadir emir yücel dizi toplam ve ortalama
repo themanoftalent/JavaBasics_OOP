@@ -1,0 +1,24 @@
+package javamedhod;
+import java.security.DigestInputStream;
+import java.util.Scanner;
+
+public class elma {
+//kadir emir yücel
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);		
+System.out.println("dizinin eleman sayısını giriniz");
+int eleman=scanner.nextInt();
+int []dizi=new int[eleman];
+int toplam=0;
+float ort=1;
+for(int i=0;i<eleman;i++) {
+	System.out.println(i+".eleman için sayı giriniz");
+	dizi[i]=scanner.nextInt();
+	toplam+=dizi[i];
+}
+ort=(float)toplam/eleman;
+System.out.println(" dizinin toplam değeri  :"+toplam);
+System.out.println("dizinin ortalama değeri  :"+ort);
+	}
+}	

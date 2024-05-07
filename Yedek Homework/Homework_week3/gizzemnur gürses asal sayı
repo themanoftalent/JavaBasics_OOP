@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class AsalSayi {
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int sayi;
+		
+		System.out.println("Lütfen bir sayı giriniz: ");
+		sayi= scanner.nextInt();
+		
+		if(AsalMi(sayi))
+			System.out.println("Sayı asaldır.");
+		else
+			System.out.println("Sayı asal değildir.");
+	}
+	
+	
+	public static boolean AsalMi(int sayi) {
+		
+		if(sayi<=1)
+			return false;
+		
+		for(int i=2; i<sayi; i++) {
+			if(sayi%i==0)	
+		    return false;
+			
+		}
+		
+		return true;
+		
+	}
+
+}

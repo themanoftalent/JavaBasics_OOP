@@ -1,0 +1,95 @@
+//13.Perform a linear search in an array to find a specific element.
+
+public class Hello world {
+
+    public static int linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i;  
+            }
+        }
+        return -1; 
+    }
+
+    public static void main(String[] args) {
+        int[] data = {3, 5, 7, 1, 8, 9};  
+        int result = linearSearch(data, target);
+
+        if (result == -1) {
+            System.out.println("Element " + target + " not found in the array.");
+        } else {
+            System.out.println("Element " + target + " found at index: " + result);
+        }
+    }
+}
+
+//15.Perform addition and multiplication of two matrices.
+
+public class Hello world {
+
+    public static int[][] addMatrices(int[][] matrixA, int[][] matrixB) {
+        int rows = matrixA.length;
+        int cols = matrixA[0].length;
+
+        int[][] result = new int[rows][cols];
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                result[i][j] = matrixA[i][j] + matrixB[i][j];
+            }
+        }
+
+        return result;
+    }
+
+    public static int[][] multiplyMatrices(int[][] matrixA, int[][] matrixB) {
+        int aRows = matrixA.length;
+        int aCols = matrixA[0].length;
+        int bCols = matrixB[0].length;
+
+        int[][] result = new int[aRows][bCols];
+
+        for (int i = 0; i < aRows; i++) {
+            for (int j = 0; j < bCols; j++) {
+                for (int k = 0; k < aCols; k++) {
+                    result[i][j] += matrixA[i][k] * matrixB[k][j];
+                }
+            }
+        }
+
+        return result;
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int value : row) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        int[][] matrixA = {
+            {1, 2},
+            {3, 4}
+        };
+
+        int[][] matrixB = {
+            {2, 0},
+            {1, 2}
+        };
+
+      
+        System.out.println("Matrix Addition:");
+        int[][] additionResult = addMatrices(matrixA, matrixB);
+        printMatrix(additionResult);
+
+     
+        System.out.println("Matrix Multiplication:");
+        int[][] multiplicationResult = multiplyMatrices(matrixA, matrixB);
+        printMatrix(multiplicationResult);
+    }
+}
+
+/2311502298

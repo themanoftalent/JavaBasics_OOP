@@ -1,0 +1,16 @@
+//kader güneş
+//odev8->çarpım tablosu:bir sayının çarpım tablosunu görüntüleyin.
+public class Main {
+    public static void main(String[] args) {
+    int i;
+    int j;
+    int c;
+    int []dizi=new int[100];
+    for(i=1;i<11;i++){
+        for(j=0;j<11;j++){
+           c=i*j;
+            System.out.println(c);
+        }
+    }
+    }
+}

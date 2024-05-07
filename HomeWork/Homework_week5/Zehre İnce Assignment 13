@@ -1,0 +1,28 @@
+//Zehre İnce 2311502231 - Linear Search
+package zehrejava;
+import java.util.Scanner;
+
+public class odev {
+  public static void main (String[] args){
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Dizinin eleman sayısını giriniz:");
+      int sayi = scan.nextInt();
+      int[] dizi = new int[sayi];
+      for(int i=0;i<sayi;i++){
+          System.out.println(i+1 +". Elemanı giriniz: ");
+          int eleman = scan.nextInt();
+          dizi[i] = eleman;
+      }
+      System.out.println("Aradığınız eleman:");
+      int search = scan.nextInt();
+     
+      for (int i =0 ;i < sayi ; i++){
+          if (dizi[i] == search){
+              System.out.println("Girdiğiniz sayı dizinin "+(i+1)+". elemanıdır");
+              break;
+          }
+          if(i==sayi-1 && dizi[i]!=search) { System.out.println("Aradığınız eleman dizinin bir elemanı değil.");
+          break; }
+      }
+  }
+}

@@ -1,0 +1,24 @@
+//kader güneş
+//odev4->faktöriyel hesaplayıcı.döngüleri kullanarak bir sayının faktöriyelini hesaplayın.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Faktöriyelini hesaplamak istediğniz sayıyı giriniz: ");
+        int x;
+        Scanner input=new Scanner(System.in);
+        x=input.nextInt();
+        int y=1;
+        if(x==0){
+            System.out.println("Girdiğiniz sayının faktöriyeli:1");
+        }
+        else if(x>0){
+            for(int i=1;i<=x;i++){
+               y*=i;
+            }
+            System.out.println("Girdiğiniz sayının faktöriyeli:" +y);
+        }
+        else{
+            System.out.println("Girdiğiniz sayının faktöriyeli hesaplanamaz.");
+        }
+    }
+}

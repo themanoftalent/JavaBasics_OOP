@@ -1,0 +1,11 @@
+//2311502260
+
+// Hello, World!
+
+
+public class Odev {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+
+    }
+}
