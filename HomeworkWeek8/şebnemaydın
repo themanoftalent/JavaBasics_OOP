@@ -1,0 +1,62 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+
+            public void Operator() {
+            Scanner input = new Scanner(System.in);
+
+            try{
+                System.out.println("islem seç");
+                System.out.println("1.toplama");
+                System.out.println("2.çıkarma");
+                System.out.println("3.çarpma");
+                System.out.println("4.bölme");
+
+                int sec= input.nextInt();
+
+                System.out.println("1.sayiyi gir");
+                int sayi1 = input.nextInt();
+
+                System.out.println("2.sayiyi gir");
+                int sayi2 = input.nextInt();
+
+                double sonuc=0;
+
+                switch (sec) {
+                    case 1:
+                        sonuc=sayi1+sayi2;
+                        break;
+                    case 2:
+                        sonuc=sayi1-sayi2;
+                        break;
+                    case 3:
+                        sonuc=sayi1*sayi2;
+                        break;
+                    case 4:
+                        if(sayi2 != 0){
+                            sonuc=sayi1/sayi2;
+                        }
+                        else {
+                            throw new ArithmeticException("sayi2 sıfır olamaz.");
+                        }
+                        break;
+                    default:
+                        System.out.printf("geçersiz işlem");
+                        return; }
+                System.out.println("Sonuç= " + sonuc); }
+            catch (InputMismatchException e) {
+                System.out.println("Hata.Sayı giriniz.");}
+            catch (ArithmeticException e) {
+                System.out.println("Hata: " + e.getMessage());}
+
+            finally {
+             input.close();
+
+            }}}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calcul = new Calculator();
+        calcul.Operations(); }
+}
