@@ -1,0 +1,62 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Calculator {
+
+            public void Operations() {
+            Scanner scan = new Scanner(System.in);
+
+            try{
+                System.out.println("islem seç");
+                System.out.println("1.toplama");
+                System.out.println("2.çıkarma");
+                System.out.println("3.çarpma");
+                System.out.println("4.bölme");
+
+                int choice = scan.nextInt();
+
+                System.out.println("1.sayiyi gir");
+                int num1 = scan.nextInt();
+
+                System.out.println("2.sayiyi gir");
+                int num2 = scan.nextInt();
+
+                double sonuc=0;
+
+                switch (choice) {
+                    case 1:
+                        sonuc=num1+num2;
+                        break;
+                    case 2:
+                        sonuc=num1-num2;
+                        break;
+                    case 3:
+                        sonuc=num1*num2;
+                        break;
+                    case 4:
+                        if(num2 != 0){
+                            sonuc=num1/num2;
+                        }
+                        else {
+                            throw new ArithmeticException("Bölme işlemi geçersiz!! İkinci sayı sıfır olamaz.");
+                        }
+                        break;
+                    default:
+                        System.out.printf("Geçersiz işlem!!");
+                        return; }
+                System.out.println("Sonuç= " + sonuc); }
+            catch (InputMismatchException e) {
+                System.out.println("Hata: Geçersiz giriş. Sayı giriniz.");}
+            catch (ArithmeticException e) {
+                System.out.println("Hata: " + e.getMessage());}
+
+            finally {
+             scan.close();
+
+            }}}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calcul = new Calculator();
+        calcul.Operations(); }
+}
