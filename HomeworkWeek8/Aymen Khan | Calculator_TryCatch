@@ -1,0 +1,69 @@
+//AYMEN KHAN | 2311502200
+
+//HESAP MAKINESI | CALCULATOR
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class hesapmakinesi {
+    public void islem() {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.println("istedigin islem seciniz:");
+            System.out.println("1. toplam");
+            System.out.println("2. cikarma");
+            System.out.println("3. carpma");
+            System.out.println("4. bolme");
+
+            int islem = scanner.nextInt();
+
+            System.out.print("ilk sayi giriniz: ");
+            double num1 = scanner.nextDouble();
+
+            System.out.print("ikinci sayi giriniz: ");
+            double num2 = scanner.nextDouble();
+
+            double sonuc= 0;
+
+            switch (islem) {
+                case 1:
+                    sonuc = num1 + num2;
+                    break;
+                case 2:
+                    sonuc = num1 - num2;
+                    break;
+                case 3:
+                    sonuc = num1 * num2;
+                    break;
+                case 4:
+                    if (num2 != 0) {
+                        sonuc = num1 / num2;
+                    } else {
+                        throw new ArithmeticException("Bolme islem hatali! ikinci sayi 0 olamaz!");
+                    }
+                    break;
+                default:
+                    System.out.println("Hatali islem");
+                    return;
+            }
+
+            System.out.println("Sonuc: " +sonuc);
+        } catch (InputMismatchException e) {
+            System.out.println("Error: Hatali giris. Lutfen bir sayi giriniz.");
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            scanner.close();
+        }
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+
+        calculator.Operations();
+    }
+}
