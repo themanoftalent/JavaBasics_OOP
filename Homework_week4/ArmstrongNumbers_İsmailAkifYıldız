@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Main36 {
+
+	public static void main(String[] args) {
+		// Armstrong Number 
+		Scanner scanner= new Scanner(System.in); 
+		System.out.println("Enter a number: ");
+		int num= scanner.nextInt();
+		scanner.close();
+		int a = num;
+		int b=0; // b = basamak sayısı
+		while (a != 0) {
+			a = a /10;
+			b++;
+		}
+		a=num;
+		int d = a;
+		int c = 0;
+		int e = b;
+		int array[] = new int[b]; 	 	
+		while (b != 0) {    
+			array[c] = d % 10;
+			d = d / 10;
+			b--;
+			c++;
+			}
+		int num2 = 0;
+		while ( e != 0 ) {
+			num2 = num2 + (int)Math.pow(array[e-1], c);
+			e--;		
+		}
+		if (num == num2 ) System.out.println("Sayı Armstrong sayısıdır!");
+		else System.out.println("Sayı Armstrong sayısı değildir!");
+		
+	}
+
+}
