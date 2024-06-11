@@ -1,0 +1,87 @@
+public class Main {
+    public static void main(String[] args) {
+Employee kaan= new Employee("kaan",20,15000,"öğrenci",5 );
+        kaan.calısanBilgiYazdirr();
+        kaan.maasArtırma(-99);
+    }
+}
+
+
+
+
+
+
+public class Employee {
+    private String name;
+    private int yas;
+    private int maas;
+    private String unvan;
+    private int calısmaBilgisi;
+    Employee(String name,int yas,int maas ,String unvan,int calısmaBilgisi){
+        this.name=name;
+        this.yas=yas;
+        this.maas=maas;
+        this.unvan=unvan;
+        this.calısmaBilgisi=calısmaBilgisi;
+
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public String getName(){
+        return name;
+
+    }
+
+    public int getYas() {
+        return yas;
+    }
+
+    public void setMaas(int maas) {
+        this.maas = maas;
+    }
+
+    public int getMaas() {
+        return maas;
+    }
+
+    public void setYas(int yas) {
+        this.yas = yas;
+    }
+
+    public String getUnvan() {
+        return unvan;
+    }
+
+    public void setUnvan(String unvan) {
+        this.unvan = unvan;
+    }
+
+    public int getCalısmaBilgisi() {
+        return calısmaBilgisi;
+    }
+
+    public void setCalısmaBilgisi(int calısmaBilgisi) {
+        this.calısmaBilgisi = calısmaBilgisi;
+    }
+    public void calısanBilgiYazdirr(){
+        System.out.println("calısanın ismi: "+ getName());
+        System.out.println("calısanın yası: "+ getYas());
+        System.out.println("calısanın unvanı: "+ getUnvan());
+        System.out.println("çalışşma saaati"+ getCalısmaBilgisi());
+        System.out.println(" çalışanın yıllık maaş miktarı:"+ getMaas());
+    }
+    public int yıllıkMaas(){
+        return maas*12;
+    }
+    public void maasArtırma(int zam){
+        if(zam>0) {
+            int yeniMaas = zam + maas;
+            System.out.println("çalışanın yeni maaş : "+yeniMaas);
+        }
+        else {
+            System.out.println("lütfen pozitif değer giriniz");
+        }
+
+    }
+}
